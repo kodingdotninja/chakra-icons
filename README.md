@@ -66,13 +66,13 @@ api {
 ## Typedefs
 
 <dl>
-<dt><a href="#PropsChakraProperties">PropsChakraProperties</a> ⇒</dt>
+<dt><a href="#PropsChakraProperties">PropsChakraProperties</a> ⇒ <code>Object</code></dt>
 <dd></dd>
-<dt><a href="#PropsChakraFunctional">PropsChakraFunctional</a> ⇒</dt>
+<dt><a href="#PropsChakraFunctional">PropsChakraFunctional</a> ⇒ <code>Object</code></dt>
 <dd></dd>
 <dt><a href="#SvgProperties">SvgProperties</a> ⇒ <code>Object</code></dt>
-<dd><p>example of @param
-{
+<dd><p>example of @param</p>
+<pre><code class="language-js">{
     type: &#39;root&#39;,
     children: [
       {
@@ -80,21 +80,21 @@ api {
         tagName: &#39;svg&#39;,
         properties: { viewBox: &#39;0 0 200 200&#39; },
         children: [ [Object], [length]: 1 ],
-        metadata: &#39;
-  &#39;
+        metadata: &#39;\n  &#39;
       },
       [length]: 1
     ]
   }
-}</p>
+}
+</code></pre>
 </dd>
 </dl>
 
 <a name="PropsChakraProperties"></a>
 
-## PropsChakraProperties ⇒
+## PropsChakraProperties ⇒ <code>Object</code>
 **Kind**: global typedef  
-**Returns**: t.ObjectExpression  
+**Returns**: <code>Object</code> - t.ObjectExpression  
 **See**: {https://babeljs.io/docs/en/babel-types#objectexpression}  
 **Properties**
 
@@ -102,14 +102,14 @@ api {
 | --- | --- |
 | displayName | <code>String</code> | 
 | viewBox | <code>String</code> | 
-| path | <code>String</code> | 
-| d | <code>String</code> | 
+| [path] | <code>String</code> | 
+| [d] | <code>String</code> | 
 
 <a name="PropsChakraFunctional"></a>
 
-## PropsChakraFunctional ⇒
+## PropsChakraFunctional ⇒ <code>Object</code>
 **Kind**: global typedef  
-**Returns**: t.ExportNameDeclaration  
+**Returns**: <code>Object</code> - t.ExportNameDeclaration  
 **See**
 
 - {https://babeljs.io/docs/en/babel-types#objectexpression}
@@ -126,6 +126,7 @@ api {
 
 ## SvgProperties ⇒ <code>Object</code>
 example of @param
+```js
 {
     type: 'root',
     children: [
@@ -134,13 +135,13 @@ example of @param
         tagName: 'svg',
         properties: { viewBox: '0 0 200 200' },
         children: [ [Object], [length]: 1 ],
-        metadata: '
-  '
+        metadata: '\n  '
       },
       [length]: 1
     ]
   }
 }
+```
 
 **Kind**: global typedef  
 **Returns**: <code>Object</code> - SvgProperties  
@@ -158,10 +159,9 @@ example of @param
 
 <!--END TYPEDEFS-->
 
-
-
 ## Alternative
-* SVGR
-* create-chakra-icon
+* [**SVGR**](https://react-svgr.com/)
+* [**create-chakra-icon**](https://www.npmjs.com/package/create-chakra-icon)
+   
 ## License
 [See HERE](./LICENSE)
