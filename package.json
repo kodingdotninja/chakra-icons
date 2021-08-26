@@ -1,0 +1,43 @@
+{
+  "name": "create-chakraicon",
+  "version": "0.0.1",
+  "description": "Transform SVG to React Chakra UI <Icon /> ✨",
+  "author": "ri7nz <hi@rin.rocks>",
+  "license": "MIT",
+  "homepage": "https://github.com/kodingdotninja/create-chakraicon",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kodingdotninja/create-chakraicon"
+  },
+  "files": [
+    "lib",
+    "package.json",
+    "index.js",
+    "index.bin.js"
+  ],
+  "keywords": [
+    "generator",
+    "chakra-ui",
+    "reactjs",
+    "react-native",
+    "react",
+    "javascript",
+    "cli",
+    "svg"
+  ],
+  "main": "index.js",
+  "bin": {
+    "create-chakraicon": "./index.bin.js"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./api": "./lib/index.js"
+  },
+  "dependencies": {
+    "@babel/generator": "7.15.0",
+    "@babel/types": "7.15.0",
+    "@svgr/hast-util-to-babel-ast": "5.5.0",
+    "minimist": "1.2.5",
+    "svg-parser": "2.0.4"
+  }
+}
