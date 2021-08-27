@@ -33,11 +33,16 @@
     ".": "./index.js",
     "./api": "./lib/index.js"
   },
+  "scripts": {
+    "docs": "npx documentation readme lib/*.js -q --section API && yarn fixreadme",
+    "fixreadme": "node -e 'var fs=require(\"fs\");fs.writeFileSync(\"README.md\", fs.readFileSync(\"README.md\", \"utf8\").replace(/^-   /gm, \"- \"))'"
+  },
   "dependencies": {
     "@babel/generator": "7.15.0",
     "@babel/types": "7.15.0",
     "@svgr/hast-util-to-babel-ast": "5.5.0",
     "minimist": "1.2.5",
     "svg-parser": "2.0.4"
-  }
+  },
+  "devDependencies": {}
 }
