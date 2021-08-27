@@ -1,4 +1,4 @@
-# create-chakraicon
+# create-chakra-icons
 > transform SVG asset to be React Chakra-UI Icon
 
 ### CLI
@@ -6,7 +6,7 @@
 
 
 ```console
-npx create-chakraicon -n "MyIcon" -i ./myicon.svg -o ./MyIcon.js
+npx create-chakra-icons -n "MyIcon" -i ./myicon.svg -o ./MyIcon.js
 ```
 
 ### Options
@@ -23,7 +23,7 @@ $> echo "
       d=\"M 100, 100 m -75, 0 a 75,75 0 1,0 150,0 a 75,75 0 1,0 -150,0\"
     />
   </svg>
-" | create-chakraicon -n "Rin"
+" | create-chakra-icons -n "Rin"
 // output
 import { createIcon } from "@chakra-ui/react";
 export const Rin = createIcon({
@@ -42,15 +42,15 @@ $> echo "
       d=\"M 100, 100 m -75, 0 a 75,75 0 1,0 150,0 a 75,75 0 1,0 -150,0\"
     />
   </svg>
-" | create-chakraicon -n "Rin" > RinIcon.js 
+" | create-chakra-icons -n "Rin" > RinIcon.js 
 ```
 
 ## Usage (API)
 
 ```js
-import { api } from 'create-chakraicon'
+import { api } from 'create-chakra-icons'
 // or
-import api from 'create-chakraicon/api'
+import api from 'create-chakra-icons/api'
 // exported function
 api {
   createChakraProperties: [Function: createChakraProperties],

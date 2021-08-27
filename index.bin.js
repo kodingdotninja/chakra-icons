@@ -6,7 +6,7 @@
  *
  * # Input
  * ```console
- * cat icon.svg | npx create-chakraicon
+ * cat icon.svg | npx create-chakra-icons
  * ```
  * # Output
  * ```console
