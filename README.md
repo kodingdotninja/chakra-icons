@@ -1,6 +1,11 @@
-# create-chakra-icons
+<p align="center">
+  <label style="font-weight:bold;font-size:x-large">Transform SVG to React Chakra UI <Icon \/> ✨ </label>
+  <br/><label style="font-weight:bold;font-size:small">from SVG file to CODE</label>
+  <br/>
+  <br/>
+  <img src="https://github.com/kodingdotninja/create-chakra-icons/blob/main/create-chakra-icons.gif?raw=true" alt="creater-chakra-icons" />  
+</p>
 
-> Transform SVG to React Chakra UI <Icon /> ✨
 
 ## Features
 * [x] Transform `<SVG/>` to Chakra-UI `Icon` Component or Functional `createIcon(...)`.
