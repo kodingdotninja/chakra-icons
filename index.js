@@ -1,3 +1,1 @@
-module.exports = {
-  api: require("./lib"),
-};
+module.exports = require("./lib");
