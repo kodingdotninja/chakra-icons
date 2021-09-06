@@ -43,6 +43,7 @@
     "@babel/generator": "7.15.0",
     "@babel/types": "7.15.0",
     "@svgr/hast-util-to-babel-ast": "5.5.0",
+    "change-case": "4.1.2",
     "minimist": "1.2.5",
     "svg-parser": "2.0.4"
   },
