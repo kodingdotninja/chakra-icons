@@ -26,7 +26,7 @@ create-chakra-icons [FLAGS] [OPTIONS] [INPUT]
 
 ### Options
 ```console
--i, --input <PATH>      This option for read the input from PATH from FILE or DIRECTORIES.
+-i, --input <PATH>      This option for read the input from PATH of FILE or DIRECTORIES.
                         [e.g.: -i some/path , -i file.svg]
 -o, --output <PATH>     Writes the output. [default: stdout]
 -n, --name <STRING>     Sets value for `displayName` properties
@@ -38,6 +38,12 @@ create-chakra-icons [FLAGS] [OPTIONS] [INPUT]
 -P, --prefix <STRING>   Sets for prefix in export named declaration.
                         [e.g.: -S "Icon"]
 --ts, --typescript      Sets output as TypeScript code.
+```
+
+### Input
+```console
+[INPUT]     This option for read the input from PATH of FILE or DIRECTORIES.
+            [e.g.: create-chakra-icons ./MyICON.svg ~/assets] 
 ```
 ### Examples
 
