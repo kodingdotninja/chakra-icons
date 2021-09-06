@@ -17,6 +17,7 @@ const {
 const {
   pascalCase: PascalCase,
   camelCase,
+  snakeCase: snake_case,
   constantCase: CONSTANT_CASE,
 } = require("change-case");
 const encoding = "utf-8";
@@ -49,6 +50,7 @@ function stringToCase(str, _case) {
     [_case === "pascal"]: PascalCase(str),
     [_case === "camel"]: camelCase(str),
     [_case === "constant"]: CONSTANT_CASE(str),
+    [_case === "snake"]: snake_case(str),
   }[true];
 }
 
