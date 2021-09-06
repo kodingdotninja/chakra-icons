@@ -35,6 +35,7 @@ create-chakra-icons [FLAGS] [OPTIONS] [INPUT]
                         Sets for case [snake|camel|constant|pascal] in export named declaration 
                         output. [default: pascal]
 -S, --suffix <STRING>   Sets for suffix in export named declaration.
+-P, --prefix <STRING>   Sets for prefix in export named declaration.
                         [e.g.: -S "Icon"]
 --ts, --typescript      Sets output as TypeScript code.
 ```
