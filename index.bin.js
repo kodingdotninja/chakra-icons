@@ -92,7 +92,6 @@ function main(args) {
   if (inputs.length > 0) {
     // make code
     const source = createCode(
-      name,
       ...inputs.reduce(
         stringToInput({ displayName: name, exportNameCase, encoding }),
         []
