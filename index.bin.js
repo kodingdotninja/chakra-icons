@@ -28,13 +28,20 @@ if (input.isTTY) {
   input.setEncoding(encoding);
   input.on("data", function (data) {
     if (data) {
-      const name = argv.name || argv.n || "Unamed";
-      const exportNameCase = argv.C || argv.case;
-      const source = createCode(name, {
+      const { name, exportNameCase, isTypescript, outputFile } =
+        getCommonOptions(argv);
+      const source = createCode({
         source: data,
         displayName: stringToCase(name, exportNameCase),
+        isTypescript,
       });
-      output.write(source);
+      return outputFile
+        ? Fs.writeFile(Path.resolve(outputFile), source, (err) => {
+            if (err) {
+              error.write(err, () => exit(1));
+            }
+          })
+        : output.write(source);
     }
   });
 }
@@ -54,7 +61,12 @@ function stringToCase(str, _case) {
   }[true];
 }
 
-function stringToInput({ displayName, exportNameCase, encoding }) {
+function stringToInput({
+  displayName,
+  exportNameCase,
+  encoding,
+  isTypescript,
+}) {
   return function (acc, str) {
     if (Fs.existsSync(str)) {
       if (Fs.lstatSync(str).isDirectory()) {
@@ -69,37 +81,51 @@ function stringToInput({ displayName, exportNameCase, encoding }) {
                 exportNameCase
               ),
               source: Fs.readFileSync(source, encoding),
+              isTypescript,
             }))
         );
       } else {
         acc.push({
           displayName: stringToCase(displayName, exportNameCase),
           source: Fs.readFileSync(str, encoding),
+          isTypescript,
         });
       }
     }
     return acc;
   };
 }
+function getCommonOptions(args) {
+  return {
+    inputs: (args.i && [args.i]) || (args.input && [args.input]) || args._,
+    outputFile: args.o || args.output,
+    name: args.name || args.n || "Unamed",
+    isTypescript: args.ts || args.typescript || false,
+    exportNameCase: args.C || args.case,
+  };
+}
 // :: [Object] -> () *Effect*
 function main(args) {
-  const inputs = (args.i && [args.i]) || (args.input && [args.input]) || args._;
+  const { inputs, outputFile, name, exportNameCase, isTypescript } =
+    getCommonOptions(args);
   const version = args.V || args.version;
-  const outFile = args.o || args.output;
-  const name = args.name || args.n || "Unamed";
-  const exportNameCase = args.C || args.case;
 
   if (inputs.length > 0) {
     // make code
     const source = createCode(
       ...inputs.reduce(
-        stringToInput({ displayName: name, exportNameCase, encoding }),
+        stringToInput({
+          displayName: name,
+          exportNameCase,
+          encoding,
+          isTypescript,
+        }),
         []
       )
     );
     // write output in output
-    return outFile
-      ? Fs.writeFile(Path.resolve(outFile), source, (err) => {
+    return outputFile
+      ? Fs.writeFile(Path.resolve(outputFile), source, (err) => {
           if (err) {
             error.write(err, () => exit(1));
           }
@@ -129,7 +155,10 @@ OPTIONS:
   -C, --case <snake|camel|constant|pascal>     
                           Sets for case [snake|camel|constant|pascal] in export named declaration 
                           output. [default: pascal]
+
   -S, --suffix <STRING>   Sets for suffix in export named declaration.
+  -P, --prefix <STRING>   Sets for prefix in export named declaration.
+
                           [e.g.: -S "Icon"]
   --ts, --typescript      Sets output as TypeScript code. (UNAVAILABLE, SOON).
 
