@@ -38,8 +38,8 @@ if (input.isTTY) {
   });
 }
 
-function createCode(name, ...sources) {
-  const icon = createChakraIcon(name, ...sources);
+function createCode(...sources) {
+  const icon = createChakraIcon(...sources);
   return BabelGenerator(icon).code;
 }
 
