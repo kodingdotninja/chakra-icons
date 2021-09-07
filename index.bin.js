@@ -14,12 +14,7 @@ const {
   exit,
   stderr: error,
 } = require("process");
-const {
-  pascalCase: PascalCase,
-  camelCase,
-  snakeCase: snake_case,
-  constantCase: CONSTANT_CASE,
-} = require("change-case");
+const { stringToCase, compose } = require("./lib/utils");
 const encoding = "utf-8";
 
 if (input.isTTY) {
@@ -28,12 +23,25 @@ if (input.isTTY) {
   input.setEncoding(encoding);
   input.on("data", function (data) {
     if (data) {
-      const { name, exportNameCase, isTypescript, outputFile } =
-        getCommonOptions(argv);
+      const {
+        name,
+        exportNameCase,
+        exportNameSuffix,
+        exportNamePrefix,
+        isTypescript,
+        outputFile,
+      } = getCommonOptions(argv);
+      const exportNamed = createExportNamed(
+        exportNameCase,
+        exportNamePrefix,
+        exportNameSuffix
+      );
       const source = createCode({
         source: data,
-        displayName: stringToCase(name, exportNameCase),
+        displayName: exportNamed(name),
         isTypescript,
+        exportNameSuffix,
+        exportNamePrefix,
       });
       return outputFile
         ? Fs.writeFile(Path.resolve(outputFile), source, (err) => {
@@ -46,68 +54,16 @@ if (input.isTTY) {
   });
 }
 
-function createCode(...sources) {
-  const icon = createChakraIcon(...sources);
-  return BabelGenerator(icon).code;
-}
-
-function stringToCase(str, _case) {
-  return {
-    [true]: PascalCase(str),
-    [_case === "pascal"]: PascalCase(str),
-    [_case === "camel"]: camelCase(str),
-    [_case === "constant"]: CONSTANT_CASE(str),
-    [_case === "snake"]: snake_case(str),
-  }[true];
-}
-
-function stringToInput({
-  displayName,
-  exportNameCase,
-  encoding,
-  isTypescript,
-}) {
-  return function (acc, str) {
-    if (Fs.existsSync(str)) {
-      if (Fs.lstatSync(str).isDirectory()) {
-        const pathResolved = Path.resolve(str);
-        acc.push(
-          ...Fs.readdirSync(pathResolved)
-            .filter((f) => f.split(".")[1] === "svg")
-            .map((f) => Path.join(pathResolved, f))
-            .map((source) => ({
-              displayName: stringToCase(
-                Path.basename(source).split(".")[0],
-                exportNameCase
-              ),
-              source: Fs.readFileSync(source, encoding),
-              isTypescript,
-            }))
-        );
-      } else {
-        acc.push({
-          displayName: stringToCase(displayName, exportNameCase),
-          source: Fs.readFileSync(str, encoding),
-          isTypescript,
-        });
-      }
-    }
-    return acc;
-  };
-}
-function getCommonOptions(args) {
-  return {
-    inputs: (args.i && [args.i]) || (args.input && [args.input]) || args._,
-    outputFile: args.o || args.output,
-    name: args.name || args.n || "Unamed",
-    isTypescript: args.ts || args.typescript || false,
-    exportNameCase: args.C || args.case,
-  };
-}
-// :: [Object] -> () *Effect*
 function main(args) {
-  const { inputs, outputFile, name, exportNameCase, isTypescript } =
-    getCommonOptions(args);
+  const {
+    inputs,
+    outputFile,
+    name,
+    exportNameCase,
+    exportNameSuffix,
+    exportNamePrefix,
+    isTypescript,
+  } = getCommonOptions(args);
   const version = args.V || args.version;
 
   if (inputs.length > 0) {
@@ -119,6 +75,8 @@ function main(args) {
           exportNameCase,
           encoding,
           isTypescript,
+          exportNameSuffix,
+          exportNamePrefix,
         }),
         []
       )
@@ -160,7 +118,7 @@ OPTIONS:
   -P, --prefix <STRING>   Sets for prefix in export named declaration.
 
                           [e.g.: -S "Icon"]
-  --ts, --typescript      Sets output as TypeScript code. (UNAVAILABLE, SOON).
+  --ts, --typescript      Sets output as TypeScript code. 
 
 
 [INPUT]:    This option for read the input from PATH of FILE or DIRECTORIES.
@@ -168,4 +126,69 @@ OPTIONS:
 
 ${packageName} (version: ${packageVersion})
 `);
+}
+
+function getCommonOptions(args) {
+  return {
+    inputs: (args.i && [args.i]) || (args.input && [args.input]) || args._,
+    outputFile: args.o || args.output,
+    name: args.name || args.n || "Unamed",
+    isTypescript: args.ts || args.typescript || false,
+    exportNameCase: args.C || args.case,
+    exportNameSuffix: args.S || args.suffix || "",
+    exportNamePrefix: args.P || args.prefix || "",
+  };
+}
+
+function createExportNamed(exportNameCase, exportNamePrefix, exportNameSuffix) {
+  return compose(
+    (str) => stringToCase(str, exportNameCase),
+    (str) => `${str}${exportNameSuffix}`,
+    (str) => `${exportNamePrefix}${str}`
+  );
+}
+
+function stringToInput({
+  displayName,
+  exportNameCase,
+  exportNamePrefix,
+  exportNameSuffix,
+  encoding,
+  isTypescript,
+}) {
+  const exportNamed = createExportNamed(
+    exportNameCase,
+    exportNamePrefix,
+    exportNameSuffix
+  );
+
+  return function (acc, str) {
+    if (Fs.existsSync(str)) {
+      if (Fs.lstatSync(str).isDirectory()) {
+        const pathResolved = Path.resolve(str);
+        acc.push(
+          ...Fs.readdirSync(pathResolved)
+            .filter((f) => f.split(".")[1] === "svg")
+            .map((f) => Path.join(pathResolved, f))
+            .map((source) => ({
+              displayName: exportNamed(Path.basename(source).split(".")[0]),
+              source: Fs.readFileSync(source, encoding),
+              isTypescript,
+            }))
+        );
+      } else {
+        acc.push({
+          displayName: exportNamed(displayName),
+          source: Fs.readFileSync(str, encoding),
+          isTypescript,
+        });
+      }
+    }
+    return acc;
+  };
+}
+
+function createCode(...sources) {
+  const icon = createChakraIcon(...sources);
+  return BabelGenerator(icon).code;
 }
