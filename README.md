@@ -9,7 +9,12 @@
 
 ## Features
 * [x] Transform `<SVG/>` to Chakra-UI `Icon` Component or Functional `createIcon(...)`.
-* [x] Multiple input with `directories` as `-i` or `--input` options
+    * `<Icon />` Component, [**See**](https://chakra-ui.com/docs/media-and-icons/icon#using-the-icon-component).
+    * `createIcon(...)` Functional, [**See**](https://chakra-ui.com/docs/media-and-icons/icon#using-the-createicon-function).
+* [x] Multiple input with `directories` or `files` as input value for option `-i` or `--input`.
+* [x] Support case in export name declaration (camel|snake|pascal|constant).
+* [x] Suffix and Prefix for generated code of export name declaration.
+* [x] Support type annotation when code generated is `<Icon />`.
 
 ## Usage
 
@@ -64,16 +69,35 @@ echo "
 
 ```jsx
 import { createIcon } from "@chakra-ui/react";
-export const Rin = createIcon({
-  displayName: "Rin",
+export const KodingNinjaIcon = createIcon({
+  displayName: "KodingNinjaIcon",
   viewBox: "0 0 200 200",
   d: "M 100, 100 m -75, 0 a 75,75 0 1,0 150,0 a 75,75 0 1,0 -150,0"
 });
 ```
 
+#### Multiple Input
+
+* **input** `per-file`
+```console
+create-chakra-icons  -o Icons.js ./Facebook.svg ./Apple.svg ./Amazon.svg ./Netflix.svg ./Google.svg 
+```
+
+* **input** `directories`
+```console
+create-chakra-icons  -o Icons.js ./social-icons
+```
+* **input** `directories and per-file` at the same time
+```console
+create-chakra-icons  -o Icons.js ./MyCompany.svg ./social-icons
+```
+
+* **output** will be make in `Icons.js` (argument `-o` or `--output`).
+
 ## Roadmap
 
-* [ ] TypeScript Support (Type Annotation or Type Definition).
+* [x] TypeScript Support (Type Annotation or Type Definition).
+    * Only when code generated is `<Icon />` component [**See**](https://chakra-ui.com/docs/media-and-icons/icon#using-the-icon-component).
 * [ ] ReScript Support.
 * [ ] Per file input is Per file output. ⁉️ 🤔
 * [ ] Feel free for give me any feedback or feature request (create an issue first).
