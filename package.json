@@ -1,6 +1,6 @@
 {
   "name": "create-chakra-icons",
-  "version": "1.0.2",
+  "version": "1.0.3-next.1",
   "description": "Transform SVG to React Chakra UI <Icon /> ✨",
   "author": "ri7nz <hi@rin.rocks>",
   "license": "MIT",
@@ -31,6 +31,7 @@
   },
   "exports": {
     ".": "./index.js",
+    "./cli": "./lib/cli.js",
     "./ast": "./lib/ast.js",
     "./chakra": "./lib/chakra.js",
     "./utils": "./lib/utils.js"
