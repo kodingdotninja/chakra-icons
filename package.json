@@ -1,8 +1,25 @@
 {
   "name": "root",
   "private": true,
+  "license": "MIT",
   "workspaces": [
     "packages/*"
   ],
-  "license": "MIT"
+  "scripts":{
+    "build": "turbo run build"
+  },
+  "turbo": {
+    "baseBranch": "origin/main",
+    "pipeline": {
+      "build": {
+        "outputs": [
+        ],
+        "dependsOn": [
+        ]
+      } 
+    }
+  },
+  "devDependencies": {
+    "turbo": "^1.0.24"
+  }
 }
