@@ -1,25 +1,56 @@
 {
-  "name": "root",
-  "private": true,
-  "license": "MIT",
+  "name": "@kodingdotninja/chakra-icons",
+  "version": "0.0.0",
   "workspaces": [
-    "packages/*"
+    "packages/*",
+    "website"
   ],
-  "scripts":{
-    "build": "turbo run build"
+  "scripts": {
+    "# general commands": "--------------------------------------------------",
+    "build": "turbo run build",
+    "clean": "turbo run clean",
+    "deduplicate": "npx yarn-deduplicate && yarn install",
+    "prepare": "husky install",
+    "purge": "shx rm -rf node_modules/.cache/ packages/**/.turbo/ website/.turbo/",
+    "validate": "turbo run validate",
+    "# scope commands": "----------------------------------------------------",
+    "chakra-icons": "yarn workspace chakra-icons",
+    "#": "-------------------------------------------------------------------"
   },
   "turbo": {
     "baseBranch": "origin/main",
+    "globalDependencies": [
+      "yarn.lock"
+    ],
     "pipeline": {
       "build": {
-        "outputs": [
-        ],
         "dependsOn": [
+          "^build"
+        ],
+        "outputs": [
+          ".next/**"
         ]
-      } 
+      },
+      "clean": {
+        "cache": false
+      },
+      "git:pre-commit": {
+        "cache": false
+      },
+      "validate": {
+        "dependsOn": [
+          "^validate"
+        ]
+      }
     }
   },
   "devDependencies": {
-    "turbo": "^1.0.24"
-  }
+    "husky": "^7",
+    "lint-staged": "^12",
+    "patch-package": "^6",
+    "postinstall-postinstall": "^2",
+    "shx": "^0",
+    "turbo": "^1"
+  },
+  "private": true
 }
