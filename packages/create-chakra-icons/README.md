@@ -3,7 +3,7 @@
   <br/><label style="font-weight:bold;font-size:small;font-style:italic">from SVG file to CODE</label>
   <br/>
   <br/>
-  <img src="https://github.com/kodingdotninja/create-chakra-icons/blob/main/create-chakra-icons.gif?raw=true" alt="creater-chakra-icons" />  
+  <img src="https://github.com/kodingdotninja/create-chakra-icons/blob/main/packages/create-chakra-icons/create-chakra-icons.gif?raw=true" alt="creater-chakra-icons" />  
 </p>
 
 
