@@ -35,6 +35,7 @@
     "svg-parser": "^2"
   },
   "devDependencies": {
+    "@kodingdotninja/tsconfig": "*",
     "documentation": "^13",
     "eslint": "^7",
     "eslint-config-kdnj": "^1"
