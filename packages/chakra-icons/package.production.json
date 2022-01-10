@@ -1,0 +1,12 @@
+{
+  "name": "chakra-icons",
+  "version": "0.0.0",
+  "main": "./index.js",
+  "repository": "git@github.com:ri7nz/chakra-icons.git",
+  "author": "ri7nz <ri7nz@evilfactory.id>",
+  "license": "MIT",
+  "exports":{},
+  "peerDependencies": {
+    "@chakra-ui/react": ">=1.0.0"
+  }
+}

@@ -1,0 +1,23 @@
+description: all repositories icons such a ionicons, RemixIcon, and many more.
+
+icons:
+  - name: RemixIcon 
+    repository: Remix-Design/RemixIcon
+    svgPath: icons
+
+  - name: IonIcons
+    repository: ionic-team/ionicons
+    svgPath: src/svg
+
+  - name: Bootstrap 
+    repository: twbs/icons
+    svgPath: icons
+
+  - name: OctIcons
+    repository: primer/octicons
+    svgPath: icons
+
+  # add new field
+  # - name: Name
+  #   repository: orgs/repo-name
+  #   svgPath: path where the location of icons (.svg)
