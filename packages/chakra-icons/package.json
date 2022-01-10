@@ -6,7 +6,7 @@
   "author": "ri7nz <ri7nz@evilfactory.id>",
   "license": "MIT",
   "scripts": {
-    "generate": "./scripts/ngoding"
+    "build": "./scripts/ngoding"
   },
   "dependencies": {
     "@ri7nz/gittar": "0.1.1-patch.3",
