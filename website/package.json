@@ -1,23 +1,11 @@
 {
-  "name": "chakra-icons",
-  "version": "3.6.9",
-  "author": "ri7nz <ri7nz@evilfactory.id>",
-  "main": "dist/index.js",
+  "name": "website",
+  "version": "0.0.0",
   "scripts": {
     "# general commands": "--------------------------------------------------",
-    "build": "./scripts/ngoding",
-    "format": "prettier --write \"**/*.{js,json,md,yml}\"",
-    "git:pre-commit": "lint-staged",
-    "lint": "eslint --fix \"**/*.js\"",
     "#": "-------------------------------------------------------------------"
   },
-  "dependencies": {
-    "@ri7nz/gittar": "0.1.1-patch.3",
-    "create-chakra-icons": "*",
-    "glob": "^7",
-    "js-yaml": "^4",
-    "ora": "^5"
-  },
+  "dependencies": {},
   "devDependencies": {
     "eslint": "^7",
     "eslint-config-kdnj": "^1"
@@ -32,10 +20,10 @@
     "root": true
   },
   "lint-staged": {
-    "*.{json,md,yml}": [
+    "*.{json,md}": [
       "prettier --write"
     ],
-    "**/*.{js,cjs,mjs,ts}": [
+    "**/*.{js,cjs,mjs,jsx,ts,tsx}": [
       "eslint --fix"
     ]
   },
