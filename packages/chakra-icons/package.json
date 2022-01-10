@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "@ri7nz/gittar": "0.1.1-patch.3",
-    "create-chakra-icons": "*",
+    "create-chakra-icons": "1.0.3-next.1",
     "glob": "^7",
     "js-yaml": "^4",
     "ora": "^5"
