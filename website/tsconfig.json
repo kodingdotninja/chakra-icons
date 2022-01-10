@@ -1,0 +1,5 @@
+{
+  "extends": "@kodingdotninja/tsconfig/base.json",
+  "exclude": ["node_modules"],
+  "include": ["**/*.ts", "**/*.tsx"]
+}
