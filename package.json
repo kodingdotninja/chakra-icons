@@ -3,16 +3,21 @@
   "version": "0.0.0",
   "workspaces": [
     "packages/*",
-    "website"
+    "website",
+    "!website/**",
+    "!packages/tsconfig/**",
+    "!packages/chakra-icons/**"
   ],
   "scripts": {
     "# general commands": "--------------------------------------------------",
     "build": "turbo run build",
+    "test": "turbo run test",
     "clean": "turbo run clean",
     "deduplicate": "npx yarn-deduplicate && yarn install",
     "prepare": "husky install",
     "purge": "shx rm -rf node_modules/.cache/ packages/**/.turbo/ website/.turbo/",
     "validate": "turbo run validate",
+    "release": "multi-semantic-release",
     "# scope commands": "----------------------------------------------------",
     "chakra-icons": "yarn workspace chakra-icons",
     "#": "-------------------------------------------------------------------"
@@ -31,6 +36,9 @@
           ".next/**"
         ]
       },
+      "test":{
+        "cache": false
+      },
       "clean": {
         "cache": false
       },
@@ -45,8 +53,10 @@
     }
   },
   "devDependencies": {
+    "@qiwi/semrel-config-monorepo": "1.5.4",
     "husky": "^7",
     "lint-staged": "^12",
+    "multi-semantic-release": "2.11.0",
     "patch-package": "^6",
     "postinstall-postinstall": "^2",
     "shx": "^0",
