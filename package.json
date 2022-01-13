@@ -6,7 +6,8 @@
     "website",
     "!website/**",
     "!packages/tsconfig/**",
-    "!packages/chakra-icons/**"
+    "!packages/chakra-icons/**",
+    "!packages/msrconfig/**"
   ],
   "scripts": {
     "# general commands": "--------------------------------------------------",
@@ -53,7 +54,6 @@
     }
   },
   "devDependencies": {
-    "@qiwi/semrel-config-monorepo": "1.5.4",
     "husky": "^7",
     "lint-staged": "^12",
     "multi-semantic-release": "2.11.0",

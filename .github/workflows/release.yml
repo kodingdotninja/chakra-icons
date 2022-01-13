@@ -1,0 +1,60 @@
+name: Release
+
+on:
+  push:
+    branches: [main, beta]
+
+jobs:
+  init:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: ./.github/actions/setup-node
+
+  validate:
+    needs: init
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: ./.github/actions/setup-node
+
+      - name: validate (lint)
+        run: yarn validate
+
+  test:
+    needs: init
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: ./.github/actions/setup-node
+
+      - name: run test
+        run: yarn test
+
+  build:
+    needs: init
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: ./.github/actions/setup-node
+      
+      - name: build project
+        run: yarn build
+
+  release:
+    needs: [validate, test, build]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: ./.github/actions/setup-node
+      
+      - name: release project
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          GH_USER: 'kdnjbot'
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          GIT_AUTHOR_EMAIL: 'robot@koding.ninja'
+          GIT_COMMITTER_EMAIL: 'robot@koding.ninja'
+          GIT_AUTHOR_NAME: '@kdnjbot'
+          GIT_COMMITTER_NAME: '@kdnjbot'
+        run: yarn release
