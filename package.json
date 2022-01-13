@@ -19,6 +19,7 @@
     "purge": "shx rm -rf node_modules/.cache/ packages/**/.turbo/ website/.turbo/",
     "validate": "turbo run validate",
     "release": "multi-semantic-release",
+    "commit": "commit",
     "# scope commands": "----------------------------------------------------",
     "chakra-icons": "yarn workspace chakra-icons",
     "#": "-------------------------------------------------------------------"
@@ -37,7 +38,7 @@
           ".next/**"
         ]
       },
-      "test":{
+      "test": {
         "cache": false
       },
       "clean": {
@@ -54,6 +55,9 @@
     }
   },
   "devDependencies": {
+    "@commitlint/cli": "16.0.2",
+    "@commitlint/config-conventional": "16.0.0",
+    "@commitlint/prompt-cli": "16.0.0",
     "husky": "^7",
     "lint-staged": "^12",
     "multi-semantic-release": "2.11.0",

@@ -1,6 +1,9 @@
 name: CI
 
-on: [push, pull_request]
+on: 
+  pull_request:
+    types: [opened, synchronize]
+    branches: [main, beta]
 
 jobs:
   init:
@@ -8,6 +11,9 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: ./.github/actions/setup-node
+      - uses: wagoid/commitlint-github-action@v4
+        env:
+          NODE_PATH: ${{ github.workspace }}/node_modules
 
   validate:
     needs: init
@@ -38,22 +44,3 @@ jobs:
       
       - name: build project
         run: yarn build
-
-  release:
-    needs: [validate, test, build]
-    runs-on: ubuntu-latest
-    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
-    steps:
-      - uses: actions/checkout@v2
-      - uses: ./.github/actions/setup-node
-      
-      - name: release project
-        env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
-          GH_USER: 'kdnjbot'
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-          GIT_AUTHOR_EMAIL: 'robot@koding.ninja'
-          GIT_COMMITTER_EMAIL: 'robot@koding.ninja'
-          GIT_AUTHOR_NAME: '@kdnjbot'
-          GIT_COMMITTER_NAME: '@kdnjbot'
-        run: yarn release

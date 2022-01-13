@@ -1,3 +1,4 @@
+// credit for https://github.com/qiwi/semantic-release-toolkit/tree/master/packages/config-monorepo 
 module.exports = {
   branches: [
     'main',
