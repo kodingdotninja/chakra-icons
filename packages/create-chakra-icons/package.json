@@ -1,6 +1,6 @@
 {
   "name": "create-chakra-icons",
-  "version": "1.0.3-next.1",
+  "version": "1.0.2",
   "author": "ri7nz <hi@rin.rocks>",
   "main": "./index.js",
   "bin": {
