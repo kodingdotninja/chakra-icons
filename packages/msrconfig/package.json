@@ -1,0 +1,13 @@
+{
+  "name": "@kodingdotninja/msrconfig",
+  "description": "Configuration for multi-semantic-release 🎉",
+  "version": "0.0.0",
+  "main": "index.js",
+  "source": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@semantic-release/changelog": "^6.0.1",
+    "@semantic-release/git": "^10.0.1",
+    "@semrel-extra/npm": "^1.2.0"
+  }
+}
