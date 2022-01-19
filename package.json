@@ -7,8 +7,8 @@
     "website",
     "!website/**",
     "!packages/chakra-icons/**",
-    "!packages/msrconfig/**"
-    "!packages/tsconfig/**",
+    "!packages/msrconfig/**",
+    "!packages/tsconfig/**"
   ],
   "scripts": {
     "# general commands": "--------------------------------------------------",
