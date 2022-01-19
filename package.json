@@ -66,5 +66,26 @@
     "shx": "^0",
     "turbo": "^1"
   },
+  "eslintConfig": {
+    "extends": [
+      "eslint-config-kdnj"
+    ],
+    "ignorePatterns": [
+      "node_modules"
+    ],
+    "root": true
+  },
+  "lint-staged": {
+    "*.{json,md}": [
+      "prettier --write"
+    ]
+  },
+  "prettier": {
+    "endOfLine": "auto",
+    "printWidth": 120,
+    "semi": true,
+    "singleQuote": false,
+    "trailingComma": "all"
+  },
   "private": true
 }

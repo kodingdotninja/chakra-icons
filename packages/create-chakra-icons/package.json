@@ -37,8 +37,8 @@
   "devDependencies": {
     "@kodingdotninja/tsconfig": "*",
     "documentation": "^13",
-    "eslint": "^7",
-    "eslint-config-kdnj": "^1"
+    "eslint": "^8",
+    "eslint-config-kdnj": "^2"
   },
   "eslintConfig": {
     "extends": [
