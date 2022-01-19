@@ -3,6 +3,12 @@
   "version": "0.0.0",
   "scripts": {
     "# general commands": "--------------------------------------------------",
+    "build": "next build",
+    "clean": "shx rm -rf .next/",
+    "dev": "next",
+    "export": "next export",
+    "lint": "eslint --fix \"**/*.{js,cjs,mjs,jsx,ts,tsx}\" && tsc --noEmit --pretty",
+    "vercel-build": "cd ../.. && yarn build:website",
     "#": "-------------------------------------------------------------------"
   },
   "dependencies": {},
@@ -22,10 +28,10 @@
   },
   "lint-staged": {
     "*.{json,md}": [
-      "prettier --write"
+      "yarn workspace website prettier --write"
     ],
     "**/*.{js,cjs,mjs,jsx,ts,tsx}": [
-      "eslint --fix"
+      "yarn workspace website eslint --fix"
     ]
   },
   "prettier": {
