@@ -22,7 +22,6 @@
     "docs": "documentation readme lib/*.js -q --section API && yarn fixreadme",
     "fixreadme": "node -e 'var fs=require(\"fs\");fs.writeFileSync(\"README.md\", fs.readFileSync(\"README.md\", \"utf8\").replace(/^-   /gm, \"- \"))'",
     "format": "prettier --write \"**/*.{js,json,md,svg}\"",
-    "git:pre-commit": "lint-staged",
     "lint": "eslint --fix \"**/*.js\"",
     "#": "-------------------------------------------------------------------"
   },
@@ -51,10 +50,10 @@
   },
   "lint-staged": {
     "*.{json,md,svg}": [
-      "prettier --write"
+      "yarn workspace create-chakra-icons prettier --write"
     ],
     "**/*.{js,cjs,mjs,ts}": [
-      "eslint --fix"
+      "yarn workspace create-chakra-icons eslint --fix"
     ]
   },
   "prettier": {
