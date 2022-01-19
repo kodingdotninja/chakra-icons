@@ -2,8 +2,13 @@
   "name": "@kodingdotninja/chakra-icons",
   "version": "0.0.0",
   "workspaces": [
-    "packages/**",
-    "website"
+    "packages/*",
+    "packages/@chakra-icons/*",
+    "website",
+    "!website/**",
+    "!packages/chakra-icons/**",
+    "!packages/msrconfig/**"
+    "!packages/tsconfig/**",
   ],
   "scripts": {
     "# general commands": "--------------------------------------------------",
