@@ -15,9 +15,10 @@
     "test": "turbo run test",
     "clean": "turbo run clean",
     "deduplicate": "npx yarn-deduplicate && yarn install",
+    "lint": "turbo run lint",
+    "postinstall": "patch-package",
     "prepare": "husky install",
     "purge": "shx rm -rf node_modules/.cache/ packages/**/.turbo/ website/.turbo/",
-    "validate": "turbo run validate",
     "release": "multi-semantic-release",
     "commit": "commit",
     "# scope commands": "----------------------------------------------------",
@@ -27,6 +28,7 @@
   "turbo": {
     "baseBranch": "origin/main",
     "globalDependencies": [
+      "patches/**",
       "yarn.lock"
     ],
     "pipeline": {
@@ -35,7 +37,8 @@
           "^build"
         ],
         "outputs": [
-          ".next/**"
+          ".next/**",
+          "dist/**"
         ]
       },
       "test": {
@@ -44,12 +47,9 @@
       "clean": {
         "cache": false
       },
-      "git:pre-commit": {
-        "cache": false
-      },
-      "validate": {
+      "lint": {
         "dependsOn": [
-          "^validate"
+          "^lint"
         ]
       }
     }
