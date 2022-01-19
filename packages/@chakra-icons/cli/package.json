@@ -1,0 +1,61 @@
+{
+  "name": "@chakra-icons/cli",
+  "description": "Transform SVG to React Chakra UI <Icon /> ✨",
+  "version": "0.0.0",
+  "author": "ri7nz <ri7nz@koding.ninja>",
+  "homepage": "https://github.com/kodingdotninja/chakra-icons",
+  "repository": "https://github.com/kodingdotninja/chakra-icons.git",
+  "bugs": "https://github.com/kodingdotninja/chakra-icons/issues",
+  "bin": {
+    "chakra-icons": "index.js"
+  },
+  "scripts": {
+    "# general commands": "--------------------------------------------------",
+    "format": "prettier --write \"**/*.{js,json,md,svg}\"",
+    "lint": "eslint --fix \"src/**/*.{js,cjs,mjs}\"",
+    "start": " node index.js",
+    "#": "-------------------------------------------------------------------"
+  },
+  "dependencies": {
+    "@chakra-icons/core": "*",
+    "arg": "^5"
+  },
+  "devDependencies": {
+    "@packages/tsconfig": "*",
+    "eslint": "^8",
+    "eslint-config-kdnj": "^2"
+  },
+  "eslintConfig": {
+    "extends": [
+      "eslint-config-kdnj"
+    ],
+    "root": true
+  },
+  "lint-staged": {
+    "*.{json,md}": [
+      "yarn workspace @chakra-icons/cli prettier --write"
+    ],
+    "**/*.{js,cjs,mjs}": [
+      "yarn workspace @chakra-icons/cli eslint --fix"
+    ]
+  },
+  "prettier": {
+    "endOfLine": "auto",
+    "printWidth": 120,
+    "semi": true,
+    "singleQuote": false,
+    "trailingComma": "all"
+  },
+  "files": [
+    "*.js",
+    "*.cjs",
+    "*.mjs"
+  ],
+  "keywords": [
+    "kdnj",
+    "kodingdotninja",
+    "chakra-icons",
+    "create-chakra-icons"
+  ],
+  "license": "MIT"
+}

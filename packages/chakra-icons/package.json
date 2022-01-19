@@ -7,7 +7,6 @@
     "# general commands": "--------------------------------------------------",
     "build": "./scripts/ngoding",
     "format": "prettier --write \"**/*.{js,json,md,yml}\"",
-    "git:pre-commit": "lint-staged",
     "lint": "eslint --fix \"**/*.js\"",
     "#": "-------------------------------------------------------------------"
   },
@@ -20,9 +19,9 @@
     "ora": "^5"
   },
   "devDependencies": {
-    "@kodingdotninja/tsconfig": "*",
-    "eslint": "^7",
-    "eslint-config-kdnj": "^1"
+    "@packages/tsconfig": "*",
+    "eslint": "^8",
+    "eslint-config-kdnj": "^2"
   },
   "eslintConfig": {
     "extends": [
@@ -35,10 +34,10 @@
   },
   "lint-staged": {
     "*.{json,md,yml}": [
-      "prettier --write"
+      "yarn workspace chakra-icons prettier --write"
     ],
     "**/*.{js,cjs,mjs,ts}": [
-      "eslint --fix"
+      "yarn workspace chakra-icons eslint --fix"
     ]
   },
   "prettier": {

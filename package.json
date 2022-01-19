@@ -2,31 +2,31 @@
   "name": "@kodingdotninja/chakra-icons",
   "version": "0.0.0",
   "workspaces": [
-    "packages/*",
-    "website",
-    "!website/**",
-    "!packages/tsconfig/**",
-    "!packages/chakra-icons/**",
-    "!packages/msrconfig/**"
+    "packages/**",
+    "website"
   ],
   "scripts": {
     "# general commands": "--------------------------------------------------",
     "build": "turbo run build",
-    "test": "turbo run test",
+    "commit": "commit",
     "clean": "turbo run clean",
     "deduplicate": "npx yarn-deduplicate && yarn install",
+    "lint": "turbo run lint",
+    "postinstall": "patch-package",
     "prepare": "husky install",
     "purge": "shx rm -rf node_modules/.cache/ packages/**/.turbo/ website/.turbo/",
-    "validate": "turbo run validate",
     "release": "multi-semantic-release",
-    "commit": "commit",
+    "test": "turbo run test",
     "# scope commands": "----------------------------------------------------",
     "chakra-icons": "yarn workspace chakra-icons",
+    "cli": "yarn workspace @chakra-icons/cli",
+    "core": "yarn workspace @chakra-icons/core",
     "#": "-------------------------------------------------------------------"
   },
   "turbo": {
     "baseBranch": "origin/main",
     "globalDependencies": [
+      "patches/**",
       "yarn.lock"
     ],
     "pipeline": {
@@ -35,36 +35,58 @@
           "^build"
         ],
         "outputs": [
-          ".next/**"
+          ".next/**",
+          "dist/**"
         ]
-      },
-      "test": {
-        "cache": false
       },
       "clean": {
         "cache": false
       },
-      "git:pre-commit": {
+      "format": {
         "cache": false
       },
-      "validate": {
+      "lint": {
         "dependsOn": [
-          "^validate"
+          "^lint"
         ]
+      },
+      "test": {
+        "cache": false
       }
     }
   },
   "devDependencies": {
-    "@commitlint/cli": "16.0.2",
-    "@commitlint/config-conventional": "16.0.0",
-    "@commitlint/prompt-cli": "16.0.0",
+    "@commitlint/cli": "^16",
+    "@commitlint/config-conventional": "^16",
+    "@commitlint/prompt-cli": "^16",
     "husky": "^7",
     "lint-staged": "^12",
-    "multi-semantic-release": "2.11.0",
+    "multi-semantic-release": "^2",
     "patch-package": "^6",
     "postinstall-postinstall": "^2",
     "shx": "^0",
     "turbo": "^1"
+  },
+  "eslintConfig": {
+    "extends": [
+      "eslint-config-kdnj"
+    ],
+    "ignorePatterns": [
+      "node_modules"
+    ],
+    "root": true
+  },
+  "lint-staged": {
+    "*.{json,md}": [
+      "prettier --write"
+    ]
+  },
+  "prettier": {
+    "endOfLine": "auto",
+    "printWidth": 120,
+    "semi": true,
+    "singleQuote": false,
+    "trailingComma": "all"
   },
   "private": true
 }

@@ -2,12 +2,7 @@
  * @module utils
  * @description provided utility function.
  */
-const {
-  pascalCase,
-  camelCase,
-  snakeCase,
-  constantCase,
-} = require("change-case");
+const { pascalCase, camelCase, snakeCase, constantCase } = require("change-case");
 
 /**
  * @memberof utils
@@ -15,24 +10,27 @@ const {
  * @param {Array}
  * @return {T}
  */
-const compose =
-  (...args) =>
-  (x) =>
-    [...args].reduce((_x, fn) => fn(_x), x);
+function compose(...args) {
+  return (x) => [...args].reduce((_x, fn) => fn(_x), x);
+}
 /**
  * @memberof utils
  * @name pairToObject
  * @param {Array}
  * @returns {Object}
  */
-const pairToObject = ([key, value]) => ({ [key]: value });
+function pairToObject([key, value]) {
+  return { [key]: value };
+}
 /**
  * @memberof utils
  * @name objectToPair
  * @param {Object}
  * @returns {Array}
  */
-const objectToPair = (object) => objectToPairs(object)[0];
+function objectToPair(object) {
+  return objectToPairs(object)[0];
+}
 /**
  * @memberof utils
  * @name pairsToObject
@@ -50,14 +48,18 @@ const objectToPair = (object) => objectToPairs(object)[0];
  * // from: "japan",
  * // }
  */
-const pairsToObject = (pairs) => Object.fromEntries(pairs);
+function pairsToObject(pairs) {
+  return Object.fromEntries(pairs);
+}
 /**
  * @memberof utils
  * @name objectToPairs
  * @param {Object}
  * @returns {Array}
  */
-const objectToPairs = (object) => Object.entries(object);
+function objectToPairs(object) {
+  return Object.entries(object);
+}
 /**
  *
  * @memberof utils
@@ -70,13 +72,14 @@ const objectToPairs = (object) => Object.entries(object);
  * stringToCase(str, "constant")
  * // HEI
  */
-const stringToCase = (str, _case) =>
-  ({
+function stringToCase(str, _case) {
+  return {
     [true]: pascalCase(str),
     [_case === "camel"]: camelCase(str),
     [_case === "constant"]: constantCase(str),
     [_case === "snake"]: snakeCase(str),
-  }[true]);
+  }.true;
+}
 
 module.exports = {
   pairToObject,

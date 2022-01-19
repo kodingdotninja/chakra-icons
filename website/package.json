@@ -3,17 +3,23 @@
   "version": "0.0.0",
   "scripts": {
     "# general commands": "--------------------------------------------------",
+    "build": "next build",
+    "clean": "shx rm -rf .next/",
+    "dev": "next",
+    "export": "next export",
+    "lint": "eslint --fix \"**/*.{js,cjs,mjs,jsx,ts,tsx}\" && tsc --noEmit --pretty",
+    "vercel-build": "cd ../.. && yarn build:website",
     "#": "-------------------------------------------------------------------"
   },
   "dependencies": {},
   "devDependencies": {
-    "@kodingdotninja/tsconfig": "*",
-    "eslint": "^7",
-    "eslint-config-kdnj": "^1"
+    "@packages/tsconfig": "*",
+    "eslint": "^8",
+    "eslint-config-kdnj": "^2"
   },
   "eslintConfig": {
     "extends": [
-      "eslint-config-kdnj"
+      "eslint-config-kdnj/react"
     ],
     "ignorePatterns": [
       "node_modules"
@@ -22,10 +28,10 @@
   },
   "lint-staged": {
     "*.{json,md}": [
-      "prettier --write"
+      "yarn workspace website prettier --write"
     ],
     "**/*.{js,cjs,mjs,jsx,ts,tsx}": [
-      "eslint --fix"
+      "yarn workspace website eslint --fix"
     ]
   },
   "prettier": {

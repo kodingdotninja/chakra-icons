@@ -1,7 +1,7 @@
 #!/usr/bin/env node
-const args = require('minimist')(process.argv.slice(2));
+const args = require("minimist")(process.argv.slice(2));
 
-const { main, pipeline } = require('./lib/cli');
+const { main, pipeline } = require("./lib/cli");
 
 if (process.stdin.isTTY) {
   main(args);
