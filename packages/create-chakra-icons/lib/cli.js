@@ -1,15 +1,18 @@
-const { name: packageName, version: packageVersion } = require('../package.json');
-const Fs = require('fs');
-const Path = require('path');
-const BabelGenerator = require('@babel/generator').default;
-const { createChakraIcon } = require('./chakra');
-const { stringToCase, compose } = require('./utils');
-const { stdout: output, stdin: input, exit, stderr: error } = require('process');
-const encoding = 'utf-8';
+/* eslint-disable new-cap */
+
+const { name: packageName, version: packageVersion } = require("../package.json");
+const Fs = require("fs");
+const Path = require("path");
+const BabelGenerator = require("@babel/generator").default;
+const { createChakraIcon } = require("./chakra");
+const { stringToCase, compose } = require("./utils");
+const { stdout: output, stdin: input, exit, stderr: error } = require("process");
+
+const encoding = "utf-8";
 
 function pipeline(args) {
   input.setEncoding(encoding);
-  input.on('data', function(data) {
+  input.on("data", (data) => {
     if (data) {
       const { name, exportNameCase, exportNameSuffix, exportNamePrefix, isTypescript, outputFile } =
         getCommonOptions(args);
@@ -23,12 +26,13 @@ function pipeline(args) {
       });
       return outputFile
         ? Fs.writeFile(Path.resolve(outputFile), source, (err) => {
-          if (err) {
-            error.write(err, () => exit(1));
-          }
-        })
+            if (err) {
+              error.write(err, () => exit(1));
+            }
+          })
         : output.write(source);
     }
+    return null;
   });
 }
 
@@ -55,10 +59,10 @@ function main(args) {
     // write output in output
     return outputFile
       ? Fs.writeFile(Path.resolve(outputFile), source, (err) => {
-        if (err) {
-          error.write(err, () => exit(1));
-        }
-      })
+          if (err) {
+            error.write(err, () => exit(1));
+          }
+        })
       : output.write(`${source}`);
   } else if (version) {
     return output.write(packageVersion);
@@ -81,33 +85,34 @@ OPTIONS:
   -o, --output <PATH>     Writes the output. [default: stdout]
   -n, --name <STRING>     Sets value for \`displayName\` properties
                           (*ONLY for pipelines command). [default: Unamed] [e.g. -n "MyIcon"]
-  -C, --case <snake|camel|constant|pascal>     
-                          Sets for case [snake|camel|constant|pascal] in export named declaration 
+  -C, --case <snake|camel|constant|pascal>
+                          Sets for case [snake|camel|constant|pascal] in export named declaration
                           output. [default: pascal]
 
   -S, --suffix <STRING>   Sets for suffix in export named declaration.
   -P, --prefix <STRING>   Sets for prefix in export named declaration.
 
                           [e.g.: -S "Icon"]
-  --ts, --typescript      Sets output as TypeScript code. 
+  --ts, --typescript      Sets output as TypeScript code.
 
 
 [INPUT]:    This option for read the input from PATH of FILE or DIRECTORIES.
-            [e.g.: create-chakra-icons ./MyICON.svg ~/assets] 
+            [e.g.: create-chakra-icons ./MyICON.svg ~/assets]
 
 ${packageName} (version: ${packageVersion})
 `);
+  return null;
 }
 
 function getCommonOptions(args) {
   return {
     inputs: (args.i && [args.i]) || (args.input && [args.input]) || args._,
     outputFile: args.o || args.output,
-    name: args.name || args.n || 'Unamed',
+    name: args.name || args.n || "Unamed",
     isTypescript: args.ts || args.typescript || false,
     exportNameCase: args.C || args.case,
-    exportNameSuffix: args.S || args.suffix || '',
-    exportNamePrefix: args.P || args.prefix || '',
+    exportNameSuffix: args.S || args.suffix || "",
+    exportNamePrefix: args.P || args.prefix || "",
   };
 }
 
@@ -119,19 +124,20 @@ function createExportNamed(exportNameCase, exportNamePrefix, exportNameSuffix) {
   );
 }
 
+// eslint-disable-next-line no-shadow
 function stringToInput({ displayName, exportNameCase, exportNamePrefix, exportNameSuffix, encoding, isTypescript }) {
   const exportNamed = createExportNamed(exportNameCase, exportNamePrefix, exportNameSuffix);
 
-  return function(acc, str) {
+  return (acc, str) => {
     if (Fs.existsSync(str)) {
       if (Fs.lstatSync(str).isDirectory()) {
         const pathResolved = Path.resolve(str);
         acc.push(
           ...Fs.readdirSync(pathResolved)
-            .filter((f) => f.split('.')[1] === 'svg')
+            .filter((f) => f.split(".")[1] === "svg")
             .map((f) => Path.join(pathResolved, f))
             .map((source) => ({
-              displayName: exportNamed(Path.basename(source).split('.')[0]),
+              displayName: exportNamed(Path.basename(source).split(".")[0]),
               source: Fs.readFileSync(source, encoding),
               isTypescript,
             })),
