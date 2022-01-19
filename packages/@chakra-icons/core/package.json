@@ -1,0 +1,60 @@
+{
+  "name": "@chakra-icons/core",
+  "description": "Core internals for @chakra-icons/cli",
+  "version": "0.0.0",
+  "author": "ri7nz <ri7nz@koding.ninja>",
+  "homepage": "https://github.com/kodingdotninja/chakra-icons",
+  "repository": "https://github.com/kodingdotninja/chakra-icons.git",
+  "bugs": "https://github.com/kodingdotninja/chakra-icons/issues",
+  "main": "index.js",
+  "scripts": {
+    "# general commands": "--------------------------------------------------",
+    "lint": "eslint --fix \"src/**/*.{js,cjs,mjs}\"",
+    "#": "-------------------------------------------------------------------"
+  },
+  "dependencies": {
+    "@babel/generator": "^7",
+    "@babel/types": "^7",
+    "@svgr/hast-util-to-babel-ast": "^6",
+    "change-case": "^4",
+    "svg-parser": "^2"
+  },
+  "devDependencies": {
+    "@packages/tsconfig": "*",
+    "eslint": "^8",
+    "eslint-config-kdnj": "^2"
+  },
+  "eslintConfig": {
+    "extends": [
+      "eslint-config-kdnj"
+    ],
+    "root": true
+  },
+  "lint-staged": {
+    "*.{json,md}": [
+      "yarn workspace @chakra-icons/core prettier --write"
+    ],
+    "**/*.{js,cjs,mjs}": [
+      "yarn workspace @chakra-icons/core eslint --fix"
+    ]
+  },
+  "prettier": {
+    "endOfLine": "auto",
+    "printWidth": 120,
+    "semi": true,
+    "singleQuote": false,
+    "trailingComma": "all"
+  },
+  "files": [
+    "*.js",
+    "*.cjs",
+    "*.mjs"
+  ],
+  "keywords": [
+    "kdnj",
+    "kodingdotninja",
+    "chakra-icons",
+    "create-chakra-icons"
+  ],
+  "license": "MIT"
+}
