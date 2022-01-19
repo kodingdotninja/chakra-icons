@@ -1,5 +1,5 @@
 {
-  "extends": "@kodingdotninja/tsconfig/base.json",
+  "extends": "@packages/tsconfig/base.json",
   "exclude": ["node_modules"],
   "include": ["**/*.ts", "**/*.tsx"]
 }

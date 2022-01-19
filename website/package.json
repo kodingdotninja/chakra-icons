@@ -13,7 +13,7 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "@kodingdotninja/tsconfig": "*",
+    "@packages/tsconfig": "*",
     "eslint": "^8",
     "eslint-config-kdnj": "^2"
   },
