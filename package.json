@@ -23,6 +23,8 @@
     "commit": "commit",
     "# scope commands": "----------------------------------------------------",
     "chakra-icons": "yarn workspace chakra-icons",
+    "cli": "yarn workspace @chakra-icons/cli",
+    "core": "yarn workspace @chakra-icons/core",
     "#": "-------------------------------------------------------------------"
   },
   "turbo": {
