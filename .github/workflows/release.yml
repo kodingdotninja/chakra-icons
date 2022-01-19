@@ -22,7 +22,7 @@ jobs:
       - uses: ./.github/actions/setup-node
 
       - name: validate (lint)
-        run: yarn validate
+        run: yarn lint
 
   test:
     needs: init
