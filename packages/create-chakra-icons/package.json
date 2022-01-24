@@ -2,18 +2,13 @@
   "name": "create-chakra-icons",
   "version": "1.0.2",
   "author": "ri7nz <hi@rin.rocks>",
-  "main": "./index.js",
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
   "bin": {
     "create-chakra-icons": "./index.bin.js"
   },
-  "exports": {
-    ".": "./index.js",
-    "./ast": "./lib/ast.js",
-    "./chakra": "./lib/chakra.js",
-    "./cli": "./lib/cli.js",
-    "./utils": "./lib/utils.js"
-  },
   "files": [
+    "dist",
     "*.js"
   ],
   "sideEffects": false,
@@ -22,7 +17,7 @@
     "docs": "documentation readme lib/*.js -q --section API && yarn fixreadme",
     "fixreadme": "node -e 'var fs=require(\"fs\");fs.writeFileSync(\"README.md\", fs.readFileSync(\"README.md\", \"utf8\").replace(/^-   /gm, \"- \"))'",
     "format": "prettier --write \"**/*.{js,json,md,svg}\"",
-    "lint": "eslint --fix \"**/*.js\"",
+    "lint": "eslint --fix \"lib/**/*.js\" index.bin.js",
     "#": "-------------------------------------------------------------------"
   },
   "dependencies": {
@@ -37,7 +32,8 @@
     "@packages/tsconfig": "*",
     "documentation": "^13",
     "eslint": "^8",
-    "eslint-config-kdnj": "^2"
+    "eslint-config-kdnj": "^2",
+    "tsup": "^4"
   },
   "eslintConfig": {
     "extends": [
