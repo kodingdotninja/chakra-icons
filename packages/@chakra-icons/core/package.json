@@ -6,27 +6,45 @@
   "homepage": "https://github.com/kodingdotninja/chakra-icons",
   "repository": "https://github.com/kodingdotninja/chakra-icons.git",
   "bugs": "https://github.com/kodingdotninja/chakra-icons/issues",
-  "main": "index.js",
+  "type": "module",
+  "exports": {
+    ".": {
+      "require": "./dist/index.cjs",
+      "export": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
   "scripts": {
     "# general commands": "--------------------------------------------------",
-    "lint": "eslint --fix \"src/**/*.{js,cjs,mjs}\"",
+    "build": "tsup",
+    "format": "prettier --write \"**/*.{js,json,md,svg}\"",
+    "lint": "eslint --fix \"**/*.ts\"",
     "#": "-------------------------------------------------------------------"
   },
   "dependencies": {
     "@babel/generator": "^7",
     "@babel/types": "^7",
-    "@svgr/hast-util-to-babel-ast": "^6",
-    "change-case": "^4",
-    "svg-parser": "^2"
+    "create-chakra-icons": "^1",
+    "fp-ts": "^2"
   },
   "devDependencies": {
     "@packages/tsconfig": "*",
+    "@types/degit": "^2",
+    "@types/glob": "^7",
+    "change-case": "^4",
+    "degit": "^2",
     "eslint": "^8",
-    "eslint-config-kdnj": "^2"
+    "eslint-config-kdnj": "^2",
+    "eslint-plugin-fp-ts": "^0.3.0",
+    "glob": "^7",
+    "tsup": "^5",
+    "typescript": "^4"
   },
   "eslintConfig": {
     "extends": [
-      "eslint-config-kdnj"
+      "eslint-config-kdnj",
+      "plugin:fp-ts/recommended",
+      "plugin:fp-ts/recommended-requiring-type-checking"
     ],
     "root": true
   },
@@ -54,7 +72,8 @@
     "kdnj",
     "kodingdotninja",
     "chakra-icons",
-    "create-chakra-icons"
+    "create-chakra-icons",
+    "cli"
   ],
   "license": "MIT"
 }
