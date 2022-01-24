@@ -6,7 +6,8 @@
     "packages/@chakra-icons/*",
     "website",
     "!website/**",
-    "!packages/chakra-icons/**",
+    "!packages/@chakra-icons/cli/**",
+    "!packages/@chakra-icons/core/**",
     "!packages/msrconfig/**",
     "!packages/tsconfig/**"
   ],
@@ -15,6 +16,7 @@
     "build": "turbo run build",
     "commit": "commit",
     "clean": "turbo run clean",
+    "postclean": "rimraf **/node_modules",
     "deduplicate": "npx yarn-deduplicate && yarn install",
     "lint": "turbo run lint",
     "postinstall": "patch-package",
@@ -23,6 +25,7 @@
     "release": "multi-semantic-release",
     "test": "turbo run test",
     "# scope commands": "----------------------------------------------------",
+    "website": "yarn workspace website",
     "chakra-icons": "yarn workspace chakra-icons",
     "cli": "yarn workspace @chakra-icons/cli",
     "core": "yarn workspace @chakra-icons/core",
@@ -41,7 +44,8 @@
         ],
         "outputs": [
           ".next/**",
-          "dist/**"
+          "dist/**",
+          ".chakraIcons/**"
         ]
       },
       "clean": {
@@ -64,6 +68,11 @@
     "@commitlint/cli": "^16",
     "@commitlint/config-conventional": "^16",
     "@commitlint/prompt-cli": "^16",
+    "@types/babel-types": "^7",
+    "@types/babel__generator": "^7",
+    "@types/node": "^14",
+    "@types/react": "^17",
+    "@types/react-dom": "^17",
     "husky": "^7",
     "lint-staged": "^12",
     "multi-semantic-release": "^2",
