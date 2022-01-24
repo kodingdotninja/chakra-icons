@@ -1,0 +1,33 @@
+{
+  "name": "@chakra-icons/bootstrap",
+  "version": "0.0.0",
+  "keywords": [
+    "bootstrap",
+    "chakra-ui",
+    "react",
+    "react-icons",
+    "chakra-icons"
+  ],
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist/",
+    "src/"
+  ],
+  "scripts": {
+    "build": "chakra-icons -r 'twbs/icons' -n bootstrap -i icons -S snapshot.json",
+    "postbuild": "tsup"
+  },
+  "devDependencies": {
+    "@types/react": "^17",
+    "@chakra-ui/react": "^1",
+    "@chakra-icons/cli": "*",
+    "tsup": "^5",
+    "@packages/tsconfig": "*"
+  },
+  "peerDependencies": {
+    "@chakra-ui/react": ">=1"
+  },
+  "license": "MIT"
+}
