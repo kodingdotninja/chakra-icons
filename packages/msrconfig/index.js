@@ -1,38 +1,39 @@
-// credit for https://github.com/qiwi/semantic-release-toolkit/tree/master/packages/config-monorepo 
+// credit for https://github.com/qiwi/semantic-release-toolkit/tree/master/packages/config-monorepo
+const releaseCommitMessage = `chore(release): $\{nextRelease.gitTag} [skip ci]
+
+$\{nextRelease.notes}`;
+
 module.exports = {
-  branches: [
-    'main',
-    { name: "beta", channel: "beta", prerelease: true }
-  ],
+  branches: ["main", { name: "beta", channel: "beta", prerelease: true }],
   plugins: [
     [
-      '@semantic-release/commit-analyzer',
+      "@semantic-release/commit-analyzer",
       {
-        preset: 'angular',
+        preset: "angular",
         releaseRules: [
-          { type: 'docs', release: 'patch' },
-          { type: 'refactor', release: 'patch' },
+          { type: "docs", release: "patch" },
+          { type: "refactor", release: "patch" },
         ],
         parserOpts: {
-          noteKeywords: ['BREAKING CHANGE', 'BREAKING CHANGES']
-        }
-      }
+          noteKeywords: ["BREAKING CHANGE", "BREAKING CHANGES"],
+        },
+      },
     ],
-    '@semantic-release/release-notes-generator',
-    '@semantic-release/changelog',
-    '@semrel-extra/npm',
+    "@semantic-release/release-notes-generator",
+    "@semantic-release/changelog",
+    "@semrel-extra/npm",
     [
-      '@semantic-release/github',
+      "@semantic-release/github",
       {
         successComment: false,
-        failComment: false
-      }
+        failComment: false,
+      },
     ],
     [
-      '@semantic-release/git',
+      "@semantic-release/git",
       {
-        message: 'chore(release): ${nextRelease.gitTag} [skip ci]\n\n${nextRelease.notes}'
-      }
-    ]
-  ]
-}
+        message: releaseCommitMessage,
+      },
+    ],
+  ],
+};
