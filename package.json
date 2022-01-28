@@ -31,39 +31,6 @@
     "postplop": "yarn install",
     "#": "-------------------------------------------------------------------"
   },
-  "turbo": {
-    "baseBranch": "origin/main",
-    "globalDependencies": [
-      "patches/**",
-      "yarn.lock"
-    ],
-    "pipeline": {
-      "build": {
-        "dependsOn": [
-          "^build"
-        ],
-        "outputs": [
-          ".next/**",
-          "dist/**",
-          ".chakraIcons/**"
-        ]
-      },
-      "test": {
-        "cache": false
-      },
-      "clean": {
-        "cache": false
-      },
-      "format": {
-        "cache": false
-      },
-      "lint": {
-        "dependsOn": [
-          "^lint"
-        ]
-      }
-    }
-  },
   "devDependencies": {
     "@commitlint/cli": "^16",
     "@commitlint/config-conventional": "^16",
