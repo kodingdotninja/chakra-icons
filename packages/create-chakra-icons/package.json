@@ -1,0 +1,75 @@
+{
+  "name": "create-chakra-icons",
+  "version": "1.0.2",
+  "author": "ri7nz <hi@rin.rocks>",
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
+  "bin": {
+    "create-chakra-icons": "./index.bin.js"
+  },
+  "files": [
+    "lib",
+    "index.bin.js"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "# general commands": "--------------------------------------------------",
+    "docs": "documentation readme lib/*.js -q --section API && yarn fixreadme",
+    "fixreadme": "node -e 'var fs=require(\"fs\");fs.writeFileSync(\"README.md\", fs.readFileSync(\"README.md\", \"utf8\").replace(/^-   /gm, \"- \"))'",
+    "format": "prettier --write \"**/*.{js,json,md,svg}\"",
+    "lint": "eslint --fix \"lib/**/*.js\" index.bin.js",
+    "test": "node ./index.bin.js examples",
+    "#": "-------------------------------------------------------------------"
+  },
+  "dependencies": {
+    "@babel/generator": "^7",
+    "@babel/types": "^7",
+    "@svgr/hast-util-to-babel-ast": "^6",
+    "change-case": "^4",
+    "minimist": "^1",
+    "svg-parser": "^2"
+  },
+  "devDependencies": {
+    "@tooling/tsconfig": "*",
+    "@tooling/msrconfig": "*",
+    "eslint": "^8",
+    "eslint-config-kdnj": "^2",
+    "tsup": "^4"
+  },
+  "eslintConfig": {
+    "extends": [
+      "eslint-config-kdnj"
+    ],
+    "ignorePatterns": [
+      "**/examples",
+      "node_modules"
+    ],
+    "root": true
+  },
+  "lint-staged": {
+    "*.{json,md,svg}": [
+      "yarn workspace create-chakra-icons prettier --write"
+    ],
+    "**/*.js": [
+      "yarn workspace create-chakra-icons eslint --fix"
+    ]
+  },
+  "prettier": {
+    "endOfLine": "auto",
+    "printWidth": 120,
+    "semi": true,
+    "singleQuote": false,
+    "trailingComma": "all"
+  },
+  "keywords": [
+    "chakra-ui",
+    "cli",
+    "generator",
+    "javascript",
+    "react",
+    "react-native",
+    "reactjs",
+    "svg"
+  ],
+  "license": "MIT"
+}

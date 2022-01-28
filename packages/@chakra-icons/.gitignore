@@ -1,0 +1,3 @@
+**/.chakraIcons/
+**/src/**/*
+!**/src/.git-keep
