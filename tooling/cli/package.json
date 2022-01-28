@@ -1,41 +1,57 @@
 {
-  "name": "@chakra-icons/core",
-  "description": "Core internals for @chakra-icons/cli",
+  "name": "@tooling/cli",
+  "description": "a tooling for manage everything in @chakra-icons",
   "version": "0.0.0",
   "author": "ri7nz <ri7nz@koding.ninja>",
   "homepage": "https://github.com/kodingdotninja/chakra-icons",
   "repository": "https://github.com/kodingdotninja/chakra-icons.git",
   "bugs": "https://github.com/kodingdotninja/chakra-icons/issues",
-  "main": "index.js",
+  "bin": {
+    "chakra-icons": "./dist/index.bin.js"
+  },
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
   "scripts": {
     "# general commands": "--------------------------------------------------",
-    "lint": "eslint --fix \"src/**/*.{js,cjs,mjs}\"",
+    "build": "tsup",
+    "format": "prettier --write \"**/*.{js,json,md,svg}\"",
+    "lint": "eslint --fix \"**/*.ts\"",
     "#": "-------------------------------------------------------------------"
   },
   "dependencies": {
     "@babel/generator": "^7",
     "@babel/types": "^7",
-    "@svgr/hast-util-to-babel-ast": "^6",
+    "arg": "^5",
+    "create-chakra-icons": "*",
+    "fp-ts": "^2",
+    "glob": "^7",
     "change-case": "^4",
-    "svg-parser": "^2"
+    "degit": "^2",
+    "ruins-ts": "^0.0.3"
   },
   "devDependencies": {
-    "@packages/tsconfig": "*",
+    "@tooling/tsconfig": "*",
     "eslint": "^8",
-    "eslint-config-kdnj": "^2"
+    "eslint-config-kdnj": "^2",
+    "eslint-plugin-fp-ts": "^0",
+    "tsup": "^5",
+    "typescript": "^4"
   },
   "eslintConfig": {
     "extends": [
-      "eslint-config-kdnj"
+      "eslint-config-kdnj",
+      "plugin:fp-ts/recommended",
+      "plugin:fp-ts/recommended-requiring-type-checking"
     ],
     "root": true
   },
   "lint-staged": {
     "*.{json,md}": [
-      "yarn workspace @chakra-icons/core prettier --write"
+      "yarn workspace @tooling/cli prettier --write"
     ],
     "**/*.{js,cjs,mjs}": [
-      "yarn workspace @chakra-icons/core eslint --fix"
+      "yarn workspace @tooling/cli eslint --fix"
     ]
   },
   "prettier": {
@@ -46,9 +62,7 @@
     "trailingComma": "all"
   },
   "files": [
-    "*.js",
-    "*.cjs",
-    "*.mjs"
+    "dist/"
   ],
   "keywords": [
     "kdnj",

@@ -1,6 +1,6 @@
 <!-- markdownlint-disable MD033 MD036 MD041 -->
 <p align="center">
-  <img src="//github.com/kodingdotninja/chakra-icons/tree/main/.github/docs/chakra-icons.png" /> 
+  <img src="https://github.com/kodingdotninja/chakra-icons/tree/main/.github/docs/chakra-icons.png?raw=true" /> 
   <br />
 </p>
 

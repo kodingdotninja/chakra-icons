@@ -1,5 +1,5 @@
 {
-  "name": "@kodingdotninja/msrconfig",
+  "name": "@tooling/msrconfig",
   "description": "Configuration for multi-semantic-release 🎉",
   "version": "0.0.0",
   "main": "index.js",
