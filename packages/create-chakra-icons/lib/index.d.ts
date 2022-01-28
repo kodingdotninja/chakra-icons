@@ -12,5 +12,6 @@ export type Option = {
 declare module "create-chakra-icons" {
   namespace cli {
     export function main(option: Option): void;
+    export function pipeline(option: Option): void;
   }
 }
