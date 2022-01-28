@@ -1,1 +1,1 @@
-module.exports = require("../msrconfig")
+module.exports = require("@tooling/msrconfig")
