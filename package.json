@@ -6,9 +6,8 @@
     "packages/**",
     "website",
     "!website/**",
-    "!tooling/@chakra-icons/cli/**",
-    "!tooling/msrconfig/**",
-    "!tooling/tsconfig/**"
+    "!tooling/cli/**",
+    "!tooling/*.conf/**"
   ],
   "scripts": {
     "# general commands": "--------------------------------------------------",

@@ -1,6 +1,11 @@
 {
   "name": "@chakra-icons/{{name}}",
   "version": "0.0.0",
+  "homepage": "https://github.com/kodingdotninja/chakra-icons/tree/main/packages/@chakra-icons/{{name}}",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kodingdotninja/chakra-icons"
+  },
   "keywords": [
     "chakra-ui",
     "react",
