@@ -1,6 +1,6 @@
 <!-- markdownlint-disable MD033 MD036 MD041 -->
 <p align="center">
-  <img src="https://github.com/kodingdotninja/chakra-icons/tree/main/.github/docs/chakra-icons.png?raw=true" /> 
+  <img src="https://raw.githubusercontent.com/kodingdotninja/create-chakra-icons/monorepo-new/.github/docs/chakra-icons.png" /> 
   <br />
 </p>
 
@@ -20,6 +20,14 @@
 Feel free for:
 
 - Create Issue, Request Features, & send a pull request.
+
+### Make new packages
+
+- in the root of project, run command `yarn plop`
+- fill the blank of prompts
+- when success generated new package, the package listed in `./packages/@chakra-icons/`
+- them run build `yarn build`
+- when success and no issues, you can make pull Request
 
 ## Maintainers
 
