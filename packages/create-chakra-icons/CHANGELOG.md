@@ -1,3 +1,5 @@
+## create-chakra-icons [1.0.3-beta.2](https://github.com/kodingdotninja/chakra-icons/compare/create-chakra-icons@1.0.3-beta.1...create-chakra-icons@1.0.3-beta.2) (2022-01-29)
+
 ## create-chakra-icons [1.0.3-beta.1](https://github.com/kodingdotninja/chakra-icons/compare/create-chakra-icons@v1.0.2...create-chakra-icons@1.0.3-beta.1) (2022-01-28)
 
 ### Bug Fixes
