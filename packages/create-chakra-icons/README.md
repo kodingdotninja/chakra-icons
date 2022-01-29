@@ -3,7 +3,7 @@
   <br/><label style="font-weight:bold;font-size:small;font-style:italic">from SVG file to CODE</label>
   <br/>
   <br/>
-  <img src="https://raw.githubusercontent.com/kodingdotninja/create-chakra-icons/monorepo-new/.github/docs/create-chakra-icons.gif" alt="create-chakra-icons" />  
+  <img src="https://raw.githubusercontent.com/kodingdotninja/create-chakra-icons/main/.github/docs/create-chakra-icons.gif" alt="create-chakra-icons" />  
 </p>
 
 ## Features
