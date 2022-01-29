@@ -23,6 +23,7 @@ const ast = require("./ast");
  * })
  */
 const createChakraIcon = (...sources) => {
+  // eslint-disable-next-line no-shadow
   const isTypescript = sources.some(({ isTypescript }) => isTypescript);
   const perFileCode = ({ source: svg, displayName }) => {
     const hast = SvgParser.parse(svg);
@@ -70,9 +71,7 @@ const createChakraIcon = (...sources) => {
       type === is;
 
   // TODO: make it more accurate with {@babel/types}.isArrowFunctionExpression
-  const hasArrowFunctionExpression = hasVariableDeclaratorInit(
-    "ArrowFunctionExpression"
-  );
+  const hasArrowFunctionExpression = hasVariableDeclaratorInit("ArrowFunctionExpression");
   // TODO: make it more accurate with {@babel/types}.isCallExpression
   const hasCallExpression = hasVariableDeclaratorInit("CallExpression");
   const isNotEmptyString = (str) => str !== "";
@@ -82,10 +81,7 @@ const createChakraIcon = (...sources) => {
     svgCodes.some(hasArrowFunctionExpression) ? "Icon" : "",
     svgCodes.some(hasCallExpression) ? "createIcon" : "",
   ].filter(isNotEmptyString);
-  const program = ast.toSource(
-    ast.toImportDeclaration("@chakra-ui/react", ...imports),
-    ...svgCodes
-  );
+  const program = ast.toSource(ast.toImportDeclaration("@chakra-ui/react", ...imports), ...svgCodes);
   return program;
 };
 

@@ -1,0 +1,22 @@
+{
+  "baseBranch": "origin/main",
+  "globalDependencies": ["patches/**", "yarn.lock"],
+  "pipeline": {
+    "build": {
+      "dependsOn": ["^build"],
+      "outputs": [".next/**", "dist/**", ".chakraIcons/**"]
+    },
+    "test": {
+      "cache": false
+    },
+    "clean": {
+      "cache": false
+    },
+    "format": {
+      "cache": false
+    },
+    "lint": {
+      "dependsOn": ["^lint"]
+    }
+  }
+}
