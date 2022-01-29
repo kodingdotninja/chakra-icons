@@ -3,13 +3,8 @@
  * @requires module:utils
  */
 const t = require("@babel/types");
-const toBabelAST = require("@svgr/hast-util-to-babel-ast").default;
-const {
-  pairToObject,
-  pairsToObject,
-  objectToPairs,
-  compose,
-} = require("./utils");
+const toBabelAST = require("@svgr/hast-util-to-babel-ast");
+const { pairsToObject, objectToPairs } = require("./utils");
 /**
  * @memberof ast
  * @name pairToObjectProperty
@@ -35,7 +30,7 @@ const pairToObjectProperty = ([key, value]) =>
   t.objectProperty(
     t.identifier(key),
     // TODO check when value is not string
-    t.stringLiteral(value)
+    t.stringLiteral(value),
   );
 /**
  * @memberof ast
@@ -55,10 +50,7 @@ const pairToObjectProperty = ([key, value]) =>
  * objectPropertyToPair(objectProperty)
  * // output: ["hey", "jude"]
  */
-const objectPropertyToPair = ({ key: { name: key }, value: { value } }) => [
-  key,
-  value,
-];
+const objectPropertyToPair = ({ key: { name: key }, value: { value } }) => [key, value];
 /**
  * @todo
  *
@@ -88,12 +80,7 @@ const objectPropertyToPair = ({ key: { name: key }, value: { value } }) => [
  * // }
  */
 const objectToObjectExpression = (object) =>
-  t.objectExpression(
-    objectToPairs(object).reduce(
-      (acc, cur) => [...acc, pairToObjectProperty(cur)],
-      []
-    )
-  );
+  t.objectExpression(objectToPairs(object).reduce((acc, cur) => [...acc, pairToObjectProperty(cur)], []));
 /**
  * @memberof ast
  * @name objectExpressionToObject
@@ -117,8 +104,7 @@ const objectToObjectExpression = (object) =>
  * // output:
  * // let object = { hey: "jude" }
  */
-const objectExpressionToObject = ({ properties }) =>
-  pairsToObject(properties.map(objectPropertyToPair));
+const objectExpressionToObject = ({ properties }) => pairsToObject(properties.map(objectPropertyToPair));
 /**
  * @memberof ast
  * @name toImportDeclaration
@@ -131,9 +117,9 @@ const toImportDeclaration = (from, ...imports) =>
   t.importDeclaration(
     [...imports].map((name) =>
       // @see {https://babeljs.io/docs/en/babel-types#importspecifier}
-      t.importSpecifier(t.identifier(name), t.identifier(name))
+      t.importSpecifier(t.identifier(name), t.identifier(name)),
     ),
-    t.stringLiteral(from)
+    t.stringLiteral(from),
   );
 /**
  * @memberof ast
@@ -151,19 +137,11 @@ const toImportDeclaration = (from, ...imports) =>
  */
 const toExportNamedDeclaration = ({ displayName, objectExpression }) => {
   // @see {https://babeljs.io/docs/en/babel-types#callexpression}
-  const createIcon = t.callExpression(
-    t.identifier("createIcon"),
-    objectExpression
-  );
+  const createIcon = t.callExpression(t.identifier("createIcon"), objectExpression);
   // @see {https://babeljs.io/docs/en/babel-types#variabledeclarator}
-  const variableDeclarator = t.variableDeclarator(
-    t.identifier(displayName),
-    createIcon
-  );
+  const variableDeclarator = t.variableDeclarator(t.identifier(displayName), createIcon);
   // @see {https://babeljs.io/docs/en/babel-types#variabledeclaration}
-  const variableDeclaration = t.variableDeclaration("const", [
-    variableDeclarator,
-  ]);
+  const variableDeclaration = t.variableDeclaration("const", [variableDeclarator]);
   // @see {https://babeljs.io/docs/en/babel-types#exportnameddeclaration}
   const exportNamedDeclaration = t.exportNamedDeclaration(variableDeclaration);
   return exportNamedDeclaration;
@@ -253,31 +231,18 @@ const hastToComponent = (hast, { displayName, isTypescript }) => {
   const propsIdentifier = t.identifier("props");
 
   if (isTypescript) {
-    propsIdentifier.typeAnnotation = t.tsTypeAnnotation(
-      t.tsTypeReference(t.identifier("IconProps"))
-    );
+    propsIdentifier.typeAnnotation = t.tsTypeAnnotation(t.tsTypeReference(t.identifier("IconProps")));
   }
 
-  const iconElement = addOpeningAttributes(
-    expressionStatement,
-    t.jsxSpreadAttribute(propsIdentifier)
-  );
+  const iconElement = addOpeningAttributes(expressionStatement, t.jsxSpreadAttribute(propsIdentifier));
 
-  const arrowFunctionIcon = t.arrowFunctionExpression(
-    [propsIdentifier],
-    iconElement
-  );
+  const arrowFunctionIcon = t.arrowFunctionExpression([propsIdentifier], iconElement);
   // @see {https://babeljs.io/docs/en/babel-types#variabledeclarator}
   const variableIdentifier = t.identifier(displayName);
 
-  const variableDeclarator = t.variableDeclarator(
-    variableIdentifier,
-    arrowFunctionIcon
-  );
+  const variableDeclarator = t.variableDeclarator(variableIdentifier, arrowFunctionIcon);
   // @see {https://babeljs.io/docs/en/babel-types#variabledeclaration}
-  const variableDeclaration = t.variableDeclaration("const", [
-    variableDeclarator,
-  ]);
+  const variableDeclaration = t.variableDeclaration("const", [variableDeclarator]);
   // @see {https://babeljs.io/docs/en/babel-types#exportnameddeclaration}
   const exportNamedDeclaration = t.exportNamedDeclaration(variableDeclaration);
   return exportNamedDeclaration;

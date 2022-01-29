@@ -1,0 +1,37 @@
+{
+  "name": "@chakra-icons/{{name}}",
+  "version": "0.0.0",
+  "homepage": "https://github.com/kodingdotninja/chakra-icons/tree/main/packages/@chakra-icons/{{name}}",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kodingdotninja/chakra-icons"
+  },
+  "keywords": [
+    "chakra-ui",
+    "react",
+    "react-icons",
+    "chakra-icons",
+    "{{name}}"
+  ],
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist/",
+    "src/"
+  ],
+  "scripts": {
+    "build": "chakra-icons build -r '{{repository}}' -n {{name}} -i {{iconPath}} -S snapshot.json -E",
+    "postbuild": "tsup"
+  },
+  "devDependencies": {
+    "@chakra-ui/react": "^1",
+    "@tooling/cli": "*",
+    "@tooling/tsconfig": "*",
+    "tsup": "^5"
+  },
+  "peerDependencies": {
+    "@chakra-ui/react": ">=1"
+  },
+  "license": "MIT"
+}
