@@ -23,7 +23,7 @@
     "@babel/generator": "^7",
     "@babel/types": "^7",
     "arg": "^5",
-    "create-chakra-icons": "*",
+    "create-chakra-icons": "1.0.3-beta.1",
     "fp-ts": "^2",
     "glob": "^7",
     "change-case": "^4",

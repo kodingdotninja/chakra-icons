@@ -31,6 +31,11 @@ const actions = [
     path: "packages/@chakra-icons/{{name}}/README.md",
     templateFile: "templates/@chakra-icons/README.md",
   },
+  {
+    type: "add",
+    path: "packages/@chakra-icons/{{name}}/.releaserc.js",
+    templateFile: "templates/@chakra-icons/.releaserc.js",
+  },
 ];
 
 export default function init(plop) {
