@@ -24,7 +24,7 @@ Feel free for:
 
 - Create Issue, Request Features, & send a pull request.
 
-## How to use
+## How to add new icons
 
 - clone this repo
 
@@ -41,7 +41,7 @@ Feel free for:
 - install dependencies
 
 ```
-  yarn | yarn install | npm install
+  yarn | yarn install
 ```
 
 - make a new package
@@ -66,7 +66,7 @@ Feel free for:
   yarn build
 ```
 
-- if the process build success and no issue, then you can make a new PR
+- if the process build success and no issue, then you can make a new [PRs](https://github.com/kodingdotninja/chakra-icons/compare)
 
 ## Maintainers
 
