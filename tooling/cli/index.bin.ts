@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 
+import { clean } from "./src/clean";
 import pkgJson from "./package.json";
 import { build, BuildOptions, init, InitOptions } from "./src";
 
@@ -9,9 +10,10 @@ import * as ruins from "ruins-ts";
 type Command =
   | { type: "init"; options: InitOptions }
   | { type: "build"; options: BuildOptions }
+  | { type: "clean"; options: BuildOptions }
+  | { type: "fail"; error: unknown }
   | { type: "help" }
-  | { type: "version" }
-  | { type: "fail"; error: unknown };
+  | { type: "version" };
 
 const parseArgs = (): Command => {
   try {
@@ -39,6 +41,7 @@ const parseArgs = (): Command => {
         "-S": "--snapshot",
         // FLAGS
         "--with-entrypoints": Boolean,
+        "--with-clean": Boolean,
         "-E": "--with-entrypoints",
       },
       { argv },
@@ -64,11 +67,24 @@ const parseArgs = (): Command => {
     if (first === "init" && name && repository && iconPath)
       return { type: "init", options: { name, repository, iconPath } };
 
-    if (first === "build" && name && repository && iconPath && clonePath && sourcePath)
+    if (name && repository && iconPath && clonePath && sourcePath) {
+      const options: BuildOptions = {
+        name,
+        repository,
+        iconPath,
+        clonePath,
+        sourcePath,
+        snapshot,
+        entryPoints: Boolean(entryPoints),
+      };
+
+      if (first === "clean") return { type: "clean", options };
+
       return {
         type: "build",
-        options: { name, repository, iconPath, clonePath, sourcePath, snapshot, entryPoints: Boolean(entryPoints) },
+        options,
       };
+    }
 
     if (version) return { type: "version" };
 
@@ -104,12 +120,16 @@ const fail = (e: unknown) => {
 const run = async (command: Command) => {
   switch (command.type) {
     case "build":
-      return ruins
-        .fromTaskEither(build(command.options))
-        .then(() => { })
-        .catch((e) => fail(e));
+      return ruins.fromTaskEither(build(command.options)).catch((e) => fail(e));
     case "init":
       return init(command.options);
+    case "clean":
+      return ruins
+        .fromTaskEither(clean(command.options))
+        .then((files) => {
+          console.log(`Clean ${files.length} files`);
+        })
+        .catch((e) => fail(e));
     case "fail":
       return fail(command.error);
     case "version":

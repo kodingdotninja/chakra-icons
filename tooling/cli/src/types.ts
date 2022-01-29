@@ -17,3 +17,8 @@ export type MetaIcon = {
   sources: Sources[];
   sourcePath: string;
 };
+
+export type BuildOptions = Omit<MetaIcon, "sources"> & {
+  snapshot?: string;
+  entryPoints: boolean;
+};

@@ -1,4 +1,4 @@
-import { MetaIcon, Sources } from "./types";
+import { BuildOptions, MetaIcon, Sources } from "./types";
 
 import babelGenerator from "@babel/generator";
 import * as t from "@babel/types";
@@ -15,11 +15,6 @@ import * as fs from "fs/promises";
 import * as _glob from "glob";
 import * as path from "path";
 import { promisify } from "util";
-
-export type BuildOptions = Omit<MetaIcon, "sources"> & {
-  snapshot?: string;
-  entryPoints: boolean;
-};
 
 const metaIconDefault = (
   name: MetaIcon["name"],
