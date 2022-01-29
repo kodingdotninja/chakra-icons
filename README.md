@@ -24,13 +24,49 @@ Feel free for:
 
 - Create Issue, Request Features, & send a pull request.
 
-### Make new packages
+## How to use
 
-- in the root of project, run command `yarn plop`
+- clone this repo
+
+```
+  git clone https://github.com/kodingdotninja/chakra-icons.git
+```
+
+- go to the project directory
+
+```
+  cd chakra-icons
+```
+
+- install dependencies
+
+```
+  yarn | yarn install | npm install
+```
+
+- make a new package
+
+```
+  yarn plop
+```
+
 - fill the blank of prompts
+
+```
+  repository url : [link repo] e.g (https://github.com/twbs/icons)
+  path of svg icons : [the name of folder where the svg is stored] e.g (icons)
+  projects name : [name new package] e.g (bootstrap)
+```
+
 - when success generated new package, the package listed in [**./packages/@chakra-icons**](https://github.com/kodingdotninja/chakra-icons/tree/main/packages/create-chakra-icons)
-- them run build `yarn build`
-- when success and no issues, you can make pull Request
+
+- build the new package
+
+```
+  yarn build
+```
+
+- if the process build success and no issue, then you can make a new PR
 
 ## Maintainers
 
