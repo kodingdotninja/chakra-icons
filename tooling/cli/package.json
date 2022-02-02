@@ -1,5 +1,5 @@
 {
-  "name": "@tooling/cli",
+  "name": "@chakra-icons/cli",
   "description": "a tooling for manage everything in @chakra-icons",
   "version": "0.0.0",
   "author": "ri7nz <ri7nz@koding.ninja>",
@@ -7,7 +7,7 @@
   "repository": "https://github.com/kodingdotninja/chakra-icons.git",
   "bugs": "https://github.com/kodingdotninja/chakra-icons/issues",
   "bin": {
-    "chakra-icons": "./dist/index.bin.js"
+    "chakra-icons": "dist/index.bin.js"
   },
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -48,10 +48,10 @@
   },
   "lint-staged": {
     "*.{json,md}": [
-      "yarn workspace @tooling/cli prettier --write"
+      "yarn workspace @chakra-icons/cli prettier --write"
     ],
     "**/*.{js,cjs,mjs}": [
-      "yarn workspace @tooling/cli eslint --fix"
+      "yarn workspace @chakra-icons/cli eslint --fix"
     ]
   },
   "prettier": {

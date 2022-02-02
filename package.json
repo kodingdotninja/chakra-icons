@@ -7,7 +7,6 @@
     "packages/@chakra-icons/*",
     "website",
     "!website/**",
-    "!tooling/cli/**",
     "!tooling/*.conf/**"
   ],
   "scripts": {
@@ -22,12 +21,13 @@
     "postinstall": "patch-package",
     "prepare": "husky install",
     "purge": "shx rm -rf node_modules/.cache/ packages/**/.turbo/ website/.turbo/",
+    "prerelease": "yarn build",
     "release": "multi-semantic-release",
     "commit": "commit",
     "# scope commands": "----------------------------------------------------",
     "website": "yarn workspace website",
     "cci": "yarn workspace create-chakra-icons",
-    "cli": "yarn workspace @tooling/cli",
+    "cli": "yarn workspace @chakra-icons/cli",
     "plop": "plop",
     "postplop": "yarn install",
     "#": "-------------------------------------------------------------------"

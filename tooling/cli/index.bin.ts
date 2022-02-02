@@ -1,5 +1,4 @@
 #!/usr/bin/env node
-
 import { clean } from "./src/clean";
 import pkgJson from "./package.json";
 import { build, BuildOptions, init, InitOptions } from "./src";
