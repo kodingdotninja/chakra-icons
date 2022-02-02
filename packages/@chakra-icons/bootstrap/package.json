@@ -27,7 +27,7 @@
   },
   "devDependencies": {
     "@chakra-ui/react": "^1",
-    "@tooling/cli": "*",
+    "@chakra-icons/cli": "*",
     "@tooling/tsconfig": "*",
     "tsup": "^5"
   },
