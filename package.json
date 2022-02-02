@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "workspaces": [
     "tooling/*",
-    "packages/**",
+    "packages/*",
+    "packages/@chakra-icons/*",
     "website",
     "!website/**",
     "!tooling/cli/**",
