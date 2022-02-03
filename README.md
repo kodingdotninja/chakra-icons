@@ -11,13 +11,16 @@
 
 ## Packages
 
+<!-- prettier-ignore-start -->
 | Name                                                                                                                 | Publishable | Version                                                                                                                         |
 | -------------------------------------------------------------------------------------------------------------------- | ----------- | ------------------------------------------------------------------------------------------------------------------------------- |
 | [create-chakra-icons](https://github.com/kodingdotninja/chakra-icons/tree/main/packages/create-chakra-icons)         | ✅          | [![npm version](https://badge.fury.io/js/create-chakra-icons.svg)](https://www.npmjs.com/package/create-chakra-icons)           |
-| [@chakra-icons/bootstrap](https://github.com/kodingdotninja/chakra-icons/tree/main/packages/@chakra-icons/bootstrap) | ✅          | [![npm version](https://badge.fury.io/js/@chakra-icons%2Fbootstrap.svg)](https://www.npmjs.com/package/@chakra-icons/bootstrap) |
-| [@chakra-icons/cli](https://github.com/kodingdotninja/chakra-icons/tree/main/tooling/cli)                            | ✅          | [![npm version](https://badge.fury.io/js/@chakra-icons%2Fcli.svg)](https://www.npmjs.com/package/@chakra-icons/cli)             |
 | [@tooling/tsconfig](https://github.com/kodingdotninja/chakra-icons/tree/main/tooling/ts.conf)                        | ❌          |                                                                                                                                 |
 | [@tooling/msrconfig](https://github.com/kodingdotninja/chakra-icons/tree/main/tooling/msr.conf)                      | ❌          |                                                                                                                                 |
+| [@chakra-icons/cli](https://github.com/kodingdotninja/chakra-icons/tree/main/tooling/cli)                            | ✅          | [![npm version](https://badge.fury.io/js/@chakra-icons%2Fcli.svg)](https://www.npmjs.com/package/@chakra-icons/cli)             |
+| [@chakra-icons/bootstrap](https://github.com/kodingdotninja/chakra-icons/tree/main/packages/@chakra-icons/bootstrap) | ✅          | [![npm version](https://badge.fury.io/js/@chakra-icons%2Fbootstrap.svg)](https://www.npmjs.com/package/@chakra-icons/bootstrap) |
+<!-- APPEND_CHAKRA_ICONS_HERE -->
+<!-- prettier-ignore-end -->
 
 ## Contribution
 

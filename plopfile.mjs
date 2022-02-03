@@ -1,3 +1,5 @@
+const updateRootReadmeTemplate = `| [@chakra-icons/{{name}}](https://github.com/kodingdotninja/chakra-icons/tree/main/packages/@chakra-icons/{{name}}) | ✅  | [![@chakra-icons/{{name}} version](https://badge.fury.io/js/@chakra-icons%2F{{name}}.svg)](https://www.npmjs.com/package/@chakra-icons/{{name}}) |\n<!-- APPEND_CHAKRA_ICONS_HERE -->`;
+
 // see ./tooling/cli/src/init.ts#InitOptions
 const prompts = [
   { type: "input", name: "repository", message: "repository url" },
@@ -35,6 +37,12 @@ const actions = [
     type: "add",
     path: "packages/@chakra-icons/{{name}}/.releaserc.js",
     templateFile: "templates/@chakra-icons/.releaserc.js",
+  },
+  {
+    type: "modify",
+    path: "README.md",
+    pattern: /<!-- APPEND_CHAKRA_ICONS_HERE -->/g,
+    template: updateRootReadmeTemplate,
   },
 ];
 
