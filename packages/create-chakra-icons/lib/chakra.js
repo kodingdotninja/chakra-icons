@@ -25,7 +25,7 @@ const ast = require("./ast");
 const createChakraIcon = (...sources) => {
   // eslint-disable-next-line no-shadow
   const isTypescript = sources.some(({ isTypescript }) => isTypescript);
-  const perFileCode = ({ source: svg, displayName }) => {
+  const perFileCode = ({ source: svg, displayName, outputType }) => {
     const hast = SvgParser.parse(svg);
     // This for solve issue {https://github.com/kodingdotninja/create-chakra-icons/issues/7}
     // In the issue 7, have some example svg file at examples/issue7.svg
@@ -38,11 +38,16 @@ const createChakraIcon = (...sources) => {
       }
       return false;
     })();
-    if (ast.hastChildrenLength(hast) > 1 || isNotTagnamePath) {
+
+    const outputWithCreateIcon = outputType.toLowerCase() === "f";
+
+    const outputWithIcon = outputType.toLowerCase() === "c" || ast.hastChildrenLength(hast) > 1 || isNotTagnamePath;
+
+    if (outputWithIcon && !outputWithCreateIcon) {
       return ast.hastToComponent(hast, { displayName, isTypescript });
     }
 
-    const properties = ast.hastToProperties(hast);
+    const properties = outputWithIcon ? ast.hastToProperties2(hast) : ast.hastToProperties(hast);
 
     const objectExpression = ast.objectToObjectExpression({
       displayName,
@@ -53,6 +58,7 @@ const createChakraIcon = (...sources) => {
       displayName,
       objectExpression: [objectExpression],
     });
+
     return iconAST;
   };
   const svgCodes = [...sources].map(perFileCode);

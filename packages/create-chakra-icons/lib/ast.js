@@ -5,6 +5,16 @@
 const t = require("@babel/types");
 const toBabelAST = require("@svgr/hast-util-to-babel-ast");
 const { pairsToObject, objectToPairs } = require("./utils");
+
+const toLiteral = (val) =>
+  ({
+    [typeof val === "string"]: () => t.stringLiteral(val),
+    [typeof val === "number"]: () => t.numericLiteral(val),
+    [Array.isArray(val)]: () => t.arrayExpression(val.map((v) => toLiteral(v))),
+    [t.isLiteral(val) || t.isArrayExpression(val)]: () => val,
+    // TODO: handle more type
+  }.true());
+
 /**
  * @memberof ast
  * @name pairToObjectProperty
@@ -26,12 +36,7 @@ const { pairsToObject, objectToPairs } = require("./utils");
  *
  *
  */
-const pairToObjectProperty = ([key, value]) =>
-  t.objectProperty(
-    t.identifier(key),
-    // TODO check when value is not string
-    t.stringLiteral(value),
-  );
+const pairToObjectProperty = ([key, value]) => t.objectProperty(t.identifier(key), toLiteral(value));
 /**
  * @memberof ast
  * @name objectPropertyToPair
@@ -174,6 +179,29 @@ const hastToProperties = ({
   viewBox,
   d,
 });
+/**
+ * @param {Object}
+ * @return {Object}
+ */
+const hastToProperties2 = ({
+  children: [
+    {
+      properties: { viewBox },
+      children,
+    },
+  ],
+}) => {
+  const expressions = children
+    .map((v) => toBabelAST({ type: "root", children: [v] }))
+    .flatMap((v) => v.body)
+    .map((v) => v.expression);
+  const path = t.arrayExpression(expressions);
+
+  return {
+    viewBox,
+    path,
+  };
+};
 
 /**
  * @memberof ast
@@ -258,6 +286,7 @@ module.exports = {
   toExportNamedDeclaration,
   toSource,
   hastToProperties,
+  hastToProperties2,
   hastToJSXProperties,
   hastChildrenLength,
   hastToComponent,
