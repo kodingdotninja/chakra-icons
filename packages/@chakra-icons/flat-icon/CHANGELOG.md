@@ -1,3 +1,9 @@
+## @chakra-icons/flat-icon [1.0.1](https://github.com/kodingdotninja/chakra-icons/compare/@chakra-icons/flat-icon@1.0.0...@chakra-icons/flat-icon@1.0.1) (2022-02-03)
+
+### Dependencies
+
+- **@chakra-icons/cli:** upgraded to 1.0.1
+
 # @chakra-icons/flat-icon 1.0.0 (2022-02-03)
 
 ### Features
