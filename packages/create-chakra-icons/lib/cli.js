@@ -8,13 +8,13 @@ const { createChakraIcon } = require("./chakra");
 const { stringToCase, compose } = require("./utils");
 const { stdout: output, stdin: input, exit, stderr: error } = require("process");
 
-const encoding = "utf-8";
+const ENCODING = "utf-8";
 
 function pipeline(args) {
-  input.setEncoding(encoding);
+  input.setEncoding(ENCODING);
   input.on("data", (data) => {
     if (data) {
-      const { name, exportNameCase, exportNameSuffix, exportNamePrefix, isTypescript, outputFile } =
+      const { name, exportNameCase, exportNameSuffix, exportNamePrefix, isTypescript, outputFile, outputType } =
         getCommonOptions(args);
       const exportNamed = createExportNamed(exportNameCase, exportNamePrefix, exportNameSuffix);
       const source = createCode({
@@ -23,6 +23,7 @@ function pipeline(args) {
         isTypescript,
         exportNameSuffix,
         exportNamePrefix,
+        outputType,
       });
       return outputFile
         ? Fs.writeFile(Path.resolve(outputFile), source, (err) => {
@@ -37,7 +38,7 @@ function pipeline(args) {
 }
 
 function main(args) {
-  const { inputs, outputFile, name, exportNameCase, exportNameSuffix, exportNamePrefix, isTypescript } =
+  const { inputs, outputFile, name, exportNameCase, exportNameSuffix, exportNamePrefix, isTypescript, outputType } =
     getCommonOptions(args);
   const version = args.V || args.version;
 
@@ -48,10 +49,11 @@ function main(args) {
         stringToInput({
           displayName: name,
           exportNameCase,
-          encoding,
+          encoding: ENCODING,
           isTypescript,
           exportNameSuffix,
           exportNamePrefix,
+          outputType,
         }),
         [],
       ),
@@ -93,7 +95,14 @@ OPTIONS:
   -P, --prefix <STRING>   Sets for prefix in export named declaration.
 
                           [e.g.: -S "Icon"]
+
   --ts, --typescript      Sets output as TypeScript code.
+
+  -T, --type <TYPE>       TYPE:
+                          (F|f). Sets output code with function \`createIcon({...})\`.
+                          (C|c). Sets output code with Component Icon \`(props) => <Icon> {...} </Icon>\`.
+
+                          [e.g.: -T C]
 
 
 [INPUT]:    This option for read the input from PATH of FILE or DIRECTORIES.
@@ -113,6 +122,7 @@ function getCommonOptions(args) {
     exportNameCase: args.C || args.case,
     exportNameSuffix: args.S || args.suffix || "",
     exportNamePrefix: args.P || args.prefix || "",
+    outputType: String(args.T || args.type),
   };
 }
 
@@ -125,7 +135,15 @@ function createExportNamed(exportNameCase, exportNamePrefix, exportNameSuffix) {
 }
 
 // eslint-disable-next-line no-shadow
-function stringToInput({ displayName, exportNameCase, exportNamePrefix, exportNameSuffix, encoding, isTypescript }) {
+function stringToInput({
+  displayName,
+  exportNameCase,
+  exportNamePrefix,
+  exportNameSuffix,
+  encoding,
+  isTypescript,
+  outputType,
+}) {
   const exportNamed = createExportNamed(exportNameCase, exportNamePrefix, exportNameSuffix);
 
   return (acc, str) => {
@@ -140,6 +158,7 @@ function stringToInput({ displayName, exportNameCase, exportNamePrefix, exportNa
               displayName: exportNamed(Path.basename(source).split(".")[0]),
               source: Fs.readFileSync(source, encoding),
               isTypescript,
+              outputType,
             })),
         );
       } else {
@@ -147,6 +166,7 @@ function stringToInput({ displayName, exportNameCase, exportNamePrefix, exportNa
           displayName: exportNamed(displayName),
           source: Fs.readFileSync(str, encoding),
           isTypescript,
+          outputType,
         });
       }
     }

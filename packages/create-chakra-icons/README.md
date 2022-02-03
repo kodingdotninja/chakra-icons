@@ -46,6 +46,13 @@ create-chakra-icons [FLAGS] [OPTIONS] [INPUT]
 -P, --prefix <STRING>   Sets for prefix in export named declaration.
                         [e.g.: -S "Icon"]
 --ts, --typescript      Sets output as TypeScript code.
+
+-T, --type <TYPE>       TYPE:
+                        (F|f). Sets output code with function \`createIcon({...})\`.
+                        (C|c). Sets output code with Component Icon \`(props) => <Icon> {...} </Icon>\`.
+
+                        [e.g.: -T C]
+
 ```
 
 ### Input
