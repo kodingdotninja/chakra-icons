@@ -1,0 +1,69 @@
+{
+  "name": "website",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "# general commands": "--------------------------------------------------",
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "format": "prettier --write \"**/*.{js,json,md,svg}\"",
+    "lint": "eslint --fix \"**/*.{ts,tsx}\"",
+    "#": "-------------------------------------------------------------------"
+  },
+  "dependencies": {
+    "@chakra-icons/bootstrap": "*",
+    "@chakra-icons/flat-icon": "*",
+    "@chakra-icons/cli": "*",
+    "@chakra-ui/icons": "^1",
+    "@chakra-ui/react": "^1",
+    "@chakra-ui/theme-tools": "^1",
+    "@emotion/react": "^11",
+    "@emotion/styled": "^11",
+    "framer-motion": "^4",
+    "fuzzysearch": "^1.0.3",
+    "glob": "^7",
+    "next": "latest",
+    "react": "^17",
+    "react-dom": "^17"
+  },
+  "devDependencies": {
+    "@tooling/tsconfig": "*",
+    "eslint-config-kdnj": "^2",
+    "typescript": "^4"
+  },
+  "eslintConfig": {
+    "extends": [
+      "eslint-config-kdnj"
+    ],
+    "ignorePatterns": [
+      "node_modules"
+    ],
+    "root": true
+  },
+  "lint-staged": {
+    "*.{json,md,svg}": [
+      "yarn workspace website prettier --write"
+    ],
+    "**/*.{js,cjs,mjs,ts}": [
+      "yarn workspace website eslint --fix"
+    ]
+  },
+  "prettier": {
+    "endOfLine": "auto",
+    "printWidth": 120,
+    "semi": true,
+    "singleQuote": false,
+    "trailingComma": "all"
+  },
+  "keywords": [
+    "chakra-ui",
+    "cli",
+    "generator",
+    "javascript",
+    "react",
+    "reactjs",
+    "svg"
+  ],
+  "license": "MIT"
+}
