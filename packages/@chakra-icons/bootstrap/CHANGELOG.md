@@ -1,3 +1,9 @@
+## @chakra-icons/bootstrap [1.1.1](https://github.com/kodingdotninja/chakra-icons/compare/@chakra-icons/bootstrap@1.1.0...@chakra-icons/bootstrap@1.1.1) (2022-02-03)
+
+### Dependencies
+
+- **@chakra-icons/cli:** upgraded to 1.0.1
+
 # @chakra-icons/bootstrap [1.1.0](https://github.com/kodingdotninja/chakra-icons/compare/@chakra-icons/bootstrap@1.0.0...@chakra-icons/bootstrap@1.1.0) (2022-02-03)
 
 ### Features

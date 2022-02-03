@@ -1,6 +1,6 @@
 {
   "name": "@chakra-icons/bootstrap",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "homepage": "https://github.com/kodingdotninja/chakra-icons/tree/main/packages/@chakra-icons/bootstrap",
   "repository": {
     "type": "git",
@@ -27,7 +27,7 @@
   },
   "devDependencies": {
     "@chakra-ui/react": "^1",
-    "@chakra-icons/cli": "1.0.0",
+    "@chakra-icons/cli": "1.0.1",
     "@tooling/tsconfig": "*",
     "tsup": "^5"
   },
