@@ -34,7 +34,7 @@ const Item = ({ children, name, code }: StackProps & Icon) => {
       <PopoverTrigger>
         <Stack
           cursor="pointer"
-          borderWidth="0.3vh"
+          borderWidth="thin"
           borderStyle="dotted"
           color={color}
           fill={color}
@@ -46,12 +46,12 @@ const Item = ({ children, name, code }: StackProps & Icon) => {
             borderStyle: "solid",
             borderColor: hoverColor,
           }}
-          boxSize="15vh"
+          boxSize="24"
           alignItems="center"
           justifyContent="center"
           aria-label={name}
         >
-          {React.isValidElement(children) ? React.cloneElement(children, { boxSize: "5vh" }) : null}
+          {React.isValidElement(children) ? React.cloneElement(children, { boxSize: "9" }) : null}
           <Text fontWeight="bold" fontSize="xs" isTruncated maxW="full" px="2">
             {name}
           </Text>
@@ -75,13 +75,18 @@ export function Overview({ icons }: { icons: Icon[] }) {
       {icons
         .map((icon) => {
           const { name: iconName, creator } = icon;
-          const getComponent = (name: string): ComponentWithAs<"svg", IconProps> | undefined =>
-            Bootstrap
-              ? // @ts-expect-error this is access submodule
-                Bootstrap[name] || FlatIcon[name]
-              : undefined;
+          const getComponent = (name: string, _creator: string): ComponentWithAs<"svg", IconProps> | undefined =>
+            ({
+              true: () => undefined,
+              [String(_creator === "bootstrap")]: () =>
+                // @ts-expect-error: THIS WORKS
+                Bootstrap[name],
+              [String(_creator === "flat-icon")]: () =>
+                // @ts-expect-error: THIS WORKS
+                FlatIcon[name],
+            }.true());
 
-          const Component = getComponent(iconName);
+          const Component = getComponent(iconName, creator.toLowerCase());
 
           if (Component) {
             return (
