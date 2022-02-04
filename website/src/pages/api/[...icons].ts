@@ -48,8 +48,7 @@ export const getData = async (q: string, limit: number = 50) => {
 
   return response;
 };
-/*eslint no-bitwise: ["error", { "int32Hint": true }] */
-const toInt = (a: any): number => a | 0;
+const toInt = (a: any): number => a | 0; // eslint-disable-line no-bitwise, @typescript-eslint/no-explicit-any
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
   const { q, limit } = req.query;

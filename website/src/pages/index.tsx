@@ -7,6 +7,7 @@ import { getData } from "./api/[...icons]";
 
 import { Code, Input, Text } from "@chakra-ui/react";
 import { GetStaticProps, InferGetStaticPropsType } from "next";
+import { useRouter } from "next/router";
 
 type IndexProps = {
   icons: ResponseIcon | null;
@@ -19,28 +20,37 @@ export const getStaticProps: GetStaticProps<IndexProps> = async (_ctx) => {
   };
 };
 
+const fetchIcons = (q?: string): Promise<ResponseIcon> => fetch(`/api/icons?q=${q ?? ""}`).then((res) => res.json());
+
 const Index = (props: InferGetStaticPropsType<typeof getStaticProps>) => {
+  const { query } = useRouter();
   const { icons: _icons } = props;
   const [icons, setIcons] = React.useState<typeof props.icons>(_icons);
+
+  const q = Array.isArray(query.q) ? query.q[0] : query.q ?? "";
+
   const onKeyPressCapture = (e: React.KeyboardEvent<HTMLInputElement>) => {
     if (e.key.toLowerCase() === "enter") {
-      fetch(`/api/icons?q=${e.currentTarget.value}`)
-        .then((res) => res.json())
-        .then(setIcons)
-        .catch(console.error);
+      fetchIcons(e.currentTarget.value).then(setIcons).catch(console.error);
     } else {
       e.persist();
     }
   };
+
+  React.useEffect(() => {
+    if (q !== "") fetchIcons(q).then(setIcons).catch(console.error);
+  }, [q]);
+
   return (
     <Main alignItems="center">
       <Hero />
       <Text maxW={{ md: "50vw" }} align="center">
-        We have been provided total <Code colorScheme="cyan">{icons?.total}</Code> icons, Included popular icons like
+        We have been provided <Code colorScheme="cyan">{icons?.total}</Code> icons, Included popular icons like
         `Bootstrap`, `Flat-Icon`, and more to use in your project with <Code colorScheme="teal">Chakra-UI</Code>.
       </Text>
       <Input
         placeholder="Search icons here..."
+        defaultValue={query.q ?? ""}
         width={["full", "full", "50vw"]}
         size="lg"
         onKeyPressCapture={onKeyPressCapture}
