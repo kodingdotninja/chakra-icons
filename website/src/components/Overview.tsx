@@ -5,6 +5,7 @@ import { MetaIcon } from "../types";
 import * as Bootstrap from "@chakra-icons/bootstrap";
 import * as FlatIcon from "@chakra-icons/flat-icon";
 import * as Octicons from "@chakra-icons/octicons";
+import * as TablerIcons from "@chakra-icons/tabler-icons";
 import {
   Code,
   ComponentWithAs,
@@ -77,18 +78,21 @@ export function Overview({ icons }: { icons: Icon[] }) {
         .map((icon) => {
           const { name: iconName, creator } = icon;
           const getComponent = (name: string, _creator: string): ComponentWithAs<"svg", IconProps> | undefined =>
-          ({
-            true: () => undefined,
-            [String(_creator === "bootstrap")]: () =>
-              // @ts-expect-error: THIS WORKS
-              Bootstrap[name],
-            [String(_creator === "flat-icon")]: () =>
-              // @ts-expect-error: THIS WORKS
-              FlatIcon[name],
-            [String(_creator === "octicons")]: () =>
-              // @ts-expect-error: THIS WORKS
-              Octicons[name],
-          }.true());
+            ({
+              true: () => undefined,
+              [String(_creator === "bootstrap")]: () =>
+                // @ts-expect-error: THIS WORKS
+                Bootstrap[name],
+              [String(_creator === "flat-icon")]: () =>
+                // @ts-expect-error: THIS WORKS
+                FlatIcon[name],
+              [String(_creator === "octicons")]: () =>
+                // @ts-expect-error: THIS WORKS
+                Octicons[name],
+              [String(_creator === "tabler-icons")]: () =>
+                // @ts-expect-error: THIS WORKS
+                TablerIcons[name],
+            }.true());
 
           const Component = getComponent(iconName, creator.toLowerCase());
 
