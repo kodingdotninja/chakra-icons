@@ -15,6 +15,7 @@
     "@chakra-icons/bootstrap": "*",
     "@chakra-icons/flat-icon": "*",
     "@chakra-icons/octicons": "*",
+    "@chakra-icons/tabler-icons": "*",
     "@chakra-icons/cli": "*",
     "@chakra-ui/icons": "^1",
     "@chakra-ui/react": "^1",
