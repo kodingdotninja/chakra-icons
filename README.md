@@ -20,6 +20,7 @@
 | [@chakra-icons/cli](https://github.com/kodingdotninja/chakra-icons/tree/main/tooling/cli)                            | ✅          | [![npm version](https://badge.fury.io/js/@chakra-icons%2Fcli.svg)](https://www.npmjs.com/package/@chakra-icons/cli)             |
 | [@chakra-icons/bootstrap](https://github.com/kodingdotninja/chakra-icons/tree/main/packages/@chakra-icons/bootstrap) | ✅          | [![npm version](https://badge.fury.io/js/@chakra-icons%2Fbootstrap.svg)](https://www.npmjs.com/package/@chakra-icons/bootstrap) |
 | [@chakra-icons/flat-icon](https://github.com/kodingdotninja/chakra-icons/tree/main/packages/@chakra-icons/flat-icon) | ✅  | [![@chakra-icons/flat-icon version](https://badge.fury.io/js/@chakra-icons%2Fflat-icon.svg)](https://www.npmjs.com/package/@chakra-icons/flat-icon) |
+| [@chakra-icons/octicons](https://github.com/kodingdotninja/chakra-icons/tree/main/packages/@chakra-icons/octicons) | ✅  | [![@chakra-icons/octicons version](https://badge.fury.io/js/@chakra-icons%2Focticons.svg)](https://www.npmjs.com/package/@chakra-icons/octicons) |
 <!-- APPEND_CHAKRA_ICONS_HERE -->
 <!-- prettier-ignore-end -->
 
