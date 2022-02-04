@@ -1,6 +1,6 @@
 {
   "name": "@chakra-icons/octicons",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "homepage": "https://github.com/kodingdotninja/chakra-icons/tree/main/packages/@chakra-icons/octicons",
   "repository": {
     "type": "git",
@@ -27,7 +27,7 @@
   },
   "devDependencies": {
     "@chakra-ui/react": "^1",
-    "@chakra-icons/cli": "*",
+    "@chakra-icons/cli": "1.0.1",
     "@tooling/tsconfig": "*",
     "tsup": "^5"
   },
