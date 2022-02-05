@@ -23,7 +23,8 @@ jobs:
       - uses: ./.github/actions/setup-node
 
       - name: validate (lint)
-        run: yarn lint
+        run: |
+          yarn lint --no-deps --scope="@chakra-icons/*" --scope="create-*" --parallel 
 
   test:
     needs: init
@@ -33,7 +34,7 @@ jobs:
       - uses: ./.github/actions/setup-node
 
       - name: run test
-        run: yarn test
+        run: yarn test 
 
   build:
     needs: init
