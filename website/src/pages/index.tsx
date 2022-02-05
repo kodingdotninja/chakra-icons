@@ -44,16 +44,16 @@ const Index = (props: InferGetStaticPropsType<typeof getStaticProps>) => {
   return (
     <Main alignItems="center">
       <Hero />
-      <Text maxW={{ md: "50vw" }} align="center">
+      <Text align="center" maxW={{ md: "50vw" }}>
         We have been provided <Code colorScheme="cyan">{icons?.total}</Code> icons, Included popular icons like
         `Bootstrap`, `Flat-Icon`, and more to use in your project with <Code colorScheme="teal">Chakra-UI</Code>.
       </Text>
       <Input
-        placeholder="Search icons here..."
         defaultValue={query.q ?? ""}
-        width={["full", "full", "50vw"]}
-        size="lg"
         onKeyPressCapture={onKeyPressCapture}
+        placeholder="Search icons here..."
+        size="lg"
+        width={["full", "full", "50vw"]}
       />
       <Overview icons={icons?.data ?? []} />
     </Main>

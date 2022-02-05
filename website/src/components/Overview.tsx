@@ -1,6 +1,6 @@
 import * as React from "react";
 
-import { MetaIcon } from "../types";
+import { ApiIcon } from "../types";
 
 import * as Bootstrap from "@chakra-icons/bootstrap";
 import * as Carbon from "@chakra-icons/carbon";
@@ -25,38 +25,34 @@ import {
   Text,
 } from "@chakra-ui/react";
 
-type Icon = Omit<MetaIcon, "iconPath" | "sources" | "clonePath" | "sourcePath"> & {
-  creator: string;
-  code: string;
-};
-
-const Item = ({ children, name, code }: StackProps & Icon) => {
+const Item = ({ children, name, code, ...props }: StackProps & ApiIcon) => {
   const color = "gray.300";
   const hoverColor = "blue.500";
   return (
     <Popover isLazy placement="top-start">
       <PopoverTrigger>
         <Stack
-          cursor="pointer"
-          borderWidth="thin"
-          borderStyle="dotted"
-          color={color}
-          fill={color}
-          borderColor={color}
-          borderRadius="lg"
           _hover={{
             color: hoverColor,
             fill: hoverColor,
             borderStyle: "solid",
             borderColor: hoverColor,
           }}
-          boxSize="24"
           alignItems="center"
-          justifyContent="center"
           aria-label={name}
+          borderColor={color}
+          borderRadius="lg"
+          borderStyle="dotted"
+          borderWidth="thin"
+          boxSize="24"
+          color={color}
+          cursor="pointer"
+          fill={color}
+          justifyContent="center"
+          {...props}
         >
           {React.isValidElement(children) ? React.cloneElement(children, { boxSize: "9" }) : null}
-          <Text fontWeight="bold" fontSize="xs" isTruncated maxW="full" px="2">
+          <Text fontSize="xs" fontWeight="bold" isTruncated maxW="full" px="2">
             {name}
           </Text>
         </Stack>
@@ -73,34 +69,25 @@ const Item = ({ children, name, code }: StackProps & Icon) => {
   );
 };
 
-export function Overview({ icons }: { icons: Icon[] }) {
+export function Overview({ icons }: { icons: ApiIcon[] }) {
   return (
     <SimpleGrid columns={[3, 6, 6, 7]} spacing={[8, 5, 5, 5]}>
       {icons
         .map((icon) => {
           const { name: iconName, creator } = icon;
+          const getKeyValue = <T, K extends keyof T>(obj: T, key: K): T[K] => obj[key];
           const getComponent = (name: string, _creator: string): ComponentWithAs<"svg", IconProps> | undefined =>
-          ({
-            true: () => undefined,
-            [String(_creator === "bootstrap")]: () =>
-              // @ts-expect-error: THIS WORKS
-              Bootstrap[name],
-            [String(_creator === "flat-icon")]: () =>
-              // @ts-expect-error: THIS WORKS
-              FlatIcon[name],
-            [String(_creator === "octicons")]: () =>
-              // @ts-expect-error: THIS WORKS
-              Octicons[name],
-            [String(_creator === "tabler-icons")]: () =>
-              // @ts-expect-error: THIS WORKS
-              TablerIcons[name],
-            [String(_creator === "typicons")]: () =>
-              // @ts-expect-error: THIS WORKS
-              TypIcons[name],
-            [String(_creator === "carbon")]: () =>
-              // @ts-expect-error: THIS WORKS
-              Carbon[name],
-          }.true());
+            ({
+              true: () => undefined,
+              // this line code `name as keof typeof SOMETHING` is still exist for prevent "Argument of type 'String' is not assignable to parameter of type"
+              // this is not a best practice :)
+              [String(_creator === "bootstrap")]: () => getKeyValue(Bootstrap, name as keyof typeof Bootstrap),
+              [String(_creator === "flat-icon")]: () => getKeyValue(FlatIcon, name as keyof typeof FlatIcon),
+              [String(_creator === "octicons")]: () => getKeyValue(Octicons, name as keyof typeof Octicons),
+              [String(_creator === "tabler-icons")]: () => getKeyValue(TablerIcons, name as keyof typeof TablerIcons),
+              [String(_creator === "typicons")]: () => getKeyValue(TypIcons, name as keyof typeof TypIcons),
+              [String(_creator === "carbon")]: () => getKeyValue(Carbon, name as keyof typeof Carbon),
+            }.true());
 
           const Component = getComponent(iconName, creator.toLowerCase());
 

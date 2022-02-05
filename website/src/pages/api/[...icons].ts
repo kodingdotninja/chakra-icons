@@ -1,4 +1,4 @@
-import { ApiIcon, MetaIcon, ResponseIcon } from "../../types";
+import { ApiIcon, MetaIcon, ResponseIcon, Source, Sources } from "../../types";
 
 import fs from "fs/promises";
 import fz from "fuzzysearch";
@@ -13,9 +13,9 @@ const getIcons = async () => {
   const metaIcons: MetaIcon[] = await Promise.all([...snapshots]).then((all) => all.map((j) => JSON.parse(j)));
 
   return ({ limit, q }: { limit?: number; q?: string }): [ApiIcon[], number] => {
-    const icons: ApiIcon[] = metaIcons.flatMap((metaIcon) =>
-      metaIcon.sources.flatMap((source) =>
-        source.entries.flatMap((icon) => ({
+    const icons = metaIcons.flatMap((metaIcon) =>
+      metaIcon.sources.flatMap((source: Sources) =>
+        source.entries.flatMap((icon: Source) => ({
           name: icon.name,
           creator: metaIcon.name,
           repository: metaIcon.repository,
@@ -29,7 +29,7 @@ const getIcons = async () => {
     return [
       icons
         .filter(filter(q))
-        .sort((a, b) => a.name.length - b.name.length)
+        .sort((a: ApiIcon, b: ApiIcon) => a.name.length - b.name.length)
         .slice(0, limit),
       icons.length,
     ];
