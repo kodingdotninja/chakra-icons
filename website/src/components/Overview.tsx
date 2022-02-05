@@ -21,6 +21,7 @@ import {
   Stack,
   StackProps,
   Text,
+  useToast,
 } from "@chakra-ui/react";
 
 type Icon = Omit<MetaIcon, "iconPath" | "sources" | "clonePath" | "sourcePath"> & {
@@ -32,7 +33,7 @@ const Item = ({ children, name, code }: StackProps & Icon) => {
   const color = "gray.300";
   const hoverColor = "blue.500";
   return (
-    <Popover isLazy placement="top-start">
+     <Popover isLazy placement="top-start">
       <PopoverTrigger>
         <Stack
           cursor="pointer"
@@ -97,9 +98,20 @@ export function Overview({ icons }: { icons: Icon[] }) {
           const Component = getComponent(iconName, creator.toLowerCase());
 
           if (Component) {
+            const toast = useToast();
+
+            const handleClick = async (name: string) => {
+              await navigator.clipboard.writeText(name);
+              toast({
+                title: name,
+                status: "success",
+                duration: 9000,
+                isClosable: true,
+              });
+            };
             return (
               <Item key={`${iconName}${creator}`} {...icon}>
-                <Component />
+                <Component onClick={() => handleClick(icon.code)} />
               </Item>
             );
           }
