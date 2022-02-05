@@ -1,0 +1,41 @@
+{
+  "name": "@chakra-icons/carbon",
+  "version": "0.0.0",
+  "homepage": "https://github.com/kodingdotninja/chakra-icons/tree/main/packages/@chakra-icons/carbon",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kodingdotninja/chakra-icons"
+  },
+  "keywords": [
+    "chakra-ui",
+    "react",
+    "react-icons",
+    "chakra-icons",
+    "carbon"
+  ],
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist/",
+    "src/"
+  ],
+  "scripts": {
+    "build": "chakra-icons build -r 'https://github.com/carbon-design-system/carbon-icons' -n carbon -i src/svg -S snapshot.json -E",
+    "clean": "chakra-icons clean -r 'https://github.com/carbon-design-system/carbon-icons' -n carbon -i src/svg",
+    "postbuild": "tsup"
+  },
+  "devDependencies": {
+    "@chakra-ui/react": "^1",
+    "@chakra-icons/cli": "*",
+    "@tooling/tsconfig": "*",
+    "tsup": "^5"
+  },
+  "peerDependencies": {
+    "@chakra-ui/react": ">=1"
+  },
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  }
+}

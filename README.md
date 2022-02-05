@@ -22,6 +22,7 @@
 | [@chakra-icons/flat-icon](https://github.com/kodingdotninja/chakra-icons/tree/main/packages/@chakra-icons/flat-icon) | ✅  | [![@chakra-icons/flat-icon version](https://badge.fury.io/js/@chakra-icons%2Fflat-icon.svg)](https://www.npmjs.com/package/@chakra-icons/flat-icon) |
 | [@chakra-icons/octicons](https://github.com/kodingdotninja/chakra-icons/tree/main/packages/@chakra-icons/octicons) | ✅  | [![@chakra-icons/octicons version](https://badge.fury.io/js/@chakra-icons%2Focticons.svg)](https://www.npmjs.com/package/@chakra-icons/octicons) |
 | [@chakra-icons/tabler-icons](https://github.com/kodingdotninja/chakra-icons/tree/main/packages/@chakra-icons/tabler-icons) | ✅  | [![@chakra-icons/tabler-icons version](https://badge.fury.io/js/@chakra-icons%2Ftabler-icons.svg)](https://www.npmjs.com/package/@chakra-icons/tabler-icons) |
+| [@chakra-icons/carbon](https://github.com/kodingdotninja/chakra-icons/tree/main/packages/@chakra-icons/carbon) | ✅  | [![@chakra-icons/carbon version](https://badge.fury.io/js/@chakra-icons%2Fcarbon.svg)](https://www.npmjs.com/package/@chakra-icons/carbon) |
 <!-- APPEND_CHAKRA_ICONS_HERE -->
 <!-- prettier-ignore-end -->
 
