@@ -14,6 +14,7 @@
   "dependencies": {
     "@chakra-icons/bootstrap": "*",
     "@chakra-icons/flat-icon": "*",
+    "@chakra-icons/feather": "*",
     "@chakra-icons/octicons": "*",
     "@chakra-icons/tabler-icons": "*",
     "@chakra-icons/typicons": "*",

@@ -4,6 +4,7 @@ import { ApiIcon } from "../types";
 
 import * as Bootstrap from "@chakra-icons/bootstrap";
 import * as Carbon from "@chakra-icons/carbon";
+import * as Feather from "@chakra-icons/feather";
 import * as FlatIcon from "@chakra-icons/flat-icon";
 import * as Octicons from "@chakra-icons/octicons";
 import * as TablerIcons from "@chakra-icons/tabler-icons";
@@ -87,6 +88,7 @@ export function Overview({ icons }: { icons: ApiIcon[] }) {
               [String(_creator === "tabler-icons")]: () => getKeyValue(TablerIcons, name as keyof typeof TablerIcons),
               [String(_creator === "typicons")]: () => getKeyValue(TypIcons, name as keyof typeof TypIcons),
               [String(_creator === "carbon")]: () => getKeyValue(Carbon, name as keyof typeof Carbon),
+              [String(_creator === "feather")]: () => getKeyValue(Feather, name as keyof typeof Feather),
             }.true());
 
           const Component = getComponent(iconName, creator.toLowerCase());
