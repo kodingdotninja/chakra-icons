@@ -22,7 +22,9 @@ jobs:
       - uses: ./.github/actions/setup-node
 
       - name: validate (lint)
-        run: yarn lint
+        # website exclude here cause depends on build, so lint in buil stage
+        run: |
+          yarn lint --no-deps --scope="@chakra-icons/*" --scope="create-*" --parallel 
 
   test:
     needs: init
