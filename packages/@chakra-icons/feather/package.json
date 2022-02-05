@@ -1,0 +1,41 @@
+{
+  "name": "@chakra-icons/feather",
+  "version": "0.0.0",
+  "homepage": "https://github.com/kodingdotninja/chakra-icons/tree/main/packages/@chakra-icons/feather",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kodingdotninja/chakra-icons"
+  },
+  "keywords": [
+    "chakra-ui",
+    "react",
+    "react-icons",
+    "chakra-icons",
+    "feather"
+  ],
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist/",
+    "src/"
+  ],
+  "scripts": {
+    "build": "chakra-icons build -r 'https://github.com/feathericons/feather' -n feather -i icons -S snapshot.json -E",
+    "clean": "chakra-icons clean -r 'https://github.com/feathericons/feather' -n feather -i icons",
+    "postbuild": "tsup"
+  },
+  "devDependencies": {
+    "@chakra-ui/react": "^1",
+    "@chakra-icons/cli": "*",
+    "@tooling/tsconfig": "*",
+    "tsup": "^5"
+  },
+  "peerDependencies": {
+    "@chakra-ui/react": ">=1"
+  },
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  }
+}

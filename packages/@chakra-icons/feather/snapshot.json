@@ -1,0 +1,1444 @@
+{
+  "name": "feather",
+  "repository": "https://github.com/feathericons/feather",
+  "iconPath": "icons",
+  "clonePath": ".chakraIcons",
+  "sourcePath": "src",
+  "sources": [
+    {
+      "entryPoint": "src/index.ts",
+      "entries": [
+        {
+          "name": "Activity",
+          "svg": ".chakraIcons/icons/activity.svg",
+          "code": "src/Activity.tsx"
+        },
+        {
+          "name": "Airplay",
+          "svg": ".chakraIcons/icons/airplay.svg",
+          "code": "src/Airplay.tsx"
+        },
+        {
+          "name": "AlertCircle",
+          "svg": ".chakraIcons/icons/alert-circle.svg",
+          "code": "src/AlertCircle.tsx"
+        },
+        {
+          "name": "AlertOctagon",
+          "svg": ".chakraIcons/icons/alert-octagon.svg",
+          "code": "src/AlertOctagon.tsx"
+        },
+        {
+          "name": "AlertTriangle",
+          "svg": ".chakraIcons/icons/alert-triangle.svg",
+          "code": "src/AlertTriangle.tsx"
+        },
+        {
+          "name": "AlignCenter",
+          "svg": ".chakraIcons/icons/align-center.svg",
+          "code": "src/AlignCenter.tsx"
+        },
+        {
+          "name": "AlignJustify",
+          "svg": ".chakraIcons/icons/align-justify.svg",
+          "code": "src/AlignJustify.tsx"
+        },
+        {
+          "name": "AlignLeft",
+          "svg": ".chakraIcons/icons/align-left.svg",
+          "code": "src/AlignLeft.tsx"
+        },
+        {
+          "name": "AlignRight",
+          "svg": ".chakraIcons/icons/align-right.svg",
+          "code": "src/AlignRight.tsx"
+        },
+        {
+          "name": "Anchor",
+          "svg": ".chakraIcons/icons/anchor.svg",
+          "code": "src/Anchor.tsx"
+        },
+        {
+          "name": "Aperture",
+          "svg": ".chakraIcons/icons/aperture.svg",
+          "code": "src/Aperture.tsx"
+        },
+        {
+          "name": "Archive",
+          "svg": ".chakraIcons/icons/archive.svg",
+          "code": "src/Archive.tsx"
+        },
+        {
+          "name": "ArrowDownCircle",
+          "svg": ".chakraIcons/icons/arrow-down-circle.svg",
+          "code": "src/ArrowDownCircle.tsx"
+        },
+        {
+          "name": "ArrowDownLeft",
+          "svg": ".chakraIcons/icons/arrow-down-left.svg",
+          "code": "src/ArrowDownLeft.tsx"
+        },
+        {
+          "name": "ArrowDownRight",
+          "svg": ".chakraIcons/icons/arrow-down-right.svg",
+          "code": "src/ArrowDownRight.tsx"
+        },
+        {
+          "name": "ArrowDown",
+          "svg": ".chakraIcons/icons/arrow-down.svg",
+          "code": "src/ArrowDown.tsx"
+        },
+        {
+          "name": "ArrowLeftCircle",
+          "svg": ".chakraIcons/icons/arrow-left-circle.svg",
+          "code": "src/ArrowLeftCircle.tsx"
+        },
+        {
+          "name": "ArrowLeft",
+          "svg": ".chakraIcons/icons/arrow-left.svg",
+          "code": "src/ArrowLeft.tsx"
+        },
+        {
+          "name": "ArrowRightCircle",
+          "svg": ".chakraIcons/icons/arrow-right-circle.svg",
+          "code": "src/ArrowRightCircle.tsx"
+        },
+        {
+          "name": "ArrowRight",
+          "svg": ".chakraIcons/icons/arrow-right.svg",
+          "code": "src/ArrowRight.tsx"
+        },
+        {
+          "name": "ArrowUpCircle",
+          "svg": ".chakraIcons/icons/arrow-up-circle.svg",
+          "code": "src/ArrowUpCircle.tsx"
+        },
+        {
+          "name": "ArrowUpLeft",
+          "svg": ".chakraIcons/icons/arrow-up-left.svg",
+          "code": "src/ArrowUpLeft.tsx"
+        },
+        {
+          "name": "ArrowUpRight",
+          "svg": ".chakraIcons/icons/arrow-up-right.svg",
+          "code": "src/ArrowUpRight.tsx"
+        },
+        {
+          "name": "ArrowUp",
+          "svg": ".chakraIcons/icons/arrow-up.svg",
+          "code": "src/ArrowUp.tsx"
+        },
+        {
+          "name": "AtSign",
+          "svg": ".chakraIcons/icons/at-sign.svg",
+          "code": "src/AtSign.tsx"
+        },
+        {
+          "name": "Award",
+          "svg": ".chakraIcons/icons/award.svg",
+          "code": "src/Award.tsx"
+        },
+        {
+          "name": "BarChart2",
+          "svg": ".chakraIcons/icons/bar-chart-2.svg",
+          "code": "src/BarChart2.tsx"
+        },
+        {
+          "name": "BarChart",
+          "svg": ".chakraIcons/icons/bar-chart.svg",
+          "code": "src/BarChart.tsx"
+        },
+        {
+          "name": "BatteryCharging",
+          "svg": ".chakraIcons/icons/battery-charging.svg",
+          "code": "src/BatteryCharging.tsx"
+        },
+        {
+          "name": "Battery",
+          "svg": ".chakraIcons/icons/battery.svg",
+          "code": "src/Battery.tsx"
+        },
+        {
+          "name": "BellOff",
+          "svg": ".chakraIcons/icons/bell-off.svg",
+          "code": "src/BellOff.tsx"
+        },
+        {
+          "name": "Bell",
+          "svg": ".chakraIcons/icons/bell.svg",
+          "code": "src/Bell.tsx"
+        },
+        {
+          "name": "Bluetooth",
+          "svg": ".chakraIcons/icons/bluetooth.svg",
+          "code": "src/Bluetooth.tsx"
+        },
+        {
+          "name": "Bold",
+          "svg": ".chakraIcons/icons/bold.svg",
+          "code": "src/Bold.tsx"
+        },
+        {
+          "name": "BookOpen",
+          "svg": ".chakraIcons/icons/book-open.svg",
+          "code": "src/BookOpen.tsx"
+        },
+        {
+          "name": "Book",
+          "svg": ".chakraIcons/icons/book.svg",
+          "code": "src/Book.tsx"
+        },
+        {
+          "name": "Bookmark",
+          "svg": ".chakraIcons/icons/bookmark.svg",
+          "code": "src/Bookmark.tsx"
+        },
+        {
+          "name": "Box",
+          "svg": ".chakraIcons/icons/box.svg",
+          "code": "src/Box.tsx"
+        },
+        {
+          "name": "Briefcase",
+          "svg": ".chakraIcons/icons/briefcase.svg",
+          "code": "src/Briefcase.tsx"
+        },
+        {
+          "name": "Calendar",
+          "svg": ".chakraIcons/icons/calendar.svg",
+          "code": "src/Calendar.tsx"
+        },
+        {
+          "name": "CameraOff",
+          "svg": ".chakraIcons/icons/camera-off.svg",
+          "code": "src/CameraOff.tsx"
+        },
+        {
+          "name": "Camera",
+          "svg": ".chakraIcons/icons/camera.svg",
+          "code": "src/Camera.tsx"
+        },
+        {
+          "name": "Cast",
+          "svg": ".chakraIcons/icons/cast.svg",
+          "code": "src/Cast.tsx"
+        },
+        {
+          "name": "CheckCircle",
+          "svg": ".chakraIcons/icons/check-circle.svg",
+          "code": "src/CheckCircle.tsx"
+        },
+        {
+          "name": "CheckSquare",
+          "svg": ".chakraIcons/icons/check-square.svg",
+          "code": "src/CheckSquare.tsx"
+        },
+        {
+          "name": "Check",
+          "svg": ".chakraIcons/icons/check.svg",
+          "code": "src/Check.tsx"
+        },
+        {
+          "name": "ChevronDown",
+          "svg": ".chakraIcons/icons/chevron-down.svg",
+          "code": "src/ChevronDown.tsx"
+        },
+        {
+          "name": "ChevronLeft",
+          "svg": ".chakraIcons/icons/chevron-left.svg",
+          "code": "src/ChevronLeft.tsx"
+        },
+        {
+          "name": "ChevronRight",
+          "svg": ".chakraIcons/icons/chevron-right.svg",
+          "code": "src/ChevronRight.tsx"
+        },
+        {
+          "name": "ChevronUp",
+          "svg": ".chakraIcons/icons/chevron-up.svg",
+          "code": "src/ChevronUp.tsx"
+        },
+        {
+          "name": "ChevronsDown",
+          "svg": ".chakraIcons/icons/chevrons-down.svg",
+          "code": "src/ChevronsDown.tsx"
+        },
+        {
+          "name": "ChevronsLeft",
+          "svg": ".chakraIcons/icons/chevrons-left.svg",
+          "code": "src/ChevronsLeft.tsx"
+        },
+        {
+          "name": "ChevronsRight",
+          "svg": ".chakraIcons/icons/chevrons-right.svg",
+          "code": "src/ChevronsRight.tsx"
+        },
+        {
+          "name": "ChevronsUp",
+          "svg": ".chakraIcons/icons/chevrons-up.svg",
+          "code": "src/ChevronsUp.tsx"
+        },
+        {
+          "name": "Chrome",
+          "svg": ".chakraIcons/icons/chrome.svg",
+          "code": "src/Chrome.tsx"
+        },
+        {
+          "name": "Circle",
+          "svg": ".chakraIcons/icons/circle.svg",
+          "code": "src/Circle.tsx"
+        },
+        {
+          "name": "Clipboard",
+          "svg": ".chakraIcons/icons/clipboard.svg",
+          "code": "src/Clipboard.tsx"
+        },
+        {
+          "name": "Clock",
+          "svg": ".chakraIcons/icons/clock.svg",
+          "code": "src/Clock.tsx"
+        },
+        {
+          "name": "CloudDrizzle",
+          "svg": ".chakraIcons/icons/cloud-drizzle.svg",
+          "code": "src/CloudDrizzle.tsx"
+        },
+        {
+          "name": "CloudLightning",
+          "svg": ".chakraIcons/icons/cloud-lightning.svg",
+          "code": "src/CloudLightning.tsx"
+        },
+        {
+          "name": "CloudOff",
+          "svg": ".chakraIcons/icons/cloud-off.svg",
+          "code": "src/CloudOff.tsx"
+        },
+        {
+          "name": "CloudRain",
+          "svg": ".chakraIcons/icons/cloud-rain.svg",
+          "code": "src/CloudRain.tsx"
+        },
+        {
+          "name": "CloudSnow",
+          "svg": ".chakraIcons/icons/cloud-snow.svg",
+          "code": "src/CloudSnow.tsx"
+        },
+        {
+          "name": "Cloud",
+          "svg": ".chakraIcons/icons/cloud.svg",
+          "code": "src/Cloud.tsx"
+        },
+        {
+          "name": "Code",
+          "svg": ".chakraIcons/icons/code.svg",
+          "code": "src/Code.tsx"
+        },
+        {
+          "name": "Codepen",
+          "svg": ".chakraIcons/icons/codepen.svg",
+          "code": "src/Codepen.tsx"
+        },
+        {
+          "name": "Codesandbox",
+          "svg": ".chakraIcons/icons/codesandbox.svg",
+          "code": "src/Codesandbox.tsx"
+        },
+        {
+          "name": "Coffee",
+          "svg": ".chakraIcons/icons/coffee.svg",
+          "code": "src/Coffee.tsx"
+        },
+        {
+          "name": "Columns",
+          "svg": ".chakraIcons/icons/columns.svg",
+          "code": "src/Columns.tsx"
+        },
+        {
+          "name": "Command",
+          "svg": ".chakraIcons/icons/command.svg",
+          "code": "src/Command.tsx"
+        },
+        {
+          "name": "Compass",
+          "svg": ".chakraIcons/icons/compass.svg",
+          "code": "src/Compass.tsx"
+        },
+        {
+          "name": "Copy",
+          "svg": ".chakraIcons/icons/copy.svg",
+          "code": "src/Copy.tsx"
+        },
+        {
+          "name": "CornerDownLeft",
+          "svg": ".chakraIcons/icons/corner-down-left.svg",
+          "code": "src/CornerDownLeft.tsx"
+        },
+        {
+          "name": "CornerDownRight",
+          "svg": ".chakraIcons/icons/corner-down-right.svg",
+          "code": "src/CornerDownRight.tsx"
+        },
+        {
+          "name": "CornerLeftDown",
+          "svg": ".chakraIcons/icons/corner-left-down.svg",
+          "code": "src/CornerLeftDown.tsx"
+        },
+        {
+          "name": "CornerLeftUp",
+          "svg": ".chakraIcons/icons/corner-left-up.svg",
+          "code": "src/CornerLeftUp.tsx"
+        },
+        {
+          "name": "CornerRightDown",
+          "svg": ".chakraIcons/icons/corner-right-down.svg",
+          "code": "src/CornerRightDown.tsx"
+        },
+        {
+          "name": "CornerRightUp",
+          "svg": ".chakraIcons/icons/corner-right-up.svg",
+          "code": "src/CornerRightUp.tsx"
+        },
+        {
+          "name": "CornerUpLeft",
+          "svg": ".chakraIcons/icons/corner-up-left.svg",
+          "code": "src/CornerUpLeft.tsx"
+        },
+        {
+          "name": "CornerUpRight",
+          "svg": ".chakraIcons/icons/corner-up-right.svg",
+          "code": "src/CornerUpRight.tsx"
+        },
+        {
+          "name": "Cpu",
+          "svg": ".chakraIcons/icons/cpu.svg",
+          "code": "src/Cpu.tsx"
+        },
+        {
+          "name": "CreditCard",
+          "svg": ".chakraIcons/icons/credit-card.svg",
+          "code": "src/CreditCard.tsx"
+        },
+        {
+          "name": "Crop",
+          "svg": ".chakraIcons/icons/crop.svg",
+          "code": "src/Crop.tsx"
+        },
+        {
+          "name": "Crosshair",
+          "svg": ".chakraIcons/icons/crosshair.svg",
+          "code": "src/Crosshair.tsx"
+        },
+        {
+          "name": "Database",
+          "svg": ".chakraIcons/icons/database.svg",
+          "code": "src/Database.tsx"
+        },
+        {
+          "name": "Delete",
+          "svg": ".chakraIcons/icons/delete.svg",
+          "code": "src/Delete.tsx"
+        },
+        {
+          "name": "Disc",
+          "svg": ".chakraIcons/icons/disc.svg",
+          "code": "src/Disc.tsx"
+        },
+        {
+          "name": "DivideCircle",
+          "svg": ".chakraIcons/icons/divide-circle.svg",
+          "code": "src/DivideCircle.tsx"
+        },
+        {
+          "name": "DivideSquare",
+          "svg": ".chakraIcons/icons/divide-square.svg",
+          "code": "src/DivideSquare.tsx"
+        },
+        {
+          "name": "Divide",
+          "svg": ".chakraIcons/icons/divide.svg",
+          "code": "src/Divide.tsx"
+        },
+        {
+          "name": "DollarSign",
+          "svg": ".chakraIcons/icons/dollar-sign.svg",
+          "code": "src/DollarSign.tsx"
+        },
+        {
+          "name": "DownloadCloud",
+          "svg": ".chakraIcons/icons/download-cloud.svg",
+          "code": "src/DownloadCloud.tsx"
+        },
+        {
+          "name": "Download",
+          "svg": ".chakraIcons/icons/download.svg",
+          "code": "src/Download.tsx"
+        },
+        {
+          "name": "Dribbble",
+          "svg": ".chakraIcons/icons/dribbble.svg",
+          "code": "src/Dribbble.tsx"
+        },
+        {
+          "name": "Droplet",
+          "svg": ".chakraIcons/icons/droplet.svg",
+          "code": "src/Droplet.tsx"
+        },
+        {
+          "name": "Edit2",
+          "svg": ".chakraIcons/icons/edit-2.svg",
+          "code": "src/Edit2.tsx"
+        },
+        {
+          "name": "Edit3",
+          "svg": ".chakraIcons/icons/edit-3.svg",
+          "code": "src/Edit3.tsx"
+        },
+        {
+          "name": "Edit",
+          "svg": ".chakraIcons/icons/edit.svg",
+          "code": "src/Edit.tsx"
+        },
+        {
+          "name": "ExternalLink",
+          "svg": ".chakraIcons/icons/external-link.svg",
+          "code": "src/ExternalLink.tsx"
+        },
+        {
+          "name": "EyeOff",
+          "svg": ".chakraIcons/icons/eye-off.svg",
+          "code": "src/EyeOff.tsx"
+        },
+        {
+          "name": "Eye",
+          "svg": ".chakraIcons/icons/eye.svg",
+          "code": "src/Eye.tsx"
+        },
+        {
+          "name": "Facebook",
+          "svg": ".chakraIcons/icons/facebook.svg",
+          "code": "src/Facebook.tsx"
+        },
+        {
+          "name": "FastForward",
+          "svg": ".chakraIcons/icons/fast-forward.svg",
+          "code": "src/FastForward.tsx"
+        },
+        {
+          "name": "Feather",
+          "svg": ".chakraIcons/icons/feather.svg",
+          "code": "src/Feather.tsx"
+        },
+        {
+          "name": "Figma",
+          "svg": ".chakraIcons/icons/figma.svg",
+          "code": "src/Figma.tsx"
+        },
+        {
+          "name": "FileMinus",
+          "svg": ".chakraIcons/icons/file-minus.svg",
+          "code": "src/FileMinus.tsx"
+        },
+        {
+          "name": "FilePlus",
+          "svg": ".chakraIcons/icons/file-plus.svg",
+          "code": "src/FilePlus.tsx"
+        },
+        {
+          "name": "FileText",
+          "svg": ".chakraIcons/icons/file-text.svg",
+          "code": "src/FileText.tsx"
+        },
+        {
+          "name": "File",
+          "svg": ".chakraIcons/icons/file.svg",
+          "code": "src/File.tsx"
+        },
+        {
+          "name": "Film",
+          "svg": ".chakraIcons/icons/film.svg",
+          "code": "src/Film.tsx"
+        },
+        {
+          "name": "Filter",
+          "svg": ".chakraIcons/icons/filter.svg",
+          "code": "src/Filter.tsx"
+        },
+        {
+          "name": "Flag",
+          "svg": ".chakraIcons/icons/flag.svg",
+          "code": "src/Flag.tsx"
+        },
+        {
+          "name": "FolderMinus",
+          "svg": ".chakraIcons/icons/folder-minus.svg",
+          "code": "src/FolderMinus.tsx"
+        },
+        {
+          "name": "FolderPlus",
+          "svg": ".chakraIcons/icons/folder-plus.svg",
+          "code": "src/FolderPlus.tsx"
+        },
+        {
+          "name": "Folder",
+          "svg": ".chakraIcons/icons/folder.svg",
+          "code": "src/Folder.tsx"
+        },
+        {
+          "name": "Framer",
+          "svg": ".chakraIcons/icons/framer.svg",
+          "code": "src/Framer.tsx"
+        },
+        {
+          "name": "Frown",
+          "svg": ".chakraIcons/icons/frown.svg",
+          "code": "src/Frown.tsx"
+        },
+        {
+          "name": "Gift",
+          "svg": ".chakraIcons/icons/gift.svg",
+          "code": "src/Gift.tsx"
+        },
+        {
+          "name": "GitBranch",
+          "svg": ".chakraIcons/icons/git-branch.svg",
+          "code": "src/GitBranch.tsx"
+        },
+        {
+          "name": "GitCommit",
+          "svg": ".chakraIcons/icons/git-commit.svg",
+          "code": "src/GitCommit.tsx"
+        },
+        {
+          "name": "GitMerge",
+          "svg": ".chakraIcons/icons/git-merge.svg",
+          "code": "src/GitMerge.tsx"
+        },
+        {
+          "name": "GitPullRequest",
+          "svg": ".chakraIcons/icons/git-pull-request.svg",
+          "code": "src/GitPullRequest.tsx"
+        },
+        {
+          "name": "Github",
+          "svg": ".chakraIcons/icons/github.svg",
+          "code": "src/Github.tsx"
+        },
+        {
+          "name": "Gitlab",
+          "svg": ".chakraIcons/icons/gitlab.svg",
+          "code": "src/Gitlab.tsx"
+        },
+        {
+          "name": "Globe",
+          "svg": ".chakraIcons/icons/globe.svg",
+          "code": "src/Globe.tsx"
+        },
+        {
+          "name": "Grid",
+          "svg": ".chakraIcons/icons/grid.svg",
+          "code": "src/Grid.tsx"
+        },
+        {
+          "name": "HardDrive",
+          "svg": ".chakraIcons/icons/hard-drive.svg",
+          "code": "src/HardDrive.tsx"
+        },
+        {
+          "name": "Hash",
+          "svg": ".chakraIcons/icons/hash.svg",
+          "code": "src/Hash.tsx"
+        },
+        {
+          "name": "Headphones",
+          "svg": ".chakraIcons/icons/headphones.svg",
+          "code": "src/Headphones.tsx"
+        },
+        {
+          "name": "Heart",
+          "svg": ".chakraIcons/icons/heart.svg",
+          "code": "src/Heart.tsx"
+        },
+        {
+          "name": "HelpCircle",
+          "svg": ".chakraIcons/icons/help-circle.svg",
+          "code": "src/HelpCircle.tsx"
+        },
+        {
+          "name": "Hexagon",
+          "svg": ".chakraIcons/icons/hexagon.svg",
+          "code": "src/Hexagon.tsx"
+        },
+        {
+          "name": "Home",
+          "svg": ".chakraIcons/icons/home.svg",
+          "code": "src/Home.tsx"
+        },
+        {
+          "name": "Image",
+          "svg": ".chakraIcons/icons/image.svg",
+          "code": "src/Image.tsx"
+        },
+        {
+          "name": "Inbox",
+          "svg": ".chakraIcons/icons/inbox.svg",
+          "code": "src/Inbox.tsx"
+        },
+        {
+          "name": "Info",
+          "svg": ".chakraIcons/icons/info.svg",
+          "code": "src/Info.tsx"
+        },
+        {
+          "name": "Instagram",
+          "svg": ".chakraIcons/icons/instagram.svg",
+          "code": "src/Instagram.tsx"
+        },
+        {
+          "name": "Italic",
+          "svg": ".chakraIcons/icons/italic.svg",
+          "code": "src/Italic.tsx"
+        },
+        {
+          "name": "Key",
+          "svg": ".chakraIcons/icons/key.svg",
+          "code": "src/Key.tsx"
+        },
+        {
+          "name": "Layers",
+          "svg": ".chakraIcons/icons/layers.svg",
+          "code": "src/Layers.tsx"
+        },
+        {
+          "name": "Layout",
+          "svg": ".chakraIcons/icons/layout.svg",
+          "code": "src/Layout.tsx"
+        },
+        {
+          "name": "LifeBuoy",
+          "svg": ".chakraIcons/icons/life-buoy.svg",
+          "code": "src/LifeBuoy.tsx"
+        },
+        {
+          "name": "Link2",
+          "svg": ".chakraIcons/icons/link-2.svg",
+          "code": "src/Link2.tsx"
+        },
+        {
+          "name": "Link",
+          "svg": ".chakraIcons/icons/link.svg",
+          "code": "src/Link.tsx"
+        },
+        {
+          "name": "Linkedin",
+          "svg": ".chakraIcons/icons/linkedin.svg",
+          "code": "src/Linkedin.tsx"
+        },
+        {
+          "name": "List",
+          "svg": ".chakraIcons/icons/list.svg",
+          "code": "src/List.tsx"
+        },
+        {
+          "name": "Loader",
+          "svg": ".chakraIcons/icons/loader.svg",
+          "code": "src/Loader.tsx"
+        },
+        {
+          "name": "Lock",
+          "svg": ".chakraIcons/icons/lock.svg",
+          "code": "src/Lock.tsx"
+        },
+        {
+          "name": "LogIn",
+          "svg": ".chakraIcons/icons/log-in.svg",
+          "code": "src/LogIn.tsx"
+        },
+        {
+          "name": "LogOut",
+          "svg": ".chakraIcons/icons/log-out.svg",
+          "code": "src/LogOut.tsx"
+        },
+        {
+          "name": "Mail",
+          "svg": ".chakraIcons/icons/mail.svg",
+          "code": "src/Mail.tsx"
+        },
+        {
+          "name": "MapPin",
+          "svg": ".chakraIcons/icons/map-pin.svg",
+          "code": "src/MapPin.tsx"
+        },
+        {
+          "name": "Map",
+          "svg": ".chakraIcons/icons/map.svg",
+          "code": "src/Map.tsx"
+        },
+        {
+          "name": "Maximize2",
+          "svg": ".chakraIcons/icons/maximize-2.svg",
+          "code": "src/Maximize2.tsx"
+        },
+        {
+          "name": "Maximize",
+          "svg": ".chakraIcons/icons/maximize.svg",
+          "code": "src/Maximize.tsx"
+        },
+        {
+          "name": "Meh",
+          "svg": ".chakraIcons/icons/meh.svg",
+          "code": "src/Meh.tsx"
+        },
+        {
+          "name": "Menu",
+          "svg": ".chakraIcons/icons/menu.svg",
+          "code": "src/Menu.tsx"
+        },
+        {
+          "name": "MessageCircle",
+          "svg": ".chakraIcons/icons/message-circle.svg",
+          "code": "src/MessageCircle.tsx"
+        },
+        {
+          "name": "MessageSquare",
+          "svg": ".chakraIcons/icons/message-square.svg",
+          "code": "src/MessageSquare.tsx"
+        },
+        {
+          "name": "MicOff",
+          "svg": ".chakraIcons/icons/mic-off.svg",
+          "code": "src/MicOff.tsx"
+        },
+        {
+          "name": "Mic",
+          "svg": ".chakraIcons/icons/mic.svg",
+          "code": "src/Mic.tsx"
+        },
+        {
+          "name": "Minimize2",
+          "svg": ".chakraIcons/icons/minimize-2.svg",
+          "code": "src/Minimize2.tsx"
+        },
+        {
+          "name": "Minimize",
+          "svg": ".chakraIcons/icons/minimize.svg",
+          "code": "src/Minimize.tsx"
+        },
+        {
+          "name": "MinusCircle",
+          "svg": ".chakraIcons/icons/minus-circle.svg",
+          "code": "src/MinusCircle.tsx"
+        },
+        {
+          "name": "MinusSquare",
+          "svg": ".chakraIcons/icons/minus-square.svg",
+          "code": "src/MinusSquare.tsx"
+        },
+        {
+          "name": "Minus",
+          "svg": ".chakraIcons/icons/minus.svg",
+          "code": "src/Minus.tsx"
+        },
+        {
+          "name": "Monitor",
+          "svg": ".chakraIcons/icons/monitor.svg",
+          "code": "src/Monitor.tsx"
+        },
+        {
+          "name": "Moon",
+          "svg": ".chakraIcons/icons/moon.svg",
+          "code": "src/Moon.tsx"
+        },
+        {
+          "name": "MoreHorizontal",
+          "svg": ".chakraIcons/icons/more-horizontal.svg",
+          "code": "src/MoreHorizontal.tsx"
+        },
+        {
+          "name": "MoreVertical",
+          "svg": ".chakraIcons/icons/more-vertical.svg",
+          "code": "src/MoreVertical.tsx"
+        },
+        {
+          "name": "MousePointer",
+          "svg": ".chakraIcons/icons/mouse-pointer.svg",
+          "code": "src/MousePointer.tsx"
+        },
+        {
+          "name": "Move",
+          "svg": ".chakraIcons/icons/move.svg",
+          "code": "src/Move.tsx"
+        },
+        {
+          "name": "Music",
+          "svg": ".chakraIcons/icons/music.svg",
+          "code": "src/Music.tsx"
+        },
+        {
+          "name": "Navigation2",
+          "svg": ".chakraIcons/icons/navigation-2.svg",
+          "code": "src/Navigation2.tsx"
+        },
+        {
+          "name": "Navigation",
+          "svg": ".chakraIcons/icons/navigation.svg",
+          "code": "src/Navigation.tsx"
+        },
+        {
+          "name": "Octagon",
+          "svg": ".chakraIcons/icons/octagon.svg",
+          "code": "src/Octagon.tsx"
+        },
+        {
+          "name": "Package",
+          "svg": ".chakraIcons/icons/package.svg",
+          "code": "src/Package.tsx"
+        },
+        {
+          "name": "Paperclip",
+          "svg": ".chakraIcons/icons/paperclip.svg",
+          "code": "src/Paperclip.tsx"
+        },
+        {
+          "name": "PauseCircle",
+          "svg": ".chakraIcons/icons/pause-circle.svg",
+          "code": "src/PauseCircle.tsx"
+        },
+        {
+          "name": "Pause",
+          "svg": ".chakraIcons/icons/pause.svg",
+          "code": "src/Pause.tsx"
+        },
+        {
+          "name": "PenTool",
+          "svg": ".chakraIcons/icons/pen-tool.svg",
+          "code": "src/PenTool.tsx"
+        },
+        {
+          "name": "Percent",
+          "svg": ".chakraIcons/icons/percent.svg",
+          "code": "src/Percent.tsx"
+        },
+        {
+          "name": "PhoneCall",
+          "svg": ".chakraIcons/icons/phone-call.svg",
+          "code": "src/PhoneCall.tsx"
+        },
+        {
+          "name": "PhoneForwarded",
+          "svg": ".chakraIcons/icons/phone-forwarded.svg",
+          "code": "src/PhoneForwarded.tsx"
+        },
+        {
+          "name": "PhoneIncoming",
+          "svg": ".chakraIcons/icons/phone-incoming.svg",
+          "code": "src/PhoneIncoming.tsx"
+        },
+        {
+          "name": "PhoneMissed",
+          "svg": ".chakraIcons/icons/phone-missed.svg",
+          "code": "src/PhoneMissed.tsx"
+        },
+        {
+          "name": "PhoneOff",
+          "svg": ".chakraIcons/icons/phone-off.svg",
+          "code": "src/PhoneOff.tsx"
+        },
+        {
+          "name": "PhoneOutgoing",
+          "svg": ".chakraIcons/icons/phone-outgoing.svg",
+          "code": "src/PhoneOutgoing.tsx"
+        },
+        {
+          "name": "Phone",
+          "svg": ".chakraIcons/icons/phone.svg",
+          "code": "src/Phone.tsx"
+        },
+        {
+          "name": "PieChart",
+          "svg": ".chakraIcons/icons/pie-chart.svg",
+          "code": "src/PieChart.tsx"
+        },
+        {
+          "name": "PlayCircle",
+          "svg": ".chakraIcons/icons/play-circle.svg",
+          "code": "src/PlayCircle.tsx"
+        },
+        {
+          "name": "Play",
+          "svg": ".chakraIcons/icons/play.svg",
+          "code": "src/Play.tsx"
+        },
+        {
+          "name": "PlusCircle",
+          "svg": ".chakraIcons/icons/plus-circle.svg",
+          "code": "src/PlusCircle.tsx"
+        },
+        {
+          "name": "PlusSquare",
+          "svg": ".chakraIcons/icons/plus-square.svg",
+          "code": "src/PlusSquare.tsx"
+        },
+        {
+          "name": "Plus",
+          "svg": ".chakraIcons/icons/plus.svg",
+          "code": "src/Plus.tsx"
+        },
+        {
+          "name": "Pocket",
+          "svg": ".chakraIcons/icons/pocket.svg",
+          "code": "src/Pocket.tsx"
+        },
+        {
+          "name": "Power",
+          "svg": ".chakraIcons/icons/power.svg",
+          "code": "src/Power.tsx"
+        },
+        {
+          "name": "Printer",
+          "svg": ".chakraIcons/icons/printer.svg",
+          "code": "src/Printer.tsx"
+        },
+        {
+          "name": "Radio",
+          "svg": ".chakraIcons/icons/radio.svg",
+          "code": "src/Radio.tsx"
+        },
+        {
+          "name": "RefreshCcw",
+          "svg": ".chakraIcons/icons/refresh-ccw.svg",
+          "code": "src/RefreshCcw.tsx"
+        },
+        {
+          "name": "RefreshCw",
+          "svg": ".chakraIcons/icons/refresh-cw.svg",
+          "code": "src/RefreshCw.tsx"
+        },
+        {
+          "name": "Repeat",
+          "svg": ".chakraIcons/icons/repeat.svg",
+          "code": "src/Repeat.tsx"
+        },
+        {
+          "name": "Rewind",
+          "svg": ".chakraIcons/icons/rewind.svg",
+          "code": "src/Rewind.tsx"
+        },
+        {
+          "name": "RotateCcw",
+          "svg": ".chakraIcons/icons/rotate-ccw.svg",
+          "code": "src/RotateCcw.tsx"
+        },
+        {
+          "name": "RotateCw",
+          "svg": ".chakraIcons/icons/rotate-cw.svg",
+          "code": "src/RotateCw.tsx"
+        },
+        {
+          "name": "Rss",
+          "svg": ".chakraIcons/icons/rss.svg",
+          "code": "src/Rss.tsx"
+        },
+        {
+          "name": "Save",
+          "svg": ".chakraIcons/icons/save.svg",
+          "code": "src/Save.tsx"
+        },
+        {
+          "name": "Scissors",
+          "svg": ".chakraIcons/icons/scissors.svg",
+          "code": "src/Scissors.tsx"
+        },
+        {
+          "name": "Search",
+          "svg": ".chakraIcons/icons/search.svg",
+          "code": "src/Search.tsx"
+        },
+        {
+          "name": "Send",
+          "svg": ".chakraIcons/icons/send.svg",
+          "code": "src/Send.tsx"
+        },
+        {
+          "name": "Server",
+          "svg": ".chakraIcons/icons/server.svg",
+          "code": "src/Server.tsx"
+        },
+        {
+          "name": "Settings",
+          "svg": ".chakraIcons/icons/settings.svg",
+          "code": "src/Settings.tsx"
+        },
+        {
+          "name": "Share2",
+          "svg": ".chakraIcons/icons/share-2.svg",
+          "code": "src/Share2.tsx"
+        },
+        {
+          "name": "Share",
+          "svg": ".chakraIcons/icons/share.svg",
+          "code": "src/Share.tsx"
+        },
+        {
+          "name": "ShieldOff",
+          "svg": ".chakraIcons/icons/shield-off.svg",
+          "code": "src/ShieldOff.tsx"
+        },
+        {
+          "name": "Shield",
+          "svg": ".chakraIcons/icons/shield.svg",
+          "code": "src/Shield.tsx"
+        },
+        {
+          "name": "ShoppingBag",
+          "svg": ".chakraIcons/icons/shopping-bag.svg",
+          "code": "src/ShoppingBag.tsx"
+        },
+        {
+          "name": "ShoppingCart",
+          "svg": ".chakraIcons/icons/shopping-cart.svg",
+          "code": "src/ShoppingCart.tsx"
+        },
+        {
+          "name": "Shuffle",
+          "svg": ".chakraIcons/icons/shuffle.svg",
+          "code": "src/Shuffle.tsx"
+        },
+        {
+          "name": "Sidebar",
+          "svg": ".chakraIcons/icons/sidebar.svg",
+          "code": "src/Sidebar.tsx"
+        },
+        {
+          "name": "SkipBack",
+          "svg": ".chakraIcons/icons/skip-back.svg",
+          "code": "src/SkipBack.tsx"
+        },
+        {
+          "name": "SkipForward",
+          "svg": ".chakraIcons/icons/skip-forward.svg",
+          "code": "src/SkipForward.tsx"
+        },
+        {
+          "name": "Slack",
+          "svg": ".chakraIcons/icons/slack.svg",
+          "code": "src/Slack.tsx"
+        },
+        {
+          "name": "Slash",
+          "svg": ".chakraIcons/icons/slash.svg",
+          "code": "src/Slash.tsx"
+        },
+        {
+          "name": "Sliders",
+          "svg": ".chakraIcons/icons/sliders.svg",
+          "code": "src/Sliders.tsx"
+        },
+        {
+          "name": "Smartphone",
+          "svg": ".chakraIcons/icons/smartphone.svg",
+          "code": "src/Smartphone.tsx"
+        },
+        {
+          "name": "Smile",
+          "svg": ".chakraIcons/icons/smile.svg",
+          "code": "src/Smile.tsx"
+        },
+        {
+          "name": "Speaker",
+          "svg": ".chakraIcons/icons/speaker.svg",
+          "code": "src/Speaker.tsx"
+        },
+        {
+          "name": "Square",
+          "svg": ".chakraIcons/icons/square.svg",
+          "code": "src/Square.tsx"
+        },
+        {
+          "name": "Star",
+          "svg": ".chakraIcons/icons/star.svg",
+          "code": "src/Star.tsx"
+        },
+        {
+          "name": "StopCircle",
+          "svg": ".chakraIcons/icons/stop-circle.svg",
+          "code": "src/StopCircle.tsx"
+        },
+        {
+          "name": "Sun",
+          "svg": ".chakraIcons/icons/sun.svg",
+          "code": "src/Sun.tsx"
+        },
+        {
+          "name": "Sunrise",
+          "svg": ".chakraIcons/icons/sunrise.svg",
+          "code": "src/Sunrise.tsx"
+        },
+        {
+          "name": "Sunset",
+          "svg": ".chakraIcons/icons/sunset.svg",
+          "code": "src/Sunset.tsx"
+        },
+        {
+          "name": "Tablet",
+          "svg": ".chakraIcons/icons/tablet.svg",
+          "code": "src/Tablet.tsx"
+        },
+        {
+          "name": "Tag",
+          "svg": ".chakraIcons/icons/tag.svg",
+          "code": "src/Tag.tsx"
+        },
+        {
+          "name": "Target",
+          "svg": ".chakraIcons/icons/target.svg",
+          "code": "src/Target.tsx"
+        },
+        {
+          "name": "Terminal",
+          "svg": ".chakraIcons/icons/terminal.svg",
+          "code": "src/Terminal.tsx"
+        },
+        {
+          "name": "Thermometer",
+          "svg": ".chakraIcons/icons/thermometer.svg",
+          "code": "src/Thermometer.tsx"
+        },
+        {
+          "name": "ThumbsDown",
+          "svg": ".chakraIcons/icons/thumbs-down.svg",
+          "code": "src/ThumbsDown.tsx"
+        },
+        {
+          "name": "ThumbsUp",
+          "svg": ".chakraIcons/icons/thumbs-up.svg",
+          "code": "src/ThumbsUp.tsx"
+        },
+        {
+          "name": "ToggleLeft",
+          "svg": ".chakraIcons/icons/toggle-left.svg",
+          "code": "src/ToggleLeft.tsx"
+        },
+        {
+          "name": "ToggleRight",
+          "svg": ".chakraIcons/icons/toggle-right.svg",
+          "code": "src/ToggleRight.tsx"
+        },
+        {
+          "name": "Tool",
+          "svg": ".chakraIcons/icons/tool.svg",
+          "code": "src/Tool.tsx"
+        },
+        {
+          "name": "Trash2",
+          "svg": ".chakraIcons/icons/trash-2.svg",
+          "code": "src/Trash2.tsx"
+        },
+        {
+          "name": "Trash",
+          "svg": ".chakraIcons/icons/trash.svg",
+          "code": "src/Trash.tsx"
+        },
+        {
+          "name": "Trello",
+          "svg": ".chakraIcons/icons/trello.svg",
+          "code": "src/Trello.tsx"
+        },
+        {
+          "name": "TrendingDown",
+          "svg": ".chakraIcons/icons/trending-down.svg",
+          "code": "src/TrendingDown.tsx"
+        },
+        {
+          "name": "TrendingUp",
+          "svg": ".chakraIcons/icons/trending-up.svg",
+          "code": "src/TrendingUp.tsx"
+        },
+        {
+          "name": "Triangle",
+          "svg": ".chakraIcons/icons/triangle.svg",
+          "code": "src/Triangle.tsx"
+        },
+        {
+          "name": "Truck",
+          "svg": ".chakraIcons/icons/truck.svg",
+          "code": "src/Truck.tsx"
+        },
+        {
+          "name": "Tv",
+          "svg": ".chakraIcons/icons/tv.svg",
+          "code": "src/Tv.tsx"
+        },
+        {
+          "name": "Twitch",
+          "svg": ".chakraIcons/icons/twitch.svg",
+          "code": "src/Twitch.tsx"
+        },
+        {
+          "name": "Twitter",
+          "svg": ".chakraIcons/icons/twitter.svg",
+          "code": "src/Twitter.tsx"
+        },
+        {
+          "name": "Type",
+          "svg": ".chakraIcons/icons/type.svg",
+          "code": "src/Type.tsx"
+        },
+        {
+          "name": "Umbrella",
+          "svg": ".chakraIcons/icons/umbrella.svg",
+          "code": "src/Umbrella.tsx"
+        },
+        {
+          "name": "Underline",
+          "svg": ".chakraIcons/icons/underline.svg",
+          "code": "src/Underline.tsx"
+        },
+        {
+          "name": "Unlock",
+          "svg": ".chakraIcons/icons/unlock.svg",
+          "code": "src/Unlock.tsx"
+        },
+        {
+          "name": "UploadCloud",
+          "svg": ".chakraIcons/icons/upload-cloud.svg",
+          "code": "src/UploadCloud.tsx"
+        },
+        {
+          "name": "Upload",
+          "svg": ".chakraIcons/icons/upload.svg",
+          "code": "src/Upload.tsx"
+        },
+        {
+          "name": "UserCheck",
+          "svg": ".chakraIcons/icons/user-check.svg",
+          "code": "src/UserCheck.tsx"
+        },
+        {
+          "name": "UserMinus",
+          "svg": ".chakraIcons/icons/user-minus.svg",
+          "code": "src/UserMinus.tsx"
+        },
+        {
+          "name": "UserPlus",
+          "svg": ".chakraIcons/icons/user-plus.svg",
+          "code": "src/UserPlus.tsx"
+        },
+        {
+          "name": "UserX",
+          "svg": ".chakraIcons/icons/user-x.svg",
+          "code": "src/UserX.tsx"
+        },
+        {
+          "name": "User",
+          "svg": ".chakraIcons/icons/user.svg",
+          "code": "src/User.tsx"
+        },
+        {
+          "name": "Users",
+          "svg": ".chakraIcons/icons/users.svg",
+          "code": "src/Users.tsx"
+        },
+        {
+          "name": "VideoOff",
+          "svg": ".chakraIcons/icons/video-off.svg",
+          "code": "src/VideoOff.tsx"
+        },
+        {
+          "name": "Video",
+          "svg": ".chakraIcons/icons/video.svg",
+          "code": "src/Video.tsx"
+        },
+        {
+          "name": "Voicemail",
+          "svg": ".chakraIcons/icons/voicemail.svg",
+          "code": "src/Voicemail.tsx"
+        },
+        {
+          "name": "Volume1",
+          "svg": ".chakraIcons/icons/volume-1.svg",
+          "code": "src/Volume1.tsx"
+        },
+        {
+          "name": "Volume2",
+          "svg": ".chakraIcons/icons/volume-2.svg",
+          "code": "src/Volume2.tsx"
+        },
+        {
+          "name": "VolumeX",
+          "svg": ".chakraIcons/icons/volume-x.svg",
+          "code": "src/VolumeX.tsx"
+        },
+        {
+          "name": "Volume",
+          "svg": ".chakraIcons/icons/volume.svg",
+          "code": "src/Volume.tsx"
+        },
+        {
+          "name": "Watch",
+          "svg": ".chakraIcons/icons/watch.svg",
+          "code": "src/Watch.tsx"
+        },
+        {
+          "name": "WifiOff",
+          "svg": ".chakraIcons/icons/wifi-off.svg",
+          "code": "src/WifiOff.tsx"
+        },
+        {
+          "name": "Wifi",
+          "svg": ".chakraIcons/icons/wifi.svg",
+          "code": "src/Wifi.tsx"
+        },
+        {
+          "name": "Wind",
+          "svg": ".chakraIcons/icons/wind.svg",
+          "code": "src/Wind.tsx"
+        },
+        {
+          "name": "XCircle",
+          "svg": ".chakraIcons/icons/x-circle.svg",
+          "code": "src/XCircle.tsx"
+        },
+        {
+          "name": "XOctagon",
+          "svg": ".chakraIcons/icons/x-octagon.svg",
+          "code": "src/XOctagon.tsx"
+        },
+        {
+          "name": "XSquare",
+          "svg": ".chakraIcons/icons/x-square.svg",
+          "code": "src/XSquare.tsx"
+        },
+        {
+          "name": "X",
+          "svg": ".chakraIcons/icons/x.svg",
+          "code": "src/X.tsx"
+        },
+        {
+          "name": "Youtube",
+          "svg": ".chakraIcons/icons/youtube.svg",
+          "code": "src/Youtube.tsx"
+        },
+        {
+          "name": "ZapOff",
+          "svg": ".chakraIcons/icons/zap-off.svg",
+          "code": "src/ZapOff.tsx"
+        },
+        {
+          "name": "Zap",
+          "svg": ".chakraIcons/icons/zap.svg",
+          "code": "src/Zap.tsx"
+        },
+        {
+          "name": "ZoomIn",
+          "svg": ".chakraIcons/icons/zoom-in.svg",
+          "code": "src/ZoomIn.tsx"
+        },
+        {
+          "name": "ZoomOut",
+          "svg": ".chakraIcons/icons/zoom-out.svg",
+          "code": "src/ZoomOut.tsx"
+        }
+      ]
+    }
+  ]
+}
