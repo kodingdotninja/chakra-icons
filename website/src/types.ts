@@ -5,6 +5,7 @@ export type Response<Data> = {
   data: Data;
   per: number;
   total: number;
+  creators: string[];
 };
 
 export type ApiIcon = Omit<MetaIcon, "iconPath" | "sources" | "clonePath" | "sourcePath"> & {

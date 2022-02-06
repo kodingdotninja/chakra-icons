@@ -5,41 +5,42 @@ import { ResponseIcon } from "../types";
 
 import { getData } from "./api/[...icons]";
 
-import { Code, Input, Text } from "@chakra-ui/react";
+import { Checkbox, Code, Input, SimpleGrid, Text } from "@chakra-ui/react";
 import { GetStaticProps, InferGetStaticPropsType } from "next";
-import { useRouter } from "next/router";
 
 type IndexProps = {
   icons: ResponseIcon | null;
 };
 
 export const getStaticProps: GetStaticProps<IndexProps> = async (_ctx) => {
-  const icons = await getData("", 50);
+  const icons = await getData("", "", 50);
   return {
     props: { icons },
   };
 };
 
-const fetchIcons = (q?: string): Promise<ResponseIcon> => fetch(`/api/icons?q=${q ?? ""}`).then((res) => res.json());
+const fetchIcons = ({ q, qCreator }: { q?: string; qCreator?: string }): Promise<ResponseIcon> =>
+  fetch(`/api/icons?q=${q ?? ""}&qCreator=${qCreator ?? ""}`).then((res) => res.json());
 
 const Index = (props: InferGetStaticPropsType<typeof getStaticProps>) => {
-  const { query } = useRouter();
   const { icons: _icons } = props;
   const [icons, setIcons] = React.useState<typeof props.icons>(_icons);
-
-  const q = Array.isArray(query.q) ? query.q[0] : query.q ?? "";
+  const [queryCreator, setQueryCreator] = React.useState<string[]>([]);
+  const [querySearch, setQuerySearch] = React.useState<string>("");
 
   const onKeyPressCapture = (e: React.KeyboardEvent<HTMLInputElement>) => {
     if (e.key.toLowerCase() === "enter") {
-      fetchIcons(e.currentTarget.value).then(setIcons).catch(console.error);
+      setQuerySearch(e.currentTarget.value);
     } else {
       e.persist();
     }
   };
 
   React.useEffect(() => {
-    if (q !== "") fetchIcons(q).then(setIcons).catch(console.error);
-  }, [q]);
+    fetchIcons({ q: querySearch, qCreator: queryCreator.join(" ") ?? "" })
+      .then(setIcons)
+      .catch(console.error);
+  }, [querySearch, queryCreator]);
 
   return (
     <Main alignItems="center">
@@ -49,12 +50,29 @@ const Index = (props: InferGetStaticPropsType<typeof getStaticProps>) => {
         `Bootstrap`, `Flat-Icon`, and more to use in your project with <Code colorScheme="teal">Chakra-UI</Code>.
       </Text>
       <Input
-        defaultValue={query.q ?? ""}
+        defaultValue={querySearch}
         onKeyPressCapture={onKeyPressCapture}
         placeholder="Search icons here..."
         size="lg"
         width={["full", "full", "50vw"]}
       />
+      <SimpleGrid columns={[2, 3, 4]} spacing={4}>
+        {icons?.creators?.map((item) => (
+          <Checkbox
+            key={item}
+            checked={!!queryCreator.find((i) => i === item)}
+            color={queryCreator.find((i) => i === item) ? "blue.500" : "gray.300"}
+            onChange={() => {
+              setQueryCreator((oldState) => {
+                return oldState.find((i) => i === item) ? oldState.filter((i) => i !== item) : [item, ...oldState];
+              });
+            }}
+          >
+            {item}
+          </Checkbox>
+        ))}
+      </SimpleGrid>
+
       <Overview icons={icons?.data ?? []} />
     </Main>
   );
