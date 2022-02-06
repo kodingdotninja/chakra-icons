@@ -10,6 +10,7 @@ import * as Octicons from "@chakra-icons/octicons";
 import * as TablerIcons from "@chakra-icons/tabler-icons";
 import * as TypIcons from "@chakra-icons/typicons";
 import {
+  Button,
   Code,
   ComponentWithAs,
   IconProps,
@@ -24,11 +25,13 @@ import {
   Stack,
   StackProps,
   Text,
+  useToast,
 } from "@chakra-ui/react";
 
-const Item = ({ children, name, code, ...props }: StackProps & ApiIcon) => {
+const Item = ({ children, name, code, creator, ...props }: StackProps & ApiIcon) => {
   const color = "gray.300";
   const hoverColor = "blue.500";
+  const toast = useToast();
   return (
     <Popover isLazy placement="top-start">
       <PopoverTrigger>
@@ -59,11 +62,32 @@ const Item = ({ children, name, code, ...props }: StackProps & ApiIcon) => {
         </Stack>
       </PopoverTrigger>
       <PopoverContent width="auto">
-        <PopoverHeader fontWeight="semibold">{name}</PopoverHeader>
+        <PopoverHeader fontWeight="bold">
+          {creator} / {name}
+        </PopoverHeader>
         <PopoverArrow />
         <PopoverCloseButton />
         <PopoverBody>
           <Code colorScheme="blackAlpha">{code}</Code>
+          <Button
+            ml={2}
+            onClick={() => {
+              navigator.clipboard
+                .writeText(code)
+                .then(() => {
+                  toast({
+                    title: "Copied to clipboard.",
+                    status: "success",
+                    duration: 3000,
+                    isClosable: true,
+                  });
+                })
+                .catch(console.error);
+            }}
+            size="xs"
+          >
+            Copy
+          </Button>
         </PopoverBody>
       </PopoverContent>
     </Popover>

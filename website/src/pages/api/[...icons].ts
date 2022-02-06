@@ -12,7 +12,7 @@ const getIcons = async () => {
   );
   const metaIcons: MetaIcon[] = await Promise.all([...snapshots]).then((all) => all.map((j) => JSON.parse(j)));
 
-  return ({ limit, q }: { limit?: number; q?: string }): [ApiIcon[], number] => {
+  return ({ limit, q, qCreator }: { limit?: number; q?: string; qCreator?: string }): [ApiIcon[], number, string[]] => {
     const icons = metaIcons.flatMap((metaIcon) =>
       metaIcon.sources.flatMap((source: Sources) =>
         source.entries.flatMap((icon: Source) => ({
@@ -24,26 +24,29 @@ const getIcons = async () => {
       ),
     );
 
-    const filter = (_q?: string) => (i: ApiIcon) => _q ? _q.split(" ").some((a) => fz(a, i.name)) : true;
+    const filter = (_q?: string, _qCreator?: string) => (i: ApiIcon) =>
+      (_q ? _q.split(" ").some((a) => fz(a.toLowerCase(), i.name.toLowerCase())) : true) &&
+      (_qCreator ? _qCreator.split(" ").some((a) => fz(a, i.creator)) : true);
 
     return [
       icons
-        .filter(filter(q))
+        .filter(filter(q, qCreator))
         .sort((a: ApiIcon, b: ApiIcon) => a.name.length - b.name.length)
         .slice(0, limit),
       icons.length,
+      icons.map((item: ApiIcon) => item.creator).filter((value, index, self) => self.indexOf(value) === index),
     ];
   };
 };
 
-export const getData = async (q: string, limit: number = 50) => {
+export const getData = async (q: string, qCreator: string, limit: number = 50) => {
   const icons = await getIcons();
-  const [data, total] = icons({ limit, q });
-
+  const [data, total, creators] = icons({ limit, q, qCreator });
   const response: ResponseIcon = {
     data,
     per: data.length,
     total,
+    creators,
   };
 
   return response;
@@ -51,11 +54,11 @@ export const getData = async (q: string, limit: number = 50) => {
 const toInt = (a: any): number => a | 0; // eslint-disable-line no-bitwise, @typescript-eslint/no-explicit-any
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
-  const { q, limit } = req.query;
+  const { q, qCreator, limit } = req.query;
 
-  if (!Array.isArray(q) && !Array.isArray(limit)) {
+  if (!Array.isArray(q) && !Array.isArray(limit) && !Array.isArray(qCreator)) {
     const _limit = toInt(limit);
-    const data = await getData(q, _limit > 0 ? _limit : 50);
+    const data = await getData(q, qCreator, _limit > 0 ? _limit : 50);
     if (req.method?.toLowerCase() === "get") {
       res.status(200).json(data);
     }
