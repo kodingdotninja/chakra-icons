@@ -25,6 +25,7 @@
 | [@chakra-icons/carbon](https://github.com/kodingdotninja/chakra-icons/tree/main/packages/@chakra-icons/carbon) | ✅  | [![@chakra-icons/carbon version](https://badge.fury.io/js/@chakra-icons%2Fcarbon.svg)](https://www.npmjs.com/package/@chakra-icons/carbon) |
 | [@chakra-icons/typicons](https://github.com/kodingdotninja/chakra-icons/tree/main/packages/@chakra-icons/typicons) | ✅  | [![@chakra-icons/typicons version](https://badge.fury.io/js/@chakra-icons%2Ftypicons.svg)](https://www.npmjs.com/package/@chakra-icons/typicons) |
 | [@chakra-icons/feather](https://github.com/kodingdotninja/chakra-icons/tree/main/packages/@chakra-icons/feather) | ✅  | [![@chakra-icons/feather version](https://badge.fury.io/js/@chakra-icons%2Ffeather.svg)](https://www.npmjs.com/package/@chakra-icons/feather) |
+| [@chakra-icons/simple-line-icons](https://github.com/kodingdotninja/chakra-icons/tree/main/packages/@chakra-icons/simple-line-icons) | ✅  | [![@chakra-icons/simple-line-icons version](https://badge.fury.io/js/@chakra-icons%2Fsimple-line-icons.svg)](https://www.npmjs.com/package/@chakra-icons/simple-line-icons) |
 <!-- APPEND_CHAKRA_ICONS_HERE -->
 <!-- prettier-ignore-end -->
 

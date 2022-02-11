@@ -1,0 +1,41 @@
+{
+  "name": "@chakra-icons/simple-line-icons",
+  "version": "0.0.0",
+  "homepage": "https://github.com/kodingdotninja/chakra-icons/tree/main/packages/@chakra-icons/simple-line-icons",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kodingdotninja/chakra-icons"
+  },
+  "keywords": [
+    "chakra-ui",
+    "react",
+    "react-icons",
+    "chakra-icons",
+    "simple-line-icons"
+  ],
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist/",
+    "src/"
+  ],
+  "scripts": {
+    "build": "chakra-icons build -r 'https://github.com/thesabbir/simple-line-icons' -n simple-line-icons -i src/svgs -S snapshot.json -E",
+    "clean": "chakra-icons clean -r 'https://github.com/thesabbir/simple-line-icons' -n simple-line-icons -i src/svgs",
+    "postbuild": "tsup"
+  },
+  "devDependencies": {
+    "@chakra-ui/react": "^1",
+    "@chakra-icons/cli": "*",
+    "@tooling/tsconfig": "*",
+    "tsup": "^5"
+  },
+  "peerDependencies": {
+    "@chakra-ui/react": ">=1"
+  },
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  }
+}
