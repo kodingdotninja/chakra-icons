@@ -23,7 +23,8 @@
   "scripts": {
     "build": "chakra-icons build -r 'https://github.com/stephenhutchings/typicons.font' -n typicons -i src/svg -S snapshot.json -E",
     "clean": "chakra-icons clean -r 'https://github.com/stephenhutchings/typicons.font' -n typicons -i src/svg",
-    "postbuild": "tsup"
+    "format": "prettier --write README.md snapshot.json",
+    "postbuild": "tsup && yarn format"
   },
   "devDependencies": {
     "@chakra-ui/react": "^1",

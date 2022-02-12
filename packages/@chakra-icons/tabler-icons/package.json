@@ -23,7 +23,8 @@
   "scripts": {
     "build": "chakra-icons build -r 'tabler/tabler-icons' -n tabler-icons -i icons -S snapshot.json -E",
     "clean": "chakra-icons clean -r 'tabler/tabler-icons' -n tabler-icons -i icons",
-    "postbuild": "tsup"
+    "format": "prettier --write README.md snapshot.json",
+    "postbuild": "tsup && yarn format"
   },
   "devDependencies": {
     "@chakra-ui/react": "^1",

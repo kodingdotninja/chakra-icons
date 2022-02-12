@@ -23,7 +23,8 @@
   "scripts": {
     "build": "chakra-icons build -r 'https://github.com/ionic-team/ionicons' -n ionicons -i src/svg -S snapshot.json -E",
     "clean": "chakra-icons clean -r 'https://github.com/ionic-team/ionicons' -n ionicons -i src/svg",
-    "postbuild": "tsup"
+    "format": "prettier --write README.md snapshot.json",
+    "postbuild": "tsup && yarn format"
   },
   "devDependencies": {
     "@chakra-ui/react": "^1",

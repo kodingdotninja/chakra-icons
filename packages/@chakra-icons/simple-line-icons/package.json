@@ -23,7 +23,8 @@
   "scripts": {
     "build": "chakra-icons build -r 'https://github.com/thesabbir/simple-line-icons' -n simple-line-icons -i src/svgs -S snapshot.json -E",
     "clean": "chakra-icons clean -r 'https://github.com/thesabbir/simple-line-icons' -n simple-line-icons -i src/svgs",
-    "postbuild": "tsup"
+    "format": "prettier --write README.md snapshot.json",
+    "postbuild": "tsup && yarn format"
   },
   "devDependencies": {
     "@chakra-ui/react": "^1",

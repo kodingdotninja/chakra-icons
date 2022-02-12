@@ -23,7 +23,8 @@
   "scripts": {
     "build": "chakra-icons build -r 'https://github.com/icons8/flat-color-icons' -n flat-icon -i svg -S snapshot.json -E",
     "clean": "chakra-icons clean -r 'https://github.com/icons8/flat-color-icons' -n flat-icon -i svg",
-    "postbuild": "tsup"
+    "format": "prettier --write README.md snapshot.json",
+    "postbuild": "tsup && yarn format"
   },
   "devDependencies": {
     "@chakra-ui/react": "^1",

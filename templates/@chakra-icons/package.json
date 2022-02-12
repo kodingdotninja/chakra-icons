@@ -23,7 +23,8 @@
   "scripts": {
     "build": "chakra-icons build -r '{{repository}}' -n {{name}} -i {{iconPath}} -S snapshot.json -E",
     "clean": "chakra-icons clean -r '{{repository}}' -n {{name}} -i {{iconPath}}",
-    "postbuild": "tsup"
+    "format": "prettier --write README.md snapshot.json",
+    "postbuild": "tsup && yarn format"
   },
   "devDependencies": {
     "@chakra-ui/react": "^1",
