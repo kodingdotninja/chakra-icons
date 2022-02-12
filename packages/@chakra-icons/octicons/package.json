@@ -23,7 +23,8 @@
   "scripts": {
     "build": "chakra-icons build -r 'https://github.com/primer/octicons' -n octicons -i icons -S snapshot.json -E",
     "clean": "chakra-icons clean -r 'https://github.com/primer/octicons' -n octicons -i icons",
-    "postbuild": "tsup"
+    "format": "prettier --write README.md snapshot.json",
+    "postbuild": "tsup && yarn format"
   },
   "devDependencies": {
     "@chakra-ui/react": "^1",
