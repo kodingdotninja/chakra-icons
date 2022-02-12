@@ -19,6 +19,8 @@
     "@chakra-icons/tabler-icons": "*",
     "@chakra-icons/typicons": "*",
     "@chakra-icons/carbon": "*",
+    "@chakra-icons/simple-line-icons": "*",
+    "@chakra-icons/ionicons": "*",
     "@chakra-icons/cli": "*",
     "@chakra-ui/icons": "^1",
     "@chakra-ui/react": "^1",
