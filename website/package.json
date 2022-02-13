@@ -6,6 +6,7 @@
     "# general commands": "--------------------------------------------------",
     "dev": "next",
     "build": "next build",
+    "export": "next export",
     "start": "next start",
     "format": "prettier --write \"**/*.{js,json,md,svg}\"",
     "lint": "next lint --fix",
