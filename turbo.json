@@ -12,6 +12,9 @@
     "clean": {
       "cache": false
     },
+    "export": {
+      "dependsOn": ["build"]
+    },
     "format": {
       "cache": false
     },
