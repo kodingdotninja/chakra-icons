@@ -1,0 +1,41 @@
+name: Sync
+
+on: 
+  # run job every week on sunday at 23:59 PM
+  - cron: 59 23 * * 0
+
+jobs:
+  packages:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.GH_TOKEN }}
+
+      - uses: actions/setup-node@v2
+        with:
+          cache: yarn
+          node-version: '14'
+
+      - name: Setup git user to "kdnjbot"
+        shell: bash
+        run: git config user.email "robot@koding.ninja" && git config user.name "kdnjbot"
+
+      - name: install dependencies
+        shell: bash
+        run: yarn --frozen-lockfile --no-progress --non-interactive --prefer-offline
+
+      - name: build all packages
+        shell: bash
+        run: yarn build --force
+
+      - name: create commit when changed snapshot.json in @chakra-icons/*
+        run: ./.github/scripts/sync-snapshot
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v3
+        with:
+          token: ${{ secrets.GH_TOKEN }}
+          branch: "sync-icons"
+          author: "kdnjbot <robot@koding.ninja>"
+          committer: "kdnjbot <robot@koding.ninja>"
