@@ -1,8 +1,9 @@
 name: Sync
 
 on: 
-  # run job every week on sunday at 23:59 PM
-  - cron: 59 23 * * 0
+  schedule:
+    # run job every week on sunday at 23:59 PM
+    - cron: 59 23 * * 0
 
 jobs:
   packages:
