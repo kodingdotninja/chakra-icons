@@ -8264,11 +8264,6 @@
           "code": "src/WrenchAdjustableCircle.tsx"
         },
         {
-          "name": "WrenchAdjustableCricle",
-          "svg": ".chakraIcons/icons/wrench-adjustable-cricle.svg",
-          "code": "src/WrenchAdjustableCricle.tsx"
-        },
-        {
           "name": "WrenchAdjustable",
           "svg": ".chakraIcons/icons/wrench-adjustable.svg",
           "code": "src/WrenchAdjustable.tsx"
