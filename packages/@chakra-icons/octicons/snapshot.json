@@ -389,6 +389,26 @@
           "code": "src/Clock24.tsx"
         },
         {
+          "name": "Cloud16",
+          "svg": ".chakraIcons/icons/cloud-16.svg",
+          "code": "src/Cloud16.tsx"
+        },
+        {
+          "name": "Cloud24",
+          "svg": ".chakraIcons/icons/cloud-24.svg",
+          "code": "src/Cloud24.tsx"
+        },
+        {
+          "name": "CloudOffline16",
+          "svg": ".chakraIcons/icons/cloud-offline-16.svg",
+          "code": "src/CloudOffline16.tsx"
+        },
+        {
+          "name": "CloudOffline24",
+          "svg": ".chakraIcons/icons/cloud-offline-24.svg",
+          "code": "src/CloudOffline24.tsx"
+        },
+        {
           "name": "Code16",
           "svg": ".chakraIcons/icons/code-16.svg",
           "code": "src/Code16.tsx"
@@ -734,9 +754,19 @@
           "code": "src/FeedDiscussion16.tsx"
         },
         {
+          "name": "FeedForked16",
+          "svg": ".chakraIcons/icons/feed-forked-16.svg",
+          "code": "src/FeedForked16.tsx"
+        },
+        {
           "name": "FeedHeart16",
           "svg": ".chakraIcons/icons/feed-heart-16.svg",
           "code": "src/FeedHeart16.tsx"
+        },
+        {
+          "name": "FeedMerged16",
+          "svg": ".chakraIcons/icons/feed-merged-16.svg",
+          "code": "src/FeedMerged16.tsx"
         },
         {
           "name": "FeedPerson16",
@@ -762,6 +792,11 @@
           "name": "FeedTag16",
           "svg": ".chakraIcons/icons/feed-tag-16.svg",
           "code": "src/FeedTag16.tsx"
+        },
+        {
+          "name": "FeedTrophy16",
+          "svg": ".chakraIcons/icons/feed-trophy-16.svg",
+          "code": "src/FeedTrophy16.tsx"
         },
         {
           "name": "File16",
@@ -817,6 +852,11 @@
           "name": "FileDirectory24",
           "svg": ".chakraIcons/icons/file-directory-24.svg",
           "code": "src/FileDirectory24.tsx"
+        },
+        {
+          "name": "FileDirectoryFill16",
+          "svg": ".chakraIcons/icons/file-directory-fill-16.svg",
+          "code": "src/FileDirectoryFill16.tsx"
         },
         {
           "name": "FileDirectoryFill24",
@@ -1744,6 +1784,11 @@
           "code": "src/RepoForked24.tsx"
         },
         {
+          "name": "RepoLocked16",
+          "svg": ".chakraIcons/icons/repo-locked-16.svg",
+          "code": "src/RepoLocked16.tsx"
+        },
+        {
           "name": "RepoPull16",
           "svg": ".chakraIcons/icons/repo-pull-16.svg",
           "code": "src/RepoPull16.tsx"
@@ -2272,6 +2317,16 @@
           "name": "TriangleUp24",
           "svg": ".chakraIcons/icons/triangle-up-24.svg",
           "code": "src/TriangleUp24.tsx"
+        },
+        {
+          "name": "Trophy16",
+          "svg": ".chakraIcons/icons/trophy-16.svg",
+          "code": "src/Trophy16.tsx"
+        },
+        {
+          "name": "Trophy24",
+          "svg": ".chakraIcons/icons/trophy-24.svg",
+          "code": "src/Trophy24.tsx"
         },
         {
           "name": "Typography16",
