@@ -864,6 +864,11 @@
           "code": "src/FileDirectoryFill24.tsx"
         },
         {
+          "name": "FileDirectoryOpenFill16",
+          "svg": ".chakraIcons/icons/file-directory-open-fill-16.svg",
+          "code": "src/FileDirectoryOpenFill16.tsx"
+        },
+        {
           "name": "FileMedia24",
           "svg": ".chakraIcons/icons/file-media-24.svg",
           "code": "src/FileMedia24.tsx"
