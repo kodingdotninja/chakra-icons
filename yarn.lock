@@ -5452,9 +5452,9 @@ ms@^2.0.0, ms@^2.1.1, ms@^2.1.2:
   integrity sha512-6FlzubTLZG3J2a/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq/s5xXI6/XXP6tz7R9xAOtHnSO/tXtF3WRTlA==
 
 multi-semantic-release@^2:
-  version "2.11.2"
-  resolved "https://registry.yarnpkg.com/multi-semantic-release/-/multi-semantic-release-2.11.2.tgz#78d8e10d8f3709c1aff8204cf0b2ee3570371b69"
-  integrity sha512-8n+kayoxElb/l1ux8SZBUC/6696tdXOJyw58cSEoLXU00MsBAqkHlPy/wxATwuwvDKXBOlmGiLpgLrUTu1i+hg==
+  version "2.11.3"
+  resolved "https://registry.yarnpkg.com/multi-semantic-release/-/multi-semantic-release-2.11.3.tgz#57d9a1db7cb108caad31ee905de88e11f39301d7"
+  integrity sha512-KFA6xA9yDtV5sAhFhNb9le8OluM1m1mxyIpclNTQlN49eQMmvq9LQ/AmORi5La2zdzGrvqOLlRyiK5O0FtlSPA==
   dependencies:
     "@manypkg/get-packages" "^1.1.3"
     blork "^9.3.0"
