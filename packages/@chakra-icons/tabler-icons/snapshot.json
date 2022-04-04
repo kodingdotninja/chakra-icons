@@ -1204,6 +1204,11 @@
           "code": "src/BluetoothOff.tsx"
         },
         {
+          "name": "BluetoothX",
+          "svg": ".chakraIcons/icons/bluetooth-x.svg",
+          "code": "src/BluetoothX.tsx"
+        },
+        {
           "name": "Bluetooth",
           "svg": ".chakraIcons/icons/bluetooth.svg",
           "code": "src/Bluetooth.tsx"
@@ -2089,6 +2094,11 @@
           "code": "src/BuildingCottage.tsx"
         },
         {
+          "name": "BuildingFactory2",
+          "svg": ".chakraIcons/icons/building-factory-2.svg",
+          "code": "src/BuildingFactory2.tsx"
+        },
+        {
           "name": "BuildingFactory",
           "svg": ".chakraIcons/icons/building-factory.svg",
           "code": "src/BuildingFactory.tsx"
@@ -2332,6 +2342,36 @@
           "name": "Ce",
           "svg": ".chakraIcons/icons/ce.svg",
           "code": "src/Ce.tsx"
+        },
+        {
+          "name": "CellSignal1",
+          "svg": ".chakraIcons/icons/cell-signal-1.svg",
+          "code": "src/CellSignal1.tsx"
+        },
+        {
+          "name": "CellSignal2",
+          "svg": ".chakraIcons/icons/cell-signal-2.svg",
+          "code": "src/CellSignal2.tsx"
+        },
+        {
+          "name": "CellSignal3",
+          "svg": ".chakraIcons/icons/cell-signal-3.svg",
+          "code": "src/CellSignal3.tsx"
+        },
+        {
+          "name": "CellSignal4",
+          "svg": ".chakraIcons/icons/cell-signal-4.svg",
+          "code": "src/CellSignal4.tsx"
+        },
+        {
+          "name": "CellSignal5",
+          "svg": ".chakraIcons/icons/cell-signal-5.svg",
+          "code": "src/CellSignal5.tsx"
+        },
+        {
+          "name": "CellSignalOff",
+          "svg": ".chakraIcons/icons/cell-signal-off.svg",
+          "code": "src/CellSignalOff.tsx"
         },
         {
           "name": "Cell",
@@ -2739,6 +2779,11 @@
           "code": "src/ClipboardPlus.tsx"
         },
         {
+          "name": "ClipboardText",
+          "svg": ".chakraIcons/icons/clipboard-text.svg",
+          "code": "src/ClipboardText.tsx"
+        },
+        {
           "name": "ClipboardX",
           "svg": ".chakraIcons/icons/clipboard-x.svg",
           "code": "src/ClipboardX.tsx"
@@ -3089,9 +3134,9 @@
           "code": "src/CurrencyBahraini.tsx"
         },
         {
-          "name": "CurrencyBath",
-          "svg": ".chakraIcons/icons/currency-bath.svg",
-          "code": "src/CurrencyBath.tsx"
+          "name": "CurrencyBaht",
+          "svg": ".chakraIcons/icons/currency-baht.svg",
+          "code": "src/CurrencyBaht.tsx"
         },
         {
           "name": "CurrencyBitcoin",
@@ -3487,6 +3532,36 @@
           "name": "Diamonds",
           "svg": ".chakraIcons/icons/diamonds.svg",
           "code": "src/Diamonds.tsx"
+        },
+        {
+          "name": "Dice1",
+          "svg": ".chakraIcons/icons/dice-1.svg",
+          "code": "src/Dice1.tsx"
+        },
+        {
+          "name": "Dice2",
+          "svg": ".chakraIcons/icons/dice-2.svg",
+          "code": "src/Dice2.tsx"
+        },
+        {
+          "name": "Dice3",
+          "svg": ".chakraIcons/icons/dice-3.svg",
+          "code": "src/Dice3.tsx"
+        },
+        {
+          "name": "Dice4",
+          "svg": ".chakraIcons/icons/dice-4.svg",
+          "code": "src/Dice4.tsx"
+        },
+        {
+          "name": "Dice5",
+          "svg": ".chakraIcons/icons/dice-5.svg",
+          "code": "src/Dice5.tsx"
+        },
+        {
+          "name": "Dice6",
+          "svg": ".chakraIcons/icons/dice-6.svg",
+          "code": "src/Dice6.tsx"
         },
         {
           "name": "Dice",
@@ -4459,6 +4534,11 @@
           "code": "src/HandFinger.tsx"
         },
         {
+          "name": "HandGrab",
+          "svg": ".chakraIcons/icons/hand-grab.svg",
+          "code": "src/HandGrab.tsx"
+        },
+        {
           "name": "HandLittleFinger",
           "svg": ".chakraIcons/icons/hand-little-finger.svg",
           "code": "src/HandLittleFinger.tsx"
@@ -4622,6 +4702,16 @@
           "name": "HotelService",
           "svg": ".chakraIcons/icons/hotel-service.svg",
           "code": "src/HotelService.tsx"
+        },
+        {
+          "name": "HourglassHigh",
+          "svg": ".chakraIcons/icons/hourglass-high.svg",
+          "code": "src/HourglassHigh.tsx"
+        },
+        {
+          "name": "HourglassLow",
+          "svg": ".chakraIcons/icons/hourglass-low.svg",
+          "code": "src/HourglassLow.tsx"
         },
         {
           "name": "Hourglass",
