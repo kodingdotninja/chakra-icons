@@ -1179,6 +1179,11 @@
           "code": "src/Sunset.tsx"
         },
         {
+          "name": "Table",
+          "svg": ".chakraIcons/icons/table.svg",
+          "code": "src/Table.tsx"
+        },
+        {
           "name": "Tablet",
           "svg": ".chakraIcons/icons/tablet.svg",
           "code": "src/Tablet.tsx"
