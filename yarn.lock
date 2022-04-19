@@ -1489,9 +1489,9 @@
     read-pkg-up "^7.0.0"
 
 "@semrel-extra/npm@^1.2.0":
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/@semrel-extra/npm/-/npm-1.2.0.tgz#3993aecbff68f4397f4923a3e4de7e795c88acbc"
-  integrity sha512-l5hBMofOUuAfytK3ILEldRO5bdX4dJOfO8aaYyUqON+EcFlKMke7bPWGJjB/bqi1FGTEfESfAsn8zXsVp+G7Zg==
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/@semrel-extra/npm/-/npm-1.2.2.tgz#bd754f9b13e397a70395c36f2229fd7b69f981e8"
+  integrity sha512-QoOJFUd00ORaqOQUe2wYmwPwa7NRdGGfUhzjZ9UEZqoqymXaBDVmFF2hE3h8mFaTa/iWpAyRrrjTsg8HbSpZyw==
 
 "@svgr/hast-util-to-babel-ast@^6":
   version "6.2.1"
