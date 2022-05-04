@@ -3380,9 +3380,9 @@ eslint-module-utils@^2.7.3:
     find-up "^2.1.0"
 
 eslint-plugin-fp-ts@^0:
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-fp-ts/-/eslint-plugin-fp-ts-0.3.0.tgz#40ec4bbaa613c7829786c9485680ff632885c215"
-  integrity sha512-C+ZPzQsC/M4PW3Y4r9IU8jQ3bECXFb5uXuK3LIB+uEYmtJxn5nIP5H+et7/kznkNhgeX0rNEOi2CMwfHGYfe7w==
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-fp-ts/-/eslint-plugin-fp-ts-0.3.1.tgz#3049309389e5cad762feffdb19a4089e80618ce1"
+  integrity sha512-+6S5L1nwrDGF8hDO638DJuHlBx659uYMFOZg9IdvKXvZXldV486fz94xCLMC2dwo4FG7xru1ECJR2+vBoS2FFw==
   dependencies:
     "@typescript-eslint/experimental-utils" "^5.0.0"
     estraverse "^5.2.0"
