@@ -1806,7 +1806,7 @@
     semver "^7.3.5"
     tsutils "^3.21.0"
 
-"@typescript-eslint/typescript-estree@5.22.0":
+"@typescript-eslint/typescript-estree@5.22.0", "@typescript-eslint/typescript-estree@^5.22.0":
   version "5.22.0"
   resolved "https://registry.yarnpkg.com/@typescript-eslint/typescript-estree/-/typescript-estree-5.22.0.tgz#e2116fd644c3e2fda7f4395158cddd38c0c6df97"
   integrity sha512-EyBEQxvNjg80yinGE2xdhpDYm41so/1kOItl0qrjIiJ1kX/L/L8WWGmJg8ni6eG3DwqmOzDqOhe6763bF92nOw==
@@ -3380,11 +3380,12 @@ eslint-module-utils@^2.7.3:
     find-up "^2.1.0"
 
 eslint-plugin-fp-ts@^0:
-  version "0.3.1"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-fp-ts/-/eslint-plugin-fp-ts-0.3.1.tgz#3049309389e5cad762feffdb19a4089e80618ce1"
-  integrity sha512-+6S5L1nwrDGF8hDO638DJuHlBx659uYMFOZg9IdvKXvZXldV486fz94xCLMC2dwo4FG7xru1ECJR2+vBoS2FFw==
+  version "0.3.2"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-fp-ts/-/eslint-plugin-fp-ts-0.3.2.tgz#148ce31a69840585adf8b0f0749b8619e0df37ab"
+  integrity sha512-xvAeD0cNv323dcDV+kM8pMJg8oNRuATqO4q3EK5fQN1Khw6NX7irCIwtnPawXPPZPaZHeMDytj12dRyMXMviSA==
   dependencies:
     "@typescript-eslint/experimental-utils" "^5.0.0"
+    "@typescript-eslint/typescript-estree" "^5.22.0"
     estraverse "^5.2.0"
     fp-ts "^2.9.3"
     recast "^0.20.4"
