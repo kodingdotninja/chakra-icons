@@ -2029,6 +2029,11 @@
           "code": "src/Skip24.tsx"
         },
         {
+          "name": "Sliders16",
+          "svg": ".chakraIcons/icons/sliders-16.svg",
+          "code": "src/Sliders16.tsx"
+        },
+        {
           "name": "Smiley16",
           "svg": ".chakraIcons/icons/smiley-16.svg",
           "code": "src/Smiley16.tsx"
