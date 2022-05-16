@@ -1,3 +1,9 @@
+# @chakra-icons/octicons [1.5.0](https://github.com/kodingdotninja/chakra-icons/compare/@chakra-icons/octicons@1.4.0...@chakra-icons/octicons@1.5.0) (2022-05-16)
+
+### Features
+
+- **octicons:** sync update icons ([17f7de6](https://github.com/kodingdotninja/chakra-icons/commit/17f7de698b573dbecfc540734fa78ab4cada9371))
+
 # @chakra-icons/octicons [1.4.0](https://github.com/kodingdotninja/chakra-icons/compare/@chakra-icons/octicons@1.3.0...@chakra-icons/octicons@1.4.0) (2022-05-10)
 
 ### Features
