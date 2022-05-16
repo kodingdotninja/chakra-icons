@@ -809,6 +809,11 @@
           "code": "src/File24.tsx"
         },
         {
+          "name": "FileAdded16",
+          "svg": ".chakraIcons/icons/file-added-16.svg",
+          "code": "src/FileAdded16.tsx"
+        },
+        {
           "name": "FileBadge16",
           "svg": ".chakraIcons/icons/file-badge-16.svg",
           "code": "src/FileBadge16.tsx"
@@ -872,6 +877,16 @@
           "name": "FileMedia24",
           "svg": ".chakraIcons/icons/file-media-24.svg",
           "code": "src/FileMedia24.tsx"
+        },
+        {
+          "name": "FileMoved16",
+          "svg": ".chakraIcons/icons/file-moved-16.svg",
+          "code": "src/FileMoved16.tsx"
+        },
+        {
+          "name": "FileRemoved16",
+          "svg": ".chakraIcons/icons/file-removed-16.svg",
+          "code": "src/FileRemoved16.tsx"
         },
         {
           "name": "FileSubmodule16",
