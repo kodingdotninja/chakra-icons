@@ -1,0 +1,2369 @@
+{
+  "name": "cryptocurrency-icons",
+  "repository": "https://github.com/spothq/cryptocurrency-icons",
+  "iconPath": "svg/color",
+  "clonePath": ".chakraIcons",
+  "sourcePath": "src",
+  "sources": [
+    {
+      "entryPoint": "src/index.ts",
+      "entries": [
+        {
+          "name": "Pac",
+          "svg": ".chakraIcons/svg/color/$pac.svg",
+          "code": "src/Pac.tsx"
+        },
+        {
+          "name": "I0xbtc",
+          "svg": ".chakraIcons/svg/color/0xbtc.svg",
+          "code": "src/I0xbtc.tsx"
+        },
+        {
+          "name": "I2give",
+          "svg": ".chakraIcons/svg/color/2give.svg",
+          "code": "src/I2give.tsx"
+        },
+        {
+          "name": "Aave",
+          "svg": ".chakraIcons/svg/color/aave.svg",
+          "code": "src/Aave.tsx"
+        },
+        {
+          "name": "Abt",
+          "svg": ".chakraIcons/svg/color/abt.svg",
+          "code": "src/Abt.tsx"
+        },
+        {
+          "name": "Act",
+          "svg": ".chakraIcons/svg/color/act.svg",
+          "code": "src/Act.tsx"
+        },
+        {
+          "name": "Actn",
+          "svg": ".chakraIcons/svg/color/actn.svg",
+          "code": "src/Actn.tsx"
+        },
+        {
+          "name": "Ada",
+          "svg": ".chakraIcons/svg/color/ada.svg",
+          "code": "src/Ada.tsx"
+        },
+        {
+          "name": "Add",
+          "svg": ".chakraIcons/svg/color/add.svg",
+          "code": "src/Add.tsx"
+        },
+        {
+          "name": "Adx",
+          "svg": ".chakraIcons/svg/color/adx.svg",
+          "code": "src/Adx.tsx"
+        },
+        {
+          "name": "Ae",
+          "svg": ".chakraIcons/svg/color/ae.svg",
+          "code": "src/Ae.tsx"
+        },
+        {
+          "name": "Aeon",
+          "svg": ".chakraIcons/svg/color/aeon.svg",
+          "code": "src/Aeon.tsx"
+        },
+        {
+          "name": "Aeur",
+          "svg": ".chakraIcons/svg/color/aeur.svg",
+          "code": "src/Aeur.tsx"
+        },
+        {
+          "name": "Agi",
+          "svg": ".chakraIcons/svg/color/agi.svg",
+          "code": "src/Agi.tsx"
+        },
+        {
+          "name": "Agrs",
+          "svg": ".chakraIcons/svg/color/agrs.svg",
+          "code": "src/Agrs.tsx"
+        },
+        {
+          "name": "Aion",
+          "svg": ".chakraIcons/svg/color/aion.svg",
+          "code": "src/Aion.tsx"
+        },
+        {
+          "name": "Algo",
+          "svg": ".chakraIcons/svg/color/algo.svg",
+          "code": "src/Algo.tsx"
+        },
+        {
+          "name": "Amb",
+          "svg": ".chakraIcons/svg/color/amb.svg",
+          "code": "src/Amb.tsx"
+        },
+        {
+          "name": "Amp",
+          "svg": ".chakraIcons/svg/color/amp.svg",
+          "code": "src/Amp.tsx"
+        },
+        {
+          "name": "Ampl",
+          "svg": ".chakraIcons/svg/color/ampl.svg",
+          "code": "src/Ampl.tsx"
+        },
+        {
+          "name": "Ankr",
+          "svg": ".chakraIcons/svg/color/ankr.svg",
+          "code": "src/Ankr.tsx"
+        },
+        {
+          "name": "Ant",
+          "svg": ".chakraIcons/svg/color/ant.svg",
+          "code": "src/Ant.tsx"
+        },
+        {
+          "name": "Apex",
+          "svg": ".chakraIcons/svg/color/apex.svg",
+          "code": "src/Apex.tsx"
+        },
+        {
+          "name": "Appc",
+          "svg": ".chakraIcons/svg/color/appc.svg",
+          "code": "src/Appc.tsx"
+        },
+        {
+          "name": "Ardr",
+          "svg": ".chakraIcons/svg/color/ardr.svg",
+          "code": "src/Ardr.tsx"
+        },
+        {
+          "name": "Arg",
+          "svg": ".chakraIcons/svg/color/arg.svg",
+          "code": "src/Arg.tsx"
+        },
+        {
+          "name": "Ark",
+          "svg": ".chakraIcons/svg/color/ark.svg",
+          "code": "src/Ark.tsx"
+        },
+        {
+          "name": "Arn",
+          "svg": ".chakraIcons/svg/color/arn.svg",
+          "code": "src/Arn.tsx"
+        },
+        {
+          "name": "Arnx",
+          "svg": ".chakraIcons/svg/color/arnx.svg",
+          "code": "src/Arnx.tsx"
+        },
+        {
+          "name": "Ary",
+          "svg": ".chakraIcons/svg/color/ary.svg",
+          "code": "src/Ary.tsx"
+        },
+        {
+          "name": "Ast",
+          "svg": ".chakraIcons/svg/color/ast.svg",
+          "code": "src/Ast.tsx"
+        },
+        {
+          "name": "Atm",
+          "svg": ".chakraIcons/svg/color/atm.svg",
+          "code": "src/Atm.tsx"
+        },
+        {
+          "name": "Atom",
+          "svg": ".chakraIcons/svg/color/atom.svg",
+          "code": "src/Atom.tsx"
+        },
+        {
+          "name": "Audr",
+          "svg": ".chakraIcons/svg/color/audr.svg",
+          "code": "src/Audr.tsx"
+        },
+        {
+          "name": "Auto",
+          "svg": ".chakraIcons/svg/color/auto.svg",
+          "code": "src/Auto.tsx"
+        },
+        {
+          "name": "Aywa",
+          "svg": ".chakraIcons/svg/color/aywa.svg",
+          "code": "src/Aywa.tsx"
+        },
+        {
+          "name": "Bab",
+          "svg": ".chakraIcons/svg/color/bab.svg",
+          "code": "src/Bab.tsx"
+        },
+        {
+          "name": "Bal",
+          "svg": ".chakraIcons/svg/color/bal.svg",
+          "code": "src/Bal.tsx"
+        },
+        {
+          "name": "Band",
+          "svg": ".chakraIcons/svg/color/band.svg",
+          "code": "src/Band.tsx"
+        },
+        {
+          "name": "Bat",
+          "svg": ".chakraIcons/svg/color/bat.svg",
+          "code": "src/Bat.tsx"
+        },
+        {
+          "name": "Bay",
+          "svg": ".chakraIcons/svg/color/bay.svg",
+          "code": "src/Bay.tsx"
+        },
+        {
+          "name": "Bcbc",
+          "svg": ".chakraIcons/svg/color/bcbc.svg",
+          "code": "src/Bcbc.tsx"
+        },
+        {
+          "name": "Bcc",
+          "svg": ".chakraIcons/svg/color/bcc.svg",
+          "code": "src/Bcc.tsx"
+        },
+        {
+          "name": "Bcd",
+          "svg": ".chakraIcons/svg/color/bcd.svg",
+          "code": "src/Bcd.tsx"
+        },
+        {
+          "name": "Bch",
+          "svg": ".chakraIcons/svg/color/bch.svg",
+          "code": "src/Bch.tsx"
+        },
+        {
+          "name": "Bcio",
+          "svg": ".chakraIcons/svg/color/bcio.svg",
+          "code": "src/Bcio.tsx"
+        },
+        {
+          "name": "Bcn",
+          "svg": ".chakraIcons/svg/color/bcn.svg",
+          "code": "src/Bcn.tsx"
+        },
+        {
+          "name": "Bco",
+          "svg": ".chakraIcons/svg/color/bco.svg",
+          "code": "src/Bco.tsx"
+        },
+        {
+          "name": "Bcpt",
+          "svg": ".chakraIcons/svg/color/bcpt.svg",
+          "code": "src/Bcpt.tsx"
+        },
+        {
+          "name": "Bdl",
+          "svg": ".chakraIcons/svg/color/bdl.svg",
+          "code": "src/Bdl.tsx"
+        },
+        {
+          "name": "Beam",
+          "svg": ".chakraIcons/svg/color/beam.svg",
+          "code": "src/Beam.tsx"
+        },
+        {
+          "name": "Bela",
+          "svg": ".chakraIcons/svg/color/bela.svg",
+          "code": "src/Bela.tsx"
+        },
+        {
+          "name": "Bix",
+          "svg": ".chakraIcons/svg/color/bix.svg",
+          "code": "src/Bix.tsx"
+        },
+        {
+          "name": "Blcn",
+          "svg": ".chakraIcons/svg/color/blcn.svg",
+          "code": "src/Blcn.tsx"
+        },
+        {
+          "name": "Blk",
+          "svg": ".chakraIcons/svg/color/blk.svg",
+          "code": "src/Blk.tsx"
+        },
+        {
+          "name": "Block",
+          "svg": ".chakraIcons/svg/color/block.svg",
+          "code": "src/Block.tsx"
+        },
+        {
+          "name": "Blz",
+          "svg": ".chakraIcons/svg/color/blz.svg",
+          "code": "src/Blz.tsx"
+        },
+        {
+          "name": "Bnb",
+          "svg": ".chakraIcons/svg/color/bnb.svg",
+          "code": "src/Bnb.tsx"
+        },
+        {
+          "name": "Bnt",
+          "svg": ".chakraIcons/svg/color/bnt.svg",
+          "code": "src/Bnt.tsx"
+        },
+        {
+          "name": "Bnty",
+          "svg": ".chakraIcons/svg/color/bnty.svg",
+          "code": "src/Bnty.tsx"
+        },
+        {
+          "name": "Booty",
+          "svg": ".chakraIcons/svg/color/booty.svg",
+          "code": "src/Booty.tsx"
+        },
+        {
+          "name": "Bos",
+          "svg": ".chakraIcons/svg/color/bos.svg",
+          "code": "src/Bos.tsx"
+        },
+        {
+          "name": "Bpt",
+          "svg": ".chakraIcons/svg/color/bpt.svg",
+          "code": "src/Bpt.tsx"
+        },
+        {
+          "name": "Bq",
+          "svg": ".chakraIcons/svg/color/bq.svg",
+          "code": "src/Bq.tsx"
+        },
+        {
+          "name": "Brd",
+          "svg": ".chakraIcons/svg/color/brd.svg",
+          "code": "src/Brd.tsx"
+        },
+        {
+          "name": "Bsd",
+          "svg": ".chakraIcons/svg/color/bsd.svg",
+          "code": "src/Bsd.tsx"
+        },
+        {
+          "name": "Bsv",
+          "svg": ".chakraIcons/svg/color/bsv.svg",
+          "code": "src/Bsv.tsx"
+        },
+        {
+          "name": "Btc",
+          "svg": ".chakraIcons/svg/color/btc.svg",
+          "code": "src/Btc.tsx"
+        },
+        {
+          "name": "Btcd",
+          "svg": ".chakraIcons/svg/color/btcd.svg",
+          "code": "src/Btcd.tsx"
+        },
+        {
+          "name": "Btch",
+          "svg": ".chakraIcons/svg/color/btch.svg",
+          "code": "src/Btch.tsx"
+        },
+        {
+          "name": "Btcp",
+          "svg": ".chakraIcons/svg/color/btcp.svg",
+          "code": "src/Btcp.tsx"
+        },
+        {
+          "name": "Btcz",
+          "svg": ".chakraIcons/svg/color/btcz.svg",
+          "code": "src/Btcz.tsx"
+        },
+        {
+          "name": "Btdx",
+          "svg": ".chakraIcons/svg/color/btdx.svg",
+          "code": "src/Btdx.tsx"
+        },
+        {
+          "name": "Btg",
+          "svg": ".chakraIcons/svg/color/btg.svg",
+          "code": "src/Btg.tsx"
+        },
+        {
+          "name": "Btm",
+          "svg": ".chakraIcons/svg/color/btm.svg",
+          "code": "src/Btm.tsx"
+        },
+        {
+          "name": "Bts",
+          "svg": ".chakraIcons/svg/color/bts.svg",
+          "code": "src/Bts.tsx"
+        },
+        {
+          "name": "Btt",
+          "svg": ".chakraIcons/svg/color/btt.svg",
+          "code": "src/Btt.tsx"
+        },
+        {
+          "name": "Btx",
+          "svg": ".chakraIcons/svg/color/btx.svg",
+          "code": "src/Btx.tsx"
+        },
+        {
+          "name": "Burst",
+          "svg": ".chakraIcons/svg/color/burst.svg",
+          "code": "src/Burst.tsx"
+        },
+        {
+          "name": "Bze",
+          "svg": ".chakraIcons/svg/color/bze.svg",
+          "code": "src/Bze.tsx"
+        },
+        {
+          "name": "Call",
+          "svg": ".chakraIcons/svg/color/call.svg",
+          "code": "src/Call.tsx"
+        },
+        {
+          "name": "Cc",
+          "svg": ".chakraIcons/svg/color/cc.svg",
+          "code": "src/Cc.tsx"
+        },
+        {
+          "name": "Cdn",
+          "svg": ".chakraIcons/svg/color/cdn.svg",
+          "code": "src/Cdn.tsx"
+        },
+        {
+          "name": "Cdt",
+          "svg": ".chakraIcons/svg/color/cdt.svg",
+          "code": "src/Cdt.tsx"
+        },
+        {
+          "name": "Cenz",
+          "svg": ".chakraIcons/svg/color/cenz.svg",
+          "code": "src/Cenz.tsx"
+        },
+        {
+          "name": "Chain",
+          "svg": ".chakraIcons/svg/color/chain.svg",
+          "code": "src/Chain.tsx"
+        },
+        {
+          "name": "Chat",
+          "svg": ".chakraIcons/svg/color/chat.svg",
+          "code": "src/Chat.tsx"
+        },
+        {
+          "name": "Chips",
+          "svg": ".chakraIcons/svg/color/chips.svg",
+          "code": "src/Chips.tsx"
+        },
+        {
+          "name": "Chsb",
+          "svg": ".chakraIcons/svg/color/chsb.svg",
+          "code": "src/Chsb.tsx"
+        },
+        {
+          "name": "Cix",
+          "svg": ".chakraIcons/svg/color/cix.svg",
+          "code": "src/Cix.tsx"
+        },
+        {
+          "name": "Clam",
+          "svg": ".chakraIcons/svg/color/clam.svg",
+          "code": "src/Clam.tsx"
+        },
+        {
+          "name": "Cloak",
+          "svg": ".chakraIcons/svg/color/cloak.svg",
+          "code": "src/Cloak.tsx"
+        },
+        {
+          "name": "Cmm",
+          "svg": ".chakraIcons/svg/color/cmm.svg",
+          "code": "src/Cmm.tsx"
+        },
+        {
+          "name": "Cmt",
+          "svg": ".chakraIcons/svg/color/cmt.svg",
+          "code": "src/Cmt.tsx"
+        },
+        {
+          "name": "Cnd",
+          "svg": ".chakraIcons/svg/color/cnd.svg",
+          "code": "src/Cnd.tsx"
+        },
+        {
+          "name": "Cnx",
+          "svg": ".chakraIcons/svg/color/cnx.svg",
+          "code": "src/Cnx.tsx"
+        },
+        {
+          "name": "Cny",
+          "svg": ".chakraIcons/svg/color/cny.svg",
+          "code": "src/Cny.tsx"
+        },
+        {
+          "name": "Cob",
+          "svg": ".chakraIcons/svg/color/cob.svg",
+          "code": "src/Cob.tsx"
+        },
+        {
+          "name": "Colx",
+          "svg": ".chakraIcons/svg/color/colx.svg",
+          "code": "src/Colx.tsx"
+        },
+        {
+          "name": "Comp",
+          "svg": ".chakraIcons/svg/color/comp.svg",
+          "code": "src/Comp.tsx"
+        },
+        {
+          "name": "Coqui",
+          "svg": ".chakraIcons/svg/color/coqui.svg",
+          "code": "src/Coqui.tsx"
+        },
+        {
+          "name": "Cred",
+          "svg": ".chakraIcons/svg/color/cred.svg",
+          "code": "src/Cred.tsx"
+        },
+        {
+          "name": "Crpt",
+          "svg": ".chakraIcons/svg/color/crpt.svg",
+          "code": "src/Crpt.tsx"
+        },
+        {
+          "name": "Crv",
+          "svg": ".chakraIcons/svg/color/crv.svg",
+          "code": "src/Crv.tsx"
+        },
+        {
+          "name": "Crw",
+          "svg": ".chakraIcons/svg/color/crw.svg",
+          "code": "src/Crw.tsx"
+        },
+        {
+          "name": "Cs",
+          "svg": ".chakraIcons/svg/color/cs.svg",
+          "code": "src/Cs.tsx"
+        },
+        {
+          "name": "Ctr",
+          "svg": ".chakraIcons/svg/color/ctr.svg",
+          "code": "src/Ctr.tsx"
+        },
+        {
+          "name": "Ctxc",
+          "svg": ".chakraIcons/svg/color/ctxc.svg",
+          "code": "src/Ctxc.tsx"
+        },
+        {
+          "name": "Cvc",
+          "svg": ".chakraIcons/svg/color/cvc.svg",
+          "code": "src/Cvc.tsx"
+        },
+        {
+          "name": "D",
+          "svg": ".chakraIcons/svg/color/d.svg",
+          "code": "src/D.tsx"
+        },
+        {
+          "name": "Dai",
+          "svg": ".chakraIcons/svg/color/dai.svg",
+          "code": "src/Dai.tsx"
+        },
+        {
+          "name": "Dash",
+          "svg": ".chakraIcons/svg/color/dash.svg",
+          "code": "src/Dash.tsx"
+        },
+        {
+          "name": "Dat",
+          "svg": ".chakraIcons/svg/color/dat.svg",
+          "code": "src/Dat.tsx"
+        },
+        {
+          "name": "Data",
+          "svg": ".chakraIcons/svg/color/data.svg",
+          "code": "src/Data.tsx"
+        },
+        {
+          "name": "Dbc",
+          "svg": ".chakraIcons/svg/color/dbc.svg",
+          "code": "src/Dbc.tsx"
+        },
+        {
+          "name": "Dcn",
+          "svg": ".chakraIcons/svg/color/dcn.svg",
+          "code": "src/Dcn.tsx"
+        },
+        {
+          "name": "Dcr",
+          "svg": ".chakraIcons/svg/color/dcr.svg",
+          "code": "src/Dcr.tsx"
+        },
+        {
+          "name": "Deez",
+          "svg": ".chakraIcons/svg/color/deez.svg",
+          "code": "src/Deez.tsx"
+        },
+        {
+          "name": "Dent",
+          "svg": ".chakraIcons/svg/color/dent.svg",
+          "code": "src/Dent.tsx"
+        },
+        {
+          "name": "Dew",
+          "svg": ".chakraIcons/svg/color/dew.svg",
+          "code": "src/Dew.tsx"
+        },
+        {
+          "name": "Dgb",
+          "svg": ".chakraIcons/svg/color/dgb.svg",
+          "code": "src/Dgb.tsx"
+        },
+        {
+          "name": "Dgd",
+          "svg": ".chakraIcons/svg/color/dgd.svg",
+          "code": "src/Dgd.tsx"
+        },
+        {
+          "name": "Dlt",
+          "svg": ".chakraIcons/svg/color/dlt.svg",
+          "code": "src/Dlt.tsx"
+        },
+        {
+          "name": "Dnt",
+          "svg": ".chakraIcons/svg/color/dnt.svg",
+          "code": "src/Dnt.tsx"
+        },
+        {
+          "name": "Dock",
+          "svg": ".chakraIcons/svg/color/dock.svg",
+          "code": "src/Dock.tsx"
+        },
+        {
+          "name": "Doge",
+          "svg": ".chakraIcons/svg/color/doge.svg",
+          "code": "src/Doge.tsx"
+        },
+        {
+          "name": "Dot",
+          "svg": ".chakraIcons/svg/color/dot.svg",
+          "code": "src/Dot.tsx"
+        },
+        {
+          "name": "Drgn",
+          "svg": ".chakraIcons/svg/color/drgn.svg",
+          "code": "src/Drgn.tsx"
+        },
+        {
+          "name": "Drop",
+          "svg": ".chakraIcons/svg/color/drop.svg",
+          "code": "src/Drop.tsx"
+        },
+        {
+          "name": "Dta",
+          "svg": ".chakraIcons/svg/color/dta.svg",
+          "code": "src/Dta.tsx"
+        },
+        {
+          "name": "Dth",
+          "svg": ".chakraIcons/svg/color/dth.svg",
+          "code": "src/Dth.tsx"
+        },
+        {
+          "name": "Dtr",
+          "svg": ".chakraIcons/svg/color/dtr.svg",
+          "code": "src/Dtr.tsx"
+        },
+        {
+          "name": "Ebst",
+          "svg": ".chakraIcons/svg/color/ebst.svg",
+          "code": "src/Ebst.tsx"
+        },
+        {
+          "name": "Eca",
+          "svg": ".chakraIcons/svg/color/eca.svg",
+          "code": "src/Eca.tsx"
+        },
+        {
+          "name": "Edg",
+          "svg": ".chakraIcons/svg/color/edg.svg",
+          "code": "src/Edg.tsx"
+        },
+        {
+          "name": "Edo",
+          "svg": ".chakraIcons/svg/color/edo.svg",
+          "code": "src/Edo.tsx"
+        },
+        {
+          "name": "Edoge",
+          "svg": ".chakraIcons/svg/color/edoge.svg",
+          "code": "src/Edoge.tsx"
+        },
+        {
+          "name": "Ela",
+          "svg": ".chakraIcons/svg/color/ela.svg",
+          "code": "src/Ela.tsx"
+        },
+        {
+          "name": "Elec",
+          "svg": ".chakraIcons/svg/color/elec.svg",
+          "code": "src/Elec.tsx"
+        },
+        {
+          "name": "Elf",
+          "svg": ".chakraIcons/svg/color/elf.svg",
+          "code": "src/Elf.tsx"
+        },
+        {
+          "name": "Elix",
+          "svg": ".chakraIcons/svg/color/elix.svg",
+          "code": "src/Elix.tsx"
+        },
+        {
+          "name": "Ella",
+          "svg": ".chakraIcons/svg/color/ella.svg",
+          "code": "src/Ella.tsx"
+        },
+        {
+          "name": "Emb",
+          "svg": ".chakraIcons/svg/color/emb.svg",
+          "code": "src/Emb.tsx"
+        },
+        {
+          "name": "Emc",
+          "svg": ".chakraIcons/svg/color/emc.svg",
+          "code": "src/Emc.tsx"
+        },
+        {
+          "name": "Emc2",
+          "svg": ".chakraIcons/svg/color/emc2.svg",
+          "code": "src/Emc2.tsx"
+        },
+        {
+          "name": "Eng",
+          "svg": ".chakraIcons/svg/color/eng.svg",
+          "code": "src/Eng.tsx"
+        },
+        {
+          "name": "Enj",
+          "svg": ".chakraIcons/svg/color/enj.svg",
+          "code": "src/Enj.tsx"
+        },
+        {
+          "name": "Entrp",
+          "svg": ".chakraIcons/svg/color/entrp.svg",
+          "code": "src/Entrp.tsx"
+        },
+        {
+          "name": "Eon",
+          "svg": ".chakraIcons/svg/color/eon.svg",
+          "code": "src/Eon.tsx"
+        },
+        {
+          "name": "Eop",
+          "svg": ".chakraIcons/svg/color/eop.svg",
+          "code": "src/Eop.tsx"
+        },
+        {
+          "name": "Eos",
+          "svg": ".chakraIcons/svg/color/eos.svg",
+          "code": "src/Eos.tsx"
+        },
+        {
+          "name": "Eqli",
+          "svg": ".chakraIcons/svg/color/eqli.svg",
+          "code": "src/Eqli.tsx"
+        },
+        {
+          "name": "Equa",
+          "svg": ".chakraIcons/svg/color/equa.svg",
+          "code": "src/Equa.tsx"
+        },
+        {
+          "name": "Etc",
+          "svg": ".chakraIcons/svg/color/etc.svg",
+          "code": "src/Etc.tsx"
+        },
+        {
+          "name": "Eth",
+          "svg": ".chakraIcons/svg/color/eth.svg",
+          "code": "src/Eth.tsx"
+        },
+        {
+          "name": "Ethos",
+          "svg": ".chakraIcons/svg/color/ethos.svg",
+          "code": "src/Ethos.tsx"
+        },
+        {
+          "name": "Etn",
+          "svg": ".chakraIcons/svg/color/etn.svg",
+          "code": "src/Etn.tsx"
+        },
+        {
+          "name": "Etp",
+          "svg": ".chakraIcons/svg/color/etp.svg",
+          "code": "src/Etp.tsx"
+        },
+        {
+          "name": "Eur",
+          "svg": ".chakraIcons/svg/color/eur.svg",
+          "code": "src/Eur.tsx"
+        },
+        {
+          "name": "Evx",
+          "svg": ".chakraIcons/svg/color/evx.svg",
+          "code": "src/Evx.tsx"
+        },
+        {
+          "name": "Exmo",
+          "svg": ".chakraIcons/svg/color/exmo.svg",
+          "code": "src/Exmo.tsx"
+        },
+        {
+          "name": "Exp",
+          "svg": ".chakraIcons/svg/color/exp.svg",
+          "code": "src/Exp.tsx"
+        },
+        {
+          "name": "Fair",
+          "svg": ".chakraIcons/svg/color/fair.svg",
+          "code": "src/Fair.tsx"
+        },
+        {
+          "name": "Fct",
+          "svg": ".chakraIcons/svg/color/fct.svg",
+          "code": "src/Fct.tsx"
+        },
+        {
+          "name": "Fil",
+          "svg": ".chakraIcons/svg/color/fil.svg",
+          "code": "src/Fil.tsx"
+        },
+        {
+          "name": "Fjc",
+          "svg": ".chakraIcons/svg/color/fjc.svg",
+          "code": "src/Fjc.tsx"
+        },
+        {
+          "name": "Fldc",
+          "svg": ".chakraIcons/svg/color/fldc.svg",
+          "code": "src/Fldc.tsx"
+        },
+        {
+          "name": "Flo",
+          "svg": ".chakraIcons/svg/color/flo.svg",
+          "code": "src/Flo.tsx"
+        },
+        {
+          "name": "Flux",
+          "svg": ".chakraIcons/svg/color/flux.svg",
+          "code": "src/Flux.tsx"
+        },
+        {
+          "name": "Fsn",
+          "svg": ".chakraIcons/svg/color/fsn.svg",
+          "code": "src/Fsn.tsx"
+        },
+        {
+          "name": "Ftc",
+          "svg": ".chakraIcons/svg/color/ftc.svg",
+          "code": "src/Ftc.tsx"
+        },
+        {
+          "name": "Fuel",
+          "svg": ".chakraIcons/svg/color/fuel.svg",
+          "code": "src/Fuel.tsx"
+        },
+        {
+          "name": "Fun",
+          "svg": ".chakraIcons/svg/color/fun.svg",
+          "code": "src/Fun.tsx"
+        },
+        {
+          "name": "Game",
+          "svg": ".chakraIcons/svg/color/game.svg",
+          "code": "src/Game.tsx"
+        },
+        {
+          "name": "Gas",
+          "svg": ".chakraIcons/svg/color/gas.svg",
+          "code": "src/Gas.tsx"
+        },
+        {
+          "name": "Gbp",
+          "svg": ".chakraIcons/svg/color/gbp.svg",
+          "code": "src/Gbp.tsx"
+        },
+        {
+          "name": "Gbx",
+          "svg": ".chakraIcons/svg/color/gbx.svg",
+          "code": "src/Gbx.tsx"
+        },
+        {
+          "name": "Gbyte",
+          "svg": ".chakraIcons/svg/color/gbyte.svg",
+          "code": "src/Gbyte.tsx"
+        },
+        {
+          "name": "Generic",
+          "svg": ".chakraIcons/svg/color/generic.svg",
+          "code": "src/Generic.tsx"
+        },
+        {
+          "name": "Gin",
+          "svg": ".chakraIcons/svg/color/gin.svg",
+          "code": "src/Gin.tsx"
+        },
+        {
+          "name": "Glxt",
+          "svg": ".chakraIcons/svg/color/glxt.svg",
+          "code": "src/Glxt.tsx"
+        },
+        {
+          "name": "Gmr",
+          "svg": ".chakraIcons/svg/color/gmr.svg",
+          "code": "src/Gmr.tsx"
+        },
+        {
+          "name": "Gno",
+          "svg": ".chakraIcons/svg/color/gno.svg",
+          "code": "src/Gno.tsx"
+        },
+        {
+          "name": "Gnt",
+          "svg": ".chakraIcons/svg/color/gnt.svg",
+          "code": "src/Gnt.tsx"
+        },
+        {
+          "name": "Gold",
+          "svg": ".chakraIcons/svg/color/gold.svg",
+          "code": "src/Gold.tsx"
+        },
+        {
+          "name": "Grc",
+          "svg": ".chakraIcons/svg/color/grc.svg",
+          "code": "src/Grc.tsx"
+        },
+        {
+          "name": "Grin",
+          "svg": ".chakraIcons/svg/color/grin.svg",
+          "code": "src/Grin.tsx"
+        },
+        {
+          "name": "Grs",
+          "svg": ".chakraIcons/svg/color/grs.svg",
+          "code": "src/Grs.tsx"
+        },
+        {
+          "name": "Grt",
+          "svg": ".chakraIcons/svg/color/grt.svg",
+          "code": "src/Grt.tsx"
+        },
+        {
+          "name": "Gsc",
+          "svg": ".chakraIcons/svg/color/gsc.svg",
+          "code": "src/Gsc.tsx"
+        },
+        {
+          "name": "Gto",
+          "svg": ".chakraIcons/svg/color/gto.svg",
+          "code": "src/Gto.tsx"
+        },
+        {
+          "name": "Gup",
+          "svg": ".chakraIcons/svg/color/gup.svg",
+          "code": "src/Gup.tsx"
+        },
+        {
+          "name": "Gusd",
+          "svg": ".chakraIcons/svg/color/gusd.svg",
+          "code": "src/Gusd.tsx"
+        },
+        {
+          "name": "Gvt",
+          "svg": ".chakraIcons/svg/color/gvt.svg",
+          "code": "src/Gvt.tsx"
+        },
+        {
+          "name": "Gxs",
+          "svg": ".chakraIcons/svg/color/gxs.svg",
+          "code": "src/Gxs.tsx"
+        },
+        {
+          "name": "Gzr",
+          "svg": ".chakraIcons/svg/color/gzr.svg",
+          "code": "src/Gzr.tsx"
+        },
+        {
+          "name": "Hight",
+          "svg": ".chakraIcons/svg/color/hight.svg",
+          "code": "src/Hight.tsx"
+        },
+        {
+          "name": "Hns",
+          "svg": ".chakraIcons/svg/color/hns.svg",
+          "code": "src/Hns.tsx"
+        },
+        {
+          "name": "Hodl",
+          "svg": ".chakraIcons/svg/color/hodl.svg",
+          "code": "src/Hodl.tsx"
+        },
+        {
+          "name": "Hot",
+          "svg": ".chakraIcons/svg/color/hot.svg",
+          "code": "src/Hot.tsx"
+        },
+        {
+          "name": "Hpb",
+          "svg": ".chakraIcons/svg/color/hpb.svg",
+          "code": "src/Hpb.tsx"
+        },
+        {
+          "name": "Hsr",
+          "svg": ".chakraIcons/svg/color/hsr.svg",
+          "code": "src/Hsr.tsx"
+        },
+        {
+          "name": "Ht",
+          "svg": ".chakraIcons/svg/color/ht.svg",
+          "code": "src/Ht.tsx"
+        },
+        {
+          "name": "Html",
+          "svg": ".chakraIcons/svg/color/html.svg",
+          "code": "src/Html.tsx"
+        },
+        {
+          "name": "Huc",
+          "svg": ".chakraIcons/svg/color/huc.svg",
+          "code": "src/Huc.tsx"
+        },
+        {
+          "name": "Husd",
+          "svg": ".chakraIcons/svg/color/husd.svg",
+          "code": "src/Husd.tsx"
+        },
+        {
+          "name": "Hush",
+          "svg": ".chakraIcons/svg/color/hush.svg",
+          "code": "src/Hush.tsx"
+        },
+        {
+          "name": "Icn",
+          "svg": ".chakraIcons/svg/color/icn.svg",
+          "code": "src/Icn.tsx"
+        },
+        {
+          "name": "Icp",
+          "svg": ".chakraIcons/svg/color/icp.svg",
+          "code": "src/Icp.tsx"
+        },
+        {
+          "name": "Icx",
+          "svg": ".chakraIcons/svg/color/icx.svg",
+          "code": "src/Icx.tsx"
+        },
+        {
+          "name": "Ignis",
+          "svg": ".chakraIcons/svg/color/ignis.svg",
+          "code": "src/Ignis.tsx"
+        },
+        {
+          "name": "Ilk",
+          "svg": ".chakraIcons/svg/color/ilk.svg",
+          "code": "src/Ilk.tsx"
+        },
+        {
+          "name": "Ink",
+          "svg": ".chakraIcons/svg/color/ink.svg",
+          "code": "src/Ink.tsx"
+        },
+        {
+          "name": "Ins",
+          "svg": ".chakraIcons/svg/color/ins.svg",
+          "code": "src/Ins.tsx"
+        },
+        {
+          "name": "Ion",
+          "svg": ".chakraIcons/svg/color/ion.svg",
+          "code": "src/Ion.tsx"
+        },
+        {
+          "name": "Iop",
+          "svg": ".chakraIcons/svg/color/iop.svg",
+          "code": "src/Iop.tsx"
+        },
+        {
+          "name": "Iost",
+          "svg": ".chakraIcons/svg/color/iost.svg",
+          "code": "src/Iost.tsx"
+        },
+        {
+          "name": "Iotx",
+          "svg": ".chakraIcons/svg/color/iotx.svg",
+          "code": "src/Iotx.tsx"
+        },
+        {
+          "name": "Iq",
+          "svg": ".chakraIcons/svg/color/iq.svg",
+          "code": "src/Iq.tsx"
+        },
+        {
+          "name": "Itc",
+          "svg": ".chakraIcons/svg/color/itc.svg",
+          "code": "src/Itc.tsx"
+        },
+        {
+          "name": "Jnt",
+          "svg": ".chakraIcons/svg/color/jnt.svg",
+          "code": "src/Jnt.tsx"
+        },
+        {
+          "name": "Jpy",
+          "svg": ".chakraIcons/svg/color/jpy.svg",
+          "code": "src/Jpy.tsx"
+        },
+        {
+          "name": "Kcs",
+          "svg": ".chakraIcons/svg/color/kcs.svg",
+          "code": "src/Kcs.tsx"
+        },
+        {
+          "name": "Kin",
+          "svg": ".chakraIcons/svg/color/kin.svg",
+          "code": "src/Kin.tsx"
+        },
+        {
+          "name": "Klown",
+          "svg": ".chakraIcons/svg/color/klown.svg",
+          "code": "src/Klown.tsx"
+        },
+        {
+          "name": "Kmd",
+          "svg": ".chakraIcons/svg/color/kmd.svg",
+          "code": "src/Kmd.tsx"
+        },
+        {
+          "name": "Knc",
+          "svg": ".chakraIcons/svg/color/knc.svg",
+          "code": "src/Knc.tsx"
+        },
+        {
+          "name": "Krb",
+          "svg": ".chakraIcons/svg/color/krb.svg",
+          "code": "src/Krb.tsx"
+        },
+        {
+          "name": "Ksm",
+          "svg": ".chakraIcons/svg/color/ksm.svg",
+          "code": "src/Ksm.tsx"
+        },
+        {
+          "name": "Lbc",
+          "svg": ".chakraIcons/svg/color/lbc.svg",
+          "code": "src/Lbc.tsx"
+        },
+        {
+          "name": "Lend",
+          "svg": ".chakraIcons/svg/color/lend.svg",
+          "code": "src/Lend.tsx"
+        },
+        {
+          "name": "Leo",
+          "svg": ".chakraIcons/svg/color/leo.svg",
+          "code": "src/Leo.tsx"
+        },
+        {
+          "name": "Link",
+          "svg": ".chakraIcons/svg/color/link.svg",
+          "code": "src/Link.tsx"
+        },
+        {
+          "name": "Lkk",
+          "svg": ".chakraIcons/svg/color/lkk.svg",
+          "code": "src/Lkk.tsx"
+        },
+        {
+          "name": "Loom",
+          "svg": ".chakraIcons/svg/color/loom.svg",
+          "code": "src/Loom.tsx"
+        },
+        {
+          "name": "Lpt",
+          "svg": ".chakraIcons/svg/color/lpt.svg",
+          "code": "src/Lpt.tsx"
+        },
+        {
+          "name": "Lrc",
+          "svg": ".chakraIcons/svg/color/lrc.svg",
+          "code": "src/Lrc.tsx"
+        },
+        {
+          "name": "Lsk",
+          "svg": ".chakraIcons/svg/color/lsk.svg",
+          "code": "src/Lsk.tsx"
+        },
+        {
+          "name": "Ltc",
+          "svg": ".chakraIcons/svg/color/ltc.svg",
+          "code": "src/Ltc.tsx"
+        },
+        {
+          "name": "Lun",
+          "svg": ".chakraIcons/svg/color/lun.svg",
+          "code": "src/Lun.tsx"
+        },
+        {
+          "name": "Maid",
+          "svg": ".chakraIcons/svg/color/maid.svg",
+          "code": "src/Maid.tsx"
+        },
+        {
+          "name": "Mana",
+          "svg": ".chakraIcons/svg/color/mana.svg",
+          "code": "src/Mana.tsx"
+        },
+        {
+          "name": "Matic",
+          "svg": ".chakraIcons/svg/color/matic.svg",
+          "code": "src/Matic.tsx"
+        },
+        {
+          "name": "Max",
+          "svg": ".chakraIcons/svg/color/max.svg",
+          "code": "src/Max.tsx"
+        },
+        {
+          "name": "Mcap",
+          "svg": ".chakraIcons/svg/color/mcap.svg",
+          "code": "src/Mcap.tsx"
+        },
+        {
+          "name": "Mco",
+          "svg": ".chakraIcons/svg/color/mco.svg",
+          "code": "src/Mco.tsx"
+        },
+        {
+          "name": "Mda",
+          "svg": ".chakraIcons/svg/color/mda.svg",
+          "code": "src/Mda.tsx"
+        },
+        {
+          "name": "Mds",
+          "svg": ".chakraIcons/svg/color/mds.svg",
+          "code": "src/Mds.tsx"
+        },
+        {
+          "name": "Med",
+          "svg": ".chakraIcons/svg/color/med.svg",
+          "code": "src/Med.tsx"
+        },
+        {
+          "name": "Meetone",
+          "svg": ".chakraIcons/svg/color/meetone.svg",
+          "code": "src/Meetone.tsx"
+        },
+        {
+          "name": "Mft",
+          "svg": ".chakraIcons/svg/color/mft.svg",
+          "code": "src/Mft.tsx"
+        },
+        {
+          "name": "Miota",
+          "svg": ".chakraIcons/svg/color/miota.svg",
+          "code": "src/Miota.tsx"
+        },
+        {
+          "name": "Mith",
+          "svg": ".chakraIcons/svg/color/mith.svg",
+          "code": "src/Mith.tsx"
+        },
+        {
+          "name": "Mkr",
+          "svg": ".chakraIcons/svg/color/mkr.svg",
+          "code": "src/Mkr.tsx"
+        },
+        {
+          "name": "Mln",
+          "svg": ".chakraIcons/svg/color/mln.svg",
+          "code": "src/Mln.tsx"
+        },
+        {
+          "name": "Mnx",
+          "svg": ".chakraIcons/svg/color/mnx.svg",
+          "code": "src/Mnx.tsx"
+        },
+        {
+          "name": "Mnz",
+          "svg": ".chakraIcons/svg/color/mnz.svg",
+          "code": "src/Mnz.tsx"
+        },
+        {
+          "name": "Moac",
+          "svg": ".chakraIcons/svg/color/moac.svg",
+          "code": "src/Moac.tsx"
+        },
+        {
+          "name": "Mod",
+          "svg": ".chakraIcons/svg/color/mod.svg",
+          "code": "src/Mod.tsx"
+        },
+        {
+          "name": "Mona",
+          "svg": ".chakraIcons/svg/color/mona.svg",
+          "code": "src/Mona.tsx"
+        },
+        {
+          "name": "Msr",
+          "svg": ".chakraIcons/svg/color/msr.svg",
+          "code": "src/Msr.tsx"
+        },
+        {
+          "name": "Mth",
+          "svg": ".chakraIcons/svg/color/mth.svg",
+          "code": "src/Mth.tsx"
+        },
+        {
+          "name": "Mtl",
+          "svg": ".chakraIcons/svg/color/mtl.svg",
+          "code": "src/Mtl.tsx"
+        },
+        {
+          "name": "Music",
+          "svg": ".chakraIcons/svg/color/music.svg",
+          "code": "src/Music.tsx"
+        },
+        {
+          "name": "Mzc",
+          "svg": ".chakraIcons/svg/color/mzc.svg",
+          "code": "src/Mzc.tsx"
+        },
+        {
+          "name": "Nano",
+          "svg": ".chakraIcons/svg/color/nano.svg",
+          "code": "src/Nano.tsx"
+        },
+        {
+          "name": "Nas",
+          "svg": ".chakraIcons/svg/color/nas.svg",
+          "code": "src/Nas.tsx"
+        },
+        {
+          "name": "Nav",
+          "svg": ".chakraIcons/svg/color/nav.svg",
+          "code": "src/Nav.tsx"
+        },
+        {
+          "name": "Ncash",
+          "svg": ".chakraIcons/svg/color/ncash.svg",
+          "code": "src/Ncash.tsx"
+        },
+        {
+          "name": "Ndz",
+          "svg": ".chakraIcons/svg/color/ndz.svg",
+          "code": "src/Ndz.tsx"
+        },
+        {
+          "name": "Nebl",
+          "svg": ".chakraIcons/svg/color/nebl.svg",
+          "code": "src/Nebl.tsx"
+        },
+        {
+          "name": "Neo",
+          "svg": ".chakraIcons/svg/color/neo.svg",
+          "code": "src/Neo.tsx"
+        },
+        {
+          "name": "Neos",
+          "svg": ".chakraIcons/svg/color/neos.svg",
+          "code": "src/Neos.tsx"
+        },
+        {
+          "name": "Neu",
+          "svg": ".chakraIcons/svg/color/neu.svg",
+          "code": "src/Neu.tsx"
+        },
+        {
+          "name": "Nexo",
+          "svg": ".chakraIcons/svg/color/nexo.svg",
+          "code": "src/Nexo.tsx"
+        },
+        {
+          "name": "Ngc",
+          "svg": ".chakraIcons/svg/color/ngc.svg",
+          "code": "src/Ngc.tsx"
+        },
+        {
+          "name": "Nio",
+          "svg": ".chakraIcons/svg/color/nio.svg",
+          "code": "src/Nio.tsx"
+        },
+        {
+          "name": "Nkn",
+          "svg": ".chakraIcons/svg/color/nkn.svg",
+          "code": "src/Nkn.tsx"
+        },
+        {
+          "name": "Nlc2",
+          "svg": ".chakraIcons/svg/color/nlc2.svg",
+          "code": "src/Nlc2.tsx"
+        },
+        {
+          "name": "Nlg",
+          "svg": ".chakraIcons/svg/color/nlg.svg",
+          "code": "src/Nlg.tsx"
+        },
+        {
+          "name": "Nmc",
+          "svg": ".chakraIcons/svg/color/nmc.svg",
+          "code": "src/Nmc.tsx"
+        },
+        {
+          "name": "Nmr",
+          "svg": ".chakraIcons/svg/color/nmr.svg",
+          "code": "src/Nmr.tsx"
+        },
+        {
+          "name": "Npxs",
+          "svg": ".chakraIcons/svg/color/npxs.svg",
+          "code": "src/Npxs.tsx"
+        },
+        {
+          "name": "Ntbc",
+          "svg": ".chakraIcons/svg/color/ntbc.svg",
+          "code": "src/Ntbc.tsx"
+        },
+        {
+          "name": "Nuls",
+          "svg": ".chakraIcons/svg/color/nuls.svg",
+          "code": "src/Nuls.tsx"
+        },
+        {
+          "name": "Nxs",
+          "svg": ".chakraIcons/svg/color/nxs.svg",
+          "code": "src/Nxs.tsx"
+        },
+        {
+          "name": "Nxt",
+          "svg": ".chakraIcons/svg/color/nxt.svg",
+          "code": "src/Nxt.tsx"
+        },
+        {
+          "name": "Oax",
+          "svg": ".chakraIcons/svg/color/oax.svg",
+          "code": "src/Oax.tsx"
+        },
+        {
+          "name": "Ok",
+          "svg": ".chakraIcons/svg/color/ok.svg",
+          "code": "src/Ok.tsx"
+        },
+        {
+          "name": "Omg",
+          "svg": ".chakraIcons/svg/color/omg.svg",
+          "code": "src/Omg.tsx"
+        },
+        {
+          "name": "Omni",
+          "svg": ".chakraIcons/svg/color/omni.svg",
+          "code": "src/Omni.tsx"
+        },
+        {
+          "name": "One",
+          "svg": ".chakraIcons/svg/color/one.svg",
+          "code": "src/One.tsx"
+        },
+        {
+          "name": "Ong",
+          "svg": ".chakraIcons/svg/color/ong.svg",
+          "code": "src/Ong.tsx"
+        },
+        {
+          "name": "Ont",
+          "svg": ".chakraIcons/svg/color/ont.svg",
+          "code": "src/Ont.tsx"
+        },
+        {
+          "name": "Oot",
+          "svg": ".chakraIcons/svg/color/oot.svg",
+          "code": "src/Oot.tsx"
+        },
+        {
+          "name": "Ost",
+          "svg": ".chakraIcons/svg/color/ost.svg",
+          "code": "src/Ost.tsx"
+        },
+        {
+          "name": "Ox",
+          "svg": ".chakraIcons/svg/color/ox.svg",
+          "code": "src/Ox.tsx"
+        },
+        {
+          "name": "Oxt",
+          "svg": ".chakraIcons/svg/color/oxt.svg",
+          "code": "src/Oxt.tsx"
+        },
+        {
+          "name": "Part",
+          "svg": ".chakraIcons/svg/color/part.svg",
+          "code": "src/Part.tsx"
+        },
+        {
+          "name": "Pasc",
+          "svg": ".chakraIcons/svg/color/pasc.svg",
+          "code": "src/Pasc.tsx"
+        },
+        {
+          "name": "Pasl",
+          "svg": ".chakraIcons/svg/color/pasl.svg",
+          "code": "src/Pasl.tsx"
+        },
+        {
+          "name": "Pax",
+          "svg": ".chakraIcons/svg/color/pax.svg",
+          "code": "src/Pax.tsx"
+        },
+        {
+          "name": "Paxg",
+          "svg": ".chakraIcons/svg/color/paxg.svg",
+          "code": "src/Paxg.tsx"
+        },
+        {
+          "name": "Pay",
+          "svg": ".chakraIcons/svg/color/pay.svg",
+          "code": "src/Pay.tsx"
+        },
+        {
+          "name": "Payx",
+          "svg": ".chakraIcons/svg/color/payx.svg",
+          "code": "src/Payx.tsx"
+        },
+        {
+          "name": "Pink",
+          "svg": ".chakraIcons/svg/color/pink.svg",
+          "code": "src/Pink.tsx"
+        },
+        {
+          "name": "Pirl",
+          "svg": ".chakraIcons/svg/color/pirl.svg",
+          "code": "src/Pirl.tsx"
+        },
+        {
+          "name": "Pivx",
+          "svg": ".chakraIcons/svg/color/pivx.svg",
+          "code": "src/Pivx.tsx"
+        },
+        {
+          "name": "Plr",
+          "svg": ".chakraIcons/svg/color/plr.svg",
+          "code": "src/Plr.tsx"
+        },
+        {
+          "name": "Poa",
+          "svg": ".chakraIcons/svg/color/poa.svg",
+          "code": "src/Poa.tsx"
+        },
+        {
+          "name": "Poe",
+          "svg": ".chakraIcons/svg/color/poe.svg",
+          "code": "src/Poe.tsx"
+        },
+        {
+          "name": "Polis",
+          "svg": ".chakraIcons/svg/color/polis.svg",
+          "code": "src/Polis.tsx"
+        },
+        {
+          "name": "Poly",
+          "svg": ".chakraIcons/svg/color/poly.svg",
+          "code": "src/Poly.tsx"
+        },
+        {
+          "name": "Pot",
+          "svg": ".chakraIcons/svg/color/pot.svg",
+          "code": "src/Pot.tsx"
+        },
+        {
+          "name": "Powr",
+          "svg": ".chakraIcons/svg/color/powr.svg",
+          "code": "src/Powr.tsx"
+        },
+        {
+          "name": "Ppc",
+          "svg": ".chakraIcons/svg/color/ppc.svg",
+          "code": "src/Ppc.tsx"
+        },
+        {
+          "name": "Ppp",
+          "svg": ".chakraIcons/svg/color/ppp.svg",
+          "code": "src/Ppp.tsx"
+        },
+        {
+          "name": "Ppt",
+          "svg": ".chakraIcons/svg/color/ppt.svg",
+          "code": "src/Ppt.tsx"
+        },
+        {
+          "name": "Pre",
+          "svg": ".chakraIcons/svg/color/pre.svg",
+          "code": "src/Pre.tsx"
+        },
+        {
+          "name": "Prl",
+          "svg": ".chakraIcons/svg/color/prl.svg",
+          "code": "src/Prl.tsx"
+        },
+        {
+          "name": "Pungo",
+          "svg": ".chakraIcons/svg/color/pungo.svg",
+          "code": "src/Pungo.tsx"
+        },
+        {
+          "name": "Pura",
+          "svg": ".chakraIcons/svg/color/pura.svg",
+          "code": "src/Pura.tsx"
+        },
+        {
+          "name": "Qash",
+          "svg": ".chakraIcons/svg/color/qash.svg",
+          "code": "src/Qash.tsx"
+        },
+        {
+          "name": "Qiwi",
+          "svg": ".chakraIcons/svg/color/qiwi.svg",
+          "code": "src/Qiwi.tsx"
+        },
+        {
+          "name": "Qlc",
+          "svg": ".chakraIcons/svg/color/qlc.svg",
+          "code": "src/Qlc.tsx"
+        },
+        {
+          "name": "Qrl",
+          "svg": ".chakraIcons/svg/color/qrl.svg",
+          "code": "src/Qrl.tsx"
+        },
+        {
+          "name": "Qsp",
+          "svg": ".chakraIcons/svg/color/qsp.svg",
+          "code": "src/Qsp.tsx"
+        },
+        {
+          "name": "Qtum",
+          "svg": ".chakraIcons/svg/color/qtum.svg",
+          "code": "src/Qtum.tsx"
+        },
+        {
+          "name": "R",
+          "svg": ".chakraIcons/svg/color/r.svg",
+          "code": "src/R.tsx"
+        },
+        {
+          "name": "Rads",
+          "svg": ".chakraIcons/svg/color/rads.svg",
+          "code": "src/Rads.tsx"
+        },
+        {
+          "name": "Rap",
+          "svg": ".chakraIcons/svg/color/rap.svg",
+          "code": "src/Rap.tsx"
+        },
+        {
+          "name": "Rcn",
+          "svg": ".chakraIcons/svg/color/rcn.svg",
+          "code": "src/Rcn.tsx"
+        },
+        {
+          "name": "Rdd",
+          "svg": ".chakraIcons/svg/color/rdd.svg",
+          "code": "src/Rdd.tsx"
+        },
+        {
+          "name": "Rdn",
+          "svg": ".chakraIcons/svg/color/rdn.svg",
+          "code": "src/Rdn.tsx"
+        },
+        {
+          "name": "Ren",
+          "svg": ".chakraIcons/svg/color/ren.svg",
+          "code": "src/Ren.tsx"
+        },
+        {
+          "name": "Rep",
+          "svg": ".chakraIcons/svg/color/rep.svg",
+          "code": "src/Rep.tsx"
+        },
+        {
+          "name": "Repv2",
+          "svg": ".chakraIcons/svg/color/repv2.svg",
+          "code": "src/Repv2.tsx"
+        },
+        {
+          "name": "Req",
+          "svg": ".chakraIcons/svg/color/req.svg",
+          "code": "src/Req.tsx"
+        },
+        {
+          "name": "Rhoc",
+          "svg": ".chakraIcons/svg/color/rhoc.svg",
+          "code": "src/Rhoc.tsx"
+        },
+        {
+          "name": "Ric",
+          "svg": ".chakraIcons/svg/color/ric.svg",
+          "code": "src/Ric.tsx"
+        },
+        {
+          "name": "Rise",
+          "svg": ".chakraIcons/svg/color/rise.svg",
+          "code": "src/Rise.tsx"
+        },
+        {
+          "name": "Rlc",
+          "svg": ".chakraIcons/svg/color/rlc.svg",
+          "code": "src/Rlc.tsx"
+        },
+        {
+          "name": "Rpx",
+          "svg": ".chakraIcons/svg/color/rpx.svg",
+          "code": "src/Rpx.tsx"
+        },
+        {
+          "name": "Rub",
+          "svg": ".chakraIcons/svg/color/rub.svg",
+          "code": "src/Rub.tsx"
+        },
+        {
+          "name": "Rvn",
+          "svg": ".chakraIcons/svg/color/rvn.svg",
+          "code": "src/Rvn.tsx"
+        },
+        {
+          "name": "Ryo",
+          "svg": ".chakraIcons/svg/color/ryo.svg",
+          "code": "src/Ryo.tsx"
+        },
+        {
+          "name": "Safe",
+          "svg": ".chakraIcons/svg/color/safe.svg",
+          "code": "src/Safe.tsx"
+        },
+        {
+          "name": "Safemoon",
+          "svg": ".chakraIcons/svg/color/safemoon.svg",
+          "code": "src/Safemoon.tsx"
+        },
+        {
+          "name": "Sai",
+          "svg": ".chakraIcons/svg/color/sai.svg",
+          "code": "src/Sai.tsx"
+        },
+        {
+          "name": "Salt",
+          "svg": ".chakraIcons/svg/color/salt.svg",
+          "code": "src/Salt.tsx"
+        },
+        {
+          "name": "San",
+          "svg": ".chakraIcons/svg/color/san.svg",
+          "code": "src/San.tsx"
+        },
+        {
+          "name": "Sand",
+          "svg": ".chakraIcons/svg/color/sand.svg",
+          "code": "src/Sand.tsx"
+        },
+        {
+          "name": "Sbd",
+          "svg": ".chakraIcons/svg/color/sbd.svg",
+          "code": "src/Sbd.tsx"
+        },
+        {
+          "name": "Sberbank",
+          "svg": ".chakraIcons/svg/color/sberbank.svg",
+          "code": "src/Sberbank.tsx"
+        },
+        {
+          "name": "Sc",
+          "svg": ".chakraIcons/svg/color/sc.svg",
+          "code": "src/Sc.tsx"
+        },
+        {
+          "name": "Shift",
+          "svg": ".chakraIcons/svg/color/shift.svg",
+          "code": "src/Shift.tsx"
+        },
+        {
+          "name": "Sib",
+          "svg": ".chakraIcons/svg/color/sib.svg",
+          "code": "src/Sib.tsx"
+        },
+        {
+          "name": "Sin",
+          "svg": ".chakraIcons/svg/color/sin.svg",
+          "code": "src/Sin.tsx"
+        },
+        {
+          "name": "Skl",
+          "svg": ".chakraIcons/svg/color/skl.svg",
+          "code": "src/Skl.tsx"
+        },
+        {
+          "name": "Sky",
+          "svg": ".chakraIcons/svg/color/sky.svg",
+          "code": "src/Sky.tsx"
+        },
+        {
+          "name": "Slr",
+          "svg": ".chakraIcons/svg/color/slr.svg",
+          "code": "src/Slr.tsx"
+        },
+        {
+          "name": "Sls",
+          "svg": ".chakraIcons/svg/color/sls.svg",
+          "code": "src/Sls.tsx"
+        },
+        {
+          "name": "Smart",
+          "svg": ".chakraIcons/svg/color/smart.svg",
+          "code": "src/Smart.tsx"
+        },
+        {
+          "name": "Sngls",
+          "svg": ".chakraIcons/svg/color/sngls.svg",
+          "code": "src/Sngls.tsx"
+        },
+        {
+          "name": "Snm",
+          "svg": ".chakraIcons/svg/color/snm.svg",
+          "code": "src/Snm.tsx"
+        },
+        {
+          "name": "Snt",
+          "svg": ".chakraIcons/svg/color/snt.svg",
+          "code": "src/Snt.tsx"
+        },
+        {
+          "name": "Snx",
+          "svg": ".chakraIcons/svg/color/snx.svg",
+          "code": "src/Snx.tsx"
+        },
+        {
+          "name": "Soc",
+          "svg": ".chakraIcons/svg/color/soc.svg",
+          "code": "src/Soc.tsx"
+        },
+        {
+          "name": "Sol",
+          "svg": ".chakraIcons/svg/color/sol.svg",
+          "code": "src/Sol.tsx"
+        },
+        {
+          "name": "Spacehbit",
+          "svg": ".chakraIcons/svg/color/spacehbit.svg",
+          "code": "src/Spacehbit.tsx"
+        },
+        {
+          "name": "Spank",
+          "svg": ".chakraIcons/svg/color/spank.svg",
+          "code": "src/Spank.tsx"
+        },
+        {
+          "name": "Sphtx",
+          "svg": ".chakraIcons/svg/color/sphtx.svg",
+          "code": "src/Sphtx.tsx"
+        },
+        {
+          "name": "Srn",
+          "svg": ".chakraIcons/svg/color/srn.svg",
+          "code": "src/Srn.tsx"
+        },
+        {
+          "name": "Stak",
+          "svg": ".chakraIcons/svg/color/stak.svg",
+          "code": "src/Stak.tsx"
+        },
+        {
+          "name": "Start",
+          "svg": ".chakraIcons/svg/color/start.svg",
+          "code": "src/Start.tsx"
+        },
+        {
+          "name": "Steem",
+          "svg": ".chakraIcons/svg/color/steem.svg",
+          "code": "src/Steem.tsx"
+        },
+        {
+          "name": "Storj",
+          "svg": ".chakraIcons/svg/color/storj.svg",
+          "code": "src/Storj.tsx"
+        },
+        {
+          "name": "Storm",
+          "svg": ".chakraIcons/svg/color/storm.svg",
+          "code": "src/Storm.tsx"
+        },
+        {
+          "name": "Stox",
+          "svg": ".chakraIcons/svg/color/stox.svg",
+          "code": "src/Stox.tsx"
+        },
+        {
+          "name": "Stq",
+          "svg": ".chakraIcons/svg/color/stq.svg",
+          "code": "src/Stq.tsx"
+        },
+        {
+          "name": "Strat",
+          "svg": ".chakraIcons/svg/color/strat.svg",
+          "code": "src/Strat.tsx"
+        },
+        {
+          "name": "Stx",
+          "svg": ".chakraIcons/svg/color/stx.svg",
+          "code": "src/Stx.tsx"
+        },
+        {
+          "name": "Sub",
+          "svg": ".chakraIcons/svg/color/sub.svg",
+          "code": "src/Sub.tsx"
+        },
+        {
+          "name": "Sumo",
+          "svg": ".chakraIcons/svg/color/sumo.svg",
+          "code": "src/Sumo.tsx"
+        },
+        {
+          "name": "Sushi",
+          "svg": ".chakraIcons/svg/color/sushi.svg",
+          "code": "src/Sushi.tsx"
+        },
+        {
+          "name": "Sys",
+          "svg": ".chakraIcons/svg/color/sys.svg",
+          "code": "src/Sys.tsx"
+        },
+        {
+          "name": "Taas",
+          "svg": ".chakraIcons/svg/color/taas.svg",
+          "code": "src/Taas.tsx"
+        },
+        {
+          "name": "Tau",
+          "svg": ".chakraIcons/svg/color/tau.svg",
+          "code": "src/Tau.tsx"
+        },
+        {
+          "name": "Tbx",
+          "svg": ".chakraIcons/svg/color/tbx.svg",
+          "code": "src/Tbx.tsx"
+        },
+        {
+          "name": "Tel",
+          "svg": ".chakraIcons/svg/color/tel.svg",
+          "code": "src/Tel.tsx"
+        },
+        {
+          "name": "Ten",
+          "svg": ".chakraIcons/svg/color/ten.svg",
+          "code": "src/Ten.tsx"
+        },
+        {
+          "name": "Tern",
+          "svg": ".chakraIcons/svg/color/tern.svg",
+          "code": "src/Tern.tsx"
+        },
+        {
+          "name": "Tgch",
+          "svg": ".chakraIcons/svg/color/tgch.svg",
+          "code": "src/Tgch.tsx"
+        },
+        {
+          "name": "Theta",
+          "svg": ".chakraIcons/svg/color/theta.svg",
+          "code": "src/Theta.tsx"
+        },
+        {
+          "name": "Tix",
+          "svg": ".chakraIcons/svg/color/tix.svg",
+          "code": "src/Tix.tsx"
+        },
+        {
+          "name": "Tkn",
+          "svg": ".chakraIcons/svg/color/tkn.svg",
+          "code": "src/Tkn.tsx"
+        },
+        {
+          "name": "Tks",
+          "svg": ".chakraIcons/svg/color/tks.svg",
+          "code": "src/Tks.tsx"
+        },
+        {
+          "name": "Tnb",
+          "svg": ".chakraIcons/svg/color/tnb.svg",
+          "code": "src/Tnb.tsx"
+        },
+        {
+          "name": "Tnc",
+          "svg": ".chakraIcons/svg/color/tnc.svg",
+          "code": "src/Tnc.tsx"
+        },
+        {
+          "name": "Tnt",
+          "svg": ".chakraIcons/svg/color/tnt.svg",
+          "code": "src/Tnt.tsx"
+        },
+        {
+          "name": "Tomo",
+          "svg": ".chakraIcons/svg/color/tomo.svg",
+          "code": "src/Tomo.tsx"
+        },
+        {
+          "name": "Tpay",
+          "svg": ".chakraIcons/svg/color/tpay.svg",
+          "code": "src/Tpay.tsx"
+        },
+        {
+          "name": "Trig",
+          "svg": ".chakraIcons/svg/color/trig.svg",
+          "code": "src/Trig.tsx"
+        },
+        {
+          "name": "Trtl",
+          "svg": ".chakraIcons/svg/color/trtl.svg",
+          "code": "src/Trtl.tsx"
+        },
+        {
+          "name": "Trx",
+          "svg": ".chakraIcons/svg/color/trx.svg",
+          "code": "src/Trx.tsx"
+        },
+        {
+          "name": "Tusd",
+          "svg": ".chakraIcons/svg/color/tusd.svg",
+          "code": "src/Tusd.tsx"
+        },
+        {
+          "name": "Tzc",
+          "svg": ".chakraIcons/svg/color/tzc.svg",
+          "code": "src/Tzc.tsx"
+        },
+        {
+          "name": "Ubq",
+          "svg": ".chakraIcons/svg/color/ubq.svg",
+          "code": "src/Ubq.tsx"
+        },
+        {
+          "name": "Uma",
+          "svg": ".chakraIcons/svg/color/uma.svg",
+          "code": "src/Uma.tsx"
+        },
+        {
+          "name": "Uni",
+          "svg": ".chakraIcons/svg/color/uni.svg",
+          "code": "src/Uni.tsx"
+        },
+        {
+          "name": "Unity",
+          "svg": ".chakraIcons/svg/color/unity.svg",
+          "code": "src/Unity.tsx"
+        },
+        {
+          "name": "Usd",
+          "svg": ".chakraIcons/svg/color/usd.svg",
+          "code": "src/Usd.tsx"
+        },
+        {
+          "name": "Usdc",
+          "svg": ".chakraIcons/svg/color/usdc.svg",
+          "code": "src/Usdc.tsx"
+        },
+        {
+          "name": "Usdt",
+          "svg": ".chakraIcons/svg/color/usdt.svg",
+          "code": "src/Usdt.tsx"
+        },
+        {
+          "name": "Utk",
+          "svg": ".chakraIcons/svg/color/utk.svg",
+          "code": "src/Utk.tsx"
+        },
+        {
+          "name": "Veri",
+          "svg": ".chakraIcons/svg/color/veri.svg",
+          "code": "src/Veri.tsx"
+        },
+        {
+          "name": "Vet",
+          "svg": ".chakraIcons/svg/color/vet.svg",
+          "code": "src/Vet.tsx"
+        },
+        {
+          "name": "Via",
+          "svg": ".chakraIcons/svg/color/via.svg",
+          "code": "src/Via.tsx"
+        },
+        {
+          "name": "Vib",
+          "svg": ".chakraIcons/svg/color/vib.svg",
+          "code": "src/Vib.tsx"
+        },
+        {
+          "name": "Vibe",
+          "svg": ".chakraIcons/svg/color/vibe.svg",
+          "code": "src/Vibe.tsx"
+        },
+        {
+          "name": "Vivo",
+          "svg": ".chakraIcons/svg/color/vivo.svg",
+          "code": "src/Vivo.tsx"
+        },
+        {
+          "name": "Vrc",
+          "svg": ".chakraIcons/svg/color/vrc.svg",
+          "code": "src/Vrc.tsx"
+        },
+        {
+          "name": "Vrsc",
+          "svg": ".chakraIcons/svg/color/vrsc.svg",
+          "code": "src/Vrsc.tsx"
+        },
+        {
+          "name": "Vtc",
+          "svg": ".chakraIcons/svg/color/vtc.svg",
+          "code": "src/Vtc.tsx"
+        },
+        {
+          "name": "Vtho",
+          "svg": ".chakraIcons/svg/color/vtho.svg",
+          "code": "src/Vtho.tsx"
+        },
+        {
+          "name": "Wabi",
+          "svg": ".chakraIcons/svg/color/wabi.svg",
+          "code": "src/Wabi.tsx"
+        },
+        {
+          "name": "Wan",
+          "svg": ".chakraIcons/svg/color/wan.svg",
+          "code": "src/Wan.tsx"
+        },
+        {
+          "name": "Waves",
+          "svg": ".chakraIcons/svg/color/waves.svg",
+          "code": "src/Waves.tsx"
+        },
+        {
+          "name": "Wax",
+          "svg": ".chakraIcons/svg/color/wax.svg",
+          "code": "src/Wax.tsx"
+        },
+        {
+          "name": "Wbtc",
+          "svg": ".chakraIcons/svg/color/wbtc.svg",
+          "code": "src/Wbtc.tsx"
+        },
+        {
+          "name": "Wgr",
+          "svg": ".chakraIcons/svg/color/wgr.svg",
+          "code": "src/Wgr.tsx"
+        },
+        {
+          "name": "Wicc",
+          "svg": ".chakraIcons/svg/color/wicc.svg",
+          "code": "src/Wicc.tsx"
+        },
+        {
+          "name": "Wings",
+          "svg": ".chakraIcons/svg/color/wings.svg",
+          "code": "src/Wings.tsx"
+        },
+        {
+          "name": "Wpr",
+          "svg": ".chakraIcons/svg/color/wpr.svg",
+          "code": "src/Wpr.tsx"
+        },
+        {
+          "name": "Wtc",
+          "svg": ".chakraIcons/svg/color/wtc.svg",
+          "code": "src/Wtc.tsx"
+        },
+        {
+          "name": "X",
+          "svg": ".chakraIcons/svg/color/x.svg",
+          "code": "src/X.tsx"
+        },
+        {
+          "name": "Xas",
+          "svg": ".chakraIcons/svg/color/xas.svg",
+          "code": "src/Xas.tsx"
+        },
+        {
+          "name": "Xbc",
+          "svg": ".chakraIcons/svg/color/xbc.svg",
+          "code": "src/Xbc.tsx"
+        },
+        {
+          "name": "Xbp",
+          "svg": ".chakraIcons/svg/color/xbp.svg",
+          "code": "src/Xbp.tsx"
+        },
+        {
+          "name": "Xby",
+          "svg": ".chakraIcons/svg/color/xby.svg",
+          "code": "src/Xby.tsx"
+        },
+        {
+          "name": "Xcp",
+          "svg": ".chakraIcons/svg/color/xcp.svg",
+          "code": "src/Xcp.tsx"
+        },
+        {
+          "name": "Xdn",
+          "svg": ".chakraIcons/svg/color/xdn.svg",
+          "code": "src/Xdn.tsx"
+        },
+        {
+          "name": "Xem",
+          "svg": ".chakraIcons/svg/color/xem.svg",
+          "code": "src/Xem.tsx"
+        },
+        {
+          "name": "Xin",
+          "svg": ".chakraIcons/svg/color/xin.svg",
+          "code": "src/Xin.tsx"
+        },
+        {
+          "name": "Xlm",
+          "svg": ".chakraIcons/svg/color/xlm.svg",
+          "code": "src/Xlm.tsx"
+        },
+        {
+          "name": "Xmcc",
+          "svg": ".chakraIcons/svg/color/xmcc.svg",
+          "code": "src/Xmcc.tsx"
+        },
+        {
+          "name": "Xmg",
+          "svg": ".chakraIcons/svg/color/xmg.svg",
+          "code": "src/Xmg.tsx"
+        },
+        {
+          "name": "Xmo",
+          "svg": ".chakraIcons/svg/color/xmo.svg",
+          "code": "src/Xmo.tsx"
+        },
+        {
+          "name": "Xmr",
+          "svg": ".chakraIcons/svg/color/xmr.svg",
+          "code": "src/Xmr.tsx"
+        },
+        {
+          "name": "Xmy",
+          "svg": ".chakraIcons/svg/color/xmy.svg",
+          "code": "src/Xmy.tsx"
+        },
+        {
+          "name": "Xp",
+          "svg": ".chakraIcons/svg/color/xp.svg",
+          "code": "src/Xp.tsx"
+        },
+        {
+          "name": "Xpa",
+          "svg": ".chakraIcons/svg/color/xpa.svg",
+          "code": "src/Xpa.tsx"
+        },
+        {
+          "name": "Xpm",
+          "svg": ".chakraIcons/svg/color/xpm.svg",
+          "code": "src/Xpm.tsx"
+        },
+        {
+          "name": "Xpr",
+          "svg": ".chakraIcons/svg/color/xpr.svg",
+          "code": "src/Xpr.tsx"
+        },
+        {
+          "name": "Xrp",
+          "svg": ".chakraIcons/svg/color/xrp.svg",
+          "code": "src/Xrp.tsx"
+        },
+        {
+          "name": "Xsg",
+          "svg": ".chakraIcons/svg/color/xsg.svg",
+          "code": "src/Xsg.tsx"
+        },
+        {
+          "name": "Xtz",
+          "svg": ".chakraIcons/svg/color/xtz.svg",
+          "code": "src/Xtz.tsx"
+        },
+        {
+          "name": "Xuc",
+          "svg": ".chakraIcons/svg/color/xuc.svg",
+          "code": "src/Xuc.tsx"
+        },
+        {
+          "name": "Xvc",
+          "svg": ".chakraIcons/svg/color/xvc.svg",
+          "code": "src/Xvc.tsx"
+        },
+        {
+          "name": "Xvg",
+          "svg": ".chakraIcons/svg/color/xvg.svg",
+          "code": "src/Xvg.tsx"
+        },
+        {
+          "name": "Xzc",
+          "svg": ".chakraIcons/svg/color/xzc.svg",
+          "code": "src/Xzc.tsx"
+        },
+        {
+          "name": "Yfi",
+          "svg": ".chakraIcons/svg/color/yfi.svg",
+          "code": "src/Yfi.tsx"
+        },
+        {
+          "name": "Yoyow",
+          "svg": ".chakraIcons/svg/color/yoyow.svg",
+          "code": "src/Yoyow.tsx"
+        },
+        {
+          "name": "Zcl",
+          "svg": ".chakraIcons/svg/color/zcl.svg",
+          "code": "src/Zcl.tsx"
+        },
+        {
+          "name": "Zec",
+          "svg": ".chakraIcons/svg/color/zec.svg",
+          "code": "src/Zec.tsx"
+        },
+        {
+          "name": "Zel",
+          "svg": ".chakraIcons/svg/color/zel.svg",
+          "code": "src/Zel.tsx"
+        },
+        {
+          "name": "Zen",
+          "svg": ".chakraIcons/svg/color/zen.svg",
+          "code": "src/Zen.tsx"
+        },
+        {
+          "name": "Zest",
+          "svg": ".chakraIcons/svg/color/zest.svg",
+          "code": "src/Zest.tsx"
+        },
+        {
+          "name": "Zil",
+          "svg": ".chakraIcons/svg/color/zil.svg",
+          "code": "src/Zil.tsx"
+        },
+        {
+          "name": "Zilla",
+          "svg": ".chakraIcons/svg/color/zilla.svg",
+          "code": "src/Zilla.tsx"
+        },
+        {
+          "name": "Zrx",
+          "svg": ".chakraIcons/svg/color/zrx.svg",
+          "code": "src/Zrx.tsx"
+        }
+      ]
+    }
+  ]
+}
