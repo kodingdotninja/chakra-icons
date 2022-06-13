@@ -524,6 +524,36 @@
           "code": "src/Container24.tsx"
         },
         {
+          "name": "Copilot16",
+          "svg": ".chakraIcons/icons/copilot-16.svg",
+          "code": "src/Copilot16.tsx"
+        },
+        {
+          "name": "Copilot24",
+          "svg": ".chakraIcons/icons/copilot-24.svg",
+          "code": "src/Copilot24.tsx"
+        },
+        {
+          "name": "Copilot48",
+          "svg": ".chakraIcons/icons/copilot-48.svg",
+          "code": "src/Copilot48.tsx"
+        },
+        {
+          "name": "Copilot96",
+          "svg": ".chakraIcons/icons/copilot-96.svg",
+          "code": "src/Copilot96.tsx"
+        },
+        {
+          "name": "CopilotError16",
+          "svg": ".chakraIcons/icons/copilot-error-16.svg",
+          "code": "src/CopilotError16.tsx"
+        },
+        {
+          "name": "CopilotWarning16",
+          "svg": ".chakraIcons/icons/copilot-warning-16.svg",
+          "code": "src/CopilotWarning16.tsx"
+        },
+        {
           "name": "Copy16",
           "svg": ".chakraIcons/icons/copy-16.svg",
           "code": "src/Copy16.tsx"
@@ -1807,6 +1837,11 @@
           "name": "RepoLocked16",
           "svg": ".chakraIcons/icons/repo-locked-16.svg",
           "code": "src/RepoLocked16.tsx"
+        },
+        {
+          "name": "RepoLocked24",
+          "svg": ".chakraIcons/icons/repo-locked-24.svg",
+          "code": "src/RepoLocked24.tsx"
         },
         {
           "name": "RepoPull16",
