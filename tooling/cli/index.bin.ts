@@ -1,12 +1,14 @@
 #!/usr/bin/env node
 import { clean } from "./src/clean";
+import { prepack } from "./src/prepack";
 import pkgJson from "./package.json";
-import { build, BuildOptions, init, InitOptions } from "./src";
+import { build, BuildOptions, init, InitOptions, PrepackOptions } from "./src";
 
 import arg from "arg";
 import * as ruins from "ruins-ts";
 
 type Command =
+  | { type: "prepack"; options: PrepackOptions }
   | { type: "init"; options: InitOptions }
   | { type: "build"; options: BuildOptions }
   | { type: "clean"; options: BuildOptions }
@@ -42,6 +44,13 @@ const parseArgs = (): Command => {
         "--with-entrypoints": Boolean,
         "--with-clean": Boolean,
         "-E": "--with-entrypoints",
+        // Prepack Related
+        "--remove-dev-deps": Boolean,
+        "--add-peer-deps": String, // example --add-peer-deps "pkg@v1,pkg2@>=2"
+        "--add-scripts": String,
+        "--rd": "--remove-dev-deps",
+        "--ap": "--add-peer-deps",
+        "--ax": "--add-scripts",
       },
       { argv },
     );
@@ -58,10 +67,23 @@ const parseArgs = (): Command => {
       "--with-entrypoints": entryPoints,
       "--version": version,
       "--help": help,
+      "--remove-dev-deps": removeDevDeps,
+      "--add-peer-deps": addPeerDeps,
+      "--add-scripts": addScripts,
     } = args;
 
     const clonePath = _clonePath ?? ".chakraIcons";
     const sourcePath = _sourcePath ?? "src";
+
+    if (first === "prepack")
+      return {
+        type: "prepack",
+        options: {
+          removeDevDeps,
+          addPeerDeps: addPeerDeps?.split(",") ?? [],
+          addScripts: addScripts?.split(",") ?? [],
+        },
+      };
 
     if (first === "init" && name && repository && iconPath)
       return { type: "init", options: { name, repository, iconPath } };
@@ -100,12 +122,20 @@ const help = () =>
 USAGE: ${pkgJson?.name} <SUBCOMMAND>
 
 SUBCOMMAND:
-  build:  build -n <NAME> -r <ORGS/REPO-NAME> -i <PATH/SVG>
   init:   init -n <NAME> -r <ORGS/REPO-NAME> -i <PATH/SVG> 
+  build:  build -n <NAME> -r <ORGS/REPO-NAME> -i <PATH/SVG>
+    OPTIONS:
+      --snapshot <NAME>, -S <NAME>  create snapshot information (.json).
+    FLAGS:
+      --with-entrypoints, -E  generate entrypoints when generating new icon.
 
-OPTIONS:
-  build:
-    -S: save snapshot information
+  prepack: tools for manage package.json fields
+    OPTIONS:
+      --add-peer-deps, --ap     add peer dependencies (e.g --ap "react@^17,react-dom@^17") 
+      --add-scripts, --ax       add new script in scripts field of package.json (e.g --ax "prcommit=commitlint")
+    FLAGS: 
+      --remove-dev-deps, --rd   remove field devDependencies in current work directory (package.json)
+
 `);
 
 const version = () => console.log(pkgJson?.version);
@@ -118,6 +148,8 @@ const fail = (e: unknown) => {
 
 const run = async (command: Command) => {
   switch (command.type) {
+    case "prepack":
+      return prepack(command.options);
     case "build":
       return ruins.fromTaskEither(build(command.options)).catch((e) => fail(e));
     case "init":

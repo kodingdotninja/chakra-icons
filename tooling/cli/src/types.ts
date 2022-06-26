@@ -22,3 +22,9 @@ export type BuildOptions = Omit<MetaIcon, "sources"> & {
   snapshot?: string;
   entryPoints: boolean;
 };
+
+export type PrepackOptions = {
+  removeDevDeps?: boolean;
+  addPeerDeps: string[];
+  addScripts: string[];
+};
