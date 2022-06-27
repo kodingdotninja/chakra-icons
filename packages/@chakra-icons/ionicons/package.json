@@ -20,12 +20,6 @@
     "dist/",
     "src/"
   ],
-  "scripts": {
-    "build": "chakra-icons build -r 'https://github.com/ionic-team/ionicons' -n ionicons -i src/svg -S snapshot.json -E",
-    "clean": "chakra-icons clean -r 'https://github.com/ionic-team/ionicons' -n ionicons -i src/svg",
-    "format": "prettier --write README.md snapshot.json",
-    "postbuild": "tsup && yarn format"
-  },
   "devDependencies": {
     "@chakra-ui/react": "^1",
     "@chakra-icons/cli": "1.0.1",
@@ -38,5 +32,12 @@
   "license": "MIT",
   "publishConfig": {
     "access": "public"
+  },
+  "scripts": {
+    "build": "chakra-icons build -r 'https://github.com/ionic-team/ionicons' -n ionicons -i src/svg -S snapshot.json -E",
+    "clean": "chakra-icons clean -r 'https://github.com/ionic-team/ionicons' -n ionicons -i src/svg",
+    "format": "prettier --write README.md snapshot.json",
+    "postbuild": "tsup && yarn format",
+    "prepack": "chakra-icons prepack --remove-dev-deps"
   }
 }
