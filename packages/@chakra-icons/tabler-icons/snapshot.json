@@ -24,6 +24,11 @@
           "code": "src/I3dRotate.tsx"
         },
         {
+          "name": "AB2",
+          "svg": ".chakraIcons/icons/a-b-2.svg",
+          "code": "src/AB2.tsx"
+        },
+        {
           "name": "ABOff",
           "svg": ".chakraIcons/icons/a-b-off.svg",
           "code": "src/ABOff.tsx"
@@ -187,6 +192,11 @@
           "name": "Ambulance",
           "svg": ".chakraIcons/icons/ambulance.svg",
           "code": "src/Ambulance.tsx"
+        },
+        {
+          "name": "Ampersand",
+          "svg": ".chakraIcons/icons/ampersand.svg",
+          "code": "src/Ampersand.tsx"
         },
         {
           "name": "AnchorOff",
@@ -549,6 +559,11 @@
           "code": "src/ArrowForward.tsx"
         },
         {
+          "name": "ArrowGuide",
+          "svg": ".chakraIcons/icons/arrow-guide.svg",
+          "code": "src/ArrowGuide.tsx"
+        },
+        {
           "name": "ArrowLeftBar",
           "svg": ".chakraIcons/icons/arrow-left-bar.svg",
           "code": "src/ArrowLeftBar.tsx"
@@ -597,6 +612,21 @@
           "name": "ArrowLoopRight",
           "svg": ".chakraIcons/icons/arrow-loop-right.svg",
           "code": "src/ArrowLoopRight.tsx"
+        },
+        {
+          "name": "ArrowMergeBoth",
+          "svg": ".chakraIcons/icons/arrow-merge-both.svg",
+          "code": "src/ArrowMergeBoth.tsx"
+        },
+        {
+          "name": "ArrowMergeLeft",
+          "svg": ".chakraIcons/icons/arrow-merge-left.svg",
+          "code": "src/ArrowMergeLeft.tsx"
+        },
+        {
+          "name": "ArrowMergeRight",
+          "svg": ".chakraIcons/icons/arrow-merge-right.svg",
+          "code": "src/ArrowMergeRight.tsx"
         },
         {
           "name": "ArrowMerge",
@@ -712,6 +742,16 @@
           "name": "ArrowRotaryStraight",
           "svg": ".chakraIcons/icons/arrow-rotary-straight.svg",
           "code": "src/ArrowRotaryStraight.tsx"
+        },
+        {
+          "name": "ArrowRoundaboutLeft",
+          "svg": ".chakraIcons/icons/arrow-roundabout-left.svg",
+          "code": "src/ArrowRoundaboutLeft.tsx"
+        },
+        {
+          "name": "ArrowRoundaboutRight",
+          "svg": ".chakraIcons/icons/arrow-roundabout-right.svg",
+          "code": "src/ArrowRoundaboutRight.tsx"
         },
         {
           "name": "ArrowSharpTurnLeft",
@@ -899,6 +939,21 @@
           "code": "src/ArrowsMinimize.tsx"
         },
         {
+          "name": "ArrowsMoveHorizontal",
+          "svg": ".chakraIcons/icons/arrows-move-horizontal.svg",
+          "code": "src/ArrowsMoveHorizontal.tsx"
+        },
+        {
+          "name": "ArrowsMoveVertical",
+          "svg": ".chakraIcons/icons/arrows-move-vertical.svg",
+          "code": "src/ArrowsMoveVertical.tsx"
+        },
+        {
+          "name": "ArrowsMove",
+          "svg": ".chakraIcons/icons/arrows-move.svg",
+          "code": "src/ArrowsMove.tsx"
+        },
+        {
           "name": "ArrowsRandom",
           "svg": ".chakraIcons/icons/arrows-random.svg",
           "code": "src/ArrowsRandom.tsx"
@@ -992,6 +1047,11 @@
           "name": "AspectRatio",
           "svg": ".chakraIcons/icons/aspect-ratio.svg",
           "code": "src/AspectRatio.tsx"
+        },
+        {
+          "name": "Assembly",
+          "svg": ".chakraIcons/icons/assembly.svg",
+          "code": "src/Assembly.tsx"
         },
         {
           "name": "Asset",
@@ -1719,6 +1779,11 @@
           "code": "src/BrandAirtable.tsx"
         },
         {
+          "name": "BrandAmazon",
+          "svg": ".chakraIcons/icons/brand-amazon.svg",
+          "code": "src/BrandAmazon.tsx"
+        },
+        {
           "name": "BrandAmongus",
           "svg": ".chakraIcons/icons/brand-amongus.svg",
           "code": "src/BrandAmongus.tsx"
@@ -1732,6 +1797,11 @@
           "name": "BrandAngular",
           "svg": ".chakraIcons/icons/brand-angular.svg",
           "code": "src/BrandAngular.tsx"
+        },
+        {
+          "name": "BrandAppgallery",
+          "svg": ".chakraIcons/icons/brand-appgallery.svg",
+          "code": "src/BrandAppgallery.tsx"
         },
         {
           "name": "BrandAppleArcade",
@@ -1834,9 +1904,19 @@
           "code": "src/BrandCucumber.tsx"
         },
         {
+          "name": "BrandD3",
+          "svg": ".chakraIcons/icons/brand-d3.svg",
+          "code": "src/BrandD3.tsx"
+        },
+        {
           "name": "BrandDebian",
           "svg": ".chakraIcons/icons/brand-debian.svg",
           "code": "src/BrandDebian.tsx"
+        },
+        {
+          "name": "BrandDeno",
+          "svg": ".chakraIcons/icons/brand-deno.svg",
+          "code": "src/BrandDeno.tsx"
         },
         {
           "name": "BrandDeviantart",
@@ -1914,6 +1994,11 @@
           "code": "src/BrandFlipboard.tsx"
         },
         {
+          "name": "BrandFortnite",
+          "svg": ".chakraIcons/icons/brand-fortnite.svg",
+          "code": "src/BrandFortnite.tsx"
+        },
+        {
           "name": "BrandFoursquare",
           "svg": ".chakraIcons/icons/brand-foursquare.svg",
           "code": "src/BrandFoursquare.tsx"
@@ -1952,6 +2037,11 @@
           "name": "BrandGoogleDrive",
           "svg": ".chakraIcons/icons/brand-google-drive.svg",
           "code": "src/BrandGoogleDrive.tsx"
+        },
+        {
+          "name": "BrandGoogleOne",
+          "svg": ".chakraIcons/icons/brand-google-one.svg",
+          "code": "src/BrandGoogleOne.tsx"
         },
         {
           "name": "BrandGooglePhotos",
@@ -2039,6 +2129,16 @@
           "code": "src/BrandMastercard.tsx"
         },
         {
+          "name": "BrandMastodon",
+          "svg": ".chakraIcons/icons/brand-mastodon.svg",
+          "code": "src/BrandMastodon.tsx"
+        },
+        {
+          "name": "BrandMcdonalds",
+          "svg": ".chakraIcons/icons/brand-mcdonalds.svg",
+          "code": "src/BrandMcdonalds.tsx"
+        },
+        {
           "name": "BrandMedium",
           "svg": ".chakraIcons/icons/brand-medium.svg",
           "code": "src/BrandMedium.tsx"
@@ -2119,6 +2219,11 @@
           "code": "src/BrandPaypal.tsx"
         },
         {
+          "name": "BrandPepsi",
+          "svg": ".chakraIcons/icons/brand-pepsi.svg",
+          "code": "src/BrandPepsi.tsx"
+        },
+        {
           "name": "BrandPhp",
           "svg": ".chakraIcons/icons/brand-php.svg",
           "code": "src/BrandPhp.tsx"
@@ -2179,6 +2284,11 @@
           "code": "src/BrandShazam.tsx"
         },
         {
+          "name": "BrandShopee",
+          "svg": ".chakraIcons/icons/brand-shopee.svg",
+          "code": "src/BrandShopee.tsx"
+        },
+        {
           "name": "BrandSketch",
           "svg": ".chakraIcons/icons/brand-sketch.svg",
           "code": "src/BrandSketch.tsx"
@@ -2197,6 +2307,11 @@
           "name": "BrandSnapchat",
           "svg": ".chakraIcons/icons/brand-snapchat.svg",
           "code": "src/BrandSnapchat.tsx"
+        },
+        {
+          "name": "BrandSnapseed",
+          "svg": ".chakraIcons/icons/brand-snapseed.svg",
+          "code": "src/BrandSnapseed.tsx"
         },
         {
           "name": "BrandSoundcloud",
@@ -2219,6 +2334,11 @@
           "code": "src/BrandSteam.tsx"
         },
         {
+          "name": "BrandStrava",
+          "svg": ".chakraIcons/icons/brand-strava.svg",
+          "code": "src/BrandStrava.tsx"
+        },
+        {
           "name": "BrandStripe",
           "svg": ".chakraIcons/icons/brand-stripe.svg",
           "code": "src/BrandStripe.tsx"
@@ -2227,6 +2347,11 @@
           "name": "BrandSublimeText",
           "svg": ".chakraIcons/icons/brand-sublime-text.svg",
           "code": "src/BrandSublimeText.tsx"
+        },
+        {
+          "name": "BrandSurfshark",
+          "svg": ".chakraIcons/icons/brand-surfshark.svg",
+          "code": "src/BrandSurfshark.tsx"
         },
         {
           "name": "BrandSvelte",
@@ -2262,6 +2387,11 @@
           "name": "BrandTinder",
           "svg": ".chakraIcons/icons/brand-tinder.svg",
           "code": "src/BrandTinder.tsx"
+        },
+        {
+          "name": "BrandToyota",
+          "svg": ".chakraIcons/icons/brand-toyota.svg",
+          "code": "src/BrandToyota.tsx"
         },
         {
           "name": "BrandTripadvisor",
@@ -4084,6 +4214,11 @@
           "code": "src/DeviceAudioTape.tsx"
         },
         {
+          "name": "DeviceCameraPhone",
+          "svg": ".chakraIcons/icons/device-camera-phone.svg",
+          "code": "src/DeviceCameraPhone.tsx"
+        },
+        {
           "name": "DeviceCctv",
           "svg": ".chakraIcons/icons/device-cctv.svg",
           "code": "src/DeviceCctv.tsx"
@@ -4647,6 +4782,11 @@
           "name": "ExclamationMark",
           "svg": ".chakraIcons/icons/exclamation-mark.svg",
           "code": "src/ExclamationMark.tsx"
+        },
+        {
+          "name": "Explicit",
+          "svg": ".chakraIcons/icons/explicit.svg",
+          "code": "src/Explicit.tsx"
         },
         {
           "name": "Exposure",
@@ -5294,6 +5434,11 @@
           "code": "src/Function.tsx"
         },
         {
+          "name": "GardenCart",
+          "svg": ".chakraIcons/icons/garden-cart.svg",
+          "code": "src/GardenCart.tsx"
+        },
+        {
           "name": "GasStationOff",
           "svg": ".chakraIcons/icons/gas-station-off.svg",
           "code": "src/GasStationOff.tsx"
@@ -5419,6 +5564,11 @@
           "code": "src/Ghost.tsx"
         },
         {
+          "name": "Gif",
+          "svg": ".chakraIcons/icons/gif.svg",
+          "code": "src/Gif.tsx"
+        },
+        {
           "name": "Gift",
           "svg": ".chakraIcons/icons/gift.svg",
           "code": "src/Gift.tsx"
@@ -5542,6 +5692,11 @@
           "name": "GripVertical",
           "svg": ".chakraIcons/icons/grip-vertical.svg",
           "code": "src/GripVertical.tsx"
+        },
+        {
+          "name": "Ground",
+          "svg": ".chakraIcons/icons/ground.svg",
+          "code": "src/Ground.tsx"
         },
         {
           "name": "Growth",
@@ -6554,6 +6709,46 @@
           "code": "src/Lock.tsx"
         },
         {
+          "name": "LogicAnd",
+          "svg": ".chakraIcons/icons/logic-and.svg",
+          "code": "src/LogicAnd.tsx"
+        },
+        {
+          "name": "LogicBuffer",
+          "svg": ".chakraIcons/icons/logic-buffer.svg",
+          "code": "src/LogicBuffer.tsx"
+        },
+        {
+          "name": "LogicNand",
+          "svg": ".chakraIcons/icons/logic-nand.svg",
+          "code": "src/LogicNand.tsx"
+        },
+        {
+          "name": "LogicNor",
+          "svg": ".chakraIcons/icons/logic-nor.svg",
+          "code": "src/LogicNor.tsx"
+        },
+        {
+          "name": "LogicNot",
+          "svg": ".chakraIcons/icons/logic-not.svg",
+          "code": "src/LogicNot.tsx"
+        },
+        {
+          "name": "LogicOr",
+          "svg": ".chakraIcons/icons/logic-or.svg",
+          "code": "src/LogicOr.tsx"
+        },
+        {
+          "name": "LogicXnor",
+          "svg": ".chakraIcons/icons/logic-xnor.svg",
+          "code": "src/LogicXnor.tsx"
+        },
+        {
+          "name": "LogicXor",
+          "svg": ".chakraIcons/icons/logic-xor.svg",
+          "code": "src/LogicXor.tsx"
+        },
+        {
           "name": "Login",
           "svg": ".chakraIcons/icons/login.svg",
           "code": "src/Login.tsx"
@@ -6717,6 +6912,11 @@
           "name": "Mask",
           "svg": ".chakraIcons/icons/mask.svg",
           "code": "src/Mask.tsx"
+        },
+        {
+          "name": "MasksTheater",
+          "svg": ".chakraIcons/icons/masks-theater.svg",
+          "code": "src/MasksTheater.tsx"
         },
         {
           "name": "Massage",
@@ -6912,6 +7112,16 @@
           "name": "Microscope",
           "svg": ".chakraIcons/icons/microscope.svg",
           "code": "src/Microscope.tsx"
+        },
+        {
+          "name": "MicrowaveOff",
+          "svg": ".chakraIcons/icons/microwave-off.svg",
+          "code": "src/MicrowaveOff.tsx"
+        },
+        {
+          "name": "Microwave",
+          "svg": ".chakraIcons/icons/microwave.svg",
+          "code": "src/Microwave.tsx"
         },
         {
           "name": "MilitaryAward",
@@ -7297,6 +7507,11 @@
           "name": "Omega",
           "svg": ".chakraIcons/icons/omega.svg",
           "code": "src/Omega.tsx"
+        },
+        {
+          "name": "Outbound",
+          "svg": ".chakraIcons/icons/outbound.svg",
+          "code": "src/Outbound.tsx"
         },
         {
           "name": "Outlet",
@@ -7814,6 +8029,11 @@
           "code": "src/Point.tsx"
         },
         {
+          "name": "Pointer",
+          "svg": ".chakraIcons/icons/pointer.svg",
+          "code": "src/Pointer.tsx"
+        },
+        {
           "name": "Pokeball",
           "svg": ".chakraIcons/icons/pokeball.svg",
           "code": "src/Pokeball.tsx"
@@ -7832,6 +8052,11 @@
           "name": "Polygon",
           "svg": ".chakraIcons/icons/polygon.svg",
           "code": "src/Polygon.tsx"
+        },
+        {
+          "name": "Poo",
+          "svg": ".chakraIcons/icons/poo.svg",
+          "code": "src/Poo.tsx"
         },
         {
           "name": "Pool",
@@ -8002,6 +8227,31 @@
           "name": "Rainbow",
           "svg": ".chakraIcons/icons/rainbow.svg",
           "code": "src/Rainbow.tsx"
+        },
+        {
+          "name": "Rating12Plus",
+          "svg": ".chakraIcons/icons/rating-12-plus.svg",
+          "code": "src/Rating12Plus.tsx"
+        },
+        {
+          "name": "Rating14Plus",
+          "svg": ".chakraIcons/icons/rating-14-plus.svg",
+          "code": "src/Rating14Plus.tsx"
+        },
+        {
+          "name": "Rating16Plus",
+          "svg": ".chakraIcons/icons/rating-16-plus.svg",
+          "code": "src/Rating16Plus.tsx"
+        },
+        {
+          "name": "Rating18Plus",
+          "svg": ".chakraIcons/icons/rating-18-plus.svg",
+          "code": "src/Rating18Plus.tsx"
+        },
+        {
+          "name": "Rating21Plus",
+          "svg": ".chakraIcons/icons/rating-21-plus.svg",
+          "code": "src/Rating21Plus.tsx"
         },
         {
           "name": "Receipt2",
@@ -8464,6 +8714,11 @@
           "code": "src/Send.tsx"
         },
         {
+          "name": "Seo",
+          "svg": ".chakraIcons/icons/seo.svg",
+          "code": "src/Seo.tsx"
+        },
+        {
           "name": "SeparatorHorizontal",
           "svg": ".chakraIcons/icons/separator-horizontal.svg",
           "code": "src/SeparatorHorizontal.tsx"
@@ -8599,6 +8854,11 @@
           "code": "src/ShirtOff.tsx"
         },
         {
+          "name": "ShirtSport",
+          "svg": ".chakraIcons/icons/shirt-sport.svg",
+          "code": "src/ShirtSport.tsx"
+        },
+        {
           "name": "Shirt",
           "svg": ".chakraIcons/icons/shirt.svg",
           "code": "src/Shirt.tsx"
@@ -8662,6 +8922,11 @@
           "name": "Signal3g",
           "svg": ".chakraIcons/icons/signal-3g.svg",
           "code": "src/Signal3g.tsx"
+        },
+        {
+          "name": "Signal4gPlus",
+          "svg": ".chakraIcons/icons/signal-4g-plus.svg",
+          "code": "src/Signal4gPlus.tsx"
         },
         {
           "name": "Signal4g",
@@ -8744,6 +9009,11 @@
           "code": "src/Snowflake.tsx"
         },
         {
+          "name": "Snowman",
+          "svg": ".chakraIcons/icons/snowman.svg",
+          "code": "src/Snowman.tsx"
+        },
+        {
           "name": "SoccerField",
           "svg": ".chakraIcons/icons/soccer-field.svg",
           "code": "src/SoccerField.tsx"
@@ -8807,6 +9077,11 @@
           "name": "SortDescending",
           "svg": ".chakraIcons/icons/sort-descending.svg",
           "code": "src/SortDescending.tsx"
+        },
+        {
+          "name": "Sos",
+          "svg": ".chakraIcons/icons/sos.svg",
+          "code": "src/Sos.tsx"
         },
         {
           "name": "Soup",
@@ -9024,6 +9299,16 @@
           "code": "src/Stack3.tsx"
         },
         {
+          "name": "StackPop",
+          "svg": ".chakraIcons/icons/stack-pop.svg",
+          "code": "src/StackPop.tsx"
+        },
+        {
+          "name": "StackPush",
+          "svg": ".chakraIcons/icons/stack-push.svg",
+          "code": "src/StackPush.tsx"
+        },
+        {
           "name": "Stack",
           "svg": ".chakraIcons/icons/stack.svg",
           "code": "src/Stack.tsx"
@@ -9064,6 +9349,11 @@
           "code": "src/Stars.tsx"
         },
         {
+          "name": "Steam",
+          "svg": ".chakraIcons/icons/steam.svg",
+          "code": "src/Steam.tsx"
+        },
+        {
           "name": "SteeringWheel",
           "svg": ".chakraIcons/icons/steering-wheel.svg",
           "code": "src/SteeringWheel.tsx"
@@ -9087,6 +9377,11 @@
           "name": "Sticker",
           "svg": ".chakraIcons/icons/sticker.svg",
           "code": "src/Sticker.tsx"
+        },
+        {
+          "name": "Storm",
+          "svg": ".chakraIcons/icons/storm.svg",
+          "code": "src/Storm.tsx"
         },
         {
           "name": "Strikethrough",
@@ -9119,9 +9414,24 @@
           "code": "src/Sum.tsx"
         },
         {
+          "name": "SunHigh",
+          "svg": ".chakraIcons/icons/sun-high.svg",
+          "code": "src/SunHigh.tsx"
+        },
+        {
+          "name": "SunLow",
+          "svg": ".chakraIcons/icons/sun-low.svg",
+          "code": "src/SunLow.tsx"
+        },
+        {
           "name": "SunOff",
           "svg": ".chakraIcons/icons/sun-off.svg",
           "code": "src/SunOff.tsx"
+        },
+        {
+          "name": "SunWind",
+          "svg": ".chakraIcons/icons/sun-wind.svg",
+          "code": "src/SunWind.tsx"
         },
         {
           "name": "Sun",
@@ -9129,9 +9439,19 @@
           "code": "src/Sun.tsx"
         },
         {
+          "name": "Sunglasses",
+          "svg": ".chakraIcons/icons/sunglasses.svg",
+          "code": "src/Sunglasses.tsx"
+        },
+        {
           "name": "Sunrise",
           "svg": ".chakraIcons/icons/sunrise.svg",
           "code": "src/Sunrise.tsx"
+        },
+        {
+          "name": "Sunset2",
+          "svg": ".chakraIcons/icons/sunset-2.svg",
+          "code": "src/Sunset2.tsx"
         },
         {
           "name": "Sunset",
@@ -9142,6 +9462,11 @@
           "name": "Superscript",
           "svg": ".chakraIcons/icons/superscript.svg",
           "code": "src/Superscript.tsx"
+        },
+        {
+          "name": "Svg",
+          "svg": ".chakraIcons/icons/svg.svg",
+          "code": "src/Svg.tsx"
         },
         {
           "name": "Swimming",
@@ -9189,6 +9514,11 @@
           "code": "src/Swords.tsx"
         },
         {
+          "name": "TableAlias",
+          "svg": ".chakraIcons/icons/table-alias.svg",
+          "code": "src/TableAlias.tsx"
+        },
+        {
           "name": "TableExport",
           "svg": ".chakraIcons/icons/table-export.svg",
           "code": "src/TableExport.tsx"
@@ -9202,6 +9532,16 @@
           "name": "TableOff",
           "svg": ".chakraIcons/icons/table-off.svg",
           "code": "src/TableOff.tsx"
+        },
+        {
+          "name": "TableOptions",
+          "svg": ".chakraIcons/icons/table-options.svg",
+          "code": "src/TableOptions.tsx"
+        },
+        {
+          "name": "TableShortcut",
+          "svg": ".chakraIcons/icons/table-shortcut.svg",
+          "code": "src/TableShortcut.tsx"
         },
         {
           "name": "Table",
@@ -9679,6 +10019,16 @@
           "code": "src/Typography.tsx"
         },
         {
+          "name": "UfOff",
+          "svg": ".chakraIcons/icons/uf-off.svg",
+          "code": "src/UfOff.tsx"
+        },
+        {
+          "name": "Ufo",
+          "svg": ".chakraIcons/icons/ufo.svg",
+          "code": "src/Ufo.tsx"
+        },
+        {
           "name": "UmbrellaOff",
           "svg": ".chakraIcons/icons/umbrella-off.svg",
           "code": "src/UmbrellaOff.tsx"
@@ -9969,6 +10319,11 @@
           "code": "src/Wand.tsx"
         },
         {
+          "name": "WashMachine",
+          "svg": ".chakraIcons/icons/wash-machine.svg",
+          "code": "src/WashMachine.tsx"
+        },
+        {
           "name": "WaveSawTool",
           "svg": ".chakraIcons/icons/wave-saw-tool.svg",
           "code": "src/WaveSawTool.tsx"
@@ -10147,6 +10502,11 @@
           "name": "Yoga",
           "svg": ".chakraIcons/icons/yoga.svg",
           "code": "src/Yoga.tsx"
+        },
+        {
+          "name": "Zeppelin",
+          "svg": ".chakraIcons/icons/zeppelin.svg",
+          "code": "src/Zeppelin.tsx"
         },
         {
           "name": "ZodiacAquarius",
