@@ -264,6 +264,11 @@
           "code": "src/Bug24.tsx"
         },
         {
+          "name": "Cache16",
+          "svg": ".chakraIcons/icons/cache-16.svg",
+          "code": "src/Cache16.tsx"
+        },
+        {
           "name": "Calendar16",
           "svg": ".chakraIcons/icons/calendar-16.svg",
           "code": "src/Calendar16.tsx"
