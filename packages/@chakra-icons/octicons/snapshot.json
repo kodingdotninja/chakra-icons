@@ -314,6 +314,16 @@
           "code": "src/CheckCircleFill24.tsx"
         },
         {
+          "name": "Checkbox16",
+          "svg": ".chakraIcons/icons/checkbox-16.svg",
+          "code": "src/Checkbox16.tsx"
+        },
+        {
+          "name": "Checkbox24",
+          "svg": ".chakraIcons/icons/checkbox-24.svg",
+          "code": "src/Checkbox24.tsx"
+        },
+        {
           "name": "Checklist16",
           "svg": ".chakraIcons/icons/checklist-16.svg",
           "code": "src/Checklist16.tsx"
@@ -492,6 +502,16 @@
           "name": "Columns24",
           "svg": ".chakraIcons/icons/columns-24.svg",
           "code": "src/Columns24.tsx"
+        },
+        {
+          "name": "CommandPalette16",
+          "svg": ".chakraIcons/icons/command-palette-16.svg",
+          "code": "src/CommandPalette16.tsx"
+        },
+        {
+          "name": "CommandPalette24",
+          "svg": ".chakraIcons/icons/command-palette-24.svg",
+          "code": "src/CommandPalette24.tsx"
         },
         {
           "name": "Comment16",
@@ -1062,6 +1082,11 @@
           "name": "GitMerge24",
           "svg": ".chakraIcons/icons/git-merge-24.svg",
           "code": "src/GitMerge24.tsx"
+        },
+        {
+          "name": "GitMergeQueue16",
+          "svg": ".chakraIcons/icons/git-merge-queue-16.svg",
+          "code": "src/GitMergeQueue16.tsx"
         },
         {
           "name": "GitPullRequest16",
@@ -1647,6 +1672,16 @@
           "name": "PaperAirplane24",
           "svg": ".chakraIcons/icons/paper-airplane-24.svg",
           "code": "src/PaperAirplane24.tsx"
+        },
+        {
+          "name": "Paperclip16",
+          "svg": ".chakraIcons/icons/paperclip-16.svg",
+          "code": "src/Paperclip16.tsx"
+        },
+        {
+          "name": "Paperclip24",
+          "svg": ".chakraIcons/icons/paperclip-24.svg",
+          "code": "src/Paperclip24.tsx"
         },
         {
           "name": "Paste16",
