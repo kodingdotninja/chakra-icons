@@ -1494,6 +1494,26 @@
           "code": "src/Biohazard.tsx"
         },
         {
+          "name": "BleachChlorine",
+          "svg": ".chakraIcons/icons/bleach-chlorine.svg",
+          "code": "src/BleachChlorine.tsx"
+        },
+        {
+          "name": "BleachNoChlorine",
+          "svg": ".chakraIcons/icons/bleach-no-chlorine.svg",
+          "code": "src/BleachNoChlorine.tsx"
+        },
+        {
+          "name": "BleachOff",
+          "svg": ".chakraIcons/icons/bleach-off.svg",
+          "code": "src/BleachOff.tsx"
+        },
+        {
+          "name": "Bleach",
+          "svg": ".chakraIcons/icons/bleach.svg",
+          "code": "src/Bleach.tsx"
+        },
+        {
           "name": "Blockquote",
           "svg": ".chakraIcons/icons/blockquote.svg",
           "code": "src/Blockquote.tsx"
@@ -6419,6 +6439,36 @@
           "code": "src/InputSearch.tsx"
         },
         {
+          "name": "Ironing1",
+          "svg": ".chakraIcons/icons/ironing-1.svg",
+          "code": "src/Ironing1.tsx"
+        },
+        {
+          "name": "Ironing2",
+          "svg": ".chakraIcons/icons/ironing-2.svg",
+          "code": "src/Ironing2.tsx"
+        },
+        {
+          "name": "Ironing3",
+          "svg": ".chakraIcons/icons/ironing-3.svg",
+          "code": "src/Ironing3.tsx"
+        },
+        {
+          "name": "IroningOff",
+          "svg": ".chakraIcons/icons/ironing-off.svg",
+          "code": "src/IroningOff.tsx"
+        },
+        {
+          "name": "IroningSteamOff",
+          "svg": ".chakraIcons/icons/ironing-steam-off.svg",
+          "code": "src/IroningSteamOff.tsx"
+        },
+        {
+          "name": "IroningSteam",
+          "svg": ".chakraIcons/icons/ironing-steam.svg",
+          "code": "src/IroningSteam.tsx"
+        },
+        {
           "name": "Italic",
           "svg": ".chakraIcons/icons/italic.svg",
           "code": "src/Italic.tsx"
@@ -7514,6 +7564,21 @@
           "code": "src/Mist.tsx"
         },
         {
+          "name": "MoodAngry",
+          "svg": ".chakraIcons/icons/mood-angry.svg",
+          "code": "src/MoodAngry.tsx"
+        },
+        {
+          "name": "MoodAnnoyed2",
+          "svg": ".chakraIcons/icons/mood-annoyed-2.svg",
+          "code": "src/MoodAnnoyed2.tsx"
+        },
+        {
+          "name": "MoodAnnoyed",
+          "svg": ".chakraIcons/icons/mood-annoyed.svg",
+          "code": "src/MoodAnnoyed.tsx"
+        },
+        {
           "name": "MoodBoy",
           "svg": ".chakraIcons/icons/mood-boy.svg",
           "code": "src/MoodBoy.tsx"
@@ -7559,6 +7624,11 @@
           "code": "src/MoodLookRight.tsx"
         },
         {
+          "name": "MoodNerd",
+          "svg": ".chakraIcons/icons/mood-nerd.svg",
+          "code": "src/MoodNerd.tsx"
+        },
+        {
           "name": "MoodNervous",
           "svg": ".chakraIcons/icons/mood-nervous.svg",
           "code": "src/MoodNervous.tsx"
@@ -7574,14 +7644,49 @@
           "code": "src/MoodOff.tsx"
         },
         {
+          "name": "MoodSad2",
+          "svg": ".chakraIcons/icons/mood-sad-2.svg",
+          "code": "src/MoodSad2.tsx"
+        },
+        {
+          "name": "MoodSadDizzy",
+          "svg": ".chakraIcons/icons/mood-sad-dizzy.svg",
+          "code": "src/MoodSadDizzy.tsx"
+        },
+        {
+          "name": "MoodSadSquint",
+          "svg": ".chakraIcons/icons/mood-sad-squint.svg",
+          "code": "src/MoodSadSquint.tsx"
+        },
+        {
           "name": "MoodSad",
           "svg": ".chakraIcons/icons/mood-sad.svg",
           "code": "src/MoodSad.tsx"
         },
         {
+          "name": "MoodSick",
+          "svg": ".chakraIcons/icons/mood-sick.svg",
+          "code": "src/MoodSick.tsx"
+        },
+        {
+          "name": "MoodSilence",
+          "svg": ".chakraIcons/icons/mood-silence.svg",
+          "code": "src/MoodSilence.tsx"
+        },
+        {
           "name": "MoodSing",
           "svg": ".chakraIcons/icons/mood-sing.svg",
           "code": "src/MoodSing.tsx"
+        },
+        {
+          "name": "MoodSmileBeam",
+          "svg": ".chakraIcons/icons/mood-smile-beam.svg",
+          "code": "src/MoodSmileBeam.tsx"
+        },
+        {
+          "name": "MoodSmileDizzy",
+          "svg": ".chakraIcons/icons/mood-smile-dizzy.svg",
+          "code": "src/MoodSmileDizzy.tsx"
         },
         {
           "name": "MoodSmile",
@@ -7594,9 +7699,44 @@
           "code": "src/MoodSuprised.tsx"
         },
         {
+          "name": "MoodTongueWink2",
+          "svg": ".chakraIcons/icons/mood-tongue-wink-2.svg",
+          "code": "src/MoodTongueWink2.tsx"
+        },
+        {
+          "name": "MoodTongueWink",
+          "svg": ".chakraIcons/icons/mood-tongue-wink.svg",
+          "code": "src/MoodTongueWink.tsx"
+        },
+        {
           "name": "MoodTongue",
           "svg": ".chakraIcons/icons/mood-tongue.svg",
           "code": "src/MoodTongue.tsx"
+        },
+        {
+          "name": "MoodUnamused",
+          "svg": ".chakraIcons/icons/mood-unamused.svg",
+          "code": "src/MoodUnamused.tsx"
+        },
+        {
+          "name": "MoodWink2",
+          "svg": ".chakraIcons/icons/mood-wink-2.svg",
+          "code": "src/MoodWink2.tsx"
+        },
+        {
+          "name": "MoodWink",
+          "svg": ".chakraIcons/icons/mood-wink.svg",
+          "code": "src/MoodWink.tsx"
+        },
+        {
+          "name": "MoodWrrr",
+          "svg": ".chakraIcons/icons/mood-wrrr.svg",
+          "code": "src/MoodWrrr.tsx"
+        },
+        {
+          "name": "MoodXd",
+          "svg": ".chakraIcons/icons/mood-xd.svg",
+          "code": "src/MoodXd.tsx"
         },
         {
           "name": "Moon2",
@@ -10829,9 +10969,129 @@
           "code": "src/Wand.tsx"
         },
         {
+          "name": "WashDry1",
+          "svg": ".chakraIcons/icons/wash-dry-1.svg",
+          "code": "src/WashDry1.tsx"
+        },
+        {
+          "name": "WashDry2",
+          "svg": ".chakraIcons/icons/wash-dry-2.svg",
+          "code": "src/WashDry2.tsx"
+        },
+        {
+          "name": "WashDry3",
+          "svg": ".chakraIcons/icons/wash-dry-3.svg",
+          "code": "src/WashDry3.tsx"
+        },
+        {
+          "name": "WashDryA",
+          "svg": ".chakraIcons/icons/wash-dry-a.svg",
+          "code": "src/WashDryA.tsx"
+        },
+        {
+          "name": "WashDryDip",
+          "svg": ".chakraIcons/icons/wash-dry-dip.svg",
+          "code": "src/WashDryDip.tsx"
+        },
+        {
+          "name": "WashDryF",
+          "svg": ".chakraIcons/icons/wash-dry-f.svg",
+          "code": "src/WashDryF.tsx"
+        },
+        {
+          "name": "WashDryHang",
+          "svg": ".chakraIcons/icons/wash-dry-hang.svg",
+          "code": "src/WashDryHang.tsx"
+        },
+        {
+          "name": "WashDryOff",
+          "svg": ".chakraIcons/icons/wash-dry-off.svg",
+          "code": "src/WashDryOff.tsx"
+        },
+        {
+          "name": "WashDryP",
+          "svg": ".chakraIcons/icons/wash-dry-p.svg",
+          "code": "src/WashDryP.tsx"
+        },
+        {
+          "name": "WashDryShade",
+          "svg": ".chakraIcons/icons/wash-dry-shade.svg",
+          "code": "src/WashDryShade.tsx"
+        },
+        {
+          "name": "WashDry",
+          "svg": ".chakraIcons/icons/wash-dry.svg",
+          "code": "src/WashDry.tsx"
+        },
+        {
+          "name": "WashDryclean",
+          "svg": ".chakraIcons/icons/wash-dryclean.svg",
+          "code": "src/WashDryclean.tsx"
+        },
+        {
+          "name": "WashGentle",
+          "svg": ".chakraIcons/icons/wash-gentle.svg",
+          "code": "src/WashGentle.tsx"
+        },
+        {
           "name": "WashMachine",
           "svg": ".chakraIcons/icons/wash-machine.svg",
           "code": "src/WashMachine.tsx"
+        },
+        {
+          "name": "WashOff",
+          "svg": ".chakraIcons/icons/wash-off.svg",
+          "code": "src/WashOff.tsx"
+        },
+        {
+          "name": "WashPress",
+          "svg": ".chakraIcons/icons/wash-press.svg",
+          "code": "src/WashPress.tsx"
+        },
+        {
+          "name": "WashTemperature1",
+          "svg": ".chakraIcons/icons/wash-temperature-1.svg",
+          "code": "src/WashTemperature1.tsx"
+        },
+        {
+          "name": "WashTemperature2",
+          "svg": ".chakraIcons/icons/wash-temperature-2.svg",
+          "code": "src/WashTemperature2.tsx"
+        },
+        {
+          "name": "WashTemperature3",
+          "svg": ".chakraIcons/icons/wash-temperature-3.svg",
+          "code": "src/WashTemperature3.tsx"
+        },
+        {
+          "name": "WashTemperature4",
+          "svg": ".chakraIcons/icons/wash-temperature-4.svg",
+          "code": "src/WashTemperature4.tsx"
+        },
+        {
+          "name": "WashTemperature5",
+          "svg": ".chakraIcons/icons/wash-temperature-5.svg",
+          "code": "src/WashTemperature5.tsx"
+        },
+        {
+          "name": "WashTemperature6",
+          "svg": ".chakraIcons/icons/wash-temperature-6.svg",
+          "code": "src/WashTemperature6.tsx"
+        },
+        {
+          "name": "WashTumbleDry",
+          "svg": ".chakraIcons/icons/wash-tumble-dry.svg",
+          "code": "src/WashTumbleDry.tsx"
+        },
+        {
+          "name": "WashTumbleOff",
+          "svg": ".chakraIcons/icons/wash-tumble-off.svg",
+          "code": "src/WashTumbleOff.tsx"
+        },
+        {
+          "name": "Wash",
+          "svg": ".chakraIcons/icons/wash.svg",
+          "code": "src/Wash.tsx"
         },
         {
           "name": "WaveSawTool",
