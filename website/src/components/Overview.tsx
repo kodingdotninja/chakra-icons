@@ -33,7 +33,7 @@ const Item = ({ children, name, code, creator, ...props }: StackProps & ApiIcon)
   const { onCopy: _onCopyCode } = useClipboard(code);
   const toast = useToast();
 
-  const onCopySVG = (_) => {
+  const onCopySVG = () => {
     _onCopySVG();
     toast({
       title: "Copied SVG to clipboard.",
