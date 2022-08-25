@@ -22,6 +22,7 @@
     "@chakra-icons/carbon": "*",
     "@chakra-icons/simple-line-icons": "*",
     "@chakra-icons/ionicons": "*",
+    "@chakra-icons/cryptocurrency-icons": "*",
     "@chakra-icons/cli": "*",
     "@chakra-ui/icons": "^1",
     "@chakra-ui/react": "^1",
