@@ -19,6 +19,11 @@
           "code": "src/I0xbtc.tsx"
         },
         {
+          "name": "I1inch",
+          "svg": ".chakraIcons/svg/color/1inch.svg",
+          "code": "src/I1inch.tsx"
+        },
+        {
           "name": "I2give",
           "svg": ".chakraIcons/svg/color/2give.svg",
           "code": "src/I2give.tsx"
@@ -119,6 +124,11 @@
           "code": "src/Ant.tsx"
         },
         {
+          "name": "Ape",
+          "svg": ".chakraIcons/svg/color/ape.svg",
+          "code": "src/Ape.tsx"
+        },
+        {
           "name": "Apex",
           "svg": ".chakraIcons/svg/color/apex.svg",
           "code": "src/Apex.tsx"
@@ -164,6 +174,11 @@
           "code": "src/Ast.tsx"
         },
         {
+          "name": "Atlas",
+          "svg": ".chakraIcons/svg/color/atlas.svg",
+          "code": "src/Atlas.tsx"
+        },
+        {
           "name": "Atm",
           "svg": ".chakraIcons/svg/color/atm.svg",
           "code": "src/Atm.tsx"
@@ -179,9 +194,19 @@
           "code": "src/Audr.tsx"
         },
         {
+          "name": "Aury",
+          "svg": ".chakraIcons/svg/color/aury.svg",
+          "code": "src/Aury.tsx"
+        },
+        {
           "name": "Auto",
           "svg": ".chakraIcons/svg/color/auto.svg",
           "code": "src/Auto.tsx"
+        },
+        {
+          "name": "Avax",
+          "svg": ".chakraIcons/svg/color/avax.svg",
+          "code": "src/Avax.tsx"
         },
         {
           "name": "Aywa",
@@ -452,6 +477,11 @@
           "name": "Chsb",
           "svg": ".chakraIcons/svg/color/chsb.svg",
           "code": "src/Chsb.tsx"
+        },
+        {
+          "name": "Chz",
+          "svg": ".chakraIcons/svg/color/chz.svg",
+          "code": "src/Chz.tsx"
         },
         {
           "name": "Cix",
@@ -829,6 +859,11 @@
           "code": "src/Fct.tsx"
         },
         {
+          "name": "Fida",
+          "svg": ".chakraIcons/svg/color/fida.svg",
+          "code": "src/Fida.tsx"
+        },
+        {
           "name": "Fil",
           "svg": ".chakraIcons/svg/color/fil.svg",
           "code": "src/Fil.tsx"
@@ -917,6 +952,11 @@
           "name": "Gmr",
           "svg": ".chakraIcons/svg/color/gmr.svg",
           "code": "src/Gmr.tsx"
+        },
+        {
+          "name": "Gmt",
+          "svg": ".chakraIcons/svg/color/gmt.svg",
+          "code": "src/Gmt.tsx"
         },
         {
           "name": "Gno",
@@ -1499,6 +1539,11 @@
           "code": "src/Oxt.tsx"
         },
         {
+          "name": "Oxy",
+          "svg": ".chakraIcons/svg/color/oxy.svg",
+          "code": "src/Oxy.tsx"
+        },
+        {
           "name": "Part",
           "svg": ".chakraIcons/svg/color/part.svg",
           "code": "src/Part.tsx"
@@ -1634,6 +1679,11 @@
           "code": "src/Qlc.tsx"
         },
         {
+          "name": "Qnt",
+          "svg": ".chakraIcons/svg/color/qnt.svg",
+          "code": "src/Qnt.tsx"
+        },
+        {
           "name": "Qrl",
           "svg": ".chakraIcons/svg/color/qrl.svg",
           "code": "src/Qrl.tsx"
@@ -1662,6 +1712,11 @@
           "name": "Rap",
           "svg": ".chakraIcons/svg/color/rap.svg",
           "code": "src/Rap.tsx"
+        },
+        {
+          "name": "Ray",
+          "svg": ".chakraIcons/svg/color/ray.svg",
+          "code": "src/Ray.tsx"
         },
         {
           "name": "Rcn",
@@ -1782,6 +1837,11 @@
           "name": "Sc",
           "svg": ".chakraIcons/svg/color/sc.svg",
           "code": "src/Sc.tsx"
+        },
+        {
+          "name": "Ser",
+          "svg": ".chakraIcons/svg/color/ser.svg",
+          "code": "src/Ser.tsx"
         },
         {
           "name": "Shift",
