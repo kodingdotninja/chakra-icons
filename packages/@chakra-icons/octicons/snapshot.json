@@ -14,6 +14,11 @@
           "code": "src/Accessibility16.tsx"
         },
         {
+          "name": "AccessibilityInset16",
+          "svg": ".chakraIcons/icons/accessibility-inset-16.svg",
+          "code": "src/AccessibilityInset16.tsx"
+        },
+        {
           "name": "Alert16",
           "svg": ".chakraIcons/icons/alert-16.svg",
           "code": "src/Alert16.tsx"
@@ -2047,6 +2052,11 @@
           "name": "ShieldLock24",
           "svg": ".chakraIcons/icons/shield-lock-24.svg",
           "code": "src/ShieldLock24.tsx"
+        },
+        {
+          "name": "ShieldSlash16",
+          "svg": ".chakraIcons/icons/shield-slash-16.svg",
+          "code": "src/ShieldSlash16.tsx"
         },
         {
           "name": "ShieldX16",
