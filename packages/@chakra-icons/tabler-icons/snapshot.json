@@ -1884,6 +1884,11 @@
           "code": "src/BrandAirtable.tsx"
         },
         {
+          "name": "BrandAlbolia",
+          "svg": ".chakraIcons/icons/brand-albolia.svg",
+          "code": "src/BrandAlbolia.tsx"
+        },
+        {
           "name": "BrandAlpineJs",
           "svg": ".chakraIcons/icons/brand-alpine-js.svg",
           "code": "src/BrandAlpineJs.tsx"
@@ -2009,6 +2014,11 @@
           "code": "src/BrandCarbon.tsx"
         },
         {
+          "name": "BrandCashapp",
+          "svg": ".chakraIcons/icons/brand-cashapp.svg",
+          "code": "src/BrandCashapp.tsx"
+        },
+        {
           "name": "BrandChrome",
           "svg": ".chakraIcons/icons/brand-chrome.svg",
           "code": "src/BrandChrome.tsx"
@@ -2037,6 +2047,11 @@
           "name": "BrandComedyCentral",
           "svg": ".chakraIcons/icons/brand-comedy-central.svg",
           "code": "src/BrandComedyCentral.tsx"
+        },
+        {
+          "name": "BrandCouchsurfing",
+          "svg": ".chakraIcons/icons/brand-couchsurfing.svg",
+          "code": "src/BrandCouchsurfing.tsx"
         },
         {
           "name": "BrandCss3",
@@ -2109,9 +2124,19 @@
           "code": "src/BrandDribbble.tsx"
         },
         {
+          "name": "BrandDrupal",
+          "svg": ".chakraIcons/icons/brand-drupal.svg",
+          "code": "src/BrandDrupal.tsx"
+        },
+        {
           "name": "BrandEdge",
           "svg": ".chakraIcons/icons/brand-edge.svg",
           "code": "src/BrandEdge.tsx"
+        },
+        {
+          "name": "BrandEnvato",
+          "svg": ".chakraIcons/icons/brand-envato.svg",
+          "code": "src/BrandEnvato.tsx"
         },
         {
           "name": "BrandFacebook",
@@ -2149,6 +2174,11 @@
           "code": "src/BrandFlipboard.tsx"
         },
         {
+          "name": "BrandFlutter",
+          "svg": ".chakraIcons/icons/brand-flutter.svg",
+          "code": "src/BrandFlutter.tsx"
+        },
+        {
           "name": "BrandFortnite",
           "svg": ".chakraIcons/icons/brand-fortnite.svg",
           "code": "src/BrandFortnite.tsx"
@@ -2162,6 +2192,11 @@
           "name": "BrandFramer",
           "svg": ".chakraIcons/icons/brand-framer.svg",
           "code": "src/BrandFramer.tsx"
+        },
+        {
+          "name": "BrandGatsby",
+          "svg": ".chakraIcons/icons/brand-gatsby.svg",
+          "code": "src/BrandGatsby.tsx"
         },
         {
           "name": "BrandGit",
@@ -2354,6 +2389,11 @@
           "code": "src/BrandMeta.tsx"
         },
         {
+          "name": "BrandMixpanel",
+          "svg": ".chakraIcons/icons/brand-mixpanel.svg",
+          "code": "src/BrandMixpanel.tsx"
+        },
+        {
           "name": "BrandMonday",
           "svg": ".chakraIcons/icons/brand-monday.svg",
           "code": "src/BrandMonday.tsx"
@@ -2394,9 +2434,24 @@
           "code": "src/BrandNytimes.tsx"
         },
         {
+          "name": "BrandOffice",
+          "svg": ".chakraIcons/icons/brand-office.svg",
+          "code": "src/BrandOffice.tsx"
+        },
+        {
+          "name": "BrandOkRu",
+          "svg": ".chakraIcons/icons/brand-ok-ru.svg",
+          "code": "src/BrandOkRu.tsx"
+        },
+        {
           "name": "BrandOpenSource",
           "svg": ".chakraIcons/icons/brand-open-source.svg",
           "code": "src/BrandOpenSource.tsx"
+        },
+        {
+          "name": "BrandOpenvpn",
+          "svg": ".chakraIcons/icons/brand-openvpn.svg",
+          "code": "src/BrandOpenvpn.tsx"
         },
         {
           "name": "BrandOpera",
@@ -2417,6 +2472,11 @@
           "name": "BrandPaypal",
           "svg": ".chakraIcons/icons/brand-paypal.svg",
           "code": "src/BrandPaypal.tsx"
+        },
+        {
+          "name": "BrandPeanut",
+          "svg": ".chakraIcons/icons/brand-peanut.svg",
+          "code": "src/BrandPeanut.tsx"
         },
         {
           "name": "BrandPepsi",
@@ -2477,6 +2537,11 @@
           "name": "BrandRedhat",
           "svg": ".chakraIcons/icons/brand-redhat.svg",
           "code": "src/BrandRedhat.tsx"
+        },
+        {
+          "name": "BrandRedux",
+          "svg": ".chakraIcons/icons/brand-redux.svg",
+          "code": "src/BrandRedux.tsx"
         },
         {
           "name": "BrandSafari",
@@ -2614,6 +2679,11 @@
           "code": "src/BrandToyota.tsx"
         },
         {
+          "name": "BrandTrello",
+          "svg": ".chakraIcons/icons/brand-trello.svg",
+          "code": "src/BrandTrello.tsx"
+        },
+        {
           "name": "BrandTripadvisor",
           "svg": ".chakraIcons/icons/brand-tripadvisor.svg",
           "code": "src/BrandTripadvisor.tsx"
@@ -2652,6 +2722,16 @@
           "name": "BrandUnsplash",
           "svg": ".chakraIcons/icons/brand-unsplash.svg",
           "code": "src/BrandUnsplash.tsx"
+        },
+        {
+          "name": "BrandUpwork",
+          "svg": ".chakraIcons/icons/brand-upwork.svg",
+          "code": "src/BrandUpwork.tsx"
+        },
+        {
+          "name": "BrandValorant",
+          "svg": ".chakraIcons/icons/brand-valorant.svg",
+          "code": "src/BrandValorant.tsx"
         },
         {
           "name": "BrandVcypress",
@@ -2699,6 +2779,11 @@
           "code": "src/BrandVsco.tsx"
         },
         {
+          "name": "BrandVscode",
+          "svg": ".chakraIcons/icons/brand-vscode.svg",
+          "code": "src/BrandVscode.tsx"
+        },
+        {
           "name": "BrandVue",
           "svg": ".chakraIcons/icons/brand-vue.svg",
           "code": "src/BrandVue.tsx"
@@ -2727,6 +2812,11 @@
           "name": "BrandWish",
           "svg": ".chakraIcons/icons/brand-wish.svg",
           "code": "src/BrandWish.tsx"
+        },
+        {
+          "name": "BrandWix",
+          "svg": ".chakraIcons/icons/brand-wix.svg",
+          "code": "src/BrandWix.tsx"
         },
         {
           "name": "BrandWordpress",
