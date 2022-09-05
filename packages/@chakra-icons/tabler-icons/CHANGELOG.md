@@ -1,3 +1,9 @@
+# @chakra-icons/tabler-icons [1.15.0](https://github.com/kodingdotninja/chakra-icons/compare/@chakra-icons/tabler-icons@1.14.0...@chakra-icons/tabler-icons@1.15.0) (2022-09-05)
+
+### Features
+
+- **tabler-icons:** sync update icons ([0428c77](https://github.com/kodingdotninja/chakra-icons/commit/0428c77d74d78daa5defb76cc91c6acdd88c729e))
+
 # @chakra-icons/tabler-icons [1.14.0](https://github.com/kodingdotninja/chakra-icons/compare/@chakra-icons/tabler-icons@1.13.0...@chakra-icons/tabler-icons@1.14.0) (2022-08-29)
 
 ### Features
