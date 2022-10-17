@@ -34,6 +34,16 @@
           "code": "src/AlertFill12.tsx"
         },
         {
+          "name": "AlertFill16",
+          "svg": ".chakraIcons/icons/alert-fill-16.svg",
+          "code": "src/AlertFill16.tsx"
+        },
+        {
+          "name": "AlertFill24",
+          "svg": ".chakraIcons/icons/alert-fill-24.svg",
+          "code": "src/AlertFill24.tsx"
+        },
+        {
           "name": "Apps16",
           "svg": ".chakraIcons/icons/apps-16.svg",
           "code": "src/Apps16.tsx"
@@ -339,6 +349,11 @@
           "code": "src/Checklist24.tsx"
         },
         {
+          "name": "ChevronDown12",
+          "svg": ".chakraIcons/icons/chevron-down-12.svg",
+          "code": "src/ChevronDown12.tsx"
+        },
+        {
           "name": "ChevronDown16",
           "svg": ".chakraIcons/icons/chevron-down-16.svg",
           "code": "src/ChevronDown16.tsx"
@@ -357,6 +372,11 @@
           "name": "ChevronLeft24",
           "svg": ".chakraIcons/icons/chevron-left-24.svg",
           "code": "src/ChevronLeft24.tsx"
+        },
+        {
+          "name": "ChevronRight12",
+          "svg": ".chakraIcons/icons/chevron-right-12.svg",
+          "code": "src/ChevronRight12.tsx"
         },
         {
           "name": "ChevronRight16",
@@ -1462,6 +1482,11 @@
           "name": "Log16",
           "svg": ".chakraIcons/icons/log-16.svg",
           "code": "src/Log16.tsx"
+        },
+        {
+          "name": "Log24",
+          "svg": ".chakraIcons/icons/log-24.svg",
+          "code": "src/Log24.tsx"
         },
         {
           "name": "LogoGist16",
