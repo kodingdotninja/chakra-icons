@@ -79,9 +79,19 @@
           "code": "src/ArrowDown24.tsx"
         },
         {
+          "name": "ArrowDownLeft16",
+          "svg": ".chakraIcons/icons/arrow-down-left-16.svg",
+          "code": "src/ArrowDownLeft16.tsx"
+        },
+        {
           "name": "ArrowDownLeft24",
           "svg": ".chakraIcons/icons/arrow-down-left-24.svg",
           "code": "src/ArrowDownLeft24.tsx"
+        },
+        {
+          "name": "ArrowDownRight16",
+          "svg": ".chakraIcons/icons/arrow-down-right-16.svg",
+          "code": "src/ArrowDownRight16.tsx"
         },
         {
           "name": "ArrowDownRight24",
@@ -129,9 +139,19 @@
           "code": "src/ArrowUp24.tsx"
         },
         {
+          "name": "ArrowUpLeft16",
+          "svg": ".chakraIcons/icons/arrow-up-left-16.svg",
+          "code": "src/ArrowUpLeft16.tsx"
+        },
+        {
           "name": "ArrowUpLeft24",
           "svg": ".chakraIcons/icons/arrow-up-left-24.svg",
           "code": "src/ArrowUpLeft24.tsx"
+        },
+        {
+          "name": "ArrowUpRight16",
+          "svg": ".chakraIcons/icons/arrow-up-right-16.svg",
+          "code": "src/ArrowUpRight16.tsx"
         },
         {
           "name": "ArrowUpRight24",
@@ -1352,6 +1372,26 @@
           "name": "IssueReopened24",
           "svg": ".chakraIcons/icons/issue-reopened-24.svg",
           "code": "src/IssueReopened24.tsx"
+        },
+        {
+          "name": "IssueTrackedBy16",
+          "svg": ".chakraIcons/icons/issue-tracked-by-16.svg",
+          "code": "src/IssueTrackedBy16.tsx"
+        },
+        {
+          "name": "IssueTrackedBy24",
+          "svg": ".chakraIcons/icons/issue-tracked-by-24.svg",
+          "code": "src/IssueTrackedBy24.tsx"
+        },
+        {
+          "name": "IssueTrackedIn16",
+          "svg": ".chakraIcons/icons/issue-tracked-in-16.svg",
+          "code": "src/IssueTrackedIn16.tsx"
+        },
+        {
+          "name": "IssueTrackedIn24",
+          "svg": ".chakraIcons/icons/issue-tracked-in-24.svg",
+          "code": "src/IssueTrackedIn24.tsx"
         },
         {
           "name": "Italic16",
