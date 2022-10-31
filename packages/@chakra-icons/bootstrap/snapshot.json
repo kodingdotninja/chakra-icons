@@ -9,6 +9,26 @@
       "entryPoint": "src/index.ts",
       "entries": [
         {
+          "name": "I0CircleFill",
+          "svg": ".chakraIcons/icons/0-circle-fill.svg",
+          "code": "src/I0CircleFill.tsx"
+        },
+        {
+          "name": "I0Circle",
+          "svg": ".chakraIcons/icons/0-circle.svg",
+          "code": "src/I0Circle.tsx"
+        },
+        {
+          "name": "I0SquareFill",
+          "svg": ".chakraIcons/icons/0-square-fill.svg",
+          "code": "src/I0SquareFill.tsx"
+        },
+        {
+          "name": "I0Square",
+          "svg": ".chakraIcons/icons/0-square.svg",
+          "code": "src/I0Square.tsx"
+        },
+        {
           "name": "I1CircleFill",
           "svg": ".chakraIcons/icons/1-circle-fill.svg",
           "code": "src/I1CircleFill.tsx"
@@ -3594,6 +3614,16 @@
           "code": "src/EmojiWink.tsx"
         },
         {
+          "name": "EnvelopeAtFill",
+          "svg": ".chakraIcons/icons/envelope-at-fill.svg",
+          "code": "src/EnvelopeAtFill.tsx"
+        },
+        {
+          "name": "EnvelopeAt",
+          "svg": ".chakraIcons/icons/envelope-at.svg",
+          "code": "src/EnvelopeAt.tsx"
+        },
+        {
           "name": "EnvelopeCheckFill",
           "svg": ".chakraIcons/icons/envelope-check-fill.svg",
           "code": "src/EnvelopeCheckFill.tsx"
@@ -7084,6 +7114,11 @@
           "code": "src/Reddit.tsx"
         },
         {
+          "name": "Regex",
+          "svg": ".chakraIcons/icons/regex.svg",
+          "code": "src/Regex.tsx"
+        },
+        {
           "name": "Repeat1",
           "svg": ".chakraIcons/icons/repeat-1.svg",
           "code": "src/Repeat1.tsx"
@@ -7147,6 +7182,26 @@
           "name": "Robot",
           "svg": ".chakraIcons/icons/robot.svg",
           "code": "src/Robot.tsx"
+        },
+        {
+          "name": "RocketFill",
+          "svg": ".chakraIcons/icons/rocket-fill.svg",
+          "code": "src/RocketFill.tsx"
+        },
+        {
+          "name": "RocketTakeoffFill",
+          "svg": ".chakraIcons/icons/rocket-takeoff-fill.svg",
+          "code": "src/RocketTakeoffFill.tsx"
+        },
+        {
+          "name": "RocketTakeoff",
+          "svg": ".chakraIcons/icons/rocket-takeoff.svg",
+          "code": "src/RocketTakeoff.tsx"
+        },
+        {
+          "name": "Rocket",
+          "svg": ".chakraIcons/icons/rocket.svg",
+          "code": "src/Rocket.tsx"
         },
         {
           "name": "RouterFill",
@@ -7447,6 +7502,126 @@
           "name": "Shuffle",
           "svg": ".chakraIcons/icons/shuffle.svg",
           "code": "src/Shuffle.tsx"
+        },
+        {
+          "name": "SignDeadEndFill",
+          "svg": ".chakraIcons/icons/sign-dead-end-fill.svg",
+          "code": "src/SignDeadEndFill.tsx"
+        },
+        {
+          "name": "SignDeadEnd",
+          "svg": ".chakraIcons/icons/sign-dead-end.svg",
+          "code": "src/SignDeadEnd.tsx"
+        },
+        {
+          "name": "SignDoNotEnterFill",
+          "svg": ".chakraIcons/icons/sign-do-not-enter-fill.svg",
+          "code": "src/SignDoNotEnterFill.tsx"
+        },
+        {
+          "name": "SignDoNotEnter",
+          "svg": ".chakraIcons/icons/sign-do-not-enter.svg",
+          "code": "src/SignDoNotEnter.tsx"
+        },
+        {
+          "name": "SignIntersectionFill",
+          "svg": ".chakraIcons/icons/sign-intersection-fill.svg",
+          "code": "src/SignIntersectionFill.tsx"
+        },
+        {
+          "name": "SignIntersectionSideFill",
+          "svg": ".chakraIcons/icons/sign-intersection-side-fill.svg",
+          "code": "src/SignIntersectionSideFill.tsx"
+        },
+        {
+          "name": "SignIntersectionSide",
+          "svg": ".chakraIcons/icons/sign-intersection-side.svg",
+          "code": "src/SignIntersectionSide.tsx"
+        },
+        {
+          "name": "SignIntersectionTFill",
+          "svg": ".chakraIcons/icons/sign-intersection-t-fill.svg",
+          "code": "src/SignIntersectionTFill.tsx"
+        },
+        {
+          "name": "SignIntersectionT",
+          "svg": ".chakraIcons/icons/sign-intersection-t.svg",
+          "code": "src/SignIntersectionT.tsx"
+        },
+        {
+          "name": "SignIntersectionYFill",
+          "svg": ".chakraIcons/icons/sign-intersection-y-fill.svg",
+          "code": "src/SignIntersectionYFill.tsx"
+        },
+        {
+          "name": "SignIntersectionY",
+          "svg": ".chakraIcons/icons/sign-intersection-y.svg",
+          "code": "src/SignIntersectionY.tsx"
+        },
+        {
+          "name": "SignIntersection",
+          "svg": ".chakraIcons/icons/sign-intersection.svg",
+          "code": "src/SignIntersection.tsx"
+        },
+        {
+          "name": "SignMergeLeftFill",
+          "svg": ".chakraIcons/icons/sign-merge-left-fill.svg",
+          "code": "src/SignMergeLeftFill.tsx"
+        },
+        {
+          "name": "SignMergeLeft",
+          "svg": ".chakraIcons/icons/sign-merge-left.svg",
+          "code": "src/SignMergeLeft.tsx"
+        },
+        {
+          "name": "SignMergeRightFill",
+          "svg": ".chakraIcons/icons/sign-merge-right-fill.svg",
+          "code": "src/SignMergeRightFill.tsx"
+        },
+        {
+          "name": "SignMergeRight",
+          "svg": ".chakraIcons/icons/sign-merge-right.svg",
+          "code": "src/SignMergeRight.tsx"
+        },
+        {
+          "name": "SignNoLeftTurnFill",
+          "svg": ".chakraIcons/icons/sign-no-left-turn-fill.svg",
+          "code": "src/SignNoLeftTurnFill.tsx"
+        },
+        {
+          "name": "SignNoLeftTurn",
+          "svg": ".chakraIcons/icons/sign-no-left-turn.svg",
+          "code": "src/SignNoLeftTurn.tsx"
+        },
+        {
+          "name": "SignNoParkingFill",
+          "svg": ".chakraIcons/icons/sign-no-parking-fill.svg",
+          "code": "src/SignNoParkingFill.tsx"
+        },
+        {
+          "name": "SignNoParking",
+          "svg": ".chakraIcons/icons/sign-no-parking.svg",
+          "code": "src/SignNoParking.tsx"
+        },
+        {
+          "name": "SignNoRightTurnFill",
+          "svg": ".chakraIcons/icons/sign-no-right-turn-fill.svg",
+          "code": "src/SignNoRightTurnFill.tsx"
+        },
+        {
+          "name": "SignNoRightTurn",
+          "svg": ".chakraIcons/icons/sign-no-right-turn.svg",
+          "code": "src/SignNoRightTurn.tsx"
+        },
+        {
+          "name": "SignRailroadFill",
+          "svg": ".chakraIcons/icons/sign-railroad-fill.svg",
+          "code": "src/SignRailroadFill.tsx"
+        },
+        {
+          "name": "SignRailroad",
+          "svg": ".chakraIcons/icons/sign-railroad.svg",
+          "code": "src/SignRailroad.tsx"
         },
         {
           "name": "SignStopFill",
@@ -7984,6 +8159,16 @@
           "code": "src/Strava.tsx"
         },
         {
+          "name": "Stripe",
+          "svg": ".chakraIcons/icons/stripe.svg",
+          "code": "src/Stripe.tsx"
+        },
+        {
+          "name": "Subscript",
+          "svg": ".chakraIcons/icons/subscript.svg",
+          "code": "src/Subscript.tsx"
+        },
+        {
           "name": "Subtract",
           "svg": ".chakraIcons/icons/subtract.svg",
           "code": "src/Subtract.tsx"
@@ -8062,6 +8247,11 @@
           "name": "Sunset",
           "svg": ".chakraIcons/icons/sunset.svg",
           "code": "src/Sunset.tsx"
+        },
+        {
+          "name": "Superscript",
+          "svg": ".chakraIcons/icons/superscript.svg",
+          "code": "src/Superscript.tsx"
         },
         {
           "name": "SymmetryHorizontal",
@@ -8252,6 +8442,11 @@
           "name": "TextRight",
           "svg": ".chakraIcons/icons/text-right.svg",
           "code": "src/TextRight.tsx"
+        },
+        {
+          "name": "TextWrap",
+          "svg": ".chakraIcons/icons/text-wrap.svg",
+          "code": "src/TextWrap.tsx"
         },
         {
           "name": "TextareaResize",
@@ -8467,6 +8662,11 @@
           "name": "Tree",
           "svg": ".chakraIcons/icons/tree.svg",
           "code": "src/Tree.tsx"
+        },
+        {
+          "name": "Trello",
+          "svg": ".chakraIcons/icons/trello.svg",
+          "code": "src/Trello.tsx"
         },
         {
           "name": "TriangleFill",
