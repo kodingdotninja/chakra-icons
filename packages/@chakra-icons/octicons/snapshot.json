@@ -449,6 +449,16 @@
           "code": "src/Clock24.tsx"
         },
         {
+          "name": "ClockFill16",
+          "svg": ".chakraIcons/icons/clock-fill-16.svg",
+          "code": "src/ClockFill16.tsx"
+        },
+        {
+          "name": "ClockFill24",
+          "svg": ".chakraIcons/icons/clock-fill-24.svg",
+          "code": "src/ClockFill24.tsx"
+        },
+        {
           "name": "Cloud16",
           "svg": ".chakraIcons/icons/cloud-16.svg",
           "code": "src/Cloud16.tsx"
@@ -1874,6 +1884,26 @@
           "code": "src/Project24.tsx"
         },
         {
+          "name": "ProjectRoadmap16",
+          "svg": ".chakraIcons/icons/project-roadmap-16.svg",
+          "code": "src/ProjectRoadmap16.tsx"
+        },
+        {
+          "name": "ProjectRoadmap24",
+          "svg": ".chakraIcons/icons/project-roadmap-24.svg",
+          "code": "src/ProjectRoadmap24.tsx"
+        },
+        {
+          "name": "ProjectSymlink16",
+          "svg": ".chakraIcons/icons/project-symlink-16.svg",
+          "code": "src/ProjectSymlink16.tsx"
+        },
+        {
+          "name": "ProjectSymlink24",
+          "svg": ".chakraIcons/icons/project-symlink-24.svg",
+          "code": "src/ProjectSymlink24.tsx"
+        },
+        {
           "name": "Pulse16",
           "svg": ".chakraIcons/icons/pulse-16.svg",
           "code": "src/Pulse16.tsx"
@@ -2192,6 +2222,16 @@
           "name": "Skip24",
           "svg": ".chakraIcons/icons/skip-24.svg",
           "code": "src/Skip24.tsx"
+        },
+        {
+          "name": "SkipFill16",
+          "svg": ".chakraIcons/icons/skip-fill-16.svg",
+          "code": "src/SkipFill16.tsx"
+        },
+        {
+          "name": "SkipFill24",
+          "svg": ".chakraIcons/icons/skip-fill-24.svg",
+          "code": "src/SkipFill24.tsx"
         },
         {
           "name": "Sliders16",
