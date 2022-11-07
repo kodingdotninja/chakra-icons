@@ -5129,6 +5129,11 @@
           "code": "src/Confetti.tsx"
         },
         {
+          "name": "Confucius",
+          "svg": ".chakraIcons/icons/confucius.svg",
+          "code": "src/Confucius.tsx"
+        },
+        {
           "name": "ContainerOff",
           "svg": ".chakraIcons/icons/container-off.svg",
           "code": "src/ContainerOff.tsx"
@@ -7027,6 +7032,11 @@
           "name": "FishBone",
           "svg": ".chakraIcons/icons/fish-bone.svg",
           "code": "src/FishBone.tsx"
+        },
+        {
+          "name": "FishChristianity",
+          "svg": ".chakraIcons/icons/fish-christianity.svg",
+          "code": "src/FishChristianity.tsx"
         },
         {
           "name": "FishHookOff",
@@ -9644,6 +9654,11 @@
           "code": "src/Meeple.tsx"
         },
         {
+          "name": "Menorah",
+          "svg": ".chakraIcons/icons/menorah.svg",
+          "code": "src/Menorah.tsx"
+        },
+        {
           "name": "Menu2",
           "svg": ".chakraIcons/icons/menu-2.svg",
           "code": "src/Menu2.tsx"
@@ -10357,6 +10372,11 @@
           "name": "Olympics",
           "svg": ".chakraIcons/icons/olympics.svg",
           "code": "src/Olympics.tsx"
+        },
+        {
+          "name": "Om",
+          "svg": ".chakraIcons/icons/om.svg",
+          "code": "src/Om.tsx"
         },
         {
           "name": "Omega",
@@ -11469,6 +11489,11 @@
           "code": "src/Resize.tsx"
         },
         {
+          "name": "RibbonHealth",
+          "svg": ".chakraIcons/icons/ribbon-health.svg",
+          "code": "src/RibbonHealth.tsx"
+        },
+        {
           "name": "RippleOff",
           "svg": ".chakraIcons/icons/ripple-off.svg",
           "code": "src/RippleOff.tsx"
@@ -11527,6 +11552,61 @@
           "name": "Rollercoaster",
           "svg": ".chakraIcons/icons/rollercoaster.svg",
           "code": "src/Rollercoaster.tsx"
+        },
+        {
+          "name": "RosetteNumber0",
+          "svg": ".chakraIcons/icons/rosette-number-0.svg",
+          "code": "src/RosetteNumber0.tsx"
+        },
+        {
+          "name": "RosetteNumber1",
+          "svg": ".chakraIcons/icons/rosette-number-1.svg",
+          "code": "src/RosetteNumber1.tsx"
+        },
+        {
+          "name": "RosetteNumber2",
+          "svg": ".chakraIcons/icons/rosette-number-2.svg",
+          "code": "src/RosetteNumber2.tsx"
+        },
+        {
+          "name": "RosetteNumber3",
+          "svg": ".chakraIcons/icons/rosette-number-3.svg",
+          "code": "src/RosetteNumber3.tsx"
+        },
+        {
+          "name": "RosetteNumber4",
+          "svg": ".chakraIcons/icons/rosette-number-4.svg",
+          "code": "src/RosetteNumber4.tsx"
+        },
+        {
+          "name": "RosetteNumber5",
+          "svg": ".chakraIcons/icons/rosette-number-5.svg",
+          "code": "src/RosetteNumber5.tsx"
+        },
+        {
+          "name": "RosetteNumber6",
+          "svg": ".chakraIcons/icons/rosette-number-6.svg",
+          "code": "src/RosetteNumber6.tsx"
+        },
+        {
+          "name": "RosetteNumber7",
+          "svg": ".chakraIcons/icons/rosette-number-7.svg",
+          "code": "src/RosetteNumber7.tsx"
+        },
+        {
+          "name": "RosetteNumber8",
+          "svg": ".chakraIcons/icons/rosette-number-8.svg",
+          "code": "src/RosetteNumber8.tsx"
+        },
+        {
+          "name": "RosetteNumber9",
+          "svg": ".chakraIcons/icons/rosette-number-9.svg",
+          "code": "src/RosetteNumber9.tsx"
+        },
+        {
+          "name": "Rosette",
+          "svg": ".chakraIcons/icons/rosette.svg",
+          "code": "src/Rosette.tsx"
         },
         {
           "name": "Rotate2",
@@ -12724,6 +12804,11 @@
           "code": "src/SquareRotated.tsx"
         },
         {
+          "name": "SquareRounded",
+          "svg": ".chakraIcons/icons/square-rounded.svg",
+          "code": "src/SquareRounded.tsx"
+        },
+        {
           "name": "SquareToggleHorizontal",
           "svg": ".chakraIcons/icons/square-toggle-horizontal.svg",
           "code": "src/SquareToggleHorizontal.tsx"
@@ -13427,6 +13512,11 @@
           "name": "Tooltip",
           "svg": ".chakraIcons/icons/tooltip.svg",
           "code": "src/Tooltip.tsx"
+        },
+        {
+          "name": "Torii",
+          "svg": ".chakraIcons/icons/torii.svg",
+          "code": "src/Torii.tsx"
         },
         {
           "name": "Tornado",
