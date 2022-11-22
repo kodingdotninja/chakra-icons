@@ -1,3 +1,9 @@
+# @chakra-icons/bootstrap [1.5.0](https://github.com/kodingdotninja/chakra-icons/compare/@chakra-icons/bootstrap@1.4.0...@chakra-icons/bootstrap@1.5.0) (2022-11-22)
+
+### Features
+
+- **bootstrap:** sync update icons ([a839a3d](https://github.com/kodingdotninja/chakra-icons/commit/a839a3daaa40e1bd97659d3ccf954ca632c8cf08))
+
 # @chakra-icons/bootstrap [1.4.0](https://github.com/kodingdotninja/chakra-icons/compare/@chakra-icons/bootstrap@1.3.0...@chakra-icons/bootstrap@1.4.0) (2022-11-04)
 
 ### Features
