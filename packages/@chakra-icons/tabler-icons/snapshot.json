@@ -14,6 +14,11 @@
           "code": "src/I123.tsx"
         },
         {
+          "name": "I24Hours",
+          "svg": ".chakraIcons/icons/24-hours.svg",
+          "code": "src/I24Hours.tsx"
+        },
+        {
           "name": "I2fa",
           "svg": ".chakraIcons/icons/2fa.svg",
           "code": "src/I2fa.tsx"
@@ -2279,6 +2284,11 @@
           "code": "src/BrandAngular.tsx"
         },
         {
+          "name": "BrandAo3",
+          "svg": ".chakraIcons/icons/brand-ao3.svg",
+          "code": "src/BrandAo3.tsx"
+        },
+        {
           "name": "BrandAppgallery",
           "svg": ".chakraIcons/icons/brand-appgallery.svg",
           "code": "src/BrandAppgallery.tsx"
@@ -2317,6 +2327,11 @@
           "name": "BrandBadoo",
           "svg": ".chakraIcons/icons/brand-badoo.svg",
           "code": "src/BrandBadoo.tsx"
+        },
+        {
+          "name": "BrandBaidu",
+          "svg": ".chakraIcons/icons/brand-baidu.svg",
+          "code": "src/BrandBaidu.tsx"
         },
         {
           "name": "BrandBandcamp",
@@ -2497,6 +2512,11 @@
           "name": "BrandDeviantart",
           "svg": ".chakraIcons/icons/brand-deviantart.svg",
           "code": "src/BrandDeviantart.tsx"
+        },
+        {
+          "name": "BrandDingtalk",
+          "svg": ".chakraIcons/icons/brand-dingtalk.svg",
+          "code": "src/BrandDingtalk.tsx"
         },
         {
           "name": "BrandDiscord",
@@ -2814,6 +2834,11 @@
           "code": "src/BrandMastodon.tsx"
         },
         {
+          "name": "BrandMatrix",
+          "svg": ".chakraIcons/icons/brand-matrix.svg",
+          "code": "src/BrandMatrix.tsx"
+        },
+        {
           "name": "BrandMcdonalds",
           "svg": ".chakraIcons/icons/brand-mcdonalds.svg",
           "code": "src/BrandMcdonalds.tsx"
@@ -2954,6 +2979,11 @@
           "code": "src/BrandPaypal.tsx"
         },
         {
+          "name": "BrandPaypay",
+          "svg": ".chakraIcons/icons/brand-paypay.svg",
+          "code": "src/BrandPaypay.tsx"
+        },
+        {
           "name": "BrandPeanut",
           "svg": ".chakraIcons/icons/brand-peanut.svg",
           "code": "src/BrandPeanut.tsx"
@@ -2987,6 +3017,11 @@
           "name": "BrandPolymer",
           "svg": ".chakraIcons/icons/brand-polymer.svg",
           "code": "src/BrandPolymer.tsx"
+        },
+        {
+          "name": "BrandPowershell",
+          "svg": ".chakraIcons/icons/brand-powershell.svg",
+          "code": "src/BrandPowershell.tsx"
         },
         {
           "name": "BrandPrisma",
@@ -3114,6 +3149,11 @@
           "code": "src/BrandSocketIo.tsx"
         },
         {
+          "name": "BrandSolidjs",
+          "svg": ".chakraIcons/icons/brand-solidjs.svg",
+          "code": "src/BrandSolidjs.tsx"
+        },
+        {
           "name": "BrandSoundcloud",
           "svg": ".chakraIcons/icons/brand-soundcloud.svg",
           "code": "src/BrandSoundcloud.tsx"
@@ -3189,6 +3229,11 @@
           "code": "src/BrandTailwind.tsx"
         },
         {
+          "name": "BrandTaobao",
+          "svg": ".chakraIcons/icons/brand-taobao.svg",
+          "code": "src/BrandTaobao.tsx"
+        },
+        {
           "name": "BrandTelegram",
           "svg": ".chakraIcons/icons/brand-telegram.svg",
           "code": "src/BrandTelegram.tsx"
@@ -3197,6 +3242,11 @@
           "name": "BrandTether",
           "svg": ".chakraIcons/icons/brand-tether.svg",
           "code": "src/BrandTether.tsx"
+        },
+        {
+          "name": "BrandThreejs",
+          "svg": ".chakraIcons/icons/brand-threejs.svg",
+          "code": "src/BrandThreejs.tsx"
         },
         {
           "name": "BrandTidal",
@@ -3254,6 +3304,11 @@
           "code": "src/BrandTwitter.tsx"
         },
         {
+          "name": "BrandTypescript",
+          "svg": ".chakraIcons/icons/brand-typescript.svg",
+          "code": "src/BrandTypescript.tsx"
+        },
+        {
           "name": "BrandUber",
           "svg": ".chakraIcons/icons/brand-uber.svg",
           "code": "src/BrandUber.tsx"
@@ -3309,6 +3364,11 @@
           "code": "src/BrandVisualStudio.tsx"
         },
         {
+          "name": "BrandVite",
+          "svg": ".chakraIcons/icons/brand-vite.svg",
+          "code": "src/BrandVite.tsx"
+        },
+        {
           "name": "BrandVivaldi",
           "svg": ".chakraIcons/icons/brand-vivaldi.svg",
           "code": "src/BrandVivaldi.tsx"
@@ -3352,6 +3412,11 @@
           "name": "BrandWebflow",
           "svg": ".chakraIcons/icons/brand-webflow.svg",
           "code": "src/BrandWebflow.tsx"
+        },
+        {
+          "name": "BrandWechat",
+          "svg": ".chakraIcons/icons/brand-wechat.svg",
+          "code": "src/BrandWechat.tsx"
         },
         {
           "name": "BrandWhatsapp",
@@ -7844,6 +7909,11 @@
           "code": "src/HandRock.tsx"
         },
         {
+          "name": "HandSanitizer",
+          "svg": ".chakraIcons/icons/hand-sanitizer.svg",
+          "code": "src/HandSanitizer.tsx"
+        },
+        {
           "name": "HandStop",
           "svg": ".chakraIcons/icons/hand-stop.svg",
           "code": "src/HandStop.tsx"
@@ -9769,6 +9839,11 @@
           "code": "src/Menu2.tsx"
         },
         {
+          "name": "MenuOrder",
+          "svg": ".chakraIcons/icons/menu-order.svg",
+          "code": "src/MenuOrder.tsx"
+        },
+        {
           "name": "Menu",
           "svg": ".chakraIcons/icons/menu.svg",
           "code": "src/Menu.tsx"
@@ -10894,6 +10969,11 @@
           "code": "src/Pig.tsx"
         },
         {
+          "name": "Pilcrow",
+          "svg": ".chakraIcons/icons/pilcrow.svg",
+          "code": "src/Pilcrow.tsx"
+        },
+        {
           "name": "PillOff",
           "svg": ".chakraIcons/icons/pill-off.svg",
           "code": "src/PillOff.tsx"
@@ -11854,6 +11934,11 @@
           "code": "src/STurnUp.tsx"
         },
         {
+          "name": "Sailboat2",
+          "svg": ".chakraIcons/icons/sailboat-2.svg",
+          "code": "src/Sailboat2.tsx"
+        },
+        {
           "name": "SailboatOff",
           "svg": ".chakraIcons/icons/sailboat-off.svg",
           "code": "src/SailboatOff.tsx"
@@ -12257,6 +12342,11 @@
           "name": "Shoe",
           "svg": ".chakraIcons/icons/shoe.svg",
           "code": "src/Shoe.tsx"
+        },
+        {
+          "name": "ShoppingBag",
+          "svg": ".chakraIcons/icons/shopping-bag.svg",
+          "code": "src/ShoppingBag.tsx"
         },
         {
           "name": "ShoppingCartDiscount",
