@@ -1184,6 +1184,16 @@
           "code": "src/Globe24.tsx"
         },
         {
+          "name": "Goal16",
+          "svg": ".chakraIcons/icons/goal-16.svg",
+          "code": "src/Goal16.tsx"
+        },
+        {
+          "name": "Goal24",
+          "svg": ".chakraIcons/icons/goal-24.svg",
+          "code": "src/Goal24.tsx"
+        },
+        {
           "name": "Grabber16",
           "svg": ".chakraIcons/icons/grabber-16.svg",
           "code": "src/Grabber16.tsx"
@@ -1934,6 +1944,26 @@
           "code": "src/Quote24.tsx"
         },
         {
+          "name": "Read16",
+          "svg": ".chakraIcons/icons/read-16.svg",
+          "code": "src/Read16.tsx"
+        },
+        {
+          "name": "Read24",
+          "svg": ".chakraIcons/icons/read-24.svg",
+          "code": "src/Read24.tsx"
+        },
+        {
+          "name": "RelFilePath16",
+          "svg": ".chakraIcons/icons/rel-file-path-16.svg",
+          "code": "src/RelFilePath16.tsx"
+        },
+        {
+          "name": "RelFilePath24",
+          "svg": ".chakraIcons/icons/rel-file-path-24.svg",
+          "code": "src/RelFilePath24.tsx"
+        },
+        {
           "name": "Reply16",
           "svg": ".chakraIcons/icons/reply-16.svg",
           "code": "src/Reply16.tsx"
@@ -2269,6 +2299,16 @@
           "code": "src/SortDesc24.tsx"
         },
         {
+          "name": "SponsorTiers16",
+          "svg": ".chakraIcons/icons/sponsor-tiers-16.svg",
+          "code": "src/SponsorTiers16.tsx"
+        },
+        {
+          "name": "SponsorTiers24",
+          "svg": ".chakraIcons/icons/sponsor-tiers-24.svg",
+          "code": "src/SponsorTiers24.tsx"
+        },
+        {
           "name": "Square16",
           "svg": ".chakraIcons/icons/square-16.svg",
           "code": "src/Square16.tsx"
@@ -2564,6 +2604,16 @@
           "code": "src/Unfold24.tsx"
         },
         {
+          "name": "Unlink16",
+          "svg": ".chakraIcons/icons/unlink-16.svg",
+          "code": "src/Unlink16.tsx"
+        },
+        {
+          "name": "Unlink24",
+          "svg": ".chakraIcons/icons/unlink-24.svg",
+          "code": "src/Unlink24.tsx"
+        },
+        {
           "name": "Unlock16",
           "svg": ".chakraIcons/icons/unlock-16.svg",
           "code": "src/Unlock16.tsx"
@@ -2582,6 +2632,16 @@
           "name": "Unmute24",
           "svg": ".chakraIcons/icons/unmute-24.svg",
           "code": "src/Unmute24.tsx"
+        },
+        {
+          "name": "Unread16",
+          "svg": ".chakraIcons/icons/unread-16.svg",
+          "code": "src/Unread16.tsx"
+        },
+        {
+          "name": "Unread24",
+          "svg": ".chakraIcons/icons/unread-24.svg",
+          "code": "src/Unread24.tsx"
         },
         {
           "name": "Unverified16",
