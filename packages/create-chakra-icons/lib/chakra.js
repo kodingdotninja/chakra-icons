@@ -25,6 +25,9 @@ const ast = require("./ast");
 const createChakraIcon = (...sources) => {
   // eslint-disable-next-line no-shadow
   const isTypescript = sources.some(({ isTypescript }) => isTypescript);
+  // eslint-disable-next-line no-shadow
+  const isIgnoreImport = sources.some(({ isIgnoreImport }) => isIgnoreImport);
+
   const perFileCode = ({ source: svg, displayName, outputType }) => {
     const hast = SvgParser.parse(svg);
     // This for solve issue {https://github.com/kodingdotninja/create-chakra-icons/issues/7}
@@ -62,6 +65,10 @@ const createChakraIcon = (...sources) => {
     return iconAST;
   };
   const svgCodes = [...sources].map(perFileCode);
+
+  if (isIgnoreImport) {
+    return ast.toSource(...svgCodes);
+  }
 
   const hasVariableDeclaratorInit =
     (is) =>

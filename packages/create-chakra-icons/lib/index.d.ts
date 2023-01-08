@@ -7,6 +7,9 @@ export type Option = {
   output?: string | undefined;
   ts?: boolean | undefined;
   typescript?: boolean | undefined;
+  useFilename?: boolean | undefined;
+  appendFile?: boolean | undefined;
+  ignoreImport?: boolean | undefined;
 }
 
 declare module "create-chakra-icons" {

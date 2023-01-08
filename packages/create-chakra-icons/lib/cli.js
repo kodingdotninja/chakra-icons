@@ -14,23 +14,41 @@ function pipeline(args) {
   input.setEncoding(ENCODING);
   input.on("data", (data) => {
     if (data) {
-      const { name, exportNameCase, exportNameSuffix, exportNamePrefix, isTypescript, outputFile, outputType } =
-        getCommonOptions(args);
+      const {
+        name,
+        isUseFilename,
+        exportNameCase,
+        exportNameSuffix,
+        exportNamePrefix,
+        isTypescript,
+        isIgnoreImport,
+        outputFile,
+        isAppendFile,
+        outputType,
+      } = getCommonOptions(args);
       const exportNamed = createExportNamed(exportNameCase, exportNamePrefix, exportNameSuffix);
       const source = createCode({
         source: data,
         displayName: exportNamed(name),
+        isUseFilename,
         isTypescript,
+        isIgnoreImport,
         exportNameSuffix,
         exportNamePrefix,
         outputType,
       });
       return outputFile
-        ? Fs.writeFile(Path.resolve(outputFile), source, (err) => {
-            if (err) {
-              error.write(err, () => exit(1));
-            }
-          })
+        ? isAppendFile
+          ? Fs.appendFile(Path.resolve(outputFile), source, (err) => {
+              if (err) {
+                error.write(err, () => exit(1));
+              }
+            })
+          : Fs.writeFile(Path.resolve(outputFile), source, (err) => {
+              if (err) {
+                error.write(err, () => exit(1));
+              }
+            })
         : output.write(source);
     }
     return null;
@@ -38,8 +56,19 @@ function pipeline(args) {
 }
 
 function main(args) {
-  const { inputs, outputFile, name, exportNameCase, exportNameSuffix, exportNamePrefix, isTypescript, outputType } =
-    getCommonOptions(args);
+  const {
+    inputs,
+    outputFile,
+    isAppendFile,
+    name,
+    isUseFilename,
+    exportNameCase,
+    exportNameSuffix,
+    exportNamePrefix,
+    isTypescript,
+    isIgnoreImport,
+    outputType,
+  } = getCommonOptions(args);
   const version = args.V || args.version;
 
   if (inputs.length > 0) {
@@ -48,9 +77,11 @@ function main(args) {
       ...inputs.reduce(
         stringToInput({
           displayName: name,
+          isUseFilename,
           exportNameCase,
           encoding: ENCODING,
           isTypescript,
+          isIgnoreImport,
           exportNameSuffix,
           exportNamePrefix,
           outputType,
@@ -60,11 +91,17 @@ function main(args) {
     );
     // write output in output
     return outputFile
-      ? Fs.writeFile(Path.resolve(outputFile), source, (err) => {
-          if (err) {
-            error.write(err, () => exit(1));
-          }
-        })
+      ? isAppendFile
+        ? Fs.appendFile(Path.resolve(outputFile), source, (err) => {
+            if (err) {
+              error.write(err, () => exit(1));
+            }
+          })
+        : Fs.writeFile(Path.resolve(outputFile), source, (err) => {
+            if (err) {
+              error.write(err, () => exit(1));
+            }
+          })
       : output.write(`${source}`);
   } else if (version) {
     return output.write(packageVersion);
@@ -96,7 +133,14 @@ OPTIONS:
 
                           [e.g.: -S "Icon"]
 
+  --use-filename          Sets use filename for export named declaration.
+
+  --append-file           Sets output write file as append mode
+                          (*ONLY for output path provided).
+
   --ts, --typescript      Sets output as TypeScript code.
+
+  --ignore-import         Sets output without import statement.
 
   -T, --type <TYPE>       TYPE:
                           (F|f). Sets output code with function \`createIcon({...})\`.
@@ -117,8 +161,11 @@ function getCommonOptions(args) {
   return {
     inputs: (args.i && [args.i]) || (args.input && [args.input]) || args._,
     outputFile: args.o || args.output,
+    isAppendFile: args["append-file"] || false,
     name: args.name || args.n || "Unamed",
+    isUseFilename: args["use-filename"] || false,
     isTypescript: args.ts || args.typescript || false,
+    isIgnoreImport: args["ignore-import"] || false,
     exportNameCase: args.C || args.case,
     exportNameSuffix: args.S || args.suffix || "",
     exportNamePrefix: args.P || args.prefix || "",
@@ -137,11 +184,13 @@ function createExportNamed(exportNameCase, exportNamePrefix, exportNameSuffix) {
 // eslint-disable-next-line no-shadow
 function stringToInput({
   displayName,
+  isUseFilename,
   exportNameCase,
   exportNamePrefix,
   exportNameSuffix,
   encoding,
   isTypescript,
+  isIgnoreImport,
   outputType,
 }) {
   const exportNamed = createExportNamed(exportNameCase, exportNamePrefix, exportNameSuffix);
@@ -158,14 +207,16 @@ function stringToInput({
               displayName: exportNamed(Path.basename(source).split(".")[0]),
               source: Fs.readFileSync(source, encoding),
               isTypescript,
+              isIgnoreImport,
               outputType,
             })),
         );
       } else {
         acc.push({
-          displayName: exportNamed(displayName),
+          displayName: exportNamed(isUseFilename ? Path.basename(str).split(".")[0] : displayName),
           source: Fs.readFileSync(str, encoding),
           isTypescript,
+          isIgnoreImport,
           outputType,
         });
       }
