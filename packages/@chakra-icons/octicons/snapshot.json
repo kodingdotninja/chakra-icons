@@ -409,6 +409,11 @@
           "code": "src/ChevronRight24.tsx"
         },
         {
+          "name": "ChevronUp12",
+          "svg": ".chakraIcons/icons/chevron-up-12.svg",
+          "code": "src/ChevronUp12.tsx"
+        },
+        {
           "name": "ChevronUp16",
           "svg": ".chakraIcons/icons/chevron-up-16.svg",
           "code": "src/ChevronUp16.tsx"
@@ -1039,6 +1044,11 @@
           "code": "src/Filter24.tsx"
         },
         {
+          "name": "FiscalHost16",
+          "svg": ".chakraIcons/icons/fiscal-host-16.svg",
+          "code": "src/FiscalHost16.tsx"
+        },
+        {
           "name": "Flame16",
           "svg": ".chakraIcons/icons/flame-16.svg",
           "code": "src/Flame16.tsx"
@@ -1142,6 +1152,11 @@
           "name": "GitMergeQueue16",
           "svg": ".chakraIcons/icons/git-merge-queue-16.svg",
           "code": "src/GitMergeQueue16.tsx"
+        },
+        {
+          "name": "GitMergeQueue24",
+          "svg": ".chakraIcons/icons/git-merge-queue-24.svg",
+          "code": "src/GitMergeQueue24.tsx"
         },
         {
           "name": "GitPullRequest16",
@@ -1642,6 +1657,46 @@
           "name": "MortarBoard24",
           "svg": ".chakraIcons/icons/mortar-board-24.svg",
           "code": "src/MortarBoard24.tsx"
+        },
+        {
+          "name": "MoveToBottom16",
+          "svg": ".chakraIcons/icons/move-to-bottom-16.svg",
+          "code": "src/MoveToBottom16.tsx"
+        },
+        {
+          "name": "MoveToBottom24",
+          "svg": ".chakraIcons/icons/move-to-bottom-24.svg",
+          "code": "src/MoveToBottom24.tsx"
+        },
+        {
+          "name": "MoveToEnd16",
+          "svg": ".chakraIcons/icons/move-to-end-16.svg",
+          "code": "src/MoveToEnd16.tsx"
+        },
+        {
+          "name": "MoveToEnd24",
+          "svg": ".chakraIcons/icons/move-to-end-24.svg",
+          "code": "src/MoveToEnd24.tsx"
+        },
+        {
+          "name": "MoveToStart16",
+          "svg": ".chakraIcons/icons/move-to-start-16.svg",
+          "code": "src/MoveToStart16.tsx"
+        },
+        {
+          "name": "MoveToStart24",
+          "svg": ".chakraIcons/icons/move-to-start-24.svg",
+          "code": "src/MoveToStart24.tsx"
+        },
+        {
+          "name": "MoveToTop16",
+          "svg": ".chakraIcons/icons/move-to-top-16.svg",
+          "code": "src/MoveToTop16.tsx"
+        },
+        {
+          "name": "MoveToTop24",
+          "svg": ".chakraIcons/icons/move-to-top-24.svg",
+          "code": "src/MoveToTop24.tsx"
         },
         {
           "name": "MultiSelect16",
@@ -2299,6 +2354,11 @@
           "code": "src/SortDesc24.tsx"
         },
         {
+          "name": "SparkleFill16",
+          "svg": ".chakraIcons/icons/sparkle-fill-16.svg",
+          "code": "src/SparkleFill16.tsx"
+        },
+        {
           "name": "SponsorTiers16",
           "svg": ".chakraIcons/icons/sponsor-tiers-16.svg",
           "code": "src/SponsorTiers16.tsx"
@@ -2752,6 +2812,26 @@
           "name": "Zap24",
           "svg": ".chakraIcons/icons/zap-24.svg",
           "code": "src/Zap24.tsx"
+        },
+        {
+          "name": "ZoomIn16",
+          "svg": ".chakraIcons/icons/zoom-in-16.svg",
+          "code": "src/ZoomIn16.tsx"
+        },
+        {
+          "name": "ZoomIn24",
+          "svg": ".chakraIcons/icons/zoom-in-24.svg",
+          "code": "src/ZoomIn24.tsx"
+        },
+        {
+          "name": "ZoomOut16",
+          "svg": ".chakraIcons/icons/zoom-out-16.svg",
+          "code": "src/ZoomOut16.tsx"
+        },
+        {
+          "name": "ZoomOut24",
+          "svg": ".chakraIcons/icons/zoom-out-24.svg",
+          "code": "src/ZoomOut24.tsx"
         }
       ]
     }
