@@ -12,6 +12,7 @@
   - `<Icon />` Component, [**See**](https://chakra-ui.com/docs/media-and-icons/icon#using-the-icon-component).
   - `createIcon(...)` Functional, [**See**](https://chakra-ui.com/docs/media-and-icons/icon#using-the-createicon-function).
 - [x] Multiple input with `directories` or `files` as input value for option `-i` or `--input`.
+- [x] Multiple outputs for each input svg.
 - [x] Support case in export name declaration (camel|snake|pascal|constant).
 - [x] Suffix and Prefix for generated code of export name declaration.
 - [x] Support type annotation when code generated is `<Icon />`.
@@ -36,7 +37,7 @@ create-chakra-icons [FLAGS] [OPTIONS] [INPUT]
 ```console
 -i, --input <PATH>      This option for read the input from PATH of FILE or DIRECTORIES.
                         [e.g.: -i some/path , -i file.svg]
--o, --output <PATH>     Writes the output. [default: stdout]
+-o, --output <PATH>     Writes the output or sets output directory. [default: stdout]
 -n, --name <STRING>     Sets value for `displayName` properties
                         (*ONLY for pipelines command). [default: Unamed] [e.g. -n "MyIcon"]
 -C, --case <snake|camel|constant|pascal>
@@ -46,6 +47,8 @@ create-chakra-icons [FLAGS] [OPTIONS] [INPUT]
 -P, --prefix <STRING>   Sets for prefix in export named declaration.
                         [e.g.: -S "Icon"]
 --ts, --typescript      Sets output as TypeScript code.
+
+--m, --multi             Creates separate output for each input (*ONLY for CLI command).
 
 -T, --type <TYPE>       TYPE:
                         (F|f). Sets output code with function \`createIcon({...})\`.
@@ -112,12 +115,19 @@ create-chakra-icons  -o Icons.js ./MyCompany.svg ./social-icons
 
 - **output** will be make in `Icons.js` (argument `-o` or `--output`).
 
+#### Multiple Output
+
+```console
+create-chakra-icons  -o output_dir ./Facebook.svg ./Apple.svg ./Amazon.svg ./Netflix.svg ./Google.svg --m
+```
+
+- **output** will make files for each svg in output_dir (argument `--m` or `--multi`).
+
 ## Roadmap
 
 - [x] TypeScript Support (Type Annotation or Type Definition).
   - Only when code generated is `<Icon />` component [**See**](https://chakra-ui.com/docs/media-and-icons/icon#using-the-icon-component).
 - [ ] ReScript Support.
-- [ ] Per file input is Per file output. ⁉️ 🤔
 - [ ] Feel free for give me any feedback or feature request (create an issue first).
 
 ## Maintainer
