@@ -38,34 +38,61 @@ function pipeline(args) {
 }
 
 function main(args) {
-  const { inputs, outputFile, name, exportNameCase, exportNameSuffix, exportNamePrefix, isTypescript, outputType } =
-    getCommonOptions(args);
+  const {
+    inputs,
+    outputFile,
+    name,
+    exportNameCase,
+    exportNameSuffix,
+    exportNamePrefix,
+    isTypescript,
+    outputType,
+    multiFileOutput,
+  } = getCommonOptions(args);
   const version = args.V || args.version;
 
   if (inputs.length > 0) {
     // make code
-    const source = createCode(
-      ...inputs.reduce(
-        stringToInput({
-          displayName: name,
-          exportNameCase,
-          encoding: ENCODING,
-          isTypescript,
-          exportNameSuffix,
-          exportNamePrefix,
-          outputType,
-        }),
-        [],
-      ),
+    const reducedInputs = inputs.reduce(
+      stringToInput({
+        displayName: name,
+        exportNameCase,
+        encoding: ENCODING,
+        isTypescript,
+        exportNameSuffix,
+        exportNamePrefix,
+        outputType,
+      }),
+      [],
     );
-    // write output in output
-    return outputFile
-      ? Fs.writeFile(Path.resolve(outputFile), source, (err) => {
-          if (err) {
-            error.write(err, () => exit(1));
-          }
-        })
-      : output.write(`${source}`);
+    if (multiFileOutput) {
+      // iterate through inputs, generate code and write to file
+      reducedInputs.forEach((fileInput) => {
+        const source = createCode(fileInput);
+        return outputFile
+          ? Fs.writeFile(
+              Path.resolve(outputFile, `${fileInput.displayName}${isTypescript ? ".ts" : ".js"}`),
+              source,
+              (err) => {
+                if (err) {
+                  error.write(err, () => exit(1));
+                }
+              },
+            )
+          : output.write(`${source}`);
+      });
+      return true;
+    } else {
+      const source = createCode(...reducedInputs);
+      // write output in output
+      return outputFile
+        ? Fs.writeFile(Path.resolve(outputFile), source, (err) => {
+            if (err) {
+              error.write(err, () => exit(1));
+            }
+          })
+        : output.write(`${source}`);
+    }
   } else if (version) {
     return output.write(packageVersion);
   }
@@ -84,7 +111,7 @@ FLAGS:
 OPTIONS:
   -i, --input <PATH>      This option for read the input from PATH from FILE or DIRECTORIES.
                           [e.g.: -i some/path , -i file.svg]
-  -o, --output <PATH>     Writes the output. [default: stdout]
+  -o, --output <PATH>     Writes the output or sets output directory. [default: stdout]
   -n, --name <STRING>     Sets value for \`displayName\` properties
                           (*ONLY for pipelines command). [default: Unamed] [e.g. -n "MyIcon"]
   -C, --case <snake|camel|constant|pascal>
@@ -95,6 +122,8 @@ OPTIONS:
   -P, --prefix <STRING>   Sets for prefix in export named declaration.
 
                           [e.g.: -S "Icon"]
+
+  --m, --multi             Creates separate output for each input.
 
   --ts, --typescript      Sets output as TypeScript code.
 
@@ -123,6 +152,7 @@ function getCommonOptions(args) {
     exportNameSuffix: args.S || args.suffix || "",
     exportNamePrefix: args.P || args.prefix || "",
     outputType: String(args.T || args.type),
+    multiFileOutput: args.m || args.multi || false,
   };
 }
 
