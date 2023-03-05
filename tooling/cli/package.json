@@ -1,7 +1,7 @@
 {
   "name": "@chakra-icons/cli",
   "description": "a tooling for manage everything in @chakra-icons",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": "ri7nz <ri7nz@koding.ninja>",
   "homepage": "https://github.com/kodingdotninja/chakra-icons",
   "repository": "https://github.com/kodingdotninja/chakra-icons.git",
@@ -23,7 +23,7 @@
     "@babel/generator": "^7",
     "@babel/types": "^7",
     "arg": "^5",
-    "create-chakra-icons": "1.1.0",
+    "create-chakra-icons": "1.2.0",
     "fp-ts": "^2",
     "glob": "^7",
     "change-case": "^4",
