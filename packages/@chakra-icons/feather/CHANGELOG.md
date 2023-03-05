@@ -1,3 +1,9 @@
+## @chakra-icons/feather [1.1.1](https://github.com/kodingdotninja/chakra-icons/compare/@chakra-icons/feather@1.1.0...@chakra-icons/feather@1.1.1) (2023-03-05)
+
+### Dependencies
+
+- **@chakra-icons/cli:** upgraded to 1.0.2
+
 # @chakra-icons/feather [1.1.0](https://github.com/kodingdotninja/chakra-icons/compare/@chakra-icons/feather@1.0.0...@chakra-icons/feather@1.1.0) (2022-04-04)
 
 ### Features
