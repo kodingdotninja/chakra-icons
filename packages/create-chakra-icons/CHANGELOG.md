@@ -1,3 +1,9 @@
+# create-chakra-icons [1.2.0](https://github.com/kodingdotninja/chakra-icons/compare/create-chakra-icons@1.1.0...create-chakra-icons@1.2.0) (2023-03-05)
+
+### Features
+
+- **create-chakra-icons:** new params: append write, ignore import code, display name from filename ([9c830ef](https://github.com/kodingdotninja/chakra-icons/commit/9c830efca89072882d8bec51930402d8dcddf1fe))
+
 # create-chakra-icons [1.1.0](https://github.com/kodingdotninja/chakra-icons/compare/create-chakra-icons@1.0.4...create-chakra-icons@1.1.0) (2022-02-03)
 
 ### Features
