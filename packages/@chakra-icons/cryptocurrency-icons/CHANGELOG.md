@@ -1,3 +1,9 @@
+## @chakra-icons/cryptocurrency-icons [1.1.1](https://github.com/kodingdotninja/chakra-icons/compare/@chakra-icons/cryptocurrency-icons@1.1.0...@chakra-icons/cryptocurrency-icons@1.1.1) (2023-03-05)
+
+### Dependencies
+
+- **@chakra-icons/cli:** upgraded to 1.0.2
+
 # @chakra-icons/cryptocurrency-icons [1.1.0](https://github.com/kodingdotninja/chakra-icons/compare/@chakra-icons/cryptocurrency-icons@1.0.0...@chakra-icons/cryptocurrency-icons@1.1.0) (2022-08-29)
 
 ### Features
