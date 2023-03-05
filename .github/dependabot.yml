@@ -1,10 +1,20 @@
 version: 2
 updates:
-  - directory: /
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "daily"
+    assignees:
+      - "r17x"
+    labels:
+      - "automerge"
+      - "deps-dev"
+
+  - package-ecosystem: npm
+    directory: /
     assignees:
       - "grikomsn"
     open-pull-requests-limit: 5
-    package-ecosystem: npm
     rebase-strategy: auto
     schedule:
       interval: daily
