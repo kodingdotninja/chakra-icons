@@ -1419,14 +1419,14 @@
           "code": "src/IssueTrackedBy24.tsx"
         },
         {
-          "name": "IssueTrackedIn16",
-          "svg": ".chakraIcons/icons/issue-tracked-in-16.svg",
-          "code": "src/IssueTrackedIn16.tsx"
+          "name": "IssueTracks16",
+          "svg": ".chakraIcons/icons/issue-tracks-16.svg",
+          "code": "src/IssueTracks16.tsx"
         },
         {
-          "name": "IssueTrackedIn24",
-          "svg": ".chakraIcons/icons/issue-tracked-in-24.svg",
-          "code": "src/IssueTrackedIn24.tsx"
+          "name": "IssueTracks24",
+          "svg": ".chakraIcons/icons/issue-tracks-24.svg",
+          "code": "src/IssueTracks24.tsx"
         },
         {
           "name": "Italic16",
@@ -2237,6 +2237,11 @@
           "name": "ShieldSlash16",
           "svg": ".chakraIcons/icons/shield-slash-16.svg",
           "code": "src/ShieldSlash16.tsx"
+        },
+        {
+          "name": "ShieldSlash24",
+          "svg": ".chakraIcons/icons/shield-slash-24.svg",
+          "code": "src/ShieldSlash24.tsx"
         },
         {
           "name": "ShieldX16",
