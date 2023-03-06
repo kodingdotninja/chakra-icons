@@ -2804,6 +2804,11 @@
           "code": "src/BrandCake.tsx"
         },
         {
+          "name": "BrandCakephp",
+          "svg": ".chakraIcons/icons/brand-cakephp.svg",
+          "code": "src/BrandCakephp.tsx"
+        },
+        {
           "name": "BrandCampaignmonitor",
           "svg": ".chakraIcons/icons/brand-campaignmonitor.svg",
           "code": "src/BrandCampaignmonitor.tsx"
@@ -3267,6 +3272,11 @@
           "name": "BrandJavascript",
           "svg": ".chakraIcons/icons/brand-javascript.svg",
           "code": "src/BrandJavascript.tsx"
+        },
+        {
+          "name": "BrandJuejin",
+          "svg": ".chakraIcons/icons/brand-juejin.svg",
+          "code": "src/BrandJuejin.tsx"
         },
         {
           "name": "BrandKickstarter",
@@ -9729,6 +9739,11 @@
           "code": "src/Hourglass.tsx"
         },
         {
+          "name": "Html",
+          "svg": ".chakraIcons/icons/html.svg",
+          "code": "src/Html.tsx"
+        },
+        {
           "name": "IceCream2",
           "svg": ".chakraIcons/icons/ice-cream-2.svg",
           "code": "src/IceCream2.tsx"
@@ -9992,6 +10007,11 @@
           "name": "Jpg",
           "svg": ".chakraIcons/icons/jpg.svg",
           "code": "src/Jpg.tsx"
+        },
+        {
+          "name": "Json",
+          "svg": ".chakraIcons/icons/json.svg",
+          "code": "src/Json.tsx"
         },
         {
           "name": "JumpRope",
@@ -11419,6 +11439,16 @@
           "code": "src/MoodBoy.tsx"
         },
         {
+          "name": "MoodCheck",
+          "svg": ".chakraIcons/icons/mood-check.svg",
+          "code": "src/MoodCheck.tsx"
+        },
+        {
+          "name": "MoodCog",
+          "svg": ".chakraIcons/icons/mood-cog.svg",
+          "code": "src/MoodCog.tsx"
+        },
+        {
           "name": "MoodConfuzed",
           "svg": ".chakraIcons/icons/mood-confuzed.svg",
           "code": "src/MoodConfuzed.tsx"
@@ -11434,6 +11464,11 @@
           "code": "src/MoodCry.tsx"
         },
         {
+          "name": "MoodDollar",
+          "svg": ".chakraIcons/icons/mood-dollar.svg",
+          "code": "src/MoodDollar.tsx"
+        },
+        {
           "name": "MoodEmpty",
           "svg": ".chakraIcons/icons/mood-empty.svg",
           "code": "src/MoodEmpty.tsx"
@@ -11442,6 +11477,11 @@
           "name": "MoodHappy",
           "svg": ".chakraIcons/icons/mood-happy.svg",
           "code": "src/MoodHappy.tsx"
+        },
+        {
+          "name": "MoodHeart",
+          "svg": ".chakraIcons/icons/mood-heart.svg",
+          "code": "src/MoodHeart.tsx"
         },
         {
           "name": "MoodKid",
@@ -11457,6 +11497,11 @@
           "name": "MoodLookRight",
           "svg": ".chakraIcons/icons/mood-look-right.svg",
           "code": "src/MoodLookRight.tsx"
+        },
+        {
+          "name": "MoodMinus",
+          "svg": ".chakraIcons/icons/mood-minus.svg",
+          "code": "src/MoodMinus.tsx"
         },
         {
           "name": "MoodNerd",
@@ -11479,6 +11524,16 @@
           "code": "src/MoodOff.tsx"
         },
         {
+          "name": "MoodPin",
+          "svg": ".chakraIcons/icons/mood-pin.svg",
+          "code": "src/MoodPin.tsx"
+        },
+        {
+          "name": "MoodPlus",
+          "svg": ".chakraIcons/icons/mood-plus.svg",
+          "code": "src/MoodPlus.tsx"
+        },
+        {
           "name": "MoodSad2",
           "svg": ".chakraIcons/icons/mood-sad-2.svg",
           "code": "src/MoodSad2.tsx"
@@ -11497,6 +11552,11 @@
           "name": "MoodSad",
           "svg": ".chakraIcons/icons/mood-sad.svg",
           "code": "src/MoodSad.tsx"
+        },
+        {
+          "name": "MoodSearch",
+          "svg": ".chakraIcons/icons/mood-search.svg",
+          "code": "src/MoodSearch.tsx"
         },
         {
           "name": "MoodSick",
@@ -11554,6 +11614,11 @@
           "code": "src/MoodUnamused.tsx"
         },
         {
+          "name": "MoodUp",
+          "svg": ".chakraIcons/icons/mood-up.svg",
+          "code": "src/MoodUp.tsx"
+        },
+        {
           "name": "MoodWink2",
           "svg": ".chakraIcons/icons/mood-wink-2.svg",
           "code": "src/MoodWink2.tsx"
@@ -11567,6 +11632,11 @@
           "name": "MoodWrrr",
           "svg": ".chakraIcons/icons/mood-wrrr.svg",
           "code": "src/MoodWrrr.tsx"
+        },
+        {
+          "name": "MoodX",
+          "svg": ".chakraIcons/icons/mood-x.svg",
+          "code": "src/MoodX.tsx"
         },
         {
           "name": "MoodXd",
@@ -13794,6 +13864,11 @@
           "code": "src/Share2.tsx"
         },
         {
+          "name": "Share3",
+          "svg": ".chakraIcons/icons/share-3.svg",
+          "code": "src/Share3.tsx"
+        },
+        {
           "name": "ShareOff",
           "svg": ".chakraIcons/icons/share-off.svg",
           "code": "src/ShareOff.tsx"
@@ -14119,6 +14194,16 @@
           "code": "src/Sofa.tsx"
         },
         {
+          "name": "SolarPanel2",
+          "svg": ".chakraIcons/icons/solar-panel-2.svg",
+          "code": "src/SolarPanel2.tsx"
+        },
+        {
+          "name": "SolarPanel",
+          "svg": ".chakraIcons/icons/solar-panel.svg",
+          "code": "src/SolarPanel.tsx"
+        },
+        {
           "name": "Sort09",
           "svg": ".chakraIcons/icons/sort-0-9.svg",
           "code": "src/Sort09.tsx"
@@ -14277,6 +14362,11 @@
           "name": "Spy",
           "svg": ".chakraIcons/icons/spy.svg",
           "code": "src/Spy.tsx"
+        },
+        {
+          "name": "Sql",
+          "svg": ".chakraIcons/icons/sql.svg",
+          "code": "src/Sql.tsx"
         },
         {
           "name": "Square0Filled",
