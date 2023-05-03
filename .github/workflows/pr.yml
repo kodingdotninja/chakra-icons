@@ -2,8 +2,8 @@ name: CI
 
 on: 
   pull_request:
-    types: [opened, synchronize]
     branches: [main, beta]
+    types: [opened, synchronize]
 
 jobs:
   init:
@@ -37,6 +37,8 @@ jobs:
         run: yarn test 
 
   build:
+    env:
+      NODE_OPTIONS: --max_old_space_size=8192
     needs: init
     runs-on: ubuntu-latest
     steps:
