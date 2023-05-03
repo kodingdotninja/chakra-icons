@@ -51,6 +51,7 @@ jobs:
   build:
     # To use Turborepo Remote Caching, set the following environment variables for the job.
     env:
+      NODE_OPTIONS: --max_old_space_size=8192 # handle OOM
       TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
       TURBO_TEAM: ${{ secrets.TURBO_TEAM }}
     needs: init

@@ -27,6 +27,8 @@ jobs:
         run: yarn --frozen-lockfile --no-progress --non-interactive --prefer-offline
 
       - name: build all packages
+        env:
+          NODE_OPTIONS: --max_old_space_size=8192 # handle OOM
         shell: bash
         run: yarn build --force
 
