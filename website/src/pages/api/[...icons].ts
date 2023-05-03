@@ -58,7 +58,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 
   if (!Array.isArray(q) && !Array.isArray(limit) && !Array.isArray(qCreator)) {
     const _limit = toInt(limit);
-    const data = await getData(q, qCreator, _limit > 0 ? _limit : 50);
+    const data = await getData(q ?? "", qCreator ?? "", _limit > 0 ? _limit : 50);
     if (req.method?.toLowerCase() === "get") {
       res.status(200).json(data);
     }
