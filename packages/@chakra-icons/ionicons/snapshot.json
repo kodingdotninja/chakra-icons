@@ -1524,6 +1524,21 @@
           "code": "src/ChevronBack.tsx"
         },
         {
+          "name": "ChevronCollapseOutline",
+          "svg": ".chakraIcons/src/svg/chevron-collapse-outline.svg",
+          "code": "src/ChevronCollapseOutline.tsx"
+        },
+        {
+          "name": "ChevronCollapseSharp",
+          "svg": ".chakraIcons/src/svg/chevron-collapse-sharp.svg",
+          "code": "src/ChevronCollapseSharp.tsx"
+        },
+        {
+          "name": "ChevronCollapse",
+          "svg": ".chakraIcons/src/svg/chevron-collapse.svg",
+          "code": "src/ChevronCollapse.tsx"
+        },
+        {
           "name": "ChevronDownCircleOutline",
           "svg": ".chakraIcons/src/svg/chevron-down-circle-outline.svg",
           "code": "src/ChevronDownCircleOutline.tsx"
@@ -1552,6 +1567,21 @@
           "name": "ChevronDown",
           "svg": ".chakraIcons/src/svg/chevron-down.svg",
           "code": "src/ChevronDown.tsx"
+        },
+        {
+          "name": "ChevronExpandOutline",
+          "svg": ".chakraIcons/src/svg/chevron-expand-outline.svg",
+          "code": "src/ChevronExpandOutline.tsx"
+        },
+        {
+          "name": "ChevronExpandSharp",
+          "svg": ".chakraIcons/src/svg/chevron-expand-sharp.svg",
+          "code": "src/ChevronExpandSharp.tsx"
+        },
+        {
+          "name": "ChevronExpand",
+          "svg": ".chakraIcons/src/svg/chevron-expand.svg",
+          "code": "src/ChevronExpand.tsx"
         },
         {
           "name": "ChevronForwardCircleOutline",
