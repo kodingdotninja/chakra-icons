@@ -799,6 +799,36 @@
           "code": "src/DiffRenamed16.tsx"
         },
         {
+          "name": "DiscussionClosed16",
+          "svg": ".chakraIcons/icons/discussion-closed-16.svg",
+          "code": "src/DiscussionClosed16.tsx"
+        },
+        {
+          "name": "DiscussionClosed24",
+          "svg": ".chakraIcons/icons/discussion-closed-24.svg",
+          "code": "src/DiscussionClosed24.tsx"
+        },
+        {
+          "name": "DiscussionDuplicate16",
+          "svg": ".chakraIcons/icons/discussion-duplicate-16.svg",
+          "code": "src/DiscussionDuplicate16.tsx"
+        },
+        {
+          "name": "DiscussionDuplicate24",
+          "svg": ".chakraIcons/icons/discussion-duplicate-24.svg",
+          "code": "src/DiscussionDuplicate24.tsx"
+        },
+        {
+          "name": "DiscussionOutdated16",
+          "svg": ".chakraIcons/icons/discussion-outdated-16.svg",
+          "code": "src/DiscussionOutdated16.tsx"
+        },
+        {
+          "name": "DiscussionOutdated24",
+          "svg": ".chakraIcons/icons/discussion-outdated-24.svg",
+          "code": "src/DiscussionOutdated24.tsx"
+        },
+        {
           "name": "Dot16",
           "svg": ".chakraIcons/icons/dot-16.svg",
           "code": "src/Dot16.tsx"
@@ -1829,6 +1859,16 @@
           "code": "src/Paperclip24.tsx"
         },
         {
+          "name": "PasskeyFill16",
+          "svg": ".chakraIcons/icons/passkey-fill-16.svg",
+          "code": "src/PasskeyFill16.tsx"
+        },
+        {
+          "name": "PasskeyFill24",
+          "svg": ".chakraIcons/icons/passkey-fill-24.svg",
+          "code": "src/PasskeyFill24.tsx"
+        },
+        {
           "name": "Paste16",
           "svg": ".chakraIcons/icons/paste-16.svg",
           "code": "src/Paste16.tsx"
@@ -1967,6 +2007,16 @@
           "name": "ProjectSymlink24",
           "svg": ".chakraIcons/icons/project-symlink-24.svg",
           "code": "src/ProjectSymlink24.tsx"
+        },
+        {
+          "name": "ProjectTemplate16",
+          "svg": ".chakraIcons/icons/project-template-16.svg",
+          "code": "src/ProjectTemplate16.tsx"
+        },
+        {
+          "name": "ProjectTemplate24",
+          "svg": ".chakraIcons/icons/project-template-24.svg",
+          "code": "src/ProjectTemplate24.tsx"
         },
         {
           "name": "Pulse16",
@@ -2772,6 +2822,11 @@
           "name": "Workflow24",
           "svg": ".chakraIcons/icons/workflow-24.svg",
           "code": "src/Workflow24.tsx"
+        },
+        {
+          "name": "X12",
+          "svg": ".chakraIcons/icons/x-12.svg",
+          "code": "src/X12.tsx"
         },
         {
           "name": "X16",
