@@ -754,6 +754,16 @@
           "code": "src/DeviceMobile24.tsx"
         },
         {
+          "name": "Devices16",
+          "svg": ".chakraIcons/icons/devices-16.svg",
+          "code": "src/Devices16.tsx"
+        },
+        {
+          "name": "Devices24",
+          "svg": ".chakraIcons/icons/devices-24.svg",
+          "code": "src/Devices24.tsx"
+        },
+        {
           "name": "Diamond16",
           "svg": ".chakraIcons/icons/diamond-16.svg",
           "code": "src/Diamond16.tsx"
@@ -1937,6 +1947,16 @@
           "name": "Pin24",
           "svg": ".chakraIcons/icons/pin-24.svg",
           "code": "src/Pin24.tsx"
+        },
+        {
+          "name": "PinSlash16",
+          "svg": ".chakraIcons/icons/pin-slash-16.svg",
+          "code": "src/PinSlash16.tsx"
+        },
+        {
+          "name": "PinSlash24",
+          "svg": ".chakraIcons/icons/pin-slash-24.svg",
+          "code": "src/PinSlash24.tsx"
         },
         {
           "name": "Play16",
