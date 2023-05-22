@@ -754,6 +754,11 @@
           "code": "src/Apps.tsx"
         },
         {
+          "name": "ArchiveFilled",
+          "svg": ".chakraIcons/icons/archive-filled.svg",
+          "code": "src/ArchiveFilled.tsx"
+        },
+        {
           "name": "ArchiveOff",
           "svg": ".chakraIcons/icons/archive-off.svg",
           "code": "src/ArchiveOff.tsx"
@@ -1674,6 +1679,11 @@
           "code": "src/ArrowsVertical.tsx"
         },
         {
+          "name": "ArtboardFilled",
+          "svg": ".chakraIcons/icons/artboard-filled.svg",
+          "code": "src/ArtboardFilled.tsx"
+        },
+        {
           "name": "ArtboardOff",
           "svg": ".chakraIcons/icons/artboard-off.svg",
           "code": "src/ArtboardOff.tsx"
@@ -1989,6 +1999,11 @@
           "code": "src/BallVolleyball.tsx"
         },
         {
+          "name": "BalloonFilled",
+          "svg": ".chakraIcons/icons/balloon-filled.svg",
+          "code": "src/BalloonFilled.tsx"
+        },
+        {
           "name": "BalloonOff",
           "svg": ".chakraIcons/icons/balloon-off.svg",
           "code": "src/BalloonOff.tsx"
@@ -1997,6 +2012,11 @@
           "name": "Balloon",
           "svg": ".chakraIcons/icons/balloon.svg",
           "code": "src/Balloon.tsx"
+        },
+        {
+          "name": "BallpenFilled",
+          "svg": ".chakraIcons/icons/ballpen-filled.svg",
+          "code": "src/BallpenFilled.tsx"
         },
         {
           "name": "BallpenOff",
@@ -2539,6 +2559,11 @@
           "code": "src/Bolt.tsx"
         },
         {
+          "name": "BombFilled",
+          "svg": ".chakraIcons/icons/bomb-filled.svg",
+          "code": "src/BombFilled.tsx"
+        },
+        {
           "name": "Bomb",
           "svg": ".chakraIcons/icons/bomb.svg",
           "code": "src/Bomb.tsx"
@@ -2574,6 +2599,11 @@
           "code": "src/BookDownload.tsx"
         },
         {
+          "name": "BookFilled",
+          "svg": ".chakraIcons/icons/book-filled.svg",
+          "code": "src/BookFilled.tsx"
+        },
+        {
           "name": "BookOff",
           "svg": ".chakraIcons/icons/book-off.svg",
           "code": "src/BookOff.tsx"
@@ -2592,6 +2622,11 @@
           "name": "BookmarkEdit",
           "svg": ".chakraIcons/icons/bookmark-edit.svg",
           "code": "src/BookmarkEdit.tsx"
+        },
+        {
+          "name": "BookmarkFilled",
+          "svg": ".chakraIcons/icons/bookmark-filled.svg",
+          "code": "src/BookmarkFilled.tsx"
         },
         {
           "name": "BookmarkMinus",
@@ -2714,6 +2749,11 @@
           "code": "src/BorderVertical.tsx"
         },
         {
+          "name": "BottleFilled",
+          "svg": ".chakraIcons/icons/bottle-filled.svg",
+          "code": "src/BottleFilled.tsx"
+        },
+        {
           "name": "BottleOff",
           "svg": ".chakraIcons/icons/bottle-off.svg",
           "code": "src/BottleOff.tsx"
@@ -2744,9 +2784,24 @@
           "code": "src/Bowl.tsx"
         },
         {
+          "name": "BoxAlignBottomFilled",
+          "svg": ".chakraIcons/icons/box-align-bottom-filled.svg",
+          "code": "src/BoxAlignBottomFilled.tsx"
+        },
+        {
+          "name": "BoxAlignBottomLeftFilled",
+          "svg": ".chakraIcons/icons/box-align-bottom-left-filled.svg",
+          "code": "src/BoxAlignBottomLeftFilled.tsx"
+        },
+        {
           "name": "BoxAlignBottomLeft",
           "svg": ".chakraIcons/icons/box-align-bottom-left.svg",
           "code": "src/BoxAlignBottomLeft.tsx"
+        },
+        {
+          "name": "BoxAlignBottomRightFilled",
+          "svg": ".chakraIcons/icons/box-align-bottom-right-filled.svg",
+          "code": "src/BoxAlignBottomRightFilled.tsx"
         },
         {
           "name": "BoxAlignBottomRight",
@@ -2759,9 +2814,19 @@
           "code": "src/BoxAlignBottom.tsx"
         },
         {
+          "name": "BoxAlignLeftFilled",
+          "svg": ".chakraIcons/icons/box-align-left-filled.svg",
+          "code": "src/BoxAlignLeftFilled.tsx"
+        },
+        {
           "name": "BoxAlignLeft",
           "svg": ".chakraIcons/icons/box-align-left.svg",
           "code": "src/BoxAlignLeft.tsx"
+        },
+        {
+          "name": "BoxAlignRightFilled",
+          "svg": ".chakraIcons/icons/box-align-right-filled.svg",
+          "code": "src/BoxAlignRightFilled.tsx"
         },
         {
           "name": "BoxAlignRight",
@@ -2769,9 +2834,24 @@
           "code": "src/BoxAlignRight.tsx"
         },
         {
+          "name": "BoxAlignTopFilled",
+          "svg": ".chakraIcons/icons/box-align-top-filled.svg",
+          "code": "src/BoxAlignTopFilled.tsx"
+        },
+        {
+          "name": "BoxAlignTopLeftFilled",
+          "svg": ".chakraIcons/icons/box-align-top-left-filled.svg",
+          "code": "src/BoxAlignTopLeftFilled.tsx"
+        },
+        {
           "name": "BoxAlignTopLeft",
           "svg": ".chakraIcons/icons/box-align-top-left.svg",
           "code": "src/BoxAlignTopLeft.tsx"
+        },
+        {
+          "name": "BoxAlignTopRightFilled",
+          "svg": ".chakraIcons/icons/box-align-top-right-filled.svg",
+          "code": "src/BoxAlignTopRightFilled.tsx"
         },
         {
           "name": "BoxAlignTopRight",
@@ -3004,6 +3084,11 @@
           "code": "src/BrandAngular.tsx"
         },
         {
+          "name": "BrandAnsible",
+          "svg": ".chakraIcons/icons/brand-ansible.svg",
+          "code": "src/BrandAnsible.tsx"
+        },
+        {
           "name": "BrandAo3",
           "svg": ".chakraIcons/icons/brand-ao3.svg",
           "code": "src/BrandAo3.tsx"
@@ -3179,6 +3264,11 @@
           "code": "src/BrandChrome.tsx"
         },
         {
+          "name": "BrandCinema4d",
+          "svg": ".chakraIcons/icons/brand-cinema-4d.svg",
+          "code": "src/BrandCinema4d.tsx"
+        },
+        {
           "name": "BrandCitymapper",
           "svg": ".chakraIcons/icons/brand-citymapper.svg",
           "code": "src/BrandCitymapper.tsx"
@@ -3237,6 +3327,11 @@
           "name": "BrandCpp",
           "svg": ".chakraIcons/icons/brand-cpp.svg",
           "code": "src/BrandCpp.tsx"
+        },
+        {
+          "name": "BrandCraft",
+          "svg": ".chakraIcons/icons/brand-craft.svg",
+          "code": "src/BrandCraft.tsx"
         },
         {
           "name": "BrandCrunchbase",
@@ -3312,6 +3407,11 @@
           "name": "BrandDeviantart",
           "svg": ".chakraIcons/icons/brand-deviantart.svg",
           "code": "src/BrandDeviantart.tsx"
+        },
+        {
+          "name": "BrandDigg",
+          "svg": ".chakraIcons/icons/brand-digg.svg",
+          "code": "src/BrandDigg.tsx"
         },
         {
           "name": "BrandDingtalk",
@@ -3394,6 +3494,11 @@
           "code": "src/BrandElastic.tsx"
         },
         {
+          "name": "BrandElectronicArts",
+          "svg": ".chakraIcons/icons/brand-electronic-arts.svg",
+          "code": "src/BrandElectronicArts.tsx"
+        },
+        {
           "name": "BrandEmber",
           "svg": ".chakraIcons/icons/brand-ember.svg",
           "code": "src/BrandEmber.tsx"
@@ -3424,9 +3529,19 @@
           "code": "src/BrandFacebook.tsx"
         },
         {
+          "name": "BrandFeedly",
+          "svg": ".chakraIcons/icons/brand-feedly.svg",
+          "code": "src/BrandFeedly.tsx"
+        },
+        {
           "name": "BrandFigma",
           "svg": ".chakraIcons/icons/brand-figma.svg",
           "code": "src/BrandFigma.tsx"
+        },
+        {
+          "name": "BrandFilezilla",
+          "svg": ".chakraIcons/icons/brand-filezilla.svg",
+          "code": "src/BrandFilezilla.tsx"
         },
         {
           "name": "BrandFinder",
@@ -4154,6 +4269,11 @@
           "code": "src/BrandSpacehey.tsx"
         },
         {
+          "name": "BrandSpeedtest",
+          "svg": ".chakraIcons/icons/brand-speedtest.svg",
+          "code": "src/BrandSpeedtest.tsx"
+        },
+        {
           "name": "BrandSpotify",
           "svg": ".chakraIcons/icons/brand-spotify.svg",
           "code": "src/BrandSpotify.tsx"
@@ -4429,6 +4549,11 @@
           "code": "src/BrandVk.tsx"
         },
         {
+          "name": "BrandVlc",
+          "svg": ".chakraIcons/icons/brand-vlc.svg",
+          "code": "src/BrandVlc.tsx"
+        },
+        {
           "name": "BrandVolkswagen",
           "svg": ".chakraIcons/icons/brand-volkswagen.svg",
           "code": "src/BrandVolkswagen.tsx"
@@ -4479,6 +4604,11 @@
           "code": "src/BrandWhatsapp.tsx"
         },
         {
+          "name": "BrandWikipedia",
+          "svg": ".chakraIcons/icons/brand-wikipedia.svg",
+          "code": "src/BrandWikipedia.tsx"
+        },
+        {
           "name": "BrandWindows",
           "svg": ".chakraIcons/icons/brand-windows.svg",
           "code": "src/BrandWindows.tsx"
@@ -4502,6 +4632,11 @@
           "name": "BrandWordpress",
           "svg": ".chakraIcons/icons/brand-wordpress.svg",
           "code": "src/BrandWordpress.tsx"
+        },
+        {
+          "name": "BrandXamarin",
+          "svg": ".chakraIcons/icons/brand-xamarin.svg",
+          "code": "src/BrandXamarin.tsx"
         },
         {
           "name": "BrandXbox",
@@ -5259,9 +5394,19 @@
           "code": "src/CaretUp.tsx"
         },
         {
+          "name": "CarouselHorizontalFilled",
+          "svg": ".chakraIcons/icons/carousel-horizontal-filled.svg",
+          "code": "src/CarouselHorizontalFilled.tsx"
+        },
+        {
           "name": "CarouselHorizontal",
           "svg": ".chakraIcons/icons/carousel-horizontal.svg",
           "code": "src/CarouselHorizontal.tsx"
+        },
+        {
+          "name": "CarouselVerticalFilled",
+          "svg": ".chakraIcons/icons/carousel-vertical-filled.svg",
+          "code": "src/CarouselVerticalFilled.tsx"
         },
         {
           "name": "CarouselVertical",
@@ -7059,6 +7204,11 @@
           "code": "src/ConeOff.tsx"
         },
         {
+          "name": "ConePlus",
+          "svg": ".chakraIcons/icons/cone-plus.svg",
+          "code": "src/ConePlus.tsx"
+        },
+        {
           "name": "Cone",
           "svg": ".chakraIcons/icons/cone.svg",
           "code": "src/Cone.tsx"
@@ -7379,6 +7529,16 @@
           "code": "src/Csv.tsx"
         },
         {
+          "name": "CubeOff",
+          "svg": ".chakraIcons/icons/cube-off.svg",
+          "code": "src/CubeOff.tsx"
+        },
+        {
+          "name": "CubePlus",
+          "svg": ".chakraIcons/icons/cube-plus.svg",
+          "code": "src/CubePlus.tsx"
+        },
+        {
           "name": "CubeSend",
           "svg": ".chakraIcons/icons/cube-send.svg",
           "code": "src/CubeSend.tsx"
@@ -7387,6 +7547,11 @@
           "name": "CubeUnfolded",
           "svg": ".chakraIcons/icons/cube-unfolded.svg",
           "code": "src/CubeUnfolded.tsx"
+        },
+        {
+          "name": "Cube",
+          "svg": ".chakraIcons/icons/cube.svg",
+          "code": "src/Cube.tsx"
         },
         {
           "name": "CupOff",
@@ -7757,6 +7922,16 @@
           "name": "Cut",
           "svg": ".chakraIcons/icons/cut.svg",
           "code": "src/Cut.tsx"
+        },
+        {
+          "name": "CylinderOff",
+          "svg": ".chakraIcons/icons/cylinder-off.svg",
+          "code": "src/CylinderOff.tsx"
+        },
+        {
+          "name": "CylinderPlus",
+          "svg": ".chakraIcons/icons/cylinder-plus.svg",
+          "code": "src/CylinderPlus.tsx"
         },
         {
           "name": "Cylinder",
@@ -8947,6 +9122,21 @@
           "name": "Devices",
           "svg": ".chakraIcons/icons/devices.svg",
           "code": "src/Devices.tsx"
+        },
+        {
+          "name": "DiaboloOff",
+          "svg": ".chakraIcons/icons/diabolo-off.svg",
+          "code": "src/DiaboloOff.tsx"
+        },
+        {
+          "name": "DiaboloPlus",
+          "svg": ".chakraIcons/icons/diabolo-plus.svg",
+          "code": "src/DiaboloPlus.tsx"
+        },
+        {
+          "name": "Diabolo",
+          "svg": ".chakraIcons/icons/diabolo.svg",
+          "code": "src/Diabolo.tsx"
         },
         {
           "name": "DialpadFilled",
@@ -10584,6 +10774,21 @@
           "code": "src/Friends.tsx"
         },
         {
+          "name": "FrustumOff",
+          "svg": ".chakraIcons/icons/frustum-off.svg",
+          "code": "src/FrustumOff.tsx"
+        },
+        {
+          "name": "FrustumPlus",
+          "svg": ".chakraIcons/icons/frustum-plus.svg",
+          "code": "src/FrustumPlus.tsx"
+        },
+        {
+          "name": "Frustum",
+          "svg": ".chakraIcons/icons/frustum.svg",
+          "code": "src/Frustum.tsx"
+        },
+        {
           "name": "FunctionOff",
           "svg": ".chakraIcons/icons/function-off.svg",
           "code": "src/FunctionOff.tsx"
@@ -11089,6 +11294,11 @@
           "code": "src/Haze.tsx"
         },
         {
+          "name": "Hdr",
+          "svg": ".chakraIcons/icons/hdr.svg",
+          "code": "src/Hdr.tsx"
+        },
+        {
           "name": "HeadingOff",
           "svg": ".chakraIcons/icons/heading-off.svg",
           "code": "src/HeadingOff.tsx"
@@ -11277,6 +11487,21 @@
           "name": "Help",
           "svg": ".chakraIcons/icons/help.svg",
           "code": "src/Help.tsx"
+        },
+        {
+          "name": "HemisphereOff",
+          "svg": ".chakraIcons/icons/hemisphere-off.svg",
+          "code": "src/HemisphereOff.tsx"
+        },
+        {
+          "name": "HemispherePlus",
+          "svg": ".chakraIcons/icons/hemisphere-plus.svg",
+          "code": "src/HemispherePlus.tsx"
+        },
+        {
+          "name": "Hemisphere",
+          "svg": ".chakraIcons/icons/hemisphere.svg",
+          "code": "src/Hemisphere.tsx"
         },
         {
           "name": "Hexagon0Filled",
@@ -11527,6 +11752,36 @@
           "name": "Hexagon",
           "svg": ".chakraIcons/icons/hexagon.svg",
           "code": "src/Hexagon.tsx"
+        },
+        {
+          "name": "HexagonalPrismOff",
+          "svg": ".chakraIcons/icons/hexagonal-prism-off.svg",
+          "code": "src/HexagonalPrismOff.tsx"
+        },
+        {
+          "name": "HexagonalPrismPlus",
+          "svg": ".chakraIcons/icons/hexagonal-prism-plus.svg",
+          "code": "src/HexagonalPrismPlus.tsx"
+        },
+        {
+          "name": "HexagonalPrism",
+          "svg": ".chakraIcons/icons/hexagonal-prism.svg",
+          "code": "src/HexagonalPrism.tsx"
+        },
+        {
+          "name": "HexagonalPyramidOff",
+          "svg": ".chakraIcons/icons/hexagonal-pyramid-off.svg",
+          "code": "src/HexagonalPyramidOff.tsx"
+        },
+        {
+          "name": "HexagonalPyramidPlus",
+          "svg": ".chakraIcons/icons/hexagonal-pyramid-plus.svg",
+          "code": "src/HexagonalPyramidPlus.tsx"
+        },
+        {
+          "name": "HexagonalPyramid",
+          "svg": ".chakraIcons/icons/hexagonal-pyramid.svg",
+          "code": "src/HexagonalPyramid.tsx"
         },
         {
           "name": "HexagonsOff",
@@ -12094,6 +12349,26 @@
           "code": "src/IroningSteam.tsx"
         },
         {
+          "name": "Ironing",
+          "svg": ".chakraIcons/icons/ironing.svg",
+          "code": "src/Ironing.tsx"
+        },
+        {
+          "name": "IrregularPolyhedronOff",
+          "svg": ".chakraIcons/icons/irregular-polyhedron-off.svg",
+          "code": "src/IrregularPolyhedronOff.tsx"
+        },
+        {
+          "name": "IrregularPolyhedronPlus",
+          "svg": ".chakraIcons/icons/irregular-polyhedron-plus.svg",
+          "code": "src/IrregularPolyhedronPlus.tsx"
+        },
+        {
+          "name": "IrregularPolyhedron",
+          "svg": ".chakraIcons/icons/irregular-polyhedron.svg",
+          "code": "src/IrregularPolyhedron.tsx"
+        },
+        {
           "name": "Italic",
           "svg": ".chakraIcons/icons/italic.svg",
           "code": "src/Italic.tsx"
@@ -12397,6 +12672,11 @@
           "name": "LayoutGridAdd",
           "svg": ".chakraIcons/icons/layout-grid-add.svg",
           "code": "src/LayoutGridAdd.tsx"
+        },
+        {
+          "name": "LayoutGridRemove",
+          "svg": ".chakraIcons/icons/layout-grid-remove.svg",
+          "code": "src/LayoutGridRemove.tsx"
         },
         {
           "name": "LayoutGrid",
@@ -12982,6 +13262,11 @@
           "name": "Login",
           "svg": ".chakraIcons/icons/login.svg",
           "code": "src/Login.tsx"
+        },
+        {
+          "name": "Logout2",
+          "svg": ".chakraIcons/icons/logout-2.svg",
+          "code": "src/Logout2.tsx"
         },
         {
           "name": "Logout",
@@ -14704,6 +14989,21 @@
           "code": "src/Octagon.tsx"
         },
         {
+          "name": "OctahedronOff",
+          "svg": ".chakraIcons/icons/octahedron-off.svg",
+          "code": "src/OctahedronOff.tsx"
+        },
+        {
+          "name": "OctahedronPlus",
+          "svg": ".chakraIcons/icons/octahedron-plus.svg",
+          "code": "src/OctahedronPlus.tsx"
+        },
+        {
+          "name": "Octahedron",
+          "svg": ".chakraIcons/icons/octahedron.svg",
+          "code": "src/Octahedron.tsx"
+        },
+        {
           "name": "Old",
           "svg": ".chakraIcons/icons/old.svg",
           "code": "src/Old.tsx"
@@ -15804,6 +16104,21 @@
           "code": "src/Printer.tsx"
         },
         {
+          "name": "PrismOff",
+          "svg": ".chakraIcons/icons/prism-off.svg",
+          "code": "src/PrismOff.tsx"
+        },
+        {
+          "name": "PrismPlus",
+          "svg": ".chakraIcons/icons/prism-plus.svg",
+          "code": "src/PrismPlus.tsx"
+        },
+        {
+          "name": "Prism",
+          "svg": ".chakraIcons/icons/prism.svg",
+          "code": "src/Prism.tsx"
+        },
+        {
           "name": "Prison",
           "svg": ".chakraIcons/icons/prison.svg",
           "code": "src/Prison.tsx"
@@ -15887,6 +16202,11 @@
           "name": "PyramidOff",
           "svg": ".chakraIcons/icons/pyramid-off.svg",
           "code": "src/PyramidOff.tsx"
+        },
+        {
+          "name": "PyramidPlus",
+          "svg": ".chakraIcons/icons/pyramid-plus.svg",
+          "code": "src/PyramidPlus.tsx"
         },
         {
           "name": "Pyramid",
@@ -16082,6 +16402,21 @@
           "name": "Rectangle",
           "svg": ".chakraIcons/icons/rectangle.svg",
           "code": "src/Rectangle.tsx"
+        },
+        {
+          "name": "RectangularPrismOff",
+          "svg": ".chakraIcons/icons/rectangular-prism-off.svg",
+          "code": "src/RectangularPrismOff.tsx"
+        },
+        {
+          "name": "RectangularPrismPlus",
+          "svg": ".chakraIcons/icons/rectangular-prism-plus.svg",
+          "code": "src/RectangularPrismPlus.tsx"
+        },
+        {
+          "name": "RectangularPrism",
+          "svg": ".chakraIcons/icons/rectangular-prism.svg",
+          "code": "src/RectangularPrism.tsx"
         },
         {
           "name": "RecycleOff",
@@ -17512,6 +17847,21 @@
           "name": "Speedboat",
           "svg": ".chakraIcons/icons/speedboat.svg",
           "code": "src/Speedboat.tsx"
+        },
+        {
+          "name": "SphereOff",
+          "svg": ".chakraIcons/icons/sphere-off.svg",
+          "code": "src/SphereOff.tsx"
+        },
+        {
+          "name": "SpherePlus",
+          "svg": ".chakraIcons/icons/sphere-plus.svg",
+          "code": "src/SpherePlus.tsx"
+        },
+        {
+          "name": "Sphere",
+          "svg": ".chakraIcons/icons/sphere.svg",
+          "code": "src/Sphere.tsx"
         },
         {
           "name": "Spider",
@@ -20084,6 +20434,11 @@
           "code": "src/WashDryF.tsx"
         },
         {
+          "name": "WashDryFlat",
+          "svg": ".chakraIcons/icons/wash-dry-flat.svg",
+          "code": "src/WashDryFlat.tsx"
+        },
+        {
           "name": "WashDryHang",
           "svg": ".chakraIcons/icons/wash-dry-hang.svg",
           "code": "src/WashDryHang.tsx"
@@ -20124,9 +20479,19 @@
           "code": "src/WashDryclean.tsx"
         },
         {
+          "name": "WashEco",
+          "svg": ".chakraIcons/icons/wash-eco.svg",
+          "code": "src/WashEco.tsx"
+        },
+        {
           "name": "WashGentle",
           "svg": ".chakraIcons/icons/wash-gentle.svg",
           "code": "src/WashGentle.tsx"
+        },
+        {
+          "name": "WashHand",
+          "svg": ".chakraIcons/icons/wash-hand.svg",
+          "code": "src/WashHand.tsx"
         },
         {
           "name": "WashMachine",
