@@ -1029,6 +1029,16 @@
           "code": "src/FileDirectoryOpenFill16.tsx"
         },
         {
+          "name": "FileDirectorySymlink16",
+          "svg": ".chakraIcons/icons/file-directory-symlink-16.svg",
+          "code": "src/FileDirectorySymlink16.tsx"
+        },
+        {
+          "name": "FileDirectorySymlink24",
+          "svg": ".chakraIcons/icons/file-directory-symlink-24.svg",
+          "code": "src/FileDirectorySymlink24.tsx"
+        },
+        {
           "name": "FileMedia24",
           "svg": ".chakraIcons/icons/file-media-24.svg",
           "code": "src/FileMedia24.tsx"
@@ -1959,6 +1969,16 @@
           "code": "src/PinSlash24.tsx"
         },
         {
+          "name": "PivotColumn16",
+          "svg": ".chakraIcons/icons/pivot-column-16.svg",
+          "code": "src/PivotColumn16.tsx"
+        },
+        {
+          "name": "PivotColumn24",
+          "svg": ".chakraIcons/icons/pivot-column-24.svg",
+          "code": "src/PivotColumn24.tsx"
+        },
+        {
           "name": "Play16",
           "svg": ".chakraIcons/icons/play-16.svg",
           "code": "src/Play16.tsx"
@@ -2077,6 +2097,11 @@
           "name": "Read24",
           "svg": ".chakraIcons/icons/read-24.svg",
           "code": "src/Read24.tsx"
+        },
+        {
+          "name": "Redo16",
+          "svg": ".chakraIcons/icons/redo-16.svg",
+          "code": "src/Redo16.tsx"
         },
         {
           "name": "RelFilePath16",
@@ -2659,6 +2684,26 @@
           "code": "src/Tools24.tsx"
         },
         {
+          "name": "TrackedByClosedCompleted16",
+          "svg": ".chakraIcons/icons/tracked-by-closed-completed-16.svg",
+          "code": "src/TrackedByClosedCompleted16.tsx"
+        },
+        {
+          "name": "TrackedByClosedCompleted24",
+          "svg": ".chakraIcons/icons/tracked-by-closed-completed-24.svg",
+          "code": "src/TrackedByClosedCompleted24.tsx"
+        },
+        {
+          "name": "TrackedByClosedNotPlanned16",
+          "svg": ".chakraIcons/icons/tracked-by-closed-not-planned-16.svg",
+          "code": "src/TrackedByClosedNotPlanned16.tsx"
+        },
+        {
+          "name": "TrackedByClosedNotPlanned24",
+          "svg": ".chakraIcons/icons/tracked-by-closed-not-planned-24.svg",
+          "code": "src/TrackedByClosedNotPlanned24.tsx"
+        },
+        {
           "name": "Trash16",
           "svg": ".chakraIcons/icons/trash-16.svg",
           "code": "src/Trash16.tsx"
@@ -2727,6 +2772,11 @@
           "name": "Typography24",
           "svg": ".chakraIcons/icons/typography-24.svg",
           "code": "src/Typography24.tsx"
+        },
+        {
+          "name": "Undo16",
+          "svg": ".chakraIcons/icons/undo-16.svg",
+          "code": "src/Undo16.tsx"
         },
         {
           "name": "Unfold16",
