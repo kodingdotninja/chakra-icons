@@ -2139,6 +2139,11 @@
           "code": "src/RepoClone16.tsx"
         },
         {
+          "name": "RepoClone24",
+          "svg": ".chakraIcons/icons/repo-clone-24.svg",
+          "code": "src/RepoClone24.tsx"
+        },
+        {
           "name": "RepoDeleted16",
           "svg": ".chakraIcons/icons/repo-deleted-16.svg",
           "code": "src/RepoDeleted16.tsx"
@@ -2167,6 +2172,11 @@
           "name": "RepoPull16",
           "svg": ".chakraIcons/icons/repo-pull-16.svg",
           "code": "src/RepoPull16.tsx"
+        },
+        {
+          "name": "RepoPull24",
+          "svg": ".chakraIcons/icons/repo-pull-24.svg",
+          "code": "src/RepoPull24.tsx"
         },
         {
           "name": "RepoPush16",
