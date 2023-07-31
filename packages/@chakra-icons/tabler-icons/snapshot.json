@@ -4829,6 +4829,16 @@
           "code": "src/BrandWordpress.tsx"
         },
         {
+          "name": "BrandXFilled",
+          "svg": ".chakraIcons/icons/brand-x-filled.svg",
+          "code": "src/BrandXFilled.tsx"
+        },
+        {
+          "name": "BrandX",
+          "svg": ".chakraIcons/icons/brand-x.svg",
+          "code": "src/BrandX.tsx"
+        },
+        {
           "name": "BrandXamarin",
           "svg": ".chakraIcons/icons/brand-xamarin.svg",
           "code": "src/BrandXamarin.tsx"
@@ -4837,6 +4847,11 @@
           "name": "BrandXbox",
           "svg": ".chakraIcons/icons/brand-xbox.svg",
           "code": "src/BrandXbox.tsx"
+        },
+        {
+          "name": "BrandXdeep",
+          "svg": ".chakraIcons/icons/brand-xdeep.svg",
+          "code": "src/BrandXdeep.tsx"
         },
         {
           "name": "BrandXing",
@@ -4862,6 +4877,11 @@
           "name": "BrandYcombinator",
           "svg": ".chakraIcons/icons/brand-ycombinator.svg",
           "code": "src/BrandYcombinator.tsx"
+        },
+        {
+          "name": "BrandYoutubeFilled",
+          "svg": ".chakraIcons/icons/brand-youtube-filled.svg",
+          "code": "src/BrandYoutubeFilled.tsx"
         },
         {
           "name": "BrandYoutubeKids",
@@ -5534,6 +5554,11 @@
           "code": "src/Campfire.tsx"
         },
         {
+          "name": "CandleFilled",
+          "svg": ".chakraIcons/icons/candle-filled.svg",
+          "code": "src/CandleFilled.tsx"
+        },
+        {
           "name": "Candle",
           "svg": ".chakraIcons/icons/candle.svg",
           "code": "src/Candle.tsx"
@@ -5557,6 +5582,16 @@
           "name": "Cannabis",
           "svg": ".chakraIcons/icons/cannabis.svg",
           "code": "src/Cannabis.tsx"
+        },
+        {
+          "name": "CapsuleFilled",
+          "svg": ".chakraIcons/icons/capsule-filled.svg",
+          "code": "src/CapsuleFilled.tsx"
+        },
+        {
+          "name": "CapsuleHorizontalFilled",
+          "svg": ".chakraIcons/icons/capsule-horizontal-filled.svg",
+          "code": "src/CapsuleHorizontalFilled.tsx"
         },
         {
           "name": "CapsuleHorizontal",
@@ -5622,6 +5657,11 @@
           "name": "Cardboards",
           "svg": ".chakraIcons/icons/cardboards.svg",
           "code": "src/Cardboards.tsx"
+        },
+        {
+          "name": "CardsFilled",
+          "svg": ".chakraIcons/icons/cards-filled.svg",
+          "code": "src/CardsFilled.tsx"
         },
         {
           "name": "Cards",
@@ -5697,111 +5737,6 @@
           "name": "Carrot",
           "svg": ".chakraIcons/icons/carrot.svg",
           "code": "src/Carrot.tsx"
-        },
-        {
-          "name": "CartBolt",
-          "svg": ".chakraIcons/icons/cart-bolt.svg",
-          "code": "src/CartBolt.tsx"
-        },
-        {
-          "name": "CartCancel",
-          "svg": ".chakraIcons/icons/cart-cancel.svg",
-          "code": "src/CartCancel.tsx"
-        },
-        {
-          "name": "CartCheck",
-          "svg": ".chakraIcons/icons/cart-check.svg",
-          "code": "src/CartCheck.tsx"
-        },
-        {
-          "name": "CartCode",
-          "svg": ".chakraIcons/icons/cart-code.svg",
-          "code": "src/CartCode.tsx"
-        },
-        {
-          "name": "CartCog",
-          "svg": ".chakraIcons/icons/cart-cog.svg",
-          "code": "src/CartCog.tsx"
-        },
-        {
-          "name": "CartCopy",
-          "svg": ".chakraIcons/icons/cart-copy.svg",
-          "code": "src/CartCopy.tsx"
-        },
-        {
-          "name": "CartDiscount",
-          "svg": ".chakraIcons/icons/cart-discount.svg",
-          "code": "src/CartDiscount.tsx"
-        },
-        {
-          "name": "CartDollar",
-          "svg": ".chakraIcons/icons/cart-dollar.svg",
-          "code": "src/CartDollar.tsx"
-        },
-        {
-          "name": "CartDown",
-          "svg": ".chakraIcons/icons/cart-down.svg",
-          "code": "src/CartDown.tsx"
-        },
-        {
-          "name": "CartExclamation",
-          "svg": ".chakraIcons/icons/cart-exclamation.svg",
-          "code": "src/CartExclamation.tsx"
-        },
-        {
-          "name": "CartHeart",
-          "svg": ".chakraIcons/icons/cart-heart.svg",
-          "code": "src/CartHeart.tsx"
-        },
-        {
-          "name": "CartMinus",
-          "svg": ".chakraIcons/icons/cart-minus.svg",
-          "code": "src/CartMinus.tsx"
-        },
-        {
-          "name": "CartPause",
-          "svg": ".chakraIcons/icons/cart-pause.svg",
-          "code": "src/CartPause.tsx"
-        },
-        {
-          "name": "CartPin",
-          "svg": ".chakraIcons/icons/cart-pin.svg",
-          "code": "src/CartPin.tsx"
-        },
-        {
-          "name": "CartPlus",
-          "svg": ".chakraIcons/icons/cart-plus.svg",
-          "code": "src/CartPlus.tsx"
-        },
-        {
-          "name": "CartQuestion",
-          "svg": ".chakraIcons/icons/cart-question.svg",
-          "code": "src/CartQuestion.tsx"
-        },
-        {
-          "name": "CartSearch",
-          "svg": ".chakraIcons/icons/cart-search.svg",
-          "code": "src/CartSearch.tsx"
-        },
-        {
-          "name": "CartShare",
-          "svg": ".chakraIcons/icons/cart-share.svg",
-          "code": "src/CartShare.tsx"
-        },
-        {
-          "name": "CartStar",
-          "svg": ".chakraIcons/icons/cart-star.svg",
-          "code": "src/CartStar.tsx"
-        },
-        {
-          "name": "CartUp",
-          "svg": ".chakraIcons/icons/cart-up.svg",
-          "code": "src/CartUp.tsx"
-        },
-        {
-          "name": "CartX",
-          "svg": ".chakraIcons/icons/cart-x.svg",
-          "code": "src/CartX.tsx"
         },
         {
           "name": "CashBanknoteOff",
@@ -9154,6 +9089,11 @@
           "code": "src/DeviceNintendo.tsx"
         },
         {
+          "name": "DeviceProjector",
+          "svg": ".chakraIcons/icons/device-projector.svg",
+          "code": "src/DeviceProjector.tsx"
+        },
+        {
           "name": "DeviceRemote",
           "svg": ".chakraIcons/icons/device-remote.svg",
           "code": "src/DeviceRemote.tsx"
@@ -10027,6 +9967,11 @@
           "name": "Droplet",
           "svg": ".chakraIcons/icons/droplet.svg",
           "code": "src/Droplet.tsx"
+        },
+        {
+          "name": "Droplets",
+          "svg": ".chakraIcons/icons/droplets.svg",
+          "code": "src/Droplets.tsx"
         },
         {
           "name": "DualScreen",
@@ -10989,6 +10934,11 @@
           "code": "src/FilterExclamation.tsx"
         },
         {
+          "name": "FilterFilled",
+          "svg": ".chakraIcons/icons/filter-filled.svg",
+          "code": "src/FilterFilled.tsx"
+        },
+        {
           "name": "FilterHeart",
           "svg": ".chakraIcons/icons/filter-heart.svg",
           "code": "src/FilterHeart.tsx"
@@ -11514,9 +11464,19 @@
           "code": "src/Folders.tsx"
         },
         {
+          "name": "Forbid2Filled",
+          "svg": ".chakraIcons/icons/forbid-2-filled.svg",
+          "code": "src/Forbid2Filled.tsx"
+        },
+        {
           "name": "Forbid2",
           "svg": ".chakraIcons/icons/forbid-2.svg",
           "code": "src/Forbid2.tsx"
+        },
+        {
+          "name": "ForbidFilled",
+          "svg": ".chakraIcons/icons/forbid-filled.svg",
+          "code": "src/ForbidFilled.tsx"
         },
         {
           "name": "Forbid",
@@ -11532,6 +11492,11 @@
           "name": "Forms",
           "svg": ".chakraIcons/icons/forms.svg",
           "code": "src/Forms.tsx"
+        },
+        {
+          "name": "FountainFilled",
+          "svg": ".chakraIcons/icons/fountain-filled.svg",
+          "code": "src/FountainFilled.tsx"
         },
         {
           "name": "FountainOff",
@@ -11609,6 +11574,11 @@
           "code": "src/Frustum.tsx"
         },
         {
+          "name": "FunctionFilled",
+          "svg": ".chakraIcons/icons/function-filled.svg",
+          "code": "src/FunctionFilled.tsx"
+        },
+        {
           "name": "FunctionOff",
           "svg": ".chakraIcons/icons/function-off.svg",
           "code": "src/FunctionOff.tsx"
@@ -11637,6 +11607,11 @@
           "name": "GasStation",
           "svg": ".chakraIcons/icons/gas-station.svg",
           "code": "src/GasStation.tsx"
+        },
+        {
+          "name": "GaugeFilled",
+          "svg": ".chakraIcons/icons/gauge-filled.svg",
+          "code": "src/GaugeFilled.tsx"
         },
         {
           "name": "GaugeOff",
@@ -11759,6 +11734,11 @@
           "code": "src/Ghost2.tsx"
         },
         {
+          "name": "Ghost3",
+          "svg": ".chakraIcons/icons/ghost-3.svg",
+          "code": "src/Ghost3.tsx"
+        },
+        {
           "name": "GhostFilled",
           "svg": ".chakraIcons/icons/ghost-filled.svg",
           "code": "src/GhostFilled.tsx"
@@ -11777,6 +11757,11 @@
           "name": "Gif",
           "svg": ".chakraIcons/icons/gif.svg",
           "code": "src/Gif.tsx"
+        },
+        {
+          "name": "GiftCardFilled",
+          "svg": ".chakraIcons/icons/gift-card-filled.svg",
+          "code": "src/GiftCardFilled.tsx"
         },
         {
           "name": "GiftCard",
@@ -11849,6 +11834,11 @@
           "code": "src/Gizmo.tsx"
         },
         {
+          "name": "GlassFullFilled",
+          "svg": ".chakraIcons/icons/glass-full-filled.svg",
+          "code": "src/GlassFullFilled.tsx"
+        },
+        {
           "name": "GlassFull",
           "svg": ".chakraIcons/icons/glass-full.svg",
           "code": "src/GlassFull.tsx"
@@ -11862,6 +11852,11 @@
           "name": "Glass",
           "svg": ".chakraIcons/icons/glass.svg",
           "code": "src/Glass.tsx"
+        },
+        {
+          "name": "GlobeFilled",
+          "svg": ".chakraIcons/icons/globe-filled.svg",
+          "code": "src/GlobeFilled.tsx"
         },
         {
           "name": "GlobeOff",
@@ -13364,9 +13359,19 @@
           "code": "src/Keyboard.tsx"
         },
         {
+          "name": "KeyframeAlignCenterFilled",
+          "svg": ".chakraIcons/icons/keyframe-align-center-filled.svg",
+          "code": "src/KeyframeAlignCenterFilled.tsx"
+        },
+        {
           "name": "KeyframeAlignCenter",
           "svg": ".chakraIcons/icons/keyframe-align-center.svg",
           "code": "src/KeyframeAlignCenter.tsx"
+        },
+        {
+          "name": "KeyframeAlignHorizontalFilled",
+          "svg": ".chakraIcons/icons/keyframe-align-horizontal-filled.svg",
+          "code": "src/KeyframeAlignHorizontalFilled.tsx"
         },
         {
           "name": "KeyframeAlignHorizontal",
@@ -13374,14 +13379,29 @@
           "code": "src/KeyframeAlignHorizontal.tsx"
         },
         {
+          "name": "KeyframeAlignVerticalFilled",
+          "svg": ".chakraIcons/icons/keyframe-align-vertical-filled.svg",
+          "code": "src/KeyframeAlignVerticalFilled.tsx"
+        },
+        {
           "name": "KeyframeAlignVertical",
           "svg": ".chakraIcons/icons/keyframe-align-vertical.svg",
           "code": "src/KeyframeAlignVertical.tsx"
         },
         {
+          "name": "KeyframeFilled",
+          "svg": ".chakraIcons/icons/keyframe-filled.svg",
+          "code": "src/KeyframeFilled.tsx"
+        },
+        {
           "name": "Keyframe",
           "svg": ".chakraIcons/icons/keyframe.svg",
           "code": "src/Keyframe.tsx"
+        },
+        {
+          "name": "KeyframesFilled",
+          "svg": ".chakraIcons/icons/keyframes-filled.svg",
+          "code": "src/KeyframesFilled.tsx"
         },
         {
           "name": "Keyframes",
@@ -13397,6 +13417,11 @@
           "name": "Ladder",
           "svg": ".chakraIcons/icons/ladder.svg",
           "code": "src/Ladder.tsx"
+        },
+        {
+          "name": "Ladle",
+          "svg": ".chakraIcons/icons/ladle.svg",
+          "code": "src/Ladle.tsx"
         },
         {
           "name": "Lambda",
@@ -13539,14 +13564,29 @@
           "code": "src/LayoutBoard.tsx"
         },
         {
+          "name": "LayoutBottombarCollapseFilled",
+          "svg": ".chakraIcons/icons/layout-bottombar-collapse-filled.svg",
+          "code": "src/LayoutBottombarCollapseFilled.tsx"
+        },
+        {
           "name": "LayoutBottombarCollapse",
           "svg": ".chakraIcons/icons/layout-bottombar-collapse.svg",
           "code": "src/LayoutBottombarCollapse.tsx"
         },
         {
+          "name": "LayoutBottombarExpandFilled",
+          "svg": ".chakraIcons/icons/layout-bottombar-expand-filled.svg",
+          "code": "src/LayoutBottombarExpandFilled.tsx"
+        },
+        {
           "name": "LayoutBottombarExpand",
           "svg": ".chakraIcons/icons/layout-bottombar-expand.svg",
           "code": "src/LayoutBottombarExpand.tsx"
+        },
+        {
+          "name": "LayoutBottombarFilled",
+          "svg": ".chakraIcons/icons/layout-bottombar-filled.svg",
+          "code": "src/LayoutBottombarFilled.tsx"
         },
         {
           "name": "LayoutBottombar",
@@ -13609,14 +13649,29 @@
           "code": "src/LayoutList.tsx"
         },
         {
+          "name": "LayoutNavbarCollapseFilled",
+          "svg": ".chakraIcons/icons/layout-navbar-collapse-filled.svg",
+          "code": "src/LayoutNavbarCollapseFilled.tsx"
+        },
+        {
           "name": "LayoutNavbarCollapse",
           "svg": ".chakraIcons/icons/layout-navbar-collapse.svg",
           "code": "src/LayoutNavbarCollapse.tsx"
         },
         {
+          "name": "LayoutNavbarExpandFilled",
+          "svg": ".chakraIcons/icons/layout-navbar-expand-filled.svg",
+          "code": "src/LayoutNavbarExpandFilled.tsx"
+        },
+        {
           "name": "LayoutNavbarExpand",
           "svg": ".chakraIcons/icons/layout-navbar-expand.svg",
           "code": "src/LayoutNavbarExpand.tsx"
+        },
+        {
+          "name": "LayoutNavbarFilled",
+          "svg": ".chakraIcons/icons/layout-navbar-filled.svg",
+          "code": "src/LayoutNavbarFilled.tsx"
         },
         {
           "name": "LayoutNavbar",
@@ -13634,9 +13689,19 @@
           "code": "src/LayoutRows.tsx"
         },
         {
+          "name": "LayoutSidebarLeftCollapseFilled",
+          "svg": ".chakraIcons/icons/layout-sidebar-left-collapse-filled.svg",
+          "code": "src/LayoutSidebarLeftCollapseFilled.tsx"
+        },
+        {
           "name": "LayoutSidebarLeftCollapse",
           "svg": ".chakraIcons/icons/layout-sidebar-left-collapse.svg",
           "code": "src/LayoutSidebarLeftCollapse.tsx"
+        },
+        {
+          "name": "LayoutSidebarLeftExpandFilled",
+          "svg": ".chakraIcons/icons/layout-sidebar-left-expand-filled.svg",
+          "code": "src/LayoutSidebarLeftExpandFilled.tsx"
         },
         {
           "name": "LayoutSidebarLeftExpand",
@@ -13644,9 +13709,19 @@
           "code": "src/LayoutSidebarLeftExpand.tsx"
         },
         {
+          "name": "LayoutSidebarRightCollapseFilled",
+          "svg": ".chakraIcons/icons/layout-sidebar-right-collapse-filled.svg",
+          "code": "src/LayoutSidebarRightCollapseFilled.tsx"
+        },
+        {
           "name": "LayoutSidebarRightCollapse",
           "svg": ".chakraIcons/icons/layout-sidebar-right-collapse.svg",
           "code": "src/LayoutSidebarRightCollapse.tsx"
+        },
+        {
+          "name": "LayoutSidebarRightExpandFilled",
+          "svg": ".chakraIcons/icons/layout-sidebar-right-expand-filled.svg",
+          "code": "src/LayoutSidebarRightExpandFilled.tsx"
         },
         {
           "name": "LayoutSidebarRightExpand",
@@ -17949,6 +18024,11 @@
           "code": "src/Reload.tsx"
         },
         {
+          "name": "Reorder",
+          "svg": ".chakraIcons/icons/reorder.svg",
+          "code": "src/Reorder.tsx"
+        },
+        {
           "name": "RepeatOff",
           "svg": ".chakraIcons/icons/repeat-off.svg",
           "code": "src/RepeatOff.tsx"
@@ -19029,9 +19109,79 @@
           "code": "src/Shoe.tsx"
         },
         {
+          "name": "ShoppingBagCheck",
+          "svg": ".chakraIcons/icons/shopping-bag-check.svg",
+          "code": "src/ShoppingBagCheck.tsx"
+        },
+        {
+          "name": "ShoppingBagDiscount",
+          "svg": ".chakraIcons/icons/shopping-bag-discount.svg",
+          "code": "src/ShoppingBagDiscount.tsx"
+        },
+        {
+          "name": "ShoppingBagEdit",
+          "svg": ".chakraIcons/icons/shopping-bag-edit.svg",
+          "code": "src/ShoppingBagEdit.tsx"
+        },
+        {
+          "name": "ShoppingBagExclamation",
+          "svg": ".chakraIcons/icons/shopping-bag-exclamation.svg",
+          "code": "src/ShoppingBagExclamation.tsx"
+        },
+        {
+          "name": "ShoppingBagMinus",
+          "svg": ".chakraIcons/icons/shopping-bag-minus.svg",
+          "code": "src/ShoppingBagMinus.tsx"
+        },
+        {
+          "name": "ShoppingBagPlus",
+          "svg": ".chakraIcons/icons/shopping-bag-plus.svg",
+          "code": "src/ShoppingBagPlus.tsx"
+        },
+        {
+          "name": "ShoppingBagSearch",
+          "svg": ".chakraIcons/icons/shopping-bag-search.svg",
+          "code": "src/ShoppingBagSearch.tsx"
+        },
+        {
+          "name": "ShoppingBagX",
+          "svg": ".chakraIcons/icons/shopping-bag-x.svg",
+          "code": "src/ShoppingBagX.tsx"
+        },
+        {
           "name": "ShoppingBag",
           "svg": ".chakraIcons/icons/shopping-bag.svg",
           "code": "src/ShoppingBag.tsx"
+        },
+        {
+          "name": "ShoppingCartBolt",
+          "svg": ".chakraIcons/icons/shopping-cart-bolt.svg",
+          "code": "src/ShoppingCartBolt.tsx"
+        },
+        {
+          "name": "ShoppingCartCancel",
+          "svg": ".chakraIcons/icons/shopping-cart-cancel.svg",
+          "code": "src/ShoppingCartCancel.tsx"
+        },
+        {
+          "name": "ShoppingCartCheck",
+          "svg": ".chakraIcons/icons/shopping-cart-check.svg",
+          "code": "src/ShoppingCartCheck.tsx"
+        },
+        {
+          "name": "ShoppingCartCode",
+          "svg": ".chakraIcons/icons/shopping-cart-code.svg",
+          "code": "src/ShoppingCartCode.tsx"
+        },
+        {
+          "name": "ShoppingCartCog",
+          "svg": ".chakraIcons/icons/shopping-cart-cog.svg",
+          "code": "src/ShoppingCartCog.tsx"
+        },
+        {
+          "name": "ShoppingCartCopy",
+          "svg": ".chakraIcons/icons/shopping-cart-copy.svg",
+          "code": "src/ShoppingCartCopy.tsx"
         },
         {
           "name": "ShoppingCartDiscount",
@@ -19039,14 +19189,79 @@
           "code": "src/ShoppingCartDiscount.tsx"
         },
         {
+          "name": "ShoppingCartDollar",
+          "svg": ".chakraIcons/icons/shopping-cart-dollar.svg",
+          "code": "src/ShoppingCartDollar.tsx"
+        },
+        {
+          "name": "ShoppingCartDown",
+          "svg": ".chakraIcons/icons/shopping-cart-down.svg",
+          "code": "src/ShoppingCartDown.tsx"
+        },
+        {
+          "name": "ShoppingCartExclamation",
+          "svg": ".chakraIcons/icons/shopping-cart-exclamation.svg",
+          "code": "src/ShoppingCartExclamation.tsx"
+        },
+        {
+          "name": "ShoppingCartFilled",
+          "svg": ".chakraIcons/icons/shopping-cart-filled.svg",
+          "code": "src/ShoppingCartFilled.tsx"
+        },
+        {
+          "name": "ShoppingCartHeart",
+          "svg": ".chakraIcons/icons/shopping-cart-heart.svg",
+          "code": "src/ShoppingCartHeart.tsx"
+        },
+        {
+          "name": "ShoppingCartMinus",
+          "svg": ".chakraIcons/icons/shopping-cart-minus.svg",
+          "code": "src/ShoppingCartMinus.tsx"
+        },
+        {
           "name": "ShoppingCartOff",
           "svg": ".chakraIcons/icons/shopping-cart-off.svg",
           "code": "src/ShoppingCartOff.tsx"
         },
         {
+          "name": "ShoppingCartPause",
+          "svg": ".chakraIcons/icons/shopping-cart-pause.svg",
+          "code": "src/ShoppingCartPause.tsx"
+        },
+        {
+          "name": "ShoppingCartPin",
+          "svg": ".chakraIcons/icons/shopping-cart-pin.svg",
+          "code": "src/ShoppingCartPin.tsx"
+        },
+        {
           "name": "ShoppingCartPlus",
           "svg": ".chakraIcons/icons/shopping-cart-plus.svg",
           "code": "src/ShoppingCartPlus.tsx"
+        },
+        {
+          "name": "ShoppingCartQuestion",
+          "svg": ".chakraIcons/icons/shopping-cart-question.svg",
+          "code": "src/ShoppingCartQuestion.tsx"
+        },
+        {
+          "name": "ShoppingCartSearch",
+          "svg": ".chakraIcons/icons/shopping-cart-search.svg",
+          "code": "src/ShoppingCartSearch.tsx"
+        },
+        {
+          "name": "ShoppingCartShare",
+          "svg": ".chakraIcons/icons/shopping-cart-share.svg",
+          "code": "src/ShoppingCartShare.tsx"
+        },
+        {
+          "name": "ShoppingCartStar",
+          "svg": ".chakraIcons/icons/shopping-cart-star.svg",
+          "code": "src/ShoppingCartStar.tsx"
+        },
+        {
+          "name": "ShoppingCartUp",
+          "svg": ".chakraIcons/icons/shopping-cart-up.svg",
+          "code": "src/ShoppingCartUp.tsx"
         },
         {
           "name": "ShoppingCartX",
@@ -19762,6 +19977,11 @@
           "name": "SquareF9",
           "svg": ".chakraIcons/icons/square-f9.svg",
           "code": "src/SquareF9.tsx"
+        },
+        {
+          "name": "SquareFilled",
+          "svg": ".chakraIcons/icons/square-filled.svg",
+          "code": "src/SquareFilled.tsx"
         },
         {
           "name": "SquareForbid2",
@@ -21424,6 +21644,16 @@
           "code": "src/TransferOut.tsx"
         },
         {
+          "name": "TransferVertical",
+          "svg": ".chakraIcons/icons/transfer-vertical.svg",
+          "code": "src/TransferVertical.tsx"
+        },
+        {
+          "name": "Transfer",
+          "svg": ".chakraIcons/icons/transfer.svg",
+          "code": "src/Transfer.tsx"
+        },
+        {
           "name": "TransformFilled",
           "svg": ".chakraIcons/icons/transform-filled.svg",
           "code": "src/TransformFilled.tsx"
@@ -22587,6 +22817,11 @@
           "name": "Xd",
           "svg": ".chakraIcons/icons/xd.svg",
           "code": "src/Xd.tsx"
+        },
+        {
+          "name": "Xxx",
+          "svg": ".chakraIcons/icons/xxx.svg",
+          "code": "src/Xxx.tsx"
         },
         {
           "name": "YinYangFilled",
