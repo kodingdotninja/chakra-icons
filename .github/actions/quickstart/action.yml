@@ -1,0 +1,17 @@
+name: Quickstart Setup
+description: Setup git user, Node.js, and pnpm cache
+
+runs:
+  using: composite
+  steps:
+    - shell: bash
+      run: git config user.email "robot@koding.ninja" && git config user.name "kdnjbot"
+    - uses: pnpm/action-setup@v2
+      with:
+        version: 8
+    - uses: actions/setup-node@v3
+      with:
+        cache: pnpm
+        node-version-file: ".nvmrc"
+    - shell: bash
+      run: pnpm install
