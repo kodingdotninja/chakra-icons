@@ -1,0 +1,6 @@
+packages:
+  - "packages/*"
+  - "packages/@chakra-icons/*"
+  - "templates/*"
+  - "tooling/*"
+  - "website"
