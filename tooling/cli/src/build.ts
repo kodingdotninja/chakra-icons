@@ -1,9 +1,8 @@
-import { BuildOptions, MetaIcon, Sources } from "./types";
-
 import babelGenerator from "@babel/generator";
 import * as t from "@babel/types";
 import { pascalCase } from "change-case";
-import { cli, Option } from "create-chakra-icons";
+import type { Option } from "create-chakra-icons";
+import { cli } from "create-chakra-icons";
 import degit from "degit";
 import * as A from "fp-ts/Array";
 import * as E from "fp-ts/Either";
@@ -14,7 +13,8 @@ import * as TE from "fp-ts/TaskEither";
 import * as fs from "fs/promises";
 import * as _glob from "glob";
 import * as path from "path";
-import { promisify } from "util";
+
+import type { BuildOptions, MetaIcon, Sources } from "./types";
 
 const metaIconDefault = (
   name: MetaIcon["name"],
@@ -31,39 +31,39 @@ const metaIconDefault = (
   sources: [],
 });
 
-const prefixWhenNumeric = (prefix: string) => (n: string) => /^\d.*$/.test(n) ? `${prefix}${n}` : n;
+const prefixWhenNumeric = (prefix: string) => (n: string) => (/^\d.*$/.test(n) ? `${prefix}${n}` : n);
 
 const moduleName = flow(prefixWhenNumeric("I"), pascalCase, S.replace(/[^A-Z0-9]/gi, ""));
 
 const setSources =
   (metaIcon: MetaIcon) =>
-    (beSources: string[]): MetaIcon => {
-      const createSource = (sources: Sources[], svg: string) => {
-        const { dir, name: _name } = path.parse(svg);
+  (beSources: string[]): MetaIcon => {
+    const createSource = (sources: Sources[], svg: string) => {
+      const { dir, name: _name } = path.parse(svg);
 
         const name = moduleName(_name);
 
-        const entryPoint = path.join(
-          dir.replace(path.join(metaIcon.clonePath, metaIcon.iconPath), metaIcon.sourcePath),
-          "index.ts",
-        );
+      const entryPoint = path.join(
+        dir.replace(path.join(metaIcon.clonePath, metaIcon.iconPath), metaIcon.sourcePath),
+        "index.ts",
+      );
 
-        const entry = { name, svg, code: path.join(path.dirname(entryPoint), `${name}.tsx`) };
+      const entry = { name, svg, code: path.join(path.dirname(entryPoint), `${name}.tsx`) };
 
-        const maybeIcon = sources.find((icon) => S.Eq.equals(icon.entryPoint, entryPoint));
+      const maybeIcon = sources.find((icon) => S.Eq.equals(icon.entryPoint, entryPoint));
 
-        if (maybeIcon) {
-          sources[sources.indexOf(maybeIcon)]?.entries.push(entry);
-          return sources;
-        }
+      if (maybeIcon) {
+        sources[sources.indexOf(maybeIcon)]?.entries.push(entry);
+        return sources;
+      }
 
-        return [...sources, { entryPoint, entries: [entry] }];
-      };
-      return {
-        ...metaIcon,
-        sources: beSources.reduce((a, b) => createSource(a, b), metaIcon.sources),
-      };
+      return [...sources, { entryPoint, entries: [entry] }];
     };
+    return {
+      ...metaIcon,
+      sources: beSources.reduce((a, b) => createSource(a, b), metaIcon.sources),
+    };
+  };
 
 const writeFile = (file: string, data: string) =>
   TE.tryCatch(() => fs.mkdir(path.dirname(file), { recursive: true }).then(() => fs.writeFile(file, data)), E.toError);
@@ -73,7 +73,7 @@ const readFile = (file: string, options: BaseEncodingOptions) =>
   TE.tryCatch(() => fs.readFile(file, options), E.toError);
   */
 
-const glob = (target: string) => TE.tryCatch(() => promisify(_glob.default)(target), E.toError);
+const glob = (target: string) => TE.tryCatch(() => _glob.glob(target), E.toError);
 
 const cloneRepository = (metaIcon: MetaIcon) =>
   TE.tryCatch(
@@ -87,7 +87,7 @@ const cloneRepository = (metaIcon: MetaIcon) =>
 const findSvgs = (metaIcon: MetaIcon) =>
   pipe(path.join(metaIcon.clonePath, metaIcon.iconPath, "**", "*.svg"), glob, TE.map(setSources(metaIcon)));
 
-const createIcons = (options: Option) => TE.tryCatch(async () => cli.main(options), E.toError);
+const createIcons = (options: Option) => TE.tryCatch(() => Promise.resolve(cli.main(options)), E.toError);
 
 const generateIcons = (metaIcon: MetaIcon) =>
   pipe(
@@ -95,7 +95,7 @@ const generateIcons = (metaIcon: MetaIcon) =>
     A.map(({ entries }) =>
       pipe(
         entries,
-        A.map(({ name: n, svg: i, code: o }) => createIcons({ n, i, o, ts: true })),
+        A.map(({ name: n, svg: i, code: o }) => createIcons({ n, i, o, ts: true, T: "C", useFilename: true })),
       ),
     ),
     A.flatten,
@@ -216,6 +216,7 @@ const generateRootEntryPoint = (metaIcon: MetaIcon) =>
           path.join(metaIcon.sourcePath, "index.ts"),
           pipe(
             metaIcon.sources,
+            // eslint-disable-next-line @typescript-eslint/unbound-method
             A.map((source) => pipe(source.entryPoint, path.dirname, path.basename)),
             A.map((source) => genrateExportAllNamespace(source, "./".concat(source))),
             (arrs) => arrs.join("\r\n"),

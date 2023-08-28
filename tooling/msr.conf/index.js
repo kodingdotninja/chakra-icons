@@ -12,7 +12,7 @@ module.exports = {
         preset: "angular",
         releaseRules: [
           { type: "docs", release: false },
-          { type: "refactor", release: "patch" }
+          { type: "refactor", release: "patch" },
         ],
         parserOpts: {
           noteKeywords: ["BREAKING CHANGE", "BREAKING CHANGES"],

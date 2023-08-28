@@ -1,4 +1,4 @@
-export type Option = {
+export interface Option {
   n?: string | undefined;
   name?: string | undefined;
   i?: string | undefined;
@@ -10,11 +10,10 @@ export type Option = {
   useFilename?: boolean | undefined;
   appendFile?: boolean | undefined;
   ignoreImport?: boolean | undefined;
+  T?: string | undefined;
 }
 
-declare module "create-chakra-icons" {
-  namespace cli {
-    export function main(option: Option): void;
-    export function pipeline(option: Option): void;
-  }
-}
+declare const cli: {
+  main: (option: Option) => void;
+  pipeline: (option: Option) => void;
+};

@@ -1,4 +1,4 @@
-import { createIcon } from "@chakra-ui/react";
+import { createIcon } from "@chakra-ui/icon";
 
 export const Simple = createIcon({
   displayName: "Simple",

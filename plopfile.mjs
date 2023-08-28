@@ -1,6 +1,6 @@
 const updateRootReadmeTemplate =
   "| [@chakra-icons/{{name}}](https://github.com/kodingdotninja/chakra-icons/tree/main/packages/@chakra-icons/{{name}})" +
-  " | ✅  | [![@chakra-icons/{{name}} version](https://badgen.net/npm/v/@chakra-icons/{{name}}?color=green)](https://www.npmjs.com/package/@chakra-icons/{{name}})" +
+  " | ✅ | [![@chakra-icons/{{name}} version](https://badgen.net/npm/v/@chakra-icons/{{name}}?color=green)](https://www.npmjs.com/package/@chakra-icons/{{name}})" +
   " [![@chakra-icons/{{name}} treeshakeble](https://badgen.net/bundlephobia/tree-shaking/@chakra-icons/{{name}}?color=blue)](https://bundlephobia.com/package/@chakra-icons/{{name}})" +
   " |\n<!-- APPEND_CHAKRA_ICONS_HERE -->";
 
@@ -50,10 +50,10 @@ const actions = [
   },
 ];
 
-export default function init(plop) {
+export default (plop) => {
   plop.setGenerator("init", {
     description: "init icons projects in @chakra-icons",
     prompts, // array of inquirer prompts
     actions, // array of actions
   });
-}
+};

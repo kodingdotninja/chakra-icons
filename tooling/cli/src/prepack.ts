@@ -1,7 +1,9 @@
-import { PrepackOptions } from "./types";
+/* eslint-disable @typescript-eslint/no-unsafe-return */
 
 import * as fs from "fs/promises";
 import path from "path";
+
+import type { PrepackOptions } from "./types";
 
 const noOp = <T = unknown>(a: T) => a;
 const ifThen =
@@ -9,18 +11,19 @@ const ifThen =
   (a: A) =>
     (condition ? whenTrue : whenFalse)(a);
 
-type json<T> = { [key: string]: string | number | boolean | string[] | { [key: string]: T } };
-type iPkgJson = json<iPkgJson>;
+type Json<T> = Record<string, string | number | boolean | string[] | Record<string, T>>;
+// @ts-expect-error - ignore
+type IPkgJson = Json<IPkgJson>;
 
-const removeDevDependencies_ = ({ devDependencies: _, ...pkgJson }: iPkgJson) => ({ ...pkgJson });
-const addPeerDependencies_ = (peerDependencies: { [key: string]: string }) => (pkgJson: iPkgJson) => ({
+const removeDevDependencies_ = ({ devDependencies: _, ...pkgJson }: IPkgJson) => ({ ...pkgJson });
+const addPeerDependencies_ = (peerDependencies: Record<string, string>) => (pkgJson: IPkgJson) => ({
   ...pkgJson,
   peerDependencies,
 });
 
 const addPkgScripts =
-  (newScripts: { [key: string]: string }) =>
-  ({ scripts, ...pkgJson }: iPkgJson) => ({
+  (newScripts: Record<string, string>) =>
+  ({ scripts, ...pkgJson }: IPkgJson) => ({
     ...pkgJson,
     scripts: {
       ...scripts,
@@ -31,6 +34,7 @@ const addPkgScripts =
 const mapDeps = (arr: string[]) =>
   arr.reduce((acc, cur) => {
     const pkgVerRegex =
+      // eslint-disable-next-line prefer-named-capture-group
       /(^(@[a-z0-9-~][a-z0-9-._~]*\/)?[a-z0-9-~][a-z0-9-._~]*)@([~^]?([\dvx*]+(?:[-.](?:[\dx*]+|alpha|beta))*))?$/;
     const [, name, , version] = pkgVerRegex.exec(cur) ?? [];
     if (!name) throw Error("Package Name invalid");
@@ -41,6 +45,8 @@ const mapDeps = (arr: string[]) =>
 const mapScripts = (arr: string[]) =>
   arr.reduce((acc, cur) => {
     const [name, version] = cur.split("=");
+    if (!name) throw Error("Package Name invalid");
+    if (!version) throw Error("Package Version invalid");
     return { ...acc, [name]: version };
   }, {});
 
@@ -76,3 +82,5 @@ export const prepack = ({ removeDevDeps = false, addPeerDeps = [], addScripts: a
     .then((pkgJson) => JSON.stringify(pkgJson, null, 2))
     .then(writePkgJson);
 };
+
+/* eslint-enable @typescript-eslint/no-unsafe-return */
