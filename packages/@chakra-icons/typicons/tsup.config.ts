@@ -3,8 +3,8 @@ import { defineConfig } from "tsup";
 export default defineConfig({
   clean: true,
   dts: true,
-  inject: ["../../../react-import.js"],
-  entryPoints: ["src/index.ts"],
+  entry: ["src/index.ts"],
+  external: ["react", "@chakra-ui/icon"],
   format: ["cjs", "esm"],
-  external: ["react", "@chakra-ui/react", "react/jsx-runtime"],
+  treeshake: true,
 });
