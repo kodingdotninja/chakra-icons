@@ -1,6 +1,6 @@
 name: CI
 
-on: 
+on:
   pull_request:
     branches: [main, beta]
     types: [opened, synchronize]
@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: ./.github/actions/setup-node
+      - uses: ./.github/actions/quickstart
       - uses: wagoid/commitlint-github-action@v5
         env:
           NODE_PATH: ${{ github.workspace }}/node_modules
@@ -20,21 +20,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: ./.github/actions/setup-node
-
-      - name: validate (lint)
-        run: |
-          yarn lint --no-deps --scope="@chakra-icons/*" --scope="create-*" --parallel 
+      - uses: ./.github/actions/quickstart
+      - run: pnpm --filter="@chakra-icons/*" --filter="create-*" run lint
 
   test:
     needs: init
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: ./.github/actions/setup-node
-
-      - name: run test
-        run: yarn test 
+      - uses: ./.github/actions/quickstart
+      - run: pnpm run test
 
   build:
     env:
@@ -43,7 +38,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: ./.github/actions/setup-node
-      
-      - name: build project
-        run: yarn build
+      - uses: ./.github/actions/quickstart
+      - run: pnpm run build

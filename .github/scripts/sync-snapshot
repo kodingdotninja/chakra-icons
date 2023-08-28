@@ -3,8 +3,7 @@
 changes=$(git diff-index --name-only HEAD --)
 echo "Checking... modified snapshot.json in @chakra-icons/*"
 
-for maybe_snapshot in $changes 
-do
+for maybe_snapshot in $changes; do
   file_name=$(basename $maybe_snapshot)
   if [ $file_name = "snapshot.json" ]; then
     scope=$(basename $(dirname $maybe_snapshot))
@@ -19,7 +18,7 @@ echo "Total Snapshot changes:" $(git rev-list --count HEAD ^origin/main)
 
 echo "Clean git stage"
 
-git checkout . 
+git checkout .
 git clean -fd .
 
 exit 0
