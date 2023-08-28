@@ -1,11 +1,13 @@
 #!/usr/bin/env node
-import { clean } from "./src/clean";
-import { prepack } from "./src/prepack";
-import pkgJson from "./package.json";
-import { build, BuildOptions, init, InitOptions, PrepackOptions } from "./src";
 
 import arg from "arg";
 import * as ruins from "ruins-ts";
+
+import pkgJson from "./package.json";
+import type { BuildOptions, InitOptions, PrepackOptions } from "./src";
+import { build, init } from "./src";
+import { clean } from "./src/clean";
+import { prepack } from "./src/prepack";
 
 type Command =
   | { type: "prepack"; options: PrepackOptions }
@@ -119,10 +121,10 @@ const parseArgs = (): Command => {
 
 const help = () =>
   process.stdout.write(`
-USAGE: ${pkgJson?.name} <SUBCOMMAND>
+USAGE: ${pkgJson.name} <SUBCOMMAND>
 
 SUBCOMMAND:
-  init:   init -n <NAME> -r <ORGS/REPO-NAME> -i <PATH/SVG> 
+  init:   init -n <NAME> -r <ORGS/REPO-NAME> -i <PATH/SVG>
   build:  build -n <NAME> -r <ORGS/REPO-NAME> -i <PATH/SVG>
     OPTIONS:
       --snapshot <NAME>, -S <NAME>  create snapshot information (.json).
@@ -131,14 +133,14 @@ SUBCOMMAND:
 
   prepack: tools for manage package.json fields
     OPTIONS:
-      --add-peer-deps, --ap     add peer dependencies (e.g --ap "react@^17,react-dom@^17") 
+      --add-peer-deps, --ap     add peer dependencies (e.g --ap "react@^17,react-dom@^17")
       --add-scripts, --ax       add new script in scripts field of package.json (e.g --ax "prcommit=commitlint")
-    FLAGS: 
+    FLAGS:
       --remove-dev-deps, --rd   remove field devDependencies in current work directory (package.json)
 
 `);
 
-const version = () => console.log(pkgJson?.version);
+const version = () => console.log(pkgJson.version);
 
 const fail = (e: unknown) => {
   console.log("something wrong :( ");
@@ -158,7 +160,7 @@ const run = async (command: Command) => {
       return ruins
         .fromTaskEither(clean(command.options))
         .then((files) => {
-          console.log(`Clean ${files.length} files`);
+          console.log(`Clean ${(files as unknown[]).length} files`);
         })
         .catch((e) => fail(e));
     case "fail":

@@ -1,4 +1,4 @@
-import { MetaIcon } from "./types";
+import type { MetaIcon } from "./types";
 
 export type InitOptions = Omit<MetaIcon, "sources" | "sourcePath" | "clonePath">;
 

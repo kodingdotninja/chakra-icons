@@ -25,4 +25,4 @@ const App = () => (
 );
 ```
 
-You just need to change `IconName` with the specific icon name that we are provided, See [List Available Icons](https://github.com/kodingdotninja/chakra-icons/tree/main/packages/@chakra-icons/bootstrap/snapshot.json).
+You just need to change `IconName` with the specific icon name that we are provided, See [List Available Icons](https://github.com/kodingdotninja/chakra-icons/tree/main/packages/@chakra-icons/tabler-icons/snapshot.json).

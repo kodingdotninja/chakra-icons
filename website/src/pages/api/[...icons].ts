@@ -1,16 +1,15 @@
-import { ApiIcon, MetaIcon, ResponseIcon, Source, Sources } from "../../types";
-
 import fs from "fs/promises";
 import fz from "fuzzysearch";
 import { glob } from "glob";
-import { NextApiRequest, NextApiResponse } from "next";
-import { promisify } from "util";
+import type { NextApiRequest, NextApiResponse } from "next";
+
+import type { ApiIcon, MetaIcon, ResponseIcon, Source, Sources } from "../../types";
 
 const getIcons = async () => {
-  const snapshots: Promise<string>[] = await promisify(glob)("../packages/@chakra-icons/**/snapshot.json").then(
-    (maybeSnapshots) => maybeSnapshots.map((snapshotPath) => fs.readFile(snapshotPath, { encoding: "utf8" })),
+  const snapshots: Promise<string>[] = await glob("../packages/@chakra-icons/**/snapshot.json").then((maybeSnapshots) =>
+    maybeSnapshots.map((snapshotPath) => fs.readFile(snapshotPath, { encoding: "utf8" })),
   );
-  const metaIcons: MetaIcon[] = await Promise.all([...snapshots]).then((all) => all.map((j) => JSON.parse(j)));
+  const metaIcons = await Promise.all([...snapshots]).then((all) => all.map((j) => JSON.parse(j) as MetaIcon));
 
   return ({ limit, q, qCreator }: { limit?: number; q?: string; qCreator?: string }): [ApiIcon[], number, string[]] => {
     const icons = metaIcons.flatMap((metaIcon) =>
@@ -39,7 +38,7 @@ const getIcons = async () => {
   };
 };
 
-export const getData = async (q: string, qCreator: string, limit: number = 50) => {
+export const getData = async (q: string, qCreator: string, limit = 50) => {
   const icons = await getIcons();
   const [data, total, creators] = icons({ limit, q, qCreator });
   const response: ResponseIcon = {
@@ -53,7 +52,7 @@ export const getData = async (q: string, qCreator: string, limit: number = 50) =
 };
 const toInt = (a: any): number => a | 0; // eslint-disable-line no-bitwise, @typescript-eslint/no-explicit-any
 
-export default async function handler(req: NextApiRequest, res: NextApiResponse) {
+export default async (req: NextApiRequest, res: NextApiResponse) => {
   const { q, qCreator, limit } = req.query;
 
   if (!Array.isArray(q) && !Array.isArray(limit) && !Array.isArray(qCreator)) {
@@ -63,4 +62,4 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
       res.status(200).json(data);
     }
   }
-}
+};

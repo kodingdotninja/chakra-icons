@@ -23,9 +23,8 @@ const ast = require("./ast");
  * })
  */
 const createChakraIcon = (...sources) => {
-  // eslint-disable-next-line no-shadow
   const isTypescript = sources.some(({ isTypescript }) => isTypescript);
-  // eslint-disable-next-line no-shadow
+
   const isIgnoreImport = sources.some(({ isIgnoreImport }) => isIgnoreImport);
 
   const perFileCode = ({ source: svg, displayName, outputType }) => {
@@ -94,7 +93,7 @@ const createChakraIcon = (...sources) => {
     svgCodes.some(hasArrowFunctionExpression) ? "Icon" : "",
     svgCodes.some(hasCallExpression) ? "createIcon" : "",
   ].filter(isNotEmptyString);
-  const program = ast.toSource(ast.toImportDeclaration("@chakra-ui/react", ...imports), ...svgCodes);
+  const program = ast.toSource(ast.toImportDeclaration("@chakra-ui/icon", ...imports), ...svgCodes);
   return program;
 };
 

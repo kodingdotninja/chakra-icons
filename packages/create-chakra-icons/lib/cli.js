@@ -1,5 +1,3 @@
-/* eslint-disable new-cap */
-
 const { name: packageName, version: packageVersion } = require("../package.json");
 const Fs = require("fs");
 const Path = require("path");
@@ -10,7 +8,7 @@ const { stdout: output, stdin: input, exit, stderr: error } = require("process")
 
 const ENCODING = "utf-8";
 
-function pipeline(args) {
+const pipeline = (args) => {
   input.setEncoding(ENCODING);
   input.on("data", (data) => {
     if (data) {
@@ -37,25 +35,18 @@ function pipeline(args) {
         exportNamePrefix,
         outputType,
       });
-      return outputFile
-        ? isAppendFile
-          ? Fs.appendFile(Path.resolve(outputFile), source, (err) => {
-              if (err) {
-                error.write(err, () => exit(1));
-              }
-            })
-          : Fs.writeFile(Path.resolve(outputFile), source, (err) => {
-              if (err) {
-                error.write(err, () => exit(1));
-              }
-            })
-        : output.write(source);
+      if (!outputFile) return output.write(source);
+      return Fs[isAppendFile ? "appendFile" : "writeFile"](Path.resolve(outputFile), source, (err) => {
+        if (err) {
+          error.write(err, () => exit(1));
+        }
+      });
     }
     return null;
   });
-}
+};
 
-function main(args) {
+const main = (args) => {
   const {
     inputs,
     outputFile,
@@ -90,19 +81,12 @@ function main(args) {
       ),
     );
     // write output in output
-    return outputFile
-      ? isAppendFile
-        ? Fs.appendFile(Path.resolve(outputFile), source, (err) => {
-            if (err) {
-              error.write(err, () => exit(1));
-            }
-          })
-        : Fs.writeFile(Path.resolve(outputFile), source, (err) => {
-            if (err) {
-              error.write(err, () => exit(1));
-            }
-          })
-      : output.write(`${source}`);
+    if (!outputFile) return output.write(source);
+    return Fs[isAppendFile ? "appendFile" : "writeFile"](Path.resolve(outputFile), source, (err) => {
+      if (err) {
+        error.write(err, () => exit(1));
+      }
+    });
   } else if (version) {
     return output.write(packageVersion);
   }
@@ -155,34 +139,30 @@ OPTIONS:
 ${packageName} (version: ${packageVersion})
 `);
   return null;
-}
+};
 
-function getCommonOptions(args) {
-  return {
-    inputs: (args.i && [args.i]) || (args.input && [args.input]) || args._,
-    outputFile: args.o || args.output,
-    isAppendFile: args["append-file"] || false,
-    name: args.name || args.n || "Unamed",
-    isUseFilename: args["use-filename"] || false,
-    isTypescript: args.ts || args.typescript || false,
-    isIgnoreImport: args["ignore-import"] || false,
-    exportNameCase: args.C || args.case,
-    exportNameSuffix: args.S || args.suffix || "",
-    exportNamePrefix: args.P || args.prefix || "",
-    outputType: String(args.T || args.type),
-  };
-}
+const getCommonOptions = (args) => ({
+  inputs: (args.i && [args.i]) || (args.input && [args.input]) || args._,
+  outputFile: args.o || args.output,
+  isAppendFile: args["append-file"] || false,
+  name: args.name || args.n || "Unamed",
+  isUseFilename: args["use-filename"] || false,
+  isTypescript: args.ts || args.typescript || false,
+  isIgnoreImport: args["ignore-import"] || false,
+  exportNameCase: args.C || args.case,
+  exportNameSuffix: args.S || args.suffix || "",
+  exportNamePrefix: args.P || args.prefix || "",
+  outputType: String(args.T || args.type),
+});
 
-function createExportNamed(exportNameCase, exportNamePrefix, exportNameSuffix) {
-  return compose(
+const createExportNamed = (exportNameCase, exportNamePrefix, exportNameSuffix) =>
+  compose(
     (str) => stringToCase(str, exportNameCase),
     (str) => `${str}${exportNameSuffix}`,
     (str) => `${exportNamePrefix}${str}`,
   );
-}
 
-// eslint-disable-next-line no-shadow
-function stringToInput({
+const stringToInput = ({
   displayName,
   isUseFilename,
   exportNameCase,
@@ -192,7 +172,7 @@ function stringToInput({
   isTypescript,
   isIgnoreImport,
   outputType,
-}) {
+}) => {
   const exportNamed = createExportNamed(exportNameCase, exportNamePrefix, exportNameSuffix);
 
   return (acc, str) => {
@@ -223,11 +203,11 @@ function stringToInput({
     }
     return acc;
   };
-}
+};
 
-function createCode(...sources) {
+const createCode = (...sources) => {
   const icon = createChakraIcon(...sources);
   return BabelGenerator(icon).code;
-}
+};
 
 module.exports = { main, pipeline };

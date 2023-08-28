@@ -1,16 +1,14 @@
+import { Checkbox, Code, Input, SimpleGrid, Text } from "@chakra-ui/react";
+import type { GetStaticProps, InferGetStaticPropsType } from "next";
 import * as React from "react";
 
 import { Hero, Main, Overview } from "../components";
-import { ResponseIcon } from "../types";
-
+import type { ResponseIcon } from "../types";
 import { getData } from "./api/[...icons]";
 
-import { Checkbox, Code, Input, SimpleGrid, Text } from "@chakra-ui/react";
-import { GetStaticProps, InferGetStaticPropsType } from "next";
-
-type IndexProps = {
+interface IndexProps {
   icons: ResponseIcon | null;
-};
+}
 
 export const getStaticProps: GetStaticProps<IndexProps> = async (_ctx) => {
   const icons = await getData("", "", 50);
@@ -20,7 +18,7 @@ export const getStaticProps: GetStaticProps<IndexProps> = async (_ctx) => {
 };
 
 const fetchIcons = ({ q, qCreator }: { q?: string; qCreator?: string }): Promise<ResponseIcon> =>
-  fetch(`/api/icons?q=${q ?? ""}&qCreator=${qCreator ?? ""}`).then((res) => res.json());
+  fetch(`/api/icons?q=${q ?? ""}&qCreator=${qCreator ?? ""}`).then((res) => res.json() as Promise<ResponseIcon>);
 
 const Index = (props: InferGetStaticPropsType<typeof getStaticProps>) => {
   const { icons: _icons } = props;
@@ -37,7 +35,7 @@ const Index = (props: InferGetStaticPropsType<typeof getStaticProps>) => {
   };
 
   React.useEffect(() => {
-    fetchIcons({ q: querySearch, qCreator: queryCreator.join(" ") ?? "" })
+    fetchIcons({ q: querySearch, qCreator: queryCreator.join(" ") || "" })
       .then(setIcons)
       .catch(console.error);
   }, [querySearch, queryCreator]);
@@ -57,10 +55,10 @@ const Index = (props: InferGetStaticPropsType<typeof getStaticProps>) => {
         width={["full", "full", "50vw"]}
       />
       <SimpleGrid columns={[2, 3, 4]} spacing={4}>
-        {icons?.creators?.map((item) => (
+        {icons?.creators.map((item) => (
           <Checkbox
             key={item}
-            checked={!!queryCreator.find((i) => i === item)}
+            checked={Boolean(queryCreator.find((i) => i === item))}
             color={queryCreator.find((i) => i === item) ? "blue.500" : "gray.300"}
             onChange={() => {
               setQueryCreator((oldState) => {

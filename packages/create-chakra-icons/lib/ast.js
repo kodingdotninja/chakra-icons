@@ -13,7 +13,7 @@ const toLiteral = (val) =>
     [Array.isArray(val)]: () => t.arrayExpression(val.map((v) => toLiteral(v))),
     [t.isLiteral(val) || t.isArrayExpression(val)]: () => val,
     // TODO: handle more type
-  }.true());
+  }).true();
 
 /**
  * @memberof ast
