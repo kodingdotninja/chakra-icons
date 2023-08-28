@@ -1,13 +1,10 @@
 {
-  "baseBranch": "origin/main",
-  "globalDependencies": ["patches/**", "yarn.lock"],
+  "$schema": "https://turborepo.org/schema.json",
+  "globalDependencies": ["pnpm-lock.yaml"],
   "pipeline": {
     "build": {
       "dependsOn": ["^build"],
       "outputs": [".next/**", "dist/**", ".chakraIcons/**"]
-    },
-    "test": {
-      "cache": false
     },
     "clean": {
       "cache": false
@@ -17,10 +14,13 @@
       "outputs": [".next/**", "dist/**", "out/**"]
     },
     "format": {
-      "cache": false
+      "outputs": []
     },
     "lint": {
       "dependsOn": ["^lint"]
+    },
+    "test": {
+      "outputs": []
     }
   }
 }
