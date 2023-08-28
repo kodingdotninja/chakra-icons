@@ -20,46 +20,22 @@
     "#": "-------------------------------------------------------------------"
   },
   "dependencies": {
-    "@babel/generator": "^7",
-    "@babel/types": "^7",
-    "arg": "^5",
-    "create-chakra-icons": "1.2.0",
-    "fp-ts": "^2",
-    "glob": "^7",
-    "change-case": "^4",
-    "degit": "^2",
-    "ruins-ts": "^0.0.3"
+    "@babel/generator": "^7.22.10",
+    "@babel/types": "^7.22.11",
+    "arg": "^5.0.2",
+    "change-case": "^4.1.2",
+    "create-chakra-icons": "*",
+    "degit": "npm:tiged",
+    "fp-ts": "^2.16.1",
+    "glob": "^10.3.3",
+    "ruins-ts": "^0.0.4"
   },
   "devDependencies": {
-    "@tooling/tsconfig": "*",
-    "eslint": "^8",
-    "eslint-config-kdnj": "^2",
-    "eslint-plugin-fp-ts": "^0",
-    "tsup": "^5",
-    "typescript": "^4"
-  },
-  "eslintConfig": {
-    "extends": [
-      "eslint-config-kdnj",
-      "plugin:fp-ts/recommended",
-      "plugin:fp-ts/recommended-requiring-type-checking"
-    ],
-    "root": true
-  },
-  "lint-staged": {
-    "*.{json,md}": [
-      "yarn workspace @chakra-icons/cli prettier --write"
-    ],
-    "**/*.{js,cjs,mjs}": [
-      "yarn workspace @chakra-icons/cli eslint --fix"
-    ]
-  },
-  "prettier": {
-    "endOfLine": "auto",
-    "printWidth": 120,
-    "semi": true,
-    "singleQuote": false,
-    "trailingComma": "all"
+    "@types/degit": "^2.8.3",
+    "eslint": "^8.47.0",
+    "eslint-plugin-fp-ts": "^0.3.2",
+    "tsup": "^7.2.0",
+    "typescript": "^5.2.2"
   },
   "files": [
     "dist/"

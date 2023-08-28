@@ -1,26 +1,8 @@
 {
+  "extends": "@kodingdotninja/style-guide/tsconfig/base.json",
   "compilerOptions": {
-    "target": "es5",
-    "module": "esnext",
-    "lib": ["dom", "esnext"],
-    "declaration": true,
-    "sourceMap": true,
+    "jsx": "preserve",
     "moduleResolution": "node",
-    "skipLibCheck": true,
-    "strict": true,
-    "isolatedModules": true,
-    "noFallthroughCasesInSwitch": true,
-    "suppressImplicitAnyIndexErrors": true,
-    "noImplicitAny": true,
-    "strictFunctionTypes": true,
-    "strictNullChecks": true,
-    "strictPropertyInitialization": true,
-    "jsx": "react-jsx",
-    "esModuleInterop": true,
-    "resolveJsonModule": true,
-    "allowSyntheticDefaultImports": true,
-    "downlevelIteration": true,
-    "incremental": false,
-    "declarationMap": true
+    "target": "esnext"
   }
 }

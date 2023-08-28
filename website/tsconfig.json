@@ -1,15 +1,5 @@
 {
-  "extends": "@tooling/tsconfig/next.json",
+  "extends": "@kodingdotninja/style-guide/tsconfig/next.json",
   "exclude": ["node_modules"],
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
-  "compilerOptions": {
-    "target": "es5",
-    "lib": ["dom", "dom.iterable", "esnext"],
-    "allowJs": true,
-    "noEmit": true,
-    "incremental": true,
-    "module": "esnext",
-    "resolveJsonModule": true,
-    "jsx": "preserve"
-  }
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"]
 }

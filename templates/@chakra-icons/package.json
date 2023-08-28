@@ -24,19 +24,17 @@
     "build": "chakra-icons build -r '{{repository}}' -n {{name}} -i {{iconPath}} -S snapshot.json -E",
     "clean": "chakra-icons clean -r '{{repository}}' -n {{name}} -i {{iconPath}}",
     "format": "prettier --write README.md snapshot.json",
-    "postbuild": "tsup && yarn format"
+    "postbuild": "tsup && prettier --write README.md snapshot.json"
   },
   "devDependencies": {
-    "@chakra-ui/react": "^1",
     "@chakra-icons/cli": "*",
-    "@tooling/tsconfig": "*",
-    "tsup": "^5"
+    "tsup": "^7.2.0"
   },
   "peerDependencies": {
-    "@chakra-ui/react": ">=1"
+    "@chakra-ui/icon": "*"
   },
-  "license": "MIT",
   "publishConfig": {
     "access": "public"
-  }
+  },
+  "license": "MIT"
 }
