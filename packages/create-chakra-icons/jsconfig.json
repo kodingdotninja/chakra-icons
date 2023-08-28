@@ -1,5 +1,5 @@
 {
-  "extends": "@tooling/tsconfig/base.json",
+  "extends": "@kodingdotninja/style-guide/tsconfig/base.json",
   "exclude": ["node_modules"],
   "include": ["**/*.js", "**/*.cjs", "**/*.mjs"]
 }

@@ -1,79 +1,44 @@
 {
   "name": "@kodingdotninja/chakra-icons",
   "version": "0.0.0",
-  "workspaces": [
-    "tooling/*",
-    "packages/*",
-    "packages/@chakra-icons/*",
-    "website",
-    "!website/**",
-    "!tooling/*.conf/**"
-  ],
+  "packageManager": "pnpm@8.7.0",
   "scripts": {
     "# general commands": "--------------------------------------------------",
-    "build": "turbo run build",
-    "test": "turbo run test",
-    "clean": "turbo run clean",
-    "clear": "yarn clean",
-    "postclear": "rimraf **/node_modules",
-    "deduplicate": "npx yarn-deduplicate && yarn install",
-    "lint": "turbo run lint",
-    "postinstall": "patch-package",
-    "prepare": "husky install",
-    "purge": "shx rm -rf node_modules/.cache/ packages/**/.turbo/ website/.turbo/",
-    "prerelease": "yarn build",
-    "release": "multi-semantic-release",
+    "build": "turbo run build --filter='!@chakra-icons/{{name}}'",
+    "clean": "turbo run clean --filter='!@chakra-icons/{{name}}'",
+    "clear": "turbo run clean --filter='!@chakra-icons/{{name}}'",
     "commit": "commit",
-    "# scope commands": "----------------------------------------------------",
-    "website": "yarn workspace website",
-    "cci": "yarn workspace create-chakra-icons",
-    "cli": "yarn workspace @chakra-icons/cli",
+    "lint": "pnpm -r lint",
     "plop": "plop",
-    "postplop": "yarn install",
+    "postclear": "shx rm -rf **/node_modules",
+    "postplop": "pnpm install",
+    "prepare": "husky install",
+    "prerelease": "turbo run build",
+    "release": "multi-semantic-release",
+    "test": "turbo run test --filter='!@chakra-icons/{{name}}'",
+    "# scope commands": "----------------------------------------------------",
+    "cci": "pnpm -F create-chakra-icons",
+    "cli": "pnpm -F @chakra-icons/cli",
+    "website": "pnpm -F website",
     "#": "-------------------------------------------------------------------"
   },
   "devDependencies": {
-    "@commitlint/cli": "^16",
-    "@commitlint/config-conventional": "^16",
-    "@commitlint/prompt-cli": "^16",
-    "@types/babel-types": "^7",
-    "@types/babel__generator": "^7",
-    "@types/degit": "^2",
-    "@types/glob": "^7",
-    "@types/node": "^14",
-    "@types/react": "^17",
-    "@types/react-dom": "^17",
-    "commitlint-config-squash-pr": "^1",
-    "husky": "^7",
-    "lint-staged": "^12",
-    "multi-semantic-release": "^2",
-    "patch-package": "^6",
-    "plop": "^3",
-    "postinstall-postinstall": "^2",
-    "shx": "^0",
-    "turbo": "^1"
+    "@commitlint/cli": "^17.7.1",
+    "@commitlint/config-conventional": "^17.7.0",
+    "@commitlint/prompt-cli": "^17.7.1",
+    "@kodingdotninja/style-guide": "^4.0.1",
+    "@types/babel__generator": "^7.6.4",
+    "@types/glob": "^8.1.0",
+    "@types/node": "^18.17.6",
+    "@types/react": "^18.2.21",
+    "@types/react-dom": "^18.2.7",
+    "commitlint-config-squash-pr": "^1.1.0",
+    "husky": "^8.0.3",
+    "multi-semantic-release": "^3.0.2",
+    "plop": "^3.1.2",
+    "shx": "^0.3.4",
+    "turbo": "^1.10.13"
   },
-  "eslintConfig": {
-    "extends": [
-      "eslint-config-kdnj"
-    ],
-    "ignorePatterns": [
-      "node_modules"
-    ],
-    "root": true
-  },
-  "lint-staged": {
-    "*.{json,md}": [
-      "prettier --write"
-    ]
-  },
-  "prettier": {
-    "endOfLine": "auto",
-    "printWidth": 120,
-    "semi": true,
-    "singleQuote": false,
-    "trailingComma": "all"
-  },
-  "private": true,
-  "packageManager": "yarn@1.22.17"
+  "prettier": "@kodingdotninja/style-guide/prettier",
+  "private": true
 }

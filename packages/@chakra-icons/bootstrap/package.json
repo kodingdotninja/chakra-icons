@@ -20,24 +20,21 @@
     "dist/",
     "src/"
   ],
+  "scripts": {
+    "build": "chakra-icons build -r 'twbs/icons' -n bootstrap -i icons -S snapshot.json -E",
+    "clean": "chakra-icons clean -r 'twbs/icons' -n bootstrap -i icons",
+    "format": "prettier --write README.md snapshot.json",
+    "postbuild": "tsup && prettier --write README.md snapshot.json"
+  },
   "devDependencies": {
-    "@chakra-ui/react": "^1",
-    "@chakra-icons/cli": "1.0.2",
-    "@tooling/tsconfig": "*",
-    "tsup": "^5"
+    "@chakra-icons/cli": "*",
+    "tsup": "^7.2.0"
   },
   "peerDependencies": {
-    "@chakra-ui/react": ">=1"
+    "@chakra-ui/icon": "*"
   },
-  "license": "MIT",
   "publishConfig": {
     "access": "public"
   },
-  "scripts": {
-    "build": "chakra-icons build -r 'https://github.com/twbs/icons' -n bootstrap -i icons -S snapshot.json -E",
-    "clean": "chakra-icons clean -r 'https://github.com/twbs/icons' -n bootstrap -i icons",
-    "format": "prettier --write README.md snapshot.json",
-    "postbuild": "tsup && yarn format",
-    "prepack": "chakra-icons prepack --remove-dev-deps"
-  }
+  "license": "MIT"
 }

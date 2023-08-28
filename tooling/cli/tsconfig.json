@@ -1,8 +1,7 @@
 {
-  "extends": "@tooling/tsconfig/base.json",
+  "extends": "@kodingdotninja/style-guide/tsconfig/base.json",
   "compilerOptions": {
-    "lib": ["es2019"],
-    "noEmit": true,
-    "resolveJsonModule": true
+    "moduleResolution": "node",
+    "target": "esnext"
   }
 }
