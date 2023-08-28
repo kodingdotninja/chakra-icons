@@ -12,16 +12,12 @@
     "editor.defaultFormatter": "dbaeumer.vscode-eslint"
   },
   "css.validate": false,
-  "eslint.packageManager": "yarn",
   "eslint.workingDirectories": [
-    {
-      "!cwd": false,
-      "pattern": "packages/*"
-    },
-    {
-      "!cwd": false,
-      "pattern": "website"
-    }
+    { "!cwd": false, "directory": "packages/create-chakra-icons" },
+    { "!cwd": false, "pattern": "packages/@chakra-icons/*" },
+    { "!cwd": false, "pattern": "templates/*" },
+    { "!cwd": false, "pattern": "tooling/*" },
+    { "!cwd": false, "directory": "website" }
   ],
-  "npm.packageManager": "yarn"
+  "npm.packageManager": "pnpm"
 }
