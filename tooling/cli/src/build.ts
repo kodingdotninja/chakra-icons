@@ -35,13 +35,40 @@ const prefixWhenNumeric = (prefix: string) => (n: string) => (/^\d.*$/.test(n) ?
 
 const moduleName = flow(prefixWhenNumeric("I"), pascalCase, S.replace(/[^A-Z0-9]/gi, ""));
 
+/**
+ * mapping for replacing icon names (e.g. duplicate or invalid icon names)
+ */
+const hotfixPkgIconNameReplace: [RegExp, Record<string, string>][] = [
+  [
+    /tabler-icons/i,
+    {
+      "device-game-pad": "device-dpad", // prevent conflict with `device-gamepad`
+    },
+  ],
+];
+
+const hotfixName = (metaIcon: MetaIcon) => (name: string) =>
+  pipe(
+    hotfixPkgIconNameReplace,
+    A.findFirst(([pattern]) => pattern.test(metaIcon.repository)),
+    O.fold(
+      () => name,
+      ([, maps]) =>
+        pipe(
+          maps[name],
+          O.fromNullable,
+          O.getOrElse(() => name),
+        ),
+    ),
+  );
+
 const setSources =
   (metaIcon: MetaIcon) =>
   (beSources: string[]): MetaIcon => {
     const createSource = (sources: Sources[], svg: string) => {
       const { dir, name: _name } = path.parse(svg);
 
-        const name = moduleName(_name);
+      const name = pipe(_name, hotfixName(metaIcon), moduleName);
 
       const entryPoint = path.join(
         dir.replace(path.join(metaIcon.clonePath, metaIcon.iconPath), metaIcon.sourcePath),
