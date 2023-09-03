@@ -1,8 +1,10 @@
 *.log
 *.tsbuildinfo
 .chakraIcons
+.direnv
 .DS_Store
 .env*
+.envrc
 .eslintcache
 .next
 .npm
