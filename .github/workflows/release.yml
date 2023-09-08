@@ -8,7 +8,7 @@ jobs:
   init:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - uses: ./.github/actions/quickstart
       - uses: wagoid/commitlint-github-action@v5
         env:
@@ -18,7 +18,7 @@ jobs:
     needs: init
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - uses: ./.github/actions/quickstart
       - run: pnpm --filter="@chakra-icons/*" --filter="create-*" run lint
 
@@ -26,7 +26,7 @@ jobs:
     needs: init
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - uses: ./.github/actions/quickstart
       - run: pnpm run test
 
@@ -36,7 +36,7 @@ jobs:
     needs: init
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - uses: ./.github/actions/quickstart
       - run: pnpm run build
 
@@ -44,7 +44,7 @@ jobs:
     needs: [validate, test, build]
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - uses: ./.github/actions/quickstart
       - env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
