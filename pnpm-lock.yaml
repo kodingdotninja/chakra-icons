@@ -290,37 +290,37 @@ importers:
     dependencies:
       '@chakra-icons/bootstrap':
         specifier: '*'
-        version: 1.0.0(@chakra-ui/react@2.8.0)
+        version: link:../packages/@chakra-icons/bootstrap
       '@chakra-icons/carbon':
         specifier: '*'
-        version: 1.0.0(@chakra-ui/react@2.8.0)
+        version: link:../packages/@chakra-icons/carbon
       '@chakra-icons/cli':
         specifier: '*'
         version: link:../tooling/cli
       '@chakra-icons/cryptocurrency-icons':
         specifier: '*'
-        version: 1.0.0(@chakra-ui/react@2.8.0)
+        version: link:../packages/@chakra-icons/cryptocurrency-icons
       '@chakra-icons/feather':
         specifier: '*'
-        version: 1.0.0(@chakra-ui/react@2.8.0)
+        version: link:../packages/@chakra-icons/feather
       '@chakra-icons/flat-icon':
         specifier: '*'
-        version: 1.0.0(@chakra-ui/react@2.8.0)
+        version: link:../packages/@chakra-icons/flat-icon
       '@chakra-icons/ionicons':
         specifier: '*'
-        version: 1.0.0(@chakra-ui/react@2.8.0)
+        version: link:../packages/@chakra-icons/ionicons
       '@chakra-icons/octicons':
         specifier: '*'
-        version: 1.0.0(@chakra-ui/react@2.8.0)
+        version: link:../packages/@chakra-icons/octicons
       '@chakra-icons/simple-line-icons':
         specifier: '*'
-        version: 1.0.0(@chakra-ui/react@2.8.0)
+        version: link:../packages/@chakra-icons/simple-line-icons
       '@chakra-icons/tabler-icons':
         specifier: '*'
-        version: 1.0.0(@chakra-ui/react@2.8.0)
+        version: link:../packages/@chakra-icons/tabler-icons
       '@chakra-icons/typicons':
         specifier: '*'
-        version: 1.0.0(@chakra-ui/react@2.8.0)
+        version: link:../packages/@chakra-icons/typicons
       '@chakra-ui/icons':
         specifier: ^2.1.0
         version: 2.1.0(@chakra-ui/system@2.6.0)(react@18.2.0)
@@ -574,86 +574,6 @@ packages:
       '@babel/helper-string-parser': 7.22.5
       '@babel/helper-validator-identifier': 7.22.5
       to-fast-properties: 2.0.0
-
-  /@chakra-icons/bootstrap@1.0.0(@chakra-ui/react@2.8.0):
-    resolution: {integrity: sha512-xiOsqUtn9j2KjaobLxL66/6Dgf5iTgBJ97GZUHIqzmm9uchb6Wb6Ys2kTzAL/Q0IklbIgZ/hHL70I+Rr2C+IMg==}
-    peerDependencies:
-      '@chakra-ui/react': '>=1'
-    dependencies:
-      '@chakra-ui/react': 2.8.0(@emotion/react@11.11.1)(@emotion/styled@11.11.0)(@types/react@18.2.21)(framer-motion@10.16.1)(react-dom@18.2.0)(react@18.2.0)
-    dev: false
-
-  /@chakra-icons/carbon@1.0.0(@chakra-ui/react@2.8.0):
-    resolution: {integrity: sha512-mCyAMlTENmnbNyoepnMEHzVP1P/eBdfHd6OWaDd4ct1szCTDmY+V0dMtko+UwKCblGptgNkqer9afYW2JT88YA==}
-    peerDependencies:
-      '@chakra-ui/react': '>=1'
-    dependencies:
-      '@chakra-ui/react': 2.8.0(@emotion/react@11.11.1)(@emotion/styled@11.11.0)(@types/react@18.2.21)(framer-motion@10.16.1)(react-dom@18.2.0)(react@18.2.0)
-    dev: false
-
-  /@chakra-icons/cryptocurrency-icons@1.0.0(@chakra-ui/react@2.8.0):
-    resolution: {integrity: sha512-Xc8Fjd3B4jJfnnokWuRQ7DzWyIpxSRQigIJMLwDhd3cQsIIwYA+IpcGyDo/0tx001rgGd1/5NkefcnBexa6yeA==}
-    peerDependencies:
-      '@chakra-ui/react': '>=1'
-    dependencies:
-      '@chakra-ui/react': 2.8.0(@emotion/react@11.11.1)(@emotion/styled@11.11.0)(@types/react@18.2.21)(framer-motion@10.16.1)(react-dom@18.2.0)(react@18.2.0)
-    dev: false
-
-  /@chakra-icons/feather@1.0.0(@chakra-ui/react@2.8.0):
-    resolution: {integrity: sha512-zKDM/YCLAYC7ouEUNBE9d/JGu8VPVAhY/Q1WYca4zCU3Ty8sEFHiAAZAB9FIpZ6BwSFRXoS+GVuOcjAkUR2mhQ==}
-    peerDependencies:
-      '@chakra-ui/react': '>=1'
-    dependencies:
-      '@chakra-ui/react': 2.8.0(@emotion/react@11.11.1)(@emotion/styled@11.11.0)(@types/react@18.2.21)(framer-motion@10.16.1)(react-dom@18.2.0)(react@18.2.0)
-    dev: false
-
-  /@chakra-icons/flat-icon@1.0.0(@chakra-ui/react@2.8.0):
-    resolution: {integrity: sha512-bmrysqWXMfLN33k9TSfvpCEzqTZZWkn5tXCLdlQKIDIUr3X4kJPkX+zUxzAKNcdPCEV6XPsVl8LehjoDlOLKMg==}
-    peerDependencies:
-      '@chakra-ui/react': '>=1'
-    dependencies:
-      '@chakra-ui/react': 2.8.0(@emotion/react@11.11.1)(@emotion/styled@11.11.0)(@types/react@18.2.21)(framer-motion@10.16.1)(react-dom@18.2.0)(react@18.2.0)
-    dev: false
-
-  /@chakra-icons/ionicons@1.0.0(@chakra-ui/react@2.8.0):
-    resolution: {integrity: sha512-HJnZpWa2qFjQI5JHRlHYIIqvQQ5DoGbH0m19O+YmJm0EYUVJzO0jXr3aMjYxBPPfmbLArj6Y82j1ulBO3B/3fQ==}
-    peerDependencies:
-      '@chakra-ui/react': '>=1'
-    dependencies:
-      '@chakra-ui/react': 2.8.0(@emotion/react@11.11.1)(@emotion/styled@11.11.0)(@types/react@18.2.21)(framer-motion@10.16.1)(react-dom@18.2.0)(react@18.2.0)
-    dev: false
-
-  /@chakra-icons/octicons@1.0.0(@chakra-ui/react@2.8.0):
-    resolution: {integrity: sha512-NyDUL4m/9+Tz+sb/vpoCGMsEChqamrpSiVL6G2NQ2TkwHvxwEmi2ZvBqj38scXpE7V6SAQkvVqSM+cMgYb126w==}
-    peerDependencies:
-      '@chakra-ui/react': '>=1'
-    dependencies:
-      '@chakra-ui/react': 2.8.0(@emotion/react@11.11.1)(@emotion/styled@11.11.0)(@types/react@18.2.21)(framer-motion@10.16.1)(react-dom@18.2.0)(react@18.2.0)
-    dev: false
-
-  /@chakra-icons/simple-line-icons@1.0.0(@chakra-ui/react@2.8.0):
-    resolution: {integrity: sha512-cSGcf2tgri8Uy222quOKtzSkJxr8jdEj4Z+o+vxfkg1RO0oZ6RXGc/iC2tiMemWUChd5tV2bY3ura9bHRy6eRQ==}
-    peerDependencies:
-      '@chakra-ui/react': '>=1'
-    dependencies:
-      '@chakra-ui/react': 2.8.0(@emotion/react@11.11.1)(@emotion/styled@11.11.0)(@types/react@18.2.21)(framer-motion@10.16.1)(react-dom@18.2.0)(react@18.2.0)
-    dev: false
-
-  /@chakra-icons/tabler-icons@1.0.0(@chakra-ui/react@2.8.0):
-    resolution: {integrity: sha512-gZpVDKuf381K2Y1vQQTLzaI2XSwPFt8+eYo0AWjfjQxl77FLaq5//2o6GyBTOv0Gwz1j0dEviUZBqYjHX7tm+g==}
-    peerDependencies:
-      '@chakra-ui/react': '>=1'
-    dependencies:
-      '@chakra-ui/react': 2.8.0(@emotion/react@11.11.1)(@emotion/styled@11.11.0)(@types/react@18.2.21)(framer-motion@10.16.1)(react-dom@18.2.0)(react@18.2.0)
-    dev: false
-
-  /@chakra-icons/typicons@1.0.0(@chakra-ui/react@2.8.0):
-    resolution: {integrity: sha512-Wqw+UHzTE2JQZW9+o/JWbEG8/ZDcFhHVQAaxrCgLy0BlkTyDQ+CrOXdvUkrzVkhspIRrJyg21qkDvxSl/+8ZCQ==}
-    peerDependencies:
-      '@chakra-ui/react': '>=1'
-    dependencies:
-      '@chakra-ui/react': 2.8.0(@emotion/react@11.11.1)(@emotion/styled@11.11.0)(@types/react@18.2.21)(framer-motion@10.16.1)(react-dom@18.2.0)(react@18.2.0)
-    dev: false
 
   /@chakra-ui/accordion@2.3.0(@chakra-ui/system@2.6.0)(framer-motion@10.16.1)(react@18.2.0):
     resolution: {integrity: sha512-A4TkRw3Jnt+Fam6dSSJ62rskdrvjF3JGctYcfXlojfFIpHPuIw4pDwfZgNAxlaxWkcj0e7JJKlQ88dnZW+QfFg==}

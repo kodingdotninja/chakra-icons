@@ -1,7 +1,7 @@
 {
   "extends": "@kodingdotninja/style-guide/tsconfig/base.json",
   "compilerOptions": {
-    "jsx": "preserve",
+    "jsx": "react-jsx",
     "moduleResolution": "node",
     "target": "esnext"
   }
