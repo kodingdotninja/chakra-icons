@@ -13,7 +13,7 @@
     "postclear": "shx rm -rf **/node_modules",
     "postplop": "pnpm install",
     "prepare": "husky install",
-    "prerelease": "turbo run build",
+    "prerelease": "pnpm build",
     "release": "multi-semantic-release",
     "test": "turbo run test --filter='!@chakra-icons/{{name}}'",
     "# scope commands": "----------------------------------------------------",
