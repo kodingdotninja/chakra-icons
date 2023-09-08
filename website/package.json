@@ -6,6 +6,7 @@
     "# general commands": "--------------------------------------------------",
     "dev": "next",
     "build": "next build",
+    "prebuild": "tsx scripts/generate-snapshot.ts",
     "export": "next export",
     "start": "next start",
     "format": "prettier --write \"**/*.{js,json,md,svg}\"",
@@ -35,6 +36,7 @@
     "next": "^13.4.19",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "tsx": "^3.12.8",
     "typescript": "^5.2.2"
   },
   "keywords": [
