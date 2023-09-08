@@ -49,6 +49,7 @@ jobs:
       - uses: actions/checkout@v4
       - uses: ./.github/actions/quickstart
       - env:
+          NODE_OPTIONS: --max_old_space_size=8192
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
           GH_USER: "kdnjbot"
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
