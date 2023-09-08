@@ -1,15 +1,20 @@
-import fs from "fs/promises";
 import fz from "fuzzysearch";
-import { glob } from "glob";
-import type { NextApiRequest, NextApiResponse } from "next";
+import type { PageConfig } from "next";
+import type { NextRequest } from "next/server";
 
-import type { ApiIcon, MetaIcon, ResponseIcon, Source, Sources } from "../../types";
+import type { ApiIcon, ResponseIcon, Source, Sources } from "../../types";
+
+export const config: PageConfig = {
+  runtime: "edge",
+};
 
 const getIcons = async () => {
-  const snapshots: Promise<string>[] = await glob("../packages/@chakra-icons/**/snapshot.json").then((maybeSnapshots) =>
-    maybeSnapshots.map((snapshotPath) => fs.readFile(snapshotPath, { encoding: "utf8" })),
-  );
-  const metaIcons = await Promise.all([...snapshots]).then((all) => all.map((j) => JSON.parse(j) as MetaIcon));
+  // const snapshots: Promise<string>[] = await glob("../packages/@chakra-icons/**/snapshot.json").then((maybeSnapshots) =>
+  //   maybeSnapshots.map((snapshotPath) => fs.readFile(snapshotPath, { encoding: "utf8" })),
+  // );
+  // const metaIcons = await Promise.all([...snapshots]).then((all) => all.map((j) => JSON.parse(j) as MetaIcon));
+
+  const metaIcons = Array.from(await import("../../snapshots.json"));
 
   return ({ limit, q, qCreator }: { limit?: number; q?: string; qCreator?: string }): [ApiIcon[], number, string[]] => {
     const icons = metaIcons.flatMap((metaIcon) =>
@@ -52,14 +57,22 @@ export const getData = async (q: string, qCreator: string, limit = 50) => {
 };
 const toInt = (a: any): number => a | 0; // eslint-disable-line no-bitwise, @typescript-eslint/no-explicit-any
 
-export default async (req: NextApiRequest, res: NextApiResponse) => {
-  const { q, qCreator, limit } = req.query;
+export default async (req: NextRequest) => {
+  const params = req.nextUrl.searchParams;
+
+  const q = params.get("q");
+  const qCreator = params.get("qCreator");
+  const limit = params.get("limit");
 
   if (!Array.isArray(q) && !Array.isArray(limit) && !Array.isArray(qCreator)) {
     const _limit = toInt(limit);
     const data = await getData(q ?? "", qCreator ?? "", _limit > 0 ? _limit : 50);
-    if (req.method?.toLowerCase() === "get") {
-      res.status(200).json(data);
+    if (req.method.toLowerCase() === "get") {
+      return new Response(JSON.stringify(data), {
+        headers: {
+          "content-type": "application/json",
+        },
+      });
     }
   }
 };
