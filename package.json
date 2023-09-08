@@ -2,6 +2,14 @@
   "name": "@kodingdotninja/chakra-icons",
   "version": "0.0.0",
   "packageManager": "pnpm@8.7.0",
+  "workspaces": [
+    "tooling/*",
+    "packages/*",
+    "packages/@chakra-icons/*",
+    "website",
+    "!website/**",
+    "!tooling/*.conf/**"
+  ],
   "scripts": {
     "# general commands": "--------------------------------------------------",
     "build": "turbo run build --filter='!@chakra-icons/{{name}}'",
