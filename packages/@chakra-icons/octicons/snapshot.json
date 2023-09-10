@@ -2089,6 +2089,11 @@
           "code": "src/FeedMerged16.tsx"
         },
         {
+          "name": "FeedIssueReopen16",
+          "svg": ".chakraIcons/icons/feed-issue-reopen-16.svg",
+          "code": "src/FeedIssueReopen16.tsx"
+        },
+        {
           "name": "FeedIssueOpen16",
           "svg": ".chakraIcons/icons/feed-issue-open-16.svg",
           "code": "src/FeedIssueOpen16.tsx"

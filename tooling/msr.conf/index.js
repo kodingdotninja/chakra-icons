@@ -21,7 +21,9 @@ module.exports = {
     ],
     "@semantic-release/release-notes-generator",
     "@semantic-release/changelog",
+    // monorepo
     "@semrel-extra/npm",
+    // "@semantic-release/npm",
     [
       "@semantic-release/github",
       {

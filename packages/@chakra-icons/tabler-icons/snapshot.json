@@ -6299,6 +6299,11 @@
           "code": "src/Pentagon.tsx"
         },
         {
+          "name": "PentagonX",
+          "svg": ".chakraIcons/icons/pentagon-x.svg",
+          "code": "src/PentagonX.tsx"
+        },
+        {
           "name": "PentagonPlus",
           "svg": ".chakraIcons/icons/pentagon-plus.svg",
           "code": "src/PentagonPlus.tsx"
@@ -6307,6 +6312,56 @@
           "name": "PentagonOff",
           "svg": ".chakraIcons/icons/pentagon-off.svg",
           "code": "src/PentagonOff.tsx"
+        },
+        {
+          "name": "PentagonNumber9",
+          "svg": ".chakraIcons/icons/pentagon-number-9.svg",
+          "code": "src/PentagonNumber9.tsx"
+        },
+        {
+          "name": "PentagonNumber8",
+          "svg": ".chakraIcons/icons/pentagon-number-8.svg",
+          "code": "src/PentagonNumber8.tsx"
+        },
+        {
+          "name": "PentagonNumber7",
+          "svg": ".chakraIcons/icons/pentagon-number-7.svg",
+          "code": "src/PentagonNumber7.tsx"
+        },
+        {
+          "name": "PentagonNumber6",
+          "svg": ".chakraIcons/icons/pentagon-number-6.svg",
+          "code": "src/PentagonNumber6.tsx"
+        },
+        {
+          "name": "PentagonNumber5",
+          "svg": ".chakraIcons/icons/pentagon-number-5.svg",
+          "code": "src/PentagonNumber5.tsx"
+        },
+        {
+          "name": "PentagonNumber4",
+          "svg": ".chakraIcons/icons/pentagon-number-4.svg",
+          "code": "src/PentagonNumber4.tsx"
+        },
+        {
+          "name": "PentagonNumber3",
+          "svg": ".chakraIcons/icons/pentagon-number-3.svg",
+          "code": "src/PentagonNumber3.tsx"
+        },
+        {
+          "name": "PentagonNumber2",
+          "svg": ".chakraIcons/icons/pentagon-number-2.svg",
+          "code": "src/PentagonNumber2.tsx"
+        },
+        {
+          "name": "PentagonNumber1",
+          "svg": ".chakraIcons/icons/pentagon-number-1.svg",
+          "code": "src/PentagonNumber1.tsx"
+        },
+        {
+          "name": "PentagonNumber0",
+          "svg": ".chakraIcons/icons/pentagon-number-0.svg",
+          "code": "src/PentagonNumber0.tsx"
         },
         {
           "name": "PentagonFilled",
@@ -6477,6 +6532,21 @@
           "name": "Password",
           "svg": ".chakraIcons/icons/password.svg",
           "code": "src/Password.tsx"
+        },
+        {
+          "name": "PasswordUser",
+          "svg": ".chakraIcons/icons/password-user.svg",
+          "code": "src/PasswordUser.tsx"
+        },
+        {
+          "name": "PasswordMobilePhone",
+          "svg": ".chakraIcons/icons/password-mobile-phone.svg",
+          "code": "src/PasswordMobilePhone.tsx"
+        },
+        {
+          "name": "PasswordFingerprint",
+          "svg": ".chakraIcons/icons/password-fingerprint.svg",
+          "code": "src/PasswordFingerprint.tsx"
         },
         {
           "name": "Parking",
@@ -8019,6 +8089,11 @@
           "code": "src/Menorah.tsx"
         },
         {
+          "name": "Melon",
+          "svg": ".chakraIcons/icons/melon.svg",
+          "code": "src/Melon.tsx"
+        },
+        {
           "name": "Meeple",
           "svg": ".chakraIcons/icons/meeple.svg",
           "code": "src/Meeple.tsx"
@@ -8332,6 +8407,11 @@
           "name": "MapSearch",
           "svg": ".chakraIcons/icons/map-search.svg",
           "code": "src/MapSearch.tsx"
+        },
+        {
+          "name": "MapRoute",
+          "svg": ".chakraIcons/icons/map-route.svg",
+          "code": "src/MapRoute.tsx"
         },
         {
           "name": "MapQuestion",
@@ -8762,6 +8842,11 @@
           "name": "Login",
           "svg": ".chakraIcons/icons/login.svg",
           "code": "src/Login.tsx"
+        },
+        {
+          "name": "Login2",
+          "svg": ".chakraIcons/icons/login-2.svg",
+          "code": "src/Login2.tsx"
         },
         {
           "name": "LogicXor",
@@ -15909,6 +15994,11 @@
           "code": "src/CloudOff.tsx"
         },
         {
+          "name": "CloudNetwork",
+          "svg": ".chakraIcons/icons/cloud-network.svg",
+          "code": "src/CloudNetwork.tsx"
+        },
+        {
           "name": "CloudMinus",
           "svg": ".chakraIcons/icons/cloud-minus.svg",
           "code": "src/CloudMinus.tsx"
@@ -16672,6 +16762,61 @@
           "name": "CircleDashed",
           "svg": ".chakraIcons/icons/circle-dashed.svg",
           "code": "src/CircleDashed.tsx"
+        },
+        {
+          "name": "CircleDashedX",
+          "svg": ".chakraIcons/icons/circle-dashed-x.svg",
+          "code": "src/CircleDashedX.tsx"
+        },
+        {
+          "name": "CircleDashedNumber9",
+          "svg": ".chakraIcons/icons/circle-dashed-number-9.svg",
+          "code": "src/CircleDashedNumber9.tsx"
+        },
+        {
+          "name": "CircleDashedNumber8",
+          "svg": ".chakraIcons/icons/circle-dashed-number-8.svg",
+          "code": "src/CircleDashedNumber8.tsx"
+        },
+        {
+          "name": "CircleDashedNumber7",
+          "svg": ".chakraIcons/icons/circle-dashed-number-7.svg",
+          "code": "src/CircleDashedNumber7.tsx"
+        },
+        {
+          "name": "CircleDashedNumber6",
+          "svg": ".chakraIcons/icons/circle-dashed-number-6.svg",
+          "code": "src/CircleDashedNumber6.tsx"
+        },
+        {
+          "name": "CircleDashedNumber5",
+          "svg": ".chakraIcons/icons/circle-dashed-number-5.svg",
+          "code": "src/CircleDashedNumber5.tsx"
+        },
+        {
+          "name": "CircleDashedNumber4",
+          "svg": ".chakraIcons/icons/circle-dashed-number-4.svg",
+          "code": "src/CircleDashedNumber4.tsx"
+        },
+        {
+          "name": "CircleDashedNumber3",
+          "svg": ".chakraIcons/icons/circle-dashed-number-3.svg",
+          "code": "src/CircleDashedNumber3.tsx"
+        },
+        {
+          "name": "CircleDashedNumber2",
+          "svg": ".chakraIcons/icons/circle-dashed-number-2.svg",
+          "code": "src/CircleDashedNumber2.tsx"
+        },
+        {
+          "name": "CircleDashedNumber1",
+          "svg": ".chakraIcons/icons/circle-dashed-number-1.svg",
+          "code": "src/CircleDashedNumber1.tsx"
+        },
+        {
+          "name": "CircleDashedNumber0",
+          "svg": ".chakraIcons/icons/circle-dashed-number-0.svg",
+          "code": "src/CircleDashedNumber0.tsx"
         },
         {
           "name": "CircleChevronsUp",
@@ -17547,6 +17692,11 @@
           "name": "CarOff",
           "svg": ".chakraIcons/icons/car-off.svg",
           "code": "src/CarOff.tsx"
+        },
+        {
+          "name": "CarGarage",
+          "svg": ".chakraIcons/icons/car-garage.svg",
+          "code": "src/CarGarage.tsx"
         },
         {
           "name": "CarCrash",
@@ -19127,6 +19277,11 @@
           "name": "BrandMercedes",
           "svg": ".chakraIcons/icons/brand-mercedes.svg",
           "code": "src/BrandMercedes.tsx"
+        },
+        {
+          "name": "BrandMeetup",
+          "svg": ".chakraIcons/icons/brand-meetup.svg",
+          "code": "src/BrandMeetup.tsx"
         },
         {
           "name": "BrandMedium",
@@ -22769,6 +22924,11 @@
           "code": "src/AlertTriangle.tsx"
         },
         {
+          "name": "AlertTriangleOff",
+          "svg": ".chakraIcons/icons/alert-triangle-off.svg",
+          "code": "src/AlertTriangleOff.tsx"
+        },
+        {
           "name": "AlertTriangleFilled",
           "svg": ".chakraIcons/icons/alert-triangle-filled.svg",
           "code": "src/AlertTriangleFilled.tsx"
@@ -22782,6 +22942,11 @@
           "name": "AlertSquareRounded",
           "svg": ".chakraIcons/icons/alert-square-rounded.svg",
           "code": "src/AlertSquareRounded.tsx"
+        },
+        {
+          "name": "AlertSquareRoundedOff",
+          "svg": ".chakraIcons/icons/alert-square-rounded-off.svg",
+          "code": "src/AlertSquareRoundedOff.tsx"
         },
         {
           "name": "AlertSquareRoundedFilled",
@@ -22799,6 +22964,11 @@
           "code": "src/AlertSmall.tsx"
         },
         {
+          "name": "AlertSmallOff",
+          "svg": ".chakraIcons/icons/alert-small-off.svg",
+          "code": "src/AlertSmallOff.tsx"
+        },
+        {
           "name": "AlertOctagon",
           "svg": ".chakraIcons/icons/alert-octagon.svg",
           "code": "src/AlertOctagon.tsx"
@@ -22814,6 +22984,11 @@
           "code": "src/AlertHexagon.tsx"
         },
         {
+          "name": "AlertHexagonOff",
+          "svg": ".chakraIcons/icons/alert-hexagon-off.svg",
+          "code": "src/AlertHexagonOff.tsx"
+        },
+        {
           "name": "AlertHexagonFilled",
           "svg": ".chakraIcons/icons/alert-hexagon-filled.svg",
           "code": "src/AlertHexagonFilled.tsx"
@@ -22822,6 +22997,11 @@
           "name": "AlertCircle",
           "svg": ".chakraIcons/icons/alert-circle.svg",
           "code": "src/AlertCircle.tsx"
+        },
+        {
+          "name": "AlertCircleOff",
+          "svg": ".chakraIcons/icons/alert-circle-off.svg",
+          "code": "src/AlertCircleOff.tsx"
         },
         {
           "name": "AlertCircleFilled",

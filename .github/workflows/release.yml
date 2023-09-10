@@ -59,4 +59,18 @@ jobs:
           GIT_COMMITTER_NAME: "@kdnjbot"
           TURBO_TEAM: ${{ secrets.TURBO_TEAM }}
           TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
-        run: pnpm run release
+        run: |
+          # PATCH: replace workspace:* to *
+          # multi-semantic-release (especially @semrel-extra/npm not supported version `workspace:*`.
+          # So, need to replace it before release
+          homebin=$HOME/kdnj/bin
+          mkdir -p $homebin
+          echo -e '#!/bin/bash\npnpm "$@"' > $homebin/npm && chmod +x $homebin/npm
+
+          rc=/tmp/rcfile
+          echo 'shopt -s expand_aliases' > $rc
+          echo 'alias npm="$homebin/npm"' >> $rc
+          source $rc
+          find . -type f -name "package.json" -not -path './node_modules*' -not -path './.git*' -exec sed -i 's/workspace:\*/\*/g' {} \;
+          npm --help
+          pnpm run release

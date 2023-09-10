@@ -22,7 +22,6 @@
   ],
   "devDependencies": {
     "@chakra-icons/cli": "*",
-    "@tooling/msrconfig": "workspace:*",
     "tsup": "^7.2.0"
   },
   "peerDependencies": {

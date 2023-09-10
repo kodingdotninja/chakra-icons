@@ -24,7 +24,7 @@
     "@babel/types": "^7.22.11",
     "arg": "^5.0.2",
     "change-case": "^4.1.2",
-    "create-chakra-icons": "*",
+    "create-chakra-icons": "workspace:*",
     "degit": "npm:tiged",
     "fp-ts": "^2.16.1",
     "glob": "^10.3.3",

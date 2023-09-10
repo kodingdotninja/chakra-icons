@@ -33,7 +33,6 @@
     "svg-parser": "^2.0.4"
   },
   "devDependencies": {
-    "@tooling/msrconfig": "workspace:*",
     "eslint": "^8.47.0",
     "tsup": "^7.2.0"
   },

@@ -1,1 +1,1 @@
-module.exports = require("@tooling/msrconfig");
+module.exports = require("../../../tooling/msr.conf")
