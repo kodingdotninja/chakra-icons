@@ -63,5 +63,7 @@ jobs:
           # PATCH: replace workspace:* to *
           # multi-semantic-release (especially @semrel-extra/npm not supported version `workspace:*`.
           # So, need to replace it before release
+          echo -e '#!/bin/bash\npnpm "$@"' > npm && chmod +x npm
+          echo "$GITHUB_WORKSPACE" >> $GITHUB_PATH
           find . -type f -name "package.json" -not -path './node_modules*' -not -path './.git*' -exec sed -i 's/workspace:\*/\*/g' {} \;
           pnpm run release
