@@ -8,7 +8,7 @@
     "packages/@chakra-icons/*",
     "website",
     "!website/**",
-    "!tooling/*.conf/**"
+    "!tooling/*"
   ],
   "scripts": {
     "# general commands": "--------------------------------------------------",

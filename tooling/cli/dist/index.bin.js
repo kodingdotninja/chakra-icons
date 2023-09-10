@@ -31,7 +31,7 @@ var ruins = __toESM(require("ruins-ts"));
 var package_default = {
   name: "@chakra-icons/cli",
   description: "a tooling for manage everything in @chakra-icons",
-  version: "1.0.2",
+  version: "2.0.0",
   author: "ri7nz <ri7nz@koding.ninja>",
   homepage: "https://github.com/kodingdotninja/chakra-icons",
   repository: "https://github.com/kodingdotninja/chakra-icons.git",
@@ -102,16 +102,19 @@ var metaIconDefault = (name, repository, iconPath, clonePath, sourcePath) => ({
   sourcePath,
   sources: []
 });
-var hotfixNameMap = [
+var prefixWhenNumeric = (prefix) => (n) => /^\d.*$/.test(n) ? `${prefix}${n}` : n;
+var moduleName = (0, import_function.flow)(prefixWhenNumeric("I"), import_change_case.pascalCase, S.replace(/[^A-Z0-9]/gi, ""));
+var hotfixPkgIconNameReplace = [
   [
     /tabler-icons/i,
     {
       "device-game-pad": "device-dpad"
+      // prevent conflict with `device-gamepad`
     }
   ]
 ];
 var hotfixName = (metaIcon) => (name) => (0, import_function.pipe)(
-  hotfixNameMap,
+  hotfixPkgIconNameReplace,
   A.findFirst(([pattern]) => pattern.test(metaIcon.repository)),
   O.fold(
     () => name,
@@ -122,8 +125,6 @@ var hotfixName = (metaIcon) => (name) => (0, import_function.pipe)(
     )
   )
 );
-var prefixWhenNumeric = (prefix) => (n) => /^\d.*$/.test(n) ? `${prefix}${n}` : n;
-var moduleName = (0, import_function.flow)(prefixWhenNumeric("I"), import_change_case.pascalCase, S.replace(/[^A-Z0-9]/gi, ""));
 var setSources = (metaIcon) => (beSources) => {
   const createSource = (sources, svg) => {
     const { dir, name: _name } = path.parse(svg);
