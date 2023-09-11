@@ -41,11 +41,17 @@
     "@types/react": "^18.2.21",
     "@types/react-dom": "^18.2.7",
     "commitlint-config-squash-pr": "^1.1.0",
+    "eslint": "^8.47.0",
     "husky": "^8.0.3",
     "multi-semantic-release": "^3.0.2",
     "plop": "^3.1.2",
+    "prettier": "^3.0.3",
     "shx": "^0.3.4",
-    "turbo": "^1.10.13"
+    "turbo": "^1.10.13",
+    "typescript": "^5.2.2"
+  },
+  "resolutions": {
+    "@semantic-release/npm": "@semrel-extra/npm"
   },
   "prettier": "@kodingdotninja/style-guide/prettier",
   "private": true
