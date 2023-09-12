@@ -51,6 +51,7 @@ jobs:
       - name: release
         run: |
           find . -type f -name "package.json" -not -path './node_modules*' -not -path './.git*' -exec sed -i 's/workspace:\*/\*/g' {} \;
+          rm -rf **/node_modules
           yarn install
           yarn release
           # PATCH: replace workspace:* to *
