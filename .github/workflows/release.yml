@@ -35,45 +35,38 @@ jobs:
       NODE_OPTIONS: --max_old_space_size=8192
       TURBO_TEAM: ${{ secrets.TURBO_TEAM }}
       TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
+      GH_TOKEN: ${{ secrets.GH_TOKEN }}
+      GH_USER: "kdnjbot"
+      NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+      GIT_AUTHOR_EMAIL: "robot@koding.ninja"
+      GIT_COMMITTER_EMAIL: "robot@koding.ninja"
+      GIT_AUTHOR_NAME: "@kdnjbot"
+      GIT_COMMITTER_NAME: "@kdnjbot"
     needs: init
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: ./.github/actions/quickstart
       - run: pnpm run build
-
-  release:
-    needs: [validate, test, build]
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: ./.github/actions/quickstart
-      - env:
-          NODE_OPTIONS: --max_old_space_size=8192
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
-          GH_USER: "kdnjbot"
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-          GIT_AUTHOR_EMAIL: "robot@koding.ninja"
-          GIT_COMMITTER_EMAIL: "robot@koding.ninja"
-          GIT_AUTHOR_NAME: "@kdnjbot"
-          GIT_COMMITTER_NAME: "@kdnjbot"
-          TURBO_TEAM: ${{ secrets.TURBO_TEAM }}
-          TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
+      - name: release
         run: |
+          find . -type f -name "package.json" -not -path './node_modules*' -not -path './.git*' -exec sed -i 's/workspace:\*/\*/g' {} \;
+          yarn install
+          yarn release
           # PATCH: replace workspace:* to *
           # multi-semantic-release (especially @semrel-extra/npm not supported version `workspace:*`.
           # So, need to replace it before release
-          homebin=$HOME/kdnj/bin
-          mkdir -p $homebin
-          echo -e '#!/bin/bash\npnpm "$@"' > $homebin/npm && chmod +x $homebin/npm
+          # homebin=$HOME/kdnj/bin
+          # mkdir -p $homebin
+          # echo -e '#!/bin/bash\npnpm "$@"' > $homebin/npm && chmod +x $homebin/npm
 
-          rc=/tmp/rcfile
-          echo 'shopt -s expand_aliases' > $rc
-          echo 'alias npm="$homebin/npm"' >> $rc
-          source $rc
+          # rc=/tmp/rcfile
+          # echo 'shopt -s expand_aliases' > $rc
+          # echo 'alias npm="$homebin/npm"' >> $rc
+          # source $rc
           # replace workspace:* to *
-          find . -type f -name "package.json" -not -path './node_modules*' -not -path './.git*' -exec sed -i 's/workspace:\*/\*/g' {} \;
+          # find . -type f -name "package.json" -not -path './node_modules*' -not -path './.git*' -exec sed -i 's/workspace:\*/\*/g' {} \;
           # replace link:* to 
-          find . -type f -name "pnpm-lock.yaml" -not -path './node_modules*' -not -path './.git*' -exec sed -i 's/link:\*/file:\*/g' {} \;
-          npm --help
-          pnpm run release
+          # find . -type f -name "pnpm-lock.yaml" -not -path './node_modules*' -not -path './.git*' -exec sed -i 's/link:\*/file:\*/g' {} \;
+          # npm --help
+          # pnpm run release
