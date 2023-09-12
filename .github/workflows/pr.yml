@@ -32,7 +32,13 @@ jobs:
           type pnpm
           type npm
 
-          add-alias npm $GITHUB_WORKSPACE/kdnj/bin/npm
+          rc=/tmp/rcfile
+
+          echo 'shopt -s expand_aliases' > $rc
+          echo 'alias ll="ls -l" ' >> $rc
+          echo 'alias npm="$GITHUB_WORKSPACE/kdnj/bin/npm"' >> $rc
+
+          source $rc
 
           type pnpm
           type npm
