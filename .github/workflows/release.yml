@@ -51,9 +51,11 @@ jobs:
       - name: release
         run: |
           find . -type f -name "package.json" -not -path './node_modules*' -not -path './.git*' -exec sed -i 's/workspace:\*/\*/g' {} \;
-          rm -rf **/node_modules
+          mv ./node_modules ./node_modules_pnpm
           yarn install
           yarn release
+          rm -rf ./node_modules
+          mv ./node_modules_pnpm ./node_modules
           # PATCH: replace workspace:* to *
           # multi-semantic-release (especially @semrel-extra/npm not supported version `workspace:*`.
           # So, need to replace it before release
