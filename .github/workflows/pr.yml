@@ -20,10 +20,13 @@ jobs:
           cat $HOME/.bash_profile
           cat $HOME/.bashrc
 
-          mkdir -p $HOME/.config/bin
-          echo -e '#!/bin/bash\npnpm "$@"' > $HOME/.config/bin/npm && chmod +x npm
-          echo 'export PATH=$HOME/.config/bin:$PATH' >> $HOME/.bashrc
-          source $HOME/.bashrc
+          mkdir -p $GITHUB_WORKSPACE/kdnj/bin
+
+          echo -e '#!/bin/bash\npnpm "$@"' > $GITHUB_WORKSPACE/kdnj/bin/npm && \
+            chmod +x $GITHUB_WORKSPACE/kdnj/bin/npm 
+
+          echo "$GITHUB_WORKSPACE/kdnj/bin" >> $GITHUB_PATH
+
           type pnpm
           type npm
 
