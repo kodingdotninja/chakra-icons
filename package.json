@@ -12,7 +12,7 @@
   ],
   "scripts": {
     "# general commands": "--------------------------------------------------",
-    "build": "turbo run build --filter='!@chakra-icons/{{name}}'",
+    "build": "turbo run build --filter='!@chakra-icons/{{name}}' --filter=[HEAD^1]",
     "clean": "turbo run clean --filter='!@chakra-icons/{{name}}'",
     "clear": "turbo run clean --filter='!@chakra-icons/{{name}}'",
     "commit": "commit",
