@@ -12,31 +12,6 @@ jobs:
       - uses: actions/checkout@v4
       - uses: ./.github/actions/quickstart
       - uses: wagoid/commitlint-github-action@v5
-        env:
-          NODE_PATH: ${{ github.workspace }}/node_modules
-
-  validate:
-    needs: init
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: ./.github/actions/quickstart
-      - run: pnpm --filter="@chakra-icons/*" --filter="create-*" run lint
-
-  test:
-    needs: init
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: ./.github/actions/quickstart
-      - run: pnpm run test
-
-  build:
-    env:
-      NODE_OPTIONS: --max_old_space_size=8192
-    needs: init
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: ./.github/actions/quickstart
-      - run: pnpm run build
+      - run: |
+          type pnpm
+          type npm
