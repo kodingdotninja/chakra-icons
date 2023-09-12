@@ -34,6 +34,9 @@ importers:
       commitlint-config-squash-pr:
         specifier: ^1.1.0
         version: 1.1.0
+      eslint:
+        specifier: ^8.47.0
+        version: 8.48.0
       husky:
         specifier: ^8.0.3
         version: 8.0.3
@@ -43,12 +46,18 @@ importers:
       plop:
         specifier: ^3.1.2
         version: 3.1.2
+      prettier:
+        specifier: ^3.0.3
+        version: 3.0.3
       shx:
         specifier: ^0.3.4
         version: 0.3.4
       turbo:
         specifier: ^1.10.13
         version: 1.10.13
+      typescript:
+        specifier: ^5.2.2
+        version: 5.2.2
 
   packages/@chakra-icons/bootstrap:
     dependencies:
