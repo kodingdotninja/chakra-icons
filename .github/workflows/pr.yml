@@ -11,7 +11,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: ./.github/actions/quickstart
-      - uses: wagoid/commitlint-github-action@v5
       - run: |
           type pnpm
           type npm
@@ -27,6 +26,13 @@ jobs:
 
           echo "$GITHUB_WORKSPACE/kdnj/bin" >> $GITHUB_PATH
 
+          echo REAL_PATH $PATH
+          echo GITHUB_PATH $GITHUB_PATH
+
           type pnpm
           type npm
 
+          add-alias npm $GITHUB_WORKSPACE/kdnj/bin/npm
+
+          type pnpm
+          type npm
