@@ -42,3 +42,7 @@ jobs:
 
           type pnpm
           type npm
+
+          npm version
+
+          npm --help
