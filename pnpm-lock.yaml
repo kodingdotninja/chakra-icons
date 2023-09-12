@@ -284,6 +284,9 @@ importers:
         specifier: ^0.0.4
         version: 0.0.4(fp-ts@2.16.1)
     devDependencies:
+      '@tooling/msrconfig':
+        specifier: workspace:*
+        version: link:../msr.conf
       '@types/degit':
         specifier: ^2.8.3
         version: 2.8.3

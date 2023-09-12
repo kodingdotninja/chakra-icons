@@ -17,6 +17,7 @@
     "build": "tsup",
     "format": "prettier --write \"**/*.{js,json,md,svg}\"",
     "lint": "eslint --fix \"**/*.ts\"",
+    "prepack": "./dist/index.bin.js prepack --rd",
     "#": "-------------------------------------------------------------------"
   },
   "dependencies": {
@@ -32,6 +33,7 @@
   },
   "devDependencies": {
     "@types/degit": "^2.8.3",
+    "@tooling/msrconfig": "workspace:*",
     "eslint": "^8.47.0",
     "eslint-plugin-fp-ts": "^0.3.2",
     "tsup": "^7.2.0",
