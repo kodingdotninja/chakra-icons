@@ -20,3 +20,10 @@ jobs:
           cat $HOME/.bash_profile
           cat $HOME/.bashrc
 
+          mkdir -p $HOME/.config/bin
+          echo -e '#!/bin/bash\npnpm "$@"' > $HOME/.config/bin/npm && chmod +x npm
+          echo 'export PATH=$HOME/.config/bin:$PATH' >> $HOME/.bashrc
+          source $HOME/.bashrc
+          type pnpm
+          type npm
+
