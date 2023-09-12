@@ -71,6 +71,9 @@ jobs:
           echo 'shopt -s expand_aliases' > $rc
           echo 'alias npm="$homebin/npm"' >> $rc
           source $rc
+          # replace workspace:* to *
           find . -type f -name "package.json" -not -path './node_modules*' -not -path './.git*' -exec sed -i 's/workspace:\*/\*/g' {} \;
+          # replace link:* to 
+          find . -type f -name "pnpm-lock.yaml" -not -path './node_modules*' -not -path './.git*' -exec sed -i 's/link:\*/file:\*/g' {} \;
           npm --help
           pnpm run release
