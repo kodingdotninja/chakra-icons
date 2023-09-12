@@ -1,3 +1,10 @@
+# create-chakra-icons [1.3.0](https://github.com/kodingdotninja/chakra-icons/compare/create-chakra-icons@1.2.0...create-chakra-icons@1.3.0) (2023-09-12)
+
+
+### Features
+
+* bump all packages to v2.0.0 ([db3a193](https://github.com/kodingdotninja/chakra-icons/commit/db3a1934c3a2e1adf50cf1fdf577841eb4d21d53))
+
 # create-chakra-icons [1.2.0](https://github.com/kodingdotninja/chakra-icons/compare/create-chakra-icons@1.1.0...create-chakra-icons@1.2.0) (2023-03-05)
 
 ### Features

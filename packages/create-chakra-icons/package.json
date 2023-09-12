@@ -1,6 +1,6 @@
 {
   "name": "create-chakra-icons",
-  "version": "2.0.0",
+  "version": "1.3.0",
   "author": "ri7nz <hi@rin.rocks>",
   "homepage": "https://github.com/kodingdotninja/chakra-icons/tree/main/packages/create-chakra-icons",
   "repository": {
@@ -33,7 +33,7 @@
     "svg-parser": "^2.0.4"
   },
   "devDependencies": {
-    "@tooling/msrconfig": "workspace:*",
+    "@tooling/msrconfig": "*",
     "eslint": "^8.47.0",
     "tsup": "^7.2.0"
   },
