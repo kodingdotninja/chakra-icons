@@ -15,3 +15,8 @@ jobs:
       - run: |
           type pnpm
           type npm
+          echo $PATH
+          echo $GITHUB_PATH
+          cat $HOME/.bash_profile
+          cat $HOME/.bashrc
+
