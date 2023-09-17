@@ -55,6 +55,7 @@ jobs:
           find . -type f -name "package.json" -not -path './node_modules*' -not -path './.git*' -exec sed -i 's/workspace:\*/\*/g' {} \;
           mv ./node_modules ./node_modules_pnpm
           yarn install
+          yarn turbo run prepack
           yarn release
           rm -rf ./node_modules
           mv ./node_modules_pnpm ./node_modules
