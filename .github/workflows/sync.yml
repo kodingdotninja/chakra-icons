@@ -17,7 +17,7 @@ jobs:
         env:
           NODE_OPTIONS: --max_old_space_size=8192
       - run: ./.github/scripts/sync-snapshot
-      - uses: peter-evans/create-pull-request@v5
+      - uses: peter-evans/create-pull-request@v7
         with:
           token: ${{ secrets.GH_TOKEN }}
           branch: "sync-icons"
